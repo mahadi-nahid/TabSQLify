@@ -1,6 +1,6 @@
 # TabSQLify
 
-<image src="/method-2C.pdf"/>
+<image src="/method.jpg"/>
 
 Comming soon.
 
