@@ -1,6 +1,10 @@
 # TabSQLify
 
+## Method Overview 
+
 <image src="/method.jpg"/>
+
+## Code 
 
 Comming soon.
 
