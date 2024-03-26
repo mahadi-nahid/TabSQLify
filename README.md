@@ -2,7 +2,11 @@
 
 Comming soon.
 
-```
+## Citation
+
+If you want to cite our papers, please use:
+
+```bibtex
 @inproceedings{
 nahid2024tabsqlify,
 title={Tab{SQL}ify: Enhancing Reasoning Capabilities of {LLM}s Through Table Decomposition},
