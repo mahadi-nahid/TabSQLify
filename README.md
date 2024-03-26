@@ -1,4 +1,4 @@
-# TabSQLify
+# TabSQLify: Enhancing Reasoning Capabilities of LLMs Through Table Decomposition
 
 ## Method Overview 
 
