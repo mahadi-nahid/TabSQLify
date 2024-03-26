@@ -1,5 +1,7 @@
 # TabSQLify
 
+<image src="/method-2C.pdf"/>
+
 Comming soon.
 
 ## Citation
