@@ -11,7 +11,7 @@ Abstract Table reasoning is a challenging task that requires understanding both 
 
 ## Code 
 
-Comming soon.
+
 
 ## Citation
 
