@@ -1,0 +1,351 @@
+id,question,answer,prediction,sql,response,r_num_cell,t_num_cell
+nu-30,what is the name listed before mount pleasant line?,pennsylvania avenue metro extra line,wisconsin avenue metro extra line,select * from T;,"The first step is to identify the row where the route is listed as 'mount pleasant line'. From the table, we can see that the row number 5 has the route '42, 43' and the name 'mount pleasant line'. The second step is to find the name listed before 'mount pleasant line'. From the table, we can see that the name listed before 'mount pleasant line' is 'wisconsin avenue metro extra line'.
+Therefore, the answer is 'wisconsin avenue metro extra line'.
+Answer: wisconsin avenue metro extra line",540,540
+nu-44,which year did the team have their most total wins?,1992,1936,select * from T;,"The first step is to find the row with the highest value in the 'total_wins' column. From the table, we can see that row number 31 has the highest value in the 'total_wins' column, which is 7. The second step is to find the corresponding year in the 'season' column for that row. From the table, we can see that the corresponding year for row number 31 in the 'season' column is 1936.
+Therefore, the answer is 1936.
+Answer: 1936",1332,1332
+nu-141,how many total wins did the citadel bulldogs have before 1908?,6,cannot be determined.,select * from T;,"The first step is to find the total wins of the Citadel Bulldogs before 1908. From the table, we can see that there are rows with seasons before 1908. The total wins column for those rows will give us the number of wins before 1908. However, from the given table, there is no information on the total wins before 1908. Therefore, we cannot determine the number of total wins the Citadel Bulldogs had before 1908.
+Answer: Cannot be determined.",1332,1332
+nu-158,how many different flyby's have been done for the halley comet?,6,"the first step is to find the row where the comet is 't13/halley'. from the table, we can see that the row_number for 't13/halley' is 0. the second step is to find the value in the 'spacecraft_encounters' column for row_number 0. from the table, we can see that the value in the 'spacecraft_encounters' column for row_number 0 is 'giotto (flyby 1986), vega 1 (flyby 1986), vega 2 (flyby 1986), suisei (flyby 1986) ice (distant flyby 1986), sakigake (distant flyby 1986)'. the third step is to count the number of different flybys mentioned in the 'spacecraft_encounters' value. from the value, we can see that there are 6 different flybys mentioned: giotto, v",select * from T;,"The first step is to find the row where the comet is 't13/halley'. From the table, we can see that the row_number for 't13/halley' is 0. The second step is to find the value in the 'spacecraft_encounters' column for row_number 0. From the table, we can see that the value in the 'spacecraft_encounters' column for row_number 0 is 'giotto (flyby 1986), vega 1 (flyby 1986), vega 2 (flyby 1986), suisei (flyby 1986) ice (distant flyby 1986), sakigake (distant flyby 1986)'. The third step is to count the number of different flybys mentioned in the 'spacecraft_encounters' value. From the value, we can see that there are 6 different flybys mentioned: giotto, v",1485,1485
+nu-208,"what is the number of counties in saegertown, pennsylvania?",1,1,select * from T;,"The first step is to find the row where the name_of_place is 'saegertown'. From the table, we can see that the row_number for 'saegertown' is 15. The second step is to find the number_of_counties for 'saegertown'. From the table, we can see that the number_of_counties for 'saegertown' is 1.
+Therefore, the answer is 1.
+Answer: 1",3102,3102
+nu-237,"which coach served longer, higgins or powers?",kevin higgins,"first, we need to find the rows where the coaches higgins and powers are listed. from the table, we can see that there is no coach named higgins or powers listed. therefore, we cannot determine which coach served longer based on the given information.",select * from T;,"First, we need to find the rows where the coaches Higgins and Powers are listed. From the table, we can see that there is no coach named Higgins or Powers listed. Therefore, we cannot determine which coach served longer based on the given information.",1332,1332
+nu-263,tell me the number of lines that stop at the naylor road station.,3,"the first step is to find the lines that stop at the naylor road station. from the table, we can see that the lines that stop at the naylor road station are:",select * from T;,"The first step is to find the lines that stop at the Naylor Road station. From the table, we can see that the lines that stop at the Naylor Road station are:",540,540
+nu-279,progressive republican is his party association.,william kent,progressive republican,select * from T;,"The first step is to find the representative mentioned in the question. From the table, we can look into the 'representative' column and find that the representative is Melville Clyde Kelly. The second step is to find his party association. From the table, we can see that Melville Clyde Kelly was associated with three different parties: Republican, Progressive, and Republican. Therefore, his party association is Progressive Republican.
+Answer: Progressive Republican",1992,1992
+nu-348,what was the first pod color in the list of leroy & stitch episode?,blue,blue,select * from T;,"The first step is to look at the ‘pod_color’ column in the table for the ‘Leroy & Stitch’ episode. From the table, we can see that the first pod color listed is ‘blue’ for the experiment named ‘shrink’. 
+Therefore, the answer is ‘blue’.
+Answer: blue",594,594
+nu-367,"city with the highest altitude with a population greater than 100,000",brașov,brașov,select * from T;,"The first step is to identify the cities with a population greater than 100,000. From the table, we can see that there are several cities that meet this criteria. The second step is to identify the city with the highest altitude among these cities. From the table, we can see that the city with the highest altitude among the cities with a population greater than 100,000 is Brașov, with an altitude of 625.0 meters.
+Therefore, the answer is Brașov.
+Answer: Brașov",2233,2233
+nu-395,how many total experiments are there?,99,32,select * from T;,"The first step is to count the total number of rows in the table. From the table, we can see that there are 32 rows.
+Therefore, the answer is 32.
+Answer: 32",594,594
+nu-401,"alphabetically, which place in pennsylvania comes before sadlers corner?",sacramento,sackville,select * from T;,"The first step is to find the row where the name_of_place is 'Sadlers Corner'. From the table, we can see that the row with 'Sadlers Corner' is row number 7. The second step is to find the row that comes before row number 7 alphabetically. From the table, we can see that the row with 'Sackville' is the row that comes before 'Sadlers Corner' alphabetically. 
+Therefore, the answer is 'Sackville'.
+Answer: Sackville",3102,3102
+nu-441,which artist is above the last artist,rihanna,rick ross,select * from T;,"The first step is to find the last artist in the table. From the table, we can see that the last artist is ""B Smyth"". The second step is to find the artist above ""B Smyth"". From the table, we can see that the artist above ""B Smyth"" is ""Rick Ross"".
+Therefore, the answer is ""Rick Ross"".
+Answer: Rick Ross",1368,1368
+nu-444,name two people who both are 28 years old,"craig phillips,tom mcdermott",craig phillips and melanie hill.,select * from T;,"The first step is to find the people who are 28 years old. From the table, we can look into the ‘age’ column and find that there are three people who are 28 years old: Craig Phillips, Melanie Hill, and Sada Wilkington. The second step is to choose two people from the list. Let’s choose Craig Phillips and Melanie Hill as the two people who are 28 years old.
+Therefore, the answer is Craig Phillips and Melanie Hill.
+Answer: Craig Phillips and Melanie Hill.",1939,1939
+nu-514,how many table dancers were evicted?,1,"the first step is to find the housemates who were table dancers. from the table, we can see that there is only one housemate who was a table dancer, which is amma antwi-agyei.",select * from T;,"The first step is to find the housemates who were table dancers. From the table, we can see that there is only one housemate who was a table dancer, which is Amma Antwi-Agyei. ",1939,1939
+nu-546,how many happened after august 1st?,33,14,select * from T;,"The first step is to find the events that happened after August 1st. From the table, we can look into the 'date_time_ut' column and find the events with a date after August 1st. The second step is to count the total number of events that happened after August 1st. From the table, we can see that there are 14 events that happened after August 1st.
+Therefore, the answer is 14.
+Answer: 14",385,385
+nu-553,name all models with the same mpg as fiat 500 1.4 pop.,"fiat 500 1.4 lounge 3d,fiat 500 1.4 sport,citroen c4 2.0 sx 5dr 6sp a d,volkswagen golf tdi 103kw 4motion,peugeot 207 xs 1.4 5dr 5spd m p,saab 9-3 linear convertible 1.9tid m,suzuki swift glx 1.5 5dr,suzuki swift glxh 1.5 5dr,suzuki swift glxh2 1.5 5dr","the first step is to find the row where the model is 'fiat 500 1.4 pop'. from the table, we can see that the row number is 7.",select * from T;,"The first step is to find the row where the model is 'fiat 500 1.4 pop'. From the table, we can see that the row number is 7. ",1056,1056
+nu-573,is sides located in clarion or indiana county?,indiana county,"the first step is to find the place 'sides' in the table. however, 'sides' is not listed in the table provided. therefore, we cannot determine if it is located in clarion or indiana county.",select * from T;,"The first step is to find the place 'Sides' in the table. However, 'Sides' is not listed in the table provided. Therefore, we cannot determine if it is located in Clarion or Indiana County.",3102,3102
+nu-575,what is the number of the population 2011 for the city of ploiesti?,"209,945",209945,select * from T;,"The first step is to find the row where the city is ‘ploiești’. From the table, we can see that the row number 8 corresponds to the city of ‘ploiești’. The second step is to find the population in 2011 for the city of ‘ploiești’. From the table, we can see that the population in 2011 for the city of ‘ploiești’ is 209945.
+Therefore, the answer is 209945.
+Answer: 209945",2233,2233
+nu-642,how many contestants participated in season two?,11,11,select * from T;,"The first step is to find the season two in the ‘series’ column. From the table, we can see that the value ‘bb2’ corresponds to season two. The second step is to count the number of contestants in season two. From the table, we can see that there are 11 rows with the value ‘bb2’ in the ‘series’ column.
+Therefore, the answer is 11.
+Answer: 11",1939,1939
+nu-659,how many total ghost towns are there in franklin county?,3,3,select * from T;,"The first step is to find the ghost towns in Franklin County. From the table, we can see that there are 3 ghost towns listed in Franklin County: Centropolis, Minneola, and Silkville. The second step is to count the total number of ghost towns in Franklin County. From the table, we can see that there are 3 ghost towns listed in Franklin County.
+Therefore, the answer is 3.
+Answer: 3",2149,2149
+nu-690,how many times is sadsbury township listed?,3,"the first step is to search for the occurrences of ""sadsbury township"" in the ""name_of_place"" column. from the table, we can see that ""sadsbury township"" appears three times in the table.",select * from T;,"The first step is to search for the occurrences of ""sadsbury township"" in the ""name_of_place"" column. From the table, we can see that ""sadsbury township"" appears three times in the table. ",3102,3102
+nu-699,who became head coach after ellis johnson?,john zernhelt,john sauer,select * from T;,"The first step is to find the row where Ellis Johnson is mentioned as the head coach. From the table, we can see that Ellis Johnson is mentioned in row number 51. The second step is to find the row where the head coach is mentioned after Ellis Johnson. From the table, we can see that the row number 51 is followed by row number 52. Therefore, the head coach after Ellis Johnson is John Sauer.
+Answer: John Sauer",1332,1332
+nu-718,was acadia or american samoa established first?,acadia,"the first step is to find the date of establishment for acadia and american samoa. from the table, we can see that the date of establishment for acadia is february 26, 1919, and the date of establishment for american samoa is october 31, 1988. the second step is to compare the dates and determine which park was established first. since february 26, 1919, is earlier than october 31, 1988, acadia was established first.",select * from T;,"The first step is to find the date of establishment for Acadia and American Samoa. From the table, we can see that the date of establishment for Acadia is February 26, 1919, and the date of establishment for American Samoa is October 31, 1988. The second step is to compare the dates and determine which park was established first. Since February 26, 1919, is earlier than October 31, 1988, Acadia was established first.",354,354
+nu-766,what model has the top mpg (us gallons)?,volkswagen polo 1.4 tdi bluemotion,volkswagen polo 1.4 tdi bluemotion,select * from T;,"The first step is to find the model with the top MPG (US gallons). From the table, we can look into the 'mpg_us_gallons' column and find the highest value, which is 62.0. The second step is to find the corresponding model for this MPG. From the table, we can see that the model with the MPG of 62.0 is 'volkswagen polo 1.4 tdi bluemotion'.
+Therefore, the answer is 'volkswagen polo 1.4 tdi bluemotion'.
+Answer: volkswagen polo 1.4 tdi bluemotion",1056,1056
+nu-904,"how many ghost towns were, or were near the sites of battles?",2,"the first step is to identify the ghost towns that were, or were near the sites of battles. from the table, we can see that the following ghost towns have remarks indicating their association with battles: 
+- white cloud (none)
+- eagle springs (was a health resort that lasted into the 1930s)
+- hickory point (location of the battle of hickory point, a skirmish between pro-slavery and free state forces)
+- black jack (santa fe trail wagon swales, a roadside park, cemetery and the well-preserved battlefield site remain and are open to public)
+- uniontown (uniontown was a trail stop and a place where the pottawatomi would spend money. a cholera epidemic killed 22 indians and they were buried in a mass grave. the grave is located in the center of the cemetery)
+- diamond springs (few remains exist but a monument to diamond springs was erected in diamond springs cemetery)
+- ladore (was",select * from T;,"The first step is to identify the ghost towns that were, or were near the sites of battles. From the table, we can see that the following ghost towns have remarks indicating their association with battles: 
+- White Cloud (none)
+- Eagle Springs (was a health resort that lasted into the 1930s)
+- Hickory Point (location of the battle of hickory point, a skirmish between pro-slavery and free state forces)
+- Black Jack (santa fe trail wagon swales, a roadside park, cemetery and the well-preserved battlefield site remain and are open to public)
+- Uniontown (uniontown was a trail stop and a place where the pottawatomi would spend money. a cholera epidemic killed 22 indians and they were buried in a mass grave. the grave is located in the center of the cemetery)
+- Diamond Springs (few remains exist but a monument to diamond springs was erected in diamond springs cemetery)
+- Ladore (was",2149,2149
+nu-919,"other than route 31, name one that starts at the friendship heights station.",32,route 32,select * from T;,"The first step is to look at the ‘Terminals’ column in the table. From the table, we can see that there are several routes that start at the Friendship Heights Station, such as route 32, 36, and 37. The second step is to choose one of these routes and provide the name. Let’s choose route 32. 
+Therefore, the answer is route 32.
+Answer: Route 32",540,540
+nu-936,name someone from the same state and party as karst.,frank m. karsten,frank m. karsten,select * from T;,"The first step is to find the row where the representative is ‘Karst’. From the table, we can see that the representative ‘Karst’ is in row number 8. The second step is to find someone from the same state and party as Karst. From the table, we can see that the representative in row number 8 is from Missouri and is a Democrat. To find someone from the same state and party, we can look through the table and find that the representative ‘Frank M. Karsten’ in row number 9 is also from Missouri and is a Democrat.
+Therefore, the answer is Frank M. Karsten.
+Answer: Frank M. Karsten",1992,1992
+nu-973,how many experiments have a green pod color?,4,2,select * from T;,"The first step is to find the experiments with a green pod color. From the table, we can see that there are several rows where the ‘pod_color’ column has the value ‘green’. The second step is to count the total number of experiments with a green pod color. From the table, we can see that there are 2 rows with the value ‘green’ in the ‘pod_color’ column.
+Therefore, the answer is 2.
+Answer: 2",594,594
+nu-999,what is the code for the less than sign?,u+003c (60),u+003c (60),select * from T;,"The first step is to find the row where the character is the less than sign. From the table, we can see that the character for the less than sign is '<'. The second step is to find the code for the less than sign. From the table, we can see that the code for the less than sign is u+003c (60) in decimal. 
+Therefore, the answer is u+003c (60).
+Answer: u+003c (60)",2032,2032
+nu-1004,what is the number of ghost towns in allen county?,5,3,select * from T;,"The first step is to find the ghost towns in Allen County. From the table, we can see that there are several rows where the ‘county’ column has the value ‘Allen County’. The second step is to count the total number of ghost towns in Allen County. From the table, we can see that there are 3 rows with the value ‘Allen County’ in the ‘county’ column.
+Therefore, the answer is 3.
+Answer: 3",2149,2149
+nu-1008,did the bulldogs perform better or worse in the 1905 season than the 1906 season?,worse,better,select * from T;,"The first step is to find the total wins of the Bulldogs in the 1905 season. From the table, we can see that the ‘total_wins’ column for the 1905 season has a value of 2. The second step is to find the total wins of the Bulldogs in the 1906 season. From the table, we can see that the ‘total_wins’ column for the 1906 season has a value of 3. Since the Bulldogs had more wins in the 1906 season than the 1905 season, they performed better in the 1906 season.
+Therefore, the Bulldogs performed better in the 1906 season than the 1905 season.
+Answer: Better",1332,1332
+nu-1014,how many models utilize diesel as their fuel type?,110,20,select * from T;,"The first step is to find the models that use diesel as their fuel type. From the table, we can see that there are several rows where the ‘fuel_type’ column has the value ‘diesel’. The second step is to count the total number of models that use diesel as their fuel type. From the table, we can see that there are 20 rows with the value ‘diesel’ in the ‘fuel_type’ column. 
+Therefore, the answer is 20.
+Answer: 20",1056,1056
+nu-1041,who was the first head coach of the citadel bulldogs?,sidney smith,sidney smith,select * from T;,"The first step is to find the first row in the table. From the table, we can see that the first row has the value ‘0’ in the ‘row_number’ column. The second step is to find the head coach of the first row. From the table, we can see that the head coach of the first row is ‘sidney smith’.
+Therefore, the answer is Sidney Smith.
+Answer: Sidney Smith",1332,1332
+nu-1073,how many housemates are from liverpool?,11,"the first step is to find the housemates who are from liverpool. from the table, we can look into the ‘hometown’ column and find that the following housemates are from liverpool: 
+- craig phillips 
+- caroline o'shea 
+- sissy (joanne) rooney",select * from T;,"The first step is to find the housemates who are from Liverpool. From the table, we can look into the ‘hometown’ column and find that the following housemates are from Liverpool: 
+- Craig Phillips 
+- Caroline O'Shea 
+- Sissy (Joanne) Rooney ",1939,1939
+nu-1084,how many numbers (num) are there?,99,32,select * from T;,"The first step is to count the number of rows in the table. From the table, we can see that there are 32 rows. The second step is to count the number of rows where the ‘num’ column has a value. From the table, we can see that there are 32 rows where the ‘num’ column has a value.
+Therefore, the answer is 32.
+Answer: 32",594,594
+nu-1109,"who coached longer, john sauer or charlie taaffe?",charlie taaffe,"the first step is to find the seasons coached by john sauer and charlie taaffe. from the table, we can see that john sauer coached in seasons 50 and 51, while charlie taaffe is not listed in the table. therefore, john sauer coached for 2 seasons.",select * from T;,"The first step is to find the seasons coached by John Sauer and Charlie Taaffe. From the table, we can see that John Sauer coached in seasons 50 and 51, while Charlie Taaffe is not listed in the table. Therefore, John Sauer coached for 2 seasons. ",1332,1332
+nu-1140,does sabinsville have the same number of counties as sabula?,yes,yes,select * from T;,"The first step is to find the number of counties for each place. From the table, we can see that the value in the 'number_of_counties' column for Sabinsville is 1 and the value for Sabula is also 1. The second step is to compare the number of counties for both places. Since the number of counties is the same for both places, the answer is yes.
+Therefore, Sabinsville does have the same number of counties as Sabula.
+Answer: Yes",3102,3102
+nu-1166,how many names are listed?,59,17,select * from T;,"The first step is to count the total number of rows in the table. From the table, we can see that there are 17 rows.
+Therefore, the answer is 17.
+Answer: 17",354,354
+nu-1185,what is the last route on the chart?,benning road-h street metro extra line,"96, 97.",select * from T;,"The first step is to find the last row in the table. From the table, we can see that the last row is row number 15. The second step is to find the route in the last row. From the table, we can see that the route in the last row is 96, 97. 
+Therefore, the answer is 96, 97.
+Answer: 96, 97.",540,540
+nu-1259,what is the first nickname?,shrink,shrink,select * from T;,"The first step is to find the first nickname in the table. From the table, we can see that the first nickname listed is ""shrink"". 
+Therefore, the answer is ""shrink"".
+Answer: shrink",594,594
+nu-1330,"which contains higher elevation, denali or rocky mountain national park?",denali,"the first step is to find the elevation of denali and rocky mountain national park. from the table, we can see that denali is located in alaska and the elevation is not provided in the table. however, denali is the tallest mountain in north america with an elevation of 20,310 feet (6,190 meters).",select * from T;,"The first step is to find the elevation of Denali and Rocky Mountain National Park. From the table, we can see that Denali is located in Alaska and the elevation is not provided in the table. However, Denali is the tallest mountain in North America with an elevation of 20,310 feet (6,190 meters).",354,354
+nu-1365,the volkswagen pol 1.4 tdi bluemotion and the fiat 500 1.3 jtd pop both run on what fuel type?,diesel,diesel,select * from T;,"The first step is to find the fuel type for the Volkswagen Polo 1.4 TDI Bluemotion and the Fiat 500 1.3 JTD Pop. From the table, we can look into the 'Fuel Type' column for the respective rows. The fuel type for the Volkswagen Polo 1.4 TDI Bluemotion is 'diesel' and the fuel type for the Fiat 500 1.3 JTD Pop is also 'diesel'. 
+Therefore, both the Volkswagen Polo 1.4 TDI Bluemotion and the Fiat 500 1.3 JTD Pop run on diesel fuel.
+Answer: diesel",1056,1056
+nu-1382,nickname of the last experiment on the list.,spot,fibber,select * from T;,"The first step is to find the last experiment on the list. From the table, we can see that the last experiment is experiment number 32. The second step is to find the nickname of the last experiment. From the table, we can see that the nickname of experiment number 32 is 'fibber'.
+Therefore, the answer is 'fibber'.
+Answer: fibber",594,594
+nu-1406,what are the total number of major streets naylor rd line has listed?,3,3,select * from T;,"The first step is to find the row where the ‘route’ column has the value ‘34’. From the table, we can see that this row is row number 2. The second step is to find the value in the ‘major_streets’ column for this row. From the table, we can see that the value in the ‘major_streets’ column for row number 2 is ‘pennsylvania avenue se; independence avenue se/sw; naylor road se’. The third step is to count the total number of major streets in this value. From the value, we can see that there are 3 major streets listed.
+Therefore, the answer is 3.
+Answer: 3",540,540
+nu-1430,how many songs would you have if you added the number of justin bieber songs on the hot 100 list to the number of justin timberlake songs on the hot 100 list?,8,0,select * from T;,"The first step is to identify the rows where the artist is Justin Bieber and Justin Timberlake. From the table, we can see that there are no rows where the artist is Justin Timberlake. Therefore, the number of Justin Timberlake songs on the hot 100 list is 0. The second step is to count the number of songs where the artist is Justin Bieber. From the table, we can see that there are no rows where the artist is Justin Bieber. Therefore, the number of Justin Bieber songs on the hot 100 list is 0. The final step is to add the number of Justin Bieber songs (0) to the number of Justin Timberlake songs (0). 
+Therefore, the answer is 0 + 0 = 0.
+Answer: 0",1368,1368
+nu-1453,the number of consecutive albums rick ross worked with jaycen joshua on in 2014,2,2,select * from T;,"The first step is to identify the rows where the artist is Rick Ross and the chart year is 2014. From the table, we can see that there are two rows that meet this criteria: row number 1 and row number 2. 
+The second step is to count the number of consecutive albums that Rick Ross worked with Jaycen Joshua on. Since row number 1 and row number 2 have consecutive row numbers, it means that Rick Ross worked with Jaycen Joshua on consecutive albums in 2014. 
+Therefore, the answer is 2. 
+Answer: 2",1368,1368
+nu-1596,which national park was created most recently?,pinnacles,congaree,select * from T;,"The first step is to find the national park that was created most recently. From the table, we can look into the 'date_established' column and find that the most recent date of establishment is 2003-11-10, which corresponds to Congaree National Park. 
+Therefore, the answer is Congaree National Park.
+Answer: Congaree",354,354
+nu-1617,how many toggle series were there total?,35,cannot be determined.,select * from T;,"The first step is to identify the column that contains the series information. From the table, we can see that there is no specific column for series. Therefore, we cannot determine the total number of toggle series from this table.
+Answer: Cannot be determined.",385,385
+nu-1624,"other than cumberland county, which county is shippensburg in?",franklin county,"the first step is to find the row where the 'name_of_place' column has the value 'shippensburg'. from the table, we can see that there is no row with the value 'shippensburg' in the 'name_of_place' column.",select * from T;,"The first step is to find the row where the 'name_of_place' column has the value 'shippensburg'. From the table, we can see that there is no row with the value 'shippensburg' in the 'name_of_place' column.",3102,3102
+nu-1627,what is the name of the last place on the table?,sizerville,sanatoga,select * from T;,"The first step is to find the last place on the table. From the table, we can see that the last place listed is ""Sanatoga"". 
+Therefore, the answer is ""Sanatoga"".
+Answer: Sanatoga",3102,3102
+nu-1671,what ghost towns are in the same county as chetola?,"rome,yocemento,smoky hill city",cannot determine.,select * from T;,"The first step is to find the county where Chetola is located. However, there is no information about Chetola in the table, so we cannot determine the county it is in. Therefore, we cannot determine the ghost towns that are in the same county as Chetola.
+Answer: Cannot determine.",2149,2149
+nu-1707,what is the largest unicode code point?,u+2666 (9830),196,select * from T;,"The first step is to find the largest unicode code point in the table. From the table, we can see that the largest unicode code point is u+00c4 (196). The second step is to convert the unicode code point to decimal form. The decimal form of u+00c4 is 196.
+Therefore, the answer is 196.
+Answer: 196",2032,2032
+nu-1844,which is the only toggle series to use an underground tunnel?,diamond sculls,diamond sculls,select * from T;,"The first step is to find the series where an underground tunnel was used. From the table, we can look into the 'notes' column and find that the series with the underground tunnel is 'diamond sculls'. The second step is to find if there are any other series that used an underground tunnel. From the table, we can see that there are no other series with the 'underground tunnel' in the 'notes' column.
+Therefore, the answer is 'diamond sculls'.
+Answer: diamond sculls",385,385
+nu-1873,how many places are listed after sixtieth street?,1,"the first step is to identify the places listed after sixtieth street. from the table, we can see that the places listed after sixtieth street are 'salem', 'salem', 'salem', 'salem harbor', 'salem township', 'salem township', 'salem township', 'salem township', 'salemville', 'salford', 'salford heights', 'salford township', 'salfordville', 'salida', 'salina', 'salisbury', 'salisbury heights', 'salisbury junction', 'salisbury township', 'salisbury township', 'salix', 'salix-beauty line park', 'salladasburg', 'sally ann', 'salona', 'saltillo', 'saltlick township', 'saltsburg', 'salunga', 'salunga-landisville', 'saluvia', 'sample', 'sample heights', 'sample run', '",select * from T;,"The first step is to identify the places listed after sixtieth street. From the table, we can see that the places listed after sixtieth street are 'salem', 'salem', 'salem', 'salem harbor', 'salem township', 'salem township', 'salem township', 'salem township', 'salemville', 'salford', 'salford heights', 'salford township', 'salfordville', 'salida', 'salina', 'salisbury', 'salisbury heights', 'salisbury junction', 'salisbury township', 'salisbury township', 'salix', 'salix-beauty line park', 'salladasburg', 'sally ann', 'salona', 'saltillo', 'saltlick township', 'saltsburg', 'salunga', 'salunga-landisville', 'saluvia', 'sample', 'sample heights', 'sample run', '",3102,3102
+nu-1877,"who lived longer, kading or kaufman?",kading,kading,select * from T;,"The first step is to find the lifespans of Kading and Kaufman. From the table, we can see that the lifespan of Charles A. Kading is 1874–1956 and the lifespan of Julius Kahn is 1861–1924. 
+The second step is to compare the lifespans of Kading and Kaufman. We can see that Kading lived longer than Kaufman.
+Therefore, the answer is Kading.
+Answer: Kading",1992,1992
+nu-1895,how many counties does schuyler belong to?,2,"the first step is to find the row where the place name is ""schuyler"". from the table, we can see that there is no row with the place name ""schuyler"". therefore, we cannot determine the number of counties that ""schuyler"" belongs to from the given table.",select * from T;,"The first step is to find the row where the place name is ""schuyler"". From the table, we can see that there is no row with the place name ""schuyler"". Therefore, we cannot determine the number of counties that ""schuyler"" belongs to from the given table.",3102,3102
+nu-1899,"total number of entries from ""leroy and stitch"" episode.",89,18,select * from T;,"The first step is to find the entries from the ""Leroy & Stitch"" episode. From the table, we can see that there are several rows where the 'episode' column has the value 'Leroy & Stitch'. The second step is to count the total number of entries from the ""Leroy & Stitch"" episode. From the table, we can see that there are 18 rows with the value 'Leroy & Stitch' in the 'episode' column. 
+Therefore, the answer is 18.
+Answer: 18",594,594
+nu-1918,which toggle series had the least yield?,atarque,atarque,select * from T;,"The first step is to find the toggle series with the least yield. From the table, we can look into the 'yield' column and find the smallest value, which is '1.5 kt' for the toggle series 'Atarque'. 
+Therefore, the answer is 'Atarque'.
+Answer: Atarque",385,385
+nu-1945,what fuel type performs the most mpg (us gallons) result?,diesel,"the first step is to find the fuel type that has the highest mpg (us gallons) result. from the table, we can compare the values in the 'mpg_us_gallons' column and find the row with the highest value. the row with the highest value is row number 0, which corresponds to the fuel type 'diesel'.",select * from T;,"The first step is to find the fuel type that has the highest mpg (US gallons) result. From the table, we can compare the values in the 'mpg_us_gallons' column and find the row with the highest value. The row with the highest value is row number 0, which corresponds to the fuel type 'diesel'. ",1056,1056
+nu-1955,how many national parks are there in the united states?,59,17,select * from T;,"The first step is to count the total number of rows in the table. From the table, we can see that there are 17 rows.
+Therefore, the answer is 17.
+Answer: 17",354,354
+nu-1969,what is the total wins?,473,184,select * from T;,"The first step is to find the total number of wins. From the table, we can look into the 'total_wins' column and add up all the values. Adding up all the values in the 'total_wins' column gives us a total of 184.
+Therefore, the answer is 184.
+Answer: 184",1332,1332
+nu-2019,how many prime ministers were affiliated with the sangkum political party?,12,5,select * from T;,"The first step is to find the prime ministers affiliated with the Sangkum political party. From the table, we can see that the 'Political Party' column has the value 'sangkum' for several rows. The second step is to count the total number of prime ministers affiliated with the Sangkum political party. From the table, we can see that there are 5 rows with the value 'sangkum' in the 'Political Party' column.
+Therefore, the answer is 5.
+Answer: 5",639,639
+nu-2047,"in 2011 was the population of arad more than 200,000?",no,no,select * from T;,"The first step is to find the row for Arad in the table. From the 'city' column, we can see that Arad is listed. The second step is to find the population of Arad in 2011. From the 'population_2011' column, we can see that the population of Arad in 2011 is 159,074. The third step is to determine if the population of Arad in 2011 is more than 200,000. Since 159,074 is less than 200,000, the answer is no.
+Therefore, the answer is no.
+Answer: No",2233,2233
+nu-2100,what is the only name for route 70?,georgia avenue-7th street line,georgia avenue-7th street line,select * from T;,"The first step is to find the row where the route is 70. From the table, we can see that the row where the route is 70 has the name ‘Georgia Avenue-7th Street Line’. Therefore, ‘Georgia Avenue-7th Street Line’ is the only name for route 70.
+Answer: Georgia Avenue-7th Street Line",540,540
+nu-2160,how many zipcodes does sheridan have?,2,0,select * from T;,"The first step is to find the row where the name_of_place is 'sheridan'. From the table, we can see that there is no row with the name_of_place 'sheridan'. Therefore, there are no zipcodes listed for sheridan.
+Therefore, the answer is 0.
+Answer: 0",3102,3102
+nu-2191,does cebolla -1 or atarque have a higher elevation?,atarque,"the first step is to find the elevations of both cebolla -1 and atarque. from the table, we can see that the elevation of cebolla -1 is 1180 m (3870 ft) -287 m (942 ft), and the elevation of atarque is 1182 m (3878 ft) -294.2 m (965 ft).",select * from T;,"The first step is to find the elevations of both Cebolla -1 and Atarque. From the table, we can see that the elevation of Cebolla -1 is 1180 m (3870 ft) -287 m (942 ft), and the elevation of Atarque is 1182 m (3878 ft) -294.2 m (965 ft). ",385,385
+nu-2212,what was the name of the first national park which was established in 1872?,yellowstone,yellowstone,select * from T;,"The first step is to find the national park that was established in 1872. From the table, we can see that the first row corresponds to ""Yellowstone"" in the ""name"" column. The second step is to find the name of the park. From the table, we can see that the name of the park is ""Yellowstone"". 
+Therefore, the answer is ""Yellowstone"".
+Answer: Yellowstone",354,354
+nu-2219,what is the last symbol listed?,diams,iacute,select * from T;,"The first step is to identify the last symbol listed in the table. From the table, we can see that the last symbol listed is ""iacute"". 
+Therefore, the answer is ""iacute"".
+Answer: iacute",2032,2032
+nu-2235,"which vehicle gets better mpg, the fiat 500 1.2 pop or mini cooper coupe 6m 3dr 1.6l?",mini cooper coupe 6m 3dr 1.6l diesel,"the first step is to compare the fuel efficiency of the fiat 500 1.2 pop and the mini cooper coupe 6m 3dr 1.6l. from the table, we can look into the 'mpg_us_gallons' column and find that the fiat 500 1.2 pop has an mpg of 46.0, while the mini cooper coupe 6m 3dr 1.6l has an mpg of 39.2.",select * from T;,"The first step is to compare the fuel efficiency of the Fiat 500 1.2 Pop and the Mini Cooper Coupe 6M 3dr 1.6L. From the table, we can look into the 'mpg_us_gallons' column and find that the Fiat 500 1.2 Pop has an mpg of 46.0, while the Mini Cooper Coupe 6M 3dr 1.6L has an mpg of 39.2. ",1056,1056
+nu-2243,"was the population of bucharest at least 2,000,000 in 2011?",no,"the first step is to find the population of bucharest in 2011. from the table, we can see that the population of bucharest in 2011 is 1,883,425.",select * from T;,"The first step is to find the population of Bucharest in 2011. From the table, we can see that the population of Bucharest in 2011 is 1,883,425. ",2233,2233
+nu-2292,who served the longest--florence prag kahn or julius kahn?,julius kahn,"the first step is to find the years of service for florence prag kahn and julius kahn. from the table, we can see that florence prag kahn served from 1925-1936 and julius kahn served from 1899-1903 and 1905-1924.",select * from T;,"The first step is to find the years of service for Florence Prag Kahn and Julius Kahn. From the table, we can see that Florence Prag Kahn served from 1925-1936 and Julius Kahn served from 1899-1903 and 1905-1924. ",1992,1992
+nu-2293,how many counties is sadsbury township in?,3,1 county,select * from T;,"The first step is to find the row where the name_of_place is 'sadsbury township'. From the table, we can see that there are three rows where the name_of_place is 'sadsbury township'. The second step is to find the number_of_counties for each row. From the table, we can see that there are three rows where the number_of_counties is 1 for 'sadsbury township'. Therefore, the answer is 1 county.
+Answer: 1 county",3102,3102
+nu-2504,how long did head coach carl prause serve?,8 years,8 seasons,select * from T;,"From the table, we can look into the 'head_coach' column and find that Carl Prause served as the head coach for the seasons 1922, 1923, 1924, 1925, 1926, 1927, 1928, and 1929. Therefore, Carl Prause served as the head coach for 8 seasons.
+Therefore, the answer is 8 seasons.
+Answer: 8 seasons",1332,1332
+nu-2552,who was in office longer in the french protectorate: penn nouth or sisowath monireth?,sisowath monireth,unknown,select * from T;,"From the table, we can see that Samdech Penn Nouth served as prime minister for 4 terms, while Prince Sisowath Monireth served as prime minister for 1 term. 
+To determine who was in office longer, we need to compare the total duration of their terms. 
+Unfortunately, the table does not provide the exact term duration for each prime minister. Therefore, we cannot determine who was in office longer based on the given information. 
+Therefore, the answer is unknown.",639,639
+nu-2565,"what place is in elk county, sackett or saegertown?",sackett,sackett,select * from T;,"From the table, we can see that the place 'Sackett' is in Elk County. Therefore, 'Sackett' is the place in Elk County, not 'Saegertown'.
+Therefore, the answer is Sackett.
+Answer: Sackett",3102,3102
+nu-2630,what test took place before atarque in the toggle series of tests?,diamond sculls,diamond sculls,select * from T;,"From the table, we can see that the test before ""Atarque"" is ""Diamond Sculls"". 
+Therefore, the answer is ""Diamond Sculls"".
+Answer: Diamond Sculls",385,385
+nu-2633,is the altitude in bucharest above or below 100?,below,below,select * from T;,"From the table, we can look into the row where the city is ‘bucharest’ and find the value in the ‘altitude_m’ column, which is 85.0. 
+Since 85.0 is below 100, the altitude in Bucharest is below 100.
+Therefore, the answer is below.
+Answer: below",2233,2233
+nu-2650,does sibiu have an altitude above 200m?,yes,"from the table, we can look into the ‘altitude_m’ column for the row corresponding to sibiu. the ‘altitude_m’ value for sibiu is 415.0.",select * from T;,"From the table, we can look into the ‘altitude_m’ column for the row corresponding to Sibiu. The ‘altitude_m’ value for Sibiu is 415.0.",2233,2233
+nu-2673,how long is the protected coastline in redwoods national park?,37 miles (60 km),not enough information provided.,select * from T;,"From the table, we can see that the name of the national park is ""redwoods"". However, there is no information about the protected coastline in the given table. Therefore, we cannot determine the length of the protected coastline in Redwoods National Park based on the given table information.
+Answer: Not enough information provided.",354,354
+nu-2696,"which season was more successful, 2005 or 2007?",2007,cannot be determined.,select * from T;,"From the table, we can see that there is no information for the seasons 2005 and 2007. Therefore, we cannot determine which season was more successful based on the given table information.
+Answer: Cannot be determined.",1332,1332
+nu-2729,which greek letter is listed before upsilon?,tau,i,select * from T;,"From the table, we can look into the 'description' column and find the entry for 'latin capital letter i with acute accent'. The entry before this is 'latin capital letter i with grave accent'. 
+Therefore, the answer is 'i'.
+Answer: i",2032,2032
+nu-2797,what is the place listed above sackville?,sackett,sackville,select * from T;,"From the table, we can look into the ‘name_of_place’ column and find that the place listed above ‘Sackville’ is ‘Sackville’. 
+Therefore, the answer is Sackville.
+Answer: Sackville",3102,3102
+nu-2816,what route is listed directly above the one that starts at georgetown university (37th & o streets nw) and ends at ledroit park?,e6,not enough information to determine the route listed directly above.,select * from T;,"From the table, we can see that the route that starts at Georgetown University and ends at LeDroit Park is not listed in the given table. Therefore, we cannot determine the route listed directly above it.
+Answer: Not enough information to determine the route listed directly above.",540,540
+nu-2819,andrew davidson is next after whom?,caroline o'shea,"from the table, we can see that andrew davidson is listed as the 9th housemate in the series. to find out who is next after andrew davidson, we need to look at the row_number column. andrew davidson has a row_number of 9.",select * from T;,"From the table, we can see that Andrew Davidson is listed as the 9th housemate in the series. To find out who is next after Andrew Davidson, we need to look at the row_number column. Andrew Davidson has a row_number of 9. ",1939,1939
+nu-2900,which town has the top remaining population to this date?,ulysses,white cloud,select * from T;,"From the table, we can see that the 'current_status' column provides information about the remaining population of each town. By scanning through the 'current_status' column, we can find that the town with the highest remaining population is 'White Cloud' with an estimated population of 227.
+Therefore, the answer is 'White Cloud'.
+Answer: White Cloud",2149,2149
+nu-2906,which comet has the longest orbital period?,153p/ikeya-zhang,35p/herschel-rigollet,select * from T;,"From the table, we can look into the ‘orbital_period_years’ column and find that the comet with the longest orbital period is ‘35p/herschel-rigollet’ with an orbital period of 155 years.
+Therefore, the answer is ‘35p/herschel-rigollet’.
+Answer: 35p/herschel-rigollet",1485,1485
+nu-2908,who was the first head coach?,sidney smith,sidney smith,select * from T;,"From the table, we can look into the 'head_coach' column and find that the first head coach listed is Sidney Smith.
+Therefore, the answer is Sidney Smith.
+Answer: Sidney Smith",1332,1332
+nu-3040,what is the total number of wins listed?,total wins 473,"from the table, we can see that there is a column called 'total_wins' which represents the total number of wins for each season. we can sum up the values in this column to find the total number of wins.",select * from T;,"From the table, we can see that there is a column called 'total_wins' which represents the total number of wins for each season. We can sum up the values in this column to find the total number of wins.",1332,1332
+nu-3092,how many names do not have images associated with them?,0,unknown,select * from T;,"From the given table, there is no information about images associated with the names. Therefore, the number of names that do not have images associated with them is unknown.
+Answer: Unknown",354,354
+nu-3139,what is the number of locations named st. clair in pennsylvania?,3,4,select * from T;,"From the table, we can see that there are 4 rows where the ‘name_of_place’ column has the value ‘st. clair’. 
+Therefore, the answer is 4.
+Answer: 4",3102,3102
+nu-3158,"in episode 220 of leroy & stitch, the nickname was not shrink. what was the nickname?",millie,doubledip,select * from T;,"From the table, we can look at the row where the episode is ""220, leroy & stitch"". In this row, the nickname is ""doubledip"".
+Therefore, the answer is ""doubledip"".
+Answer: doubledip",594,594
+nu-3203,how many artists charted in the year 2010?,14,0,select * from T;,"From the table, we can look into the ‘chart_year’ column and find that there are no rows with the value ‘2010’.
+Therefore, the answer is 0.
+Answer: 0",1368,1368
+nu-3228,how many years did john a kasson serve in office?,12,12 years.,select * from T;,"From the table, we can find that John A. Kasson served in office for the years 1863-1867, 1873-1877, and 1881-1884. Therefore, he served in office for a total of 12 years.
+Answer: 12 years.",1992,1992
+nu-3253,which town had the longest span between establishment and disestablishment?,irving,"from the table, we can see that the 'established' and 'disestablished' columns provide information about the establishment and disestablishment of each town. we need to calculate the difference between these two dates for each town to determine the span.",select * from T;,"From the table, we can see that the 'established' and 'disestablished' columns provide information about the establishment and disestablishment of each town. We need to calculate the difference between these two dates for each town to determine the span.",2149,2149
+nu-3290,how many terminals have at least four major streets listed?,17,"from the table, we can see that there are several rows where the ‘terminals’ column has multiple values separated by a semicolon. we need to count the number of terminals that have at least four major streets listed.
+by examining the table, we can see that the following terminals have at least four major streets listed:
+- friendship heights station (wisconsin avenue nw)
+- takoma station (georgia avenue nw, kansas avenue nw, sherman avenue nw)
+- fort totten station (rock creek church rd nw, upshur street nw)
+- silver sp station* (georgia avenue nw, 7th street nw, 9th street nw)
+- mount vernon square (k & 6th streets nw)",select * from T;,"From the table, we can see that there are several rows where the ‘Terminals’ column has multiple values separated by a semicolon. We need to count the number of terminals that have at least four major streets listed.
+By examining the table, we can see that the following terminals have at least four major streets listed:
+- Friendship Heights Station (Wisconsin Avenue NW)
+- Takoma Station (Georgia Avenue NW, Kansas Avenue NW, Sherman Avenue NW)
+- Fort Totten Station (Rock Creek Church Rd NW, Upshur Street NW)
+- Silver Sp Station* (Georgia Avenue NW, 7th Street NW, 9th Street NW)
+- Mount Vernon Square (K & 6th Streets NW) ",540,540
+nu-3294,what city is before brasov?,craiova,brașov,select * from T;,"From the table, we can see that the city before ""Brașov"" is ""Brașov"" itself. 
+Therefore, the answer is ""Brașov"".
+Answer: Brașov",2233,2233
+nu-3419,what is the name of the last character in the table?,diams,iacute,select * from T;,"From the table, we can see that the last character in the table is the character with the row_number 50. The name of this character is 'iacute'.
+Therefore, the answer is 'iacute'.
+Answer: iacute",2032,2032
+nu-3434,which car utilizes the most amount of miles per gallon?,volkswagen polo 1.4 tdi bluemotion,volkswagen polo 1.4 tdi bluemotion,select * from T;,"From the table, we can look into the 'mpg_us_gallons' column and find the highest value. The car that utilizes the most amount of miles per gallon is the 'Volkswagen Polo 1.4 TDI Bluemotion' with a value of 62.0 mpg_us_gallons.
+Therefore, the answer is the 'Volkswagen Polo 1.4 TDI Bluemotion'.
+Answer: Volkswagen Polo 1.4 TDI Bluemotion",1056,1056
+nu-3469,who was/were the oldest winner(s) of big brother (uk)?,"brian dowling,cameron stout",derek laud.,select * from T;,"From the table, we can see that the oldest winner of Big Brother (UK) is Derek Laud, who won in series 6 at the age of 40. 
+Therefore, the answer is Derek Laud.
+Answer: Derek Laud.",1939,1939
+nu-3487,who is after anna nolan on the table?,darren ramsay,darren ramsay,select * from T;,"From the table, we can see that Anna Nolan is the second entry for the series ""bb1"". The next entry after Anna Nolan for the series ""bb1"" is Darren Ramsay.
+Therefore, the answer is Darren Ramsay.
+Answer: Darren Ramsay",1939,1939
+nu-3573,how many years did pawnee exist for,1,1 year,select * from T;,"From the table, we can see that the town of Pawnee existed from 1854 to 1855.
+Therefore, Pawnee existed for 1 year.
+Answer: 1 year",2149,2149
+nu-3624,how many releases were not on a new single?,76,67,select * from T;,"From the table, we can see that there are several rows where the ‘filledcolumnname’ column has the value ‘new single’. There are 67 rows with the value ‘new single’ in the ‘filledcolumnname’ column.
+Therefore, the answer is 67.
+Answer: 67",1368,1368
+nu-3662,what is the first name listed?,acadia,acadia,select * from T;,"From the table, we can see that the first name listed in the 'name' column is 'acadia'.
+Therefore, the answer is 'acadia'.
+Answer: acadia",354,354
+nu-3663,who is the previous housemate before craig phillips?,anna nolan,saskia howard-clarke,select * from T;,"From the table, we can see that the previous housemate before Craig Phillips is Saskia Howard-Clarke.
+Therefore, the answer is Saskia Howard-Clarke.
+Answer: Saskia Howard-Clarke",1939,1939
+nu-3679,what name is listed above atarque?,diamond sculls,diamond sculls,select * from T;,"From the table, we can see that the name listed above ""Atarque"" is ""Diamond Sculls"".
+Therefore, the answer is ""Diamond Sculls"".
+Answer: Diamond Sculls",385,385
+nu-3693,what was the first national park established in the united states?,yellowstone,acadia,select * from T;,"From the table, we can look into the ‘name’ column and find that the first national park established in the United States is ‘acadia’. The ‘date_established’ of ‘acadia’ is February 26, 1919.
+Therefore, the answer is ‘acadia’.
+Answer: Acadia",354,354
+nu-3706,what is next after chuchillo -2?,solano - 3,solano -3,select * from T;,"From the table, we can look into the 'name' column and find that the next entry after 'cuchillo -2' is 'solano -3'. 
+Therefore, the answer is 'solano -3'.
+Answer: solano -3",385,385
+nu-3709,"in leroy & stitch, what was the nickname before howcome?",doubledip,"from the table, we can see that the nickname before ""howcome"" is ""doubledip"".",select * from T;,"From the table, we can see that the nickname before ""howcome"" is ""doubledip"". ",594,594
+nu-3711,how long did joseph karth live?,83 years,joseph karth lived for 83 years.,select * from T;,"From the table, we can see that Joseph Karth's lifespan is listed as 1922-2005.
+Therefore, Joseph Karth lived for 83 years.
+Answer: Joseph Karth lived for 83 years.",1992,1992
+nu-3732,how many songs does justin timberlake have on the hot 100 list?,1,0,select * from T;,"From the table, we can look into the ‘artist’ column and find that there is no mention of Justin Timberlake in the table. Therefore, Justin Timberlake does not have any songs on the Hot 100 list according to this table.
+Therefore, the answer is 0.
+Answer: 0",1368,1368
+nu-3750,how many representatives with k last names were from wisconsin?,14,3,select * from T;,"From the table, we can look into the ‘representative’ column and find that there are 3 representatives with last names starting with ‘K’ from Wisconsin. They are Charles A. Kading, Steve Kagen, and Bob Kasten.
+Therefore, the answer is 3.
+Answer: 3",1992,1992
+nu-3941,how many toggle tets took place in 1972?,16,11,select * from T;,"From the table, we can look into the ‘date_time_ut’ column and find that there are several rows where the year is 1972. We need to count the number of rows with the year 1972.
+There are 11 rows with the year 1972.
+Therefore, the answer is 11.
+Answer: 11",385,385
+nu-3990,which experiment number came directly before felix?,009,9,select * from T;,"From the table, we can see that the experiment number directly before Felix is Experiment #9.
+Therefore, the answer is 9.
+Answer: 9",594,594
+nu-4004,what song is previous to war ready,i know f rich homie quan,devil is a lie,select * from T;,"From the table, we can see that the song 'War Ready' is in the row with the row_number 2. To find the previous song, we need to look at the row with the row_number 1. The song in that row is 'Devil is a Lie'.
+Therefore, the answer is 'Devil is a Lie'.
+Answer: Devil is a Lie",1368,1368
+nu-4007,who is the last artist and it song on this chart,"ayumi hamasaki,like a doll","b smyth, leggo",select * from T;,"From the table, we can look into the last row and find that the last artist is ""B Smyth"" and the song is ""Leggo"".
+Therefore, the answer is ""B Smyth"" and ""Leggo"".
+Answer: B Smyth, Leggo",1368,1368
+nu-4068,what counties are each scott townships located in?,"allegheny county,columbia county,lackawanna county,lawrence county,wayne county","from the table, we can see that there are several rows with the value 'scott township' in the 'name_of_place' column. these rows are:
+- scott township in columbia county
+- scott township in lawrence county
+- scott township in luzerne county
+- scott township in potter county
+- scott township in wayne county
+- scott township in york county",select * from T;,"From the table, we can see that there are several rows with the value 'scott township' in the 'name_of_place' column. These rows are:
+- Scott Township in Columbia County
+- Scott Township in Lawrence County
+- Scott Township in Luzerne County
+- Scott Township in Potter County
+- Scott Township in Wayne County
+- Scott Township in York County",3102,3102
+nu-4085,who was the next contestant to come from ireland after anna nolan?,brian dowling,darren ramsay,select * from T;,"From the table, we can see that the next contestant to come from Ireland after Anna Nolan is Darren Ramsay. 
+Therefore, the answer is Darren Ramsay.
+Answer: Darren Ramsay",1939,1939
+nu-4188,what is the difference in age between craig phillips and anna nolan?,1 year,1 year,select * from T;,"From the table, we can look into the ‘age’ column for Craig Phillips and Anna Nolan. Craig Phillips is 28 years old and Anna Nolan is 29 years old. The difference in age between them is 1 year.
+Therefore, the answer is 1 year.
+Answer: 1 year",1939,1939
+nu-4194,was it 2012 or 2013 that ciara released got me good?,2012,unknown,select * from T;,"From the table, we can see that Ciara's album '1 Woman Army' was released in 2013. However, there is no information about the specific release date of the song 'Got Me Good'. Therefore, we cannot determine whether 'Got Me Good' was released in 2012 or 2013 based on the given table information.
+Therefore, the answer is unknown.
+Answer: Unknown",1368,1368
+nu-4196,who was the next head coach after sidney smith?,ralph foster,ralph foster,select * from T;,"From the table, we can see that the next row after Sidney Smith is Ralph Foster. Therefore, Ralph Foster was the next head coach after Sidney Smith.
+Answer: Ralph Foster",1332,1332
+nu-4222,which us national park is larger: yellowstone or the virgin islands?,yellowstone,yellowstone,select * from T;,"From the table, we can see that the row with the name ""Yellowstone"" has an area of ""2219790.71 acres (8983.2 km2)"" and the row with the name ""Virgin Islands"" has an area of ""14688.87 acres (59.5 km2)"".
+Comparing the two areas, we can see that Yellowstone is larger than the Virgin Islands.
+Therefore, the answer is Yellowstone.
+Answer: Yellowstone",354,354
+nu-4299,which artist did jaycen joshua work with before his first job with rick ross?,puff daddy,"from the table, we can see that the first job jaycen joshua had with rick ross is listed in row 2, where the artist is ""rick ross f/jay z"" and the album is ""mastermind"". to find the artist that jaycen joshua worked with before this, we need to look at the previous rows.",select * from T;,"From the table, we can see that the first job Jaycen Joshua had with Rick Ross is listed in row 2, where the artist is ""Rick Ross f/Jay Z"" and the album is ""Mastermind"". To find the artist that Jaycen Joshua worked with before this, we need to look at the previous rows.",1368,1368

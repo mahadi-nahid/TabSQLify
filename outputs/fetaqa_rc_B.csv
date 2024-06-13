@@ -1,0 +1,1496 @@
+id,question,response,answer,sql,r_num_cell,t_num_cell,linear_table
+2206,What TV shows was Shagun Sharma seen in 2019?,"in 2019, shagun sharma was seen in the tv shows ""kuch rang pyar ke aise bhi"", ""gangaa"", ""laal ishq"", ""vikram betaal ki rahasya gatha"", and ""shaadi ke siyape"".","in 2019, shagun sharma played in the roles as pernia in laal ishq, vikram betaal ki rahasya gatha as rukmani/kashi and shaadi ke siyape as dua.","select title from T where year = 2019 and channel = ""star plus"" or channel = ""sony tv"" or channel = ""&tv"";",5,40,"title
+kuch rang pyar ke aise bhi
+gangaa
+laal ishq
+vikram betaal ki rahasya gatha
+shaadi ke siyape"
+15555,What were the voting results of the 1975 North Vietnamese legislative election with regards to seats?,the voting results of the 1975 north vietnamese legislative election with regards to seats were that the vietnamese fatherland front won 424 seats out of a total of 424 seats.,"in the 1975 north vietnamese legislative election, the vietnamese fatherland front won all 424 seats.","select party, seats from T where _ = 100;",4,20,"party | seats
+vietnamese fatherland front | 424
+total | 424"
+561,What roles did Christian Cooke play in 2009?,"in 2009, christian cooke played the roles of luke rutherford-van helsing in ""demons"" and lord dorian gaudain in ""trinity"".","during 2009, christian cooke played the lead role of luke rutherford in demons & lord dorian gaudain in trinity.","select title, role from T where year = 2009;",4,115,"title | role
+demons | luke rutherford-van helsing
+trinity | lord dorian gaudain"
+9835,"Which track has the lowest bpm, and which has the highest on the Speed SFX series?","the track with the lowest bpm in the speed sfx series is ""rhythm & police (k.o.g g3 mix)"" with a bpm of 175, and the track with the highest bpm is ""mission: impossible theme"" with a bpm of 195.","the speed sfx's lowest bpm is 175 on tracks #5–16, and the highest bpm is 195 on #20 in the speed series.","select track, bpm from T where bpm = (select min(bpm) from T) or bpm = (select max(bpm) from T);",26,120,"track | bpm
+rhythm & police (k.o.g g3 mix) | 175
+7 | 175
+feel good time | 175
+men in black | 175
+ghostbusters | 175
+the power of love | 175
+unchained melody | 175
+may it be | 175
+i don't wanna miss a thing (planet lution mix) | 175
+my heart will go on (kcp remix) | 175
+never ending story | 175
+the raiders march | 175
+mission: impossible theme | 195"
+21418,When and in which club and league did Kazunari Okayama start his career?,kazunari okayama started his career in 1997 with yokohama marinos in the j1 league.,kazunari okayama joined j1 league club yokohama marinos (later yokohama f. marinos) in 1997.,"select season, club, league from T where row_number = 1;",3,276,"season | club | league
+1997 | yokohama marinos | j1 league"
+8032,How much overall damage did the German submarine U-438 cause?,"the german submarine u-438 caused a total damage of 17,541 tons.","the u-438 sank three ships, totalling 12,045 gross register tons (grt) and damaged one ship totalling 5,496 grt.",SELECT SUM(tonnage_grt) AS total_damage FROM T;,1,24,"total_damage
+17541"
+431,Who set the fastest average in Megaminx?,yu da-hyun (유다현) set the fastest average in megaminx with a time of 32.03 seconds.,the 32.03 seconds average of five solves is set by yu da-hyun (유다현) at cwr winter 2018.,"select name, fastest_average from T order by fastest_average asc limit 1;",2,20,"name | fastest_average
+yu da-hyun (유다현) | 32.03s"
+20853,What seasons did Faye appear for Hull City?,faye appeared for hull city in the seasons 2012-13 and 2013-14.,faye appeared for hull city in the 2012–13 and 2013–14 seasons.,select * from T,378,378,"row_number | club | season | league | league1 | league2 | fa_cup | fa_cup1 | league_cup | league_cup1 | europe | europe1 | total | total1
+0 | club | season | division | apps | goals | apps | goals | apps | goals | apps | goals | apps | goals
+1 | asec ndiambour | 1999–2000 | senegal premier league | none | none | none | none | — | — | none | none | none | none
+2 | asec ndiambour | 2000–1 | senegal premier league | none | none | none | none | — | — | none | none | none | none
+3 | asec ndiambour | total | total | 59 | 8 | none | none | — | — | 59 | 8 | none | none
+4 | jeanne d'arc | 2001–2 | senegal premier league | 32 | 4 | none | none | — | — | 32 | 4 | none | none
+5 | jeanne d'arc | total | total | 32 | 4 | none | none | — | — | 32 | 4 | none | none
+6 | rc lens | 2002–3 | ligue 1 | 17 | 0 | 1 | 0 | 0 | 0 | 6 | 0 | 24 | 0
+7 | rc lens | 2003–4 | ligue 1 | 18 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 19 | 0
+8 | rc lens | total | total | 35 | 0 | 2 | 0 | 0 | 0 | 6 | 0 | 43 | 0
+9 | istres (loan) | 2004–5 | ligue 1 | 28 | 0 | 0 | 0 | 0 | 0 | — | — | 28 | 0
+10 | istres (loan) | total | total | 28 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 28 | 0
+11 | bolton wanderers | 2005–6 | premier league | 27 | 1 | 1 | 0 | 2 | 0 | 7 | 0 | 37 | 1
+12 | bolton wanderers | 2006–7 | premier league | 32 | 2 | 2 | 0 | 0 | 0 | — | — | 34 | 2
+13 | bolton wanderers | 2007–8 | premier league | 1 | 0 | 0 | 0 | 0 | 0 | — | — | 1 | 0
+14 | bolton wanderers | total | total | 60 | 3 | 3 | 0 | 2 | 0 | 7 | 0 | 72 | 3
+15 | newcastle united | 2007–8 | premier league | 22 | 1 | 1 | 0 | 1 | 0 | — | — | 24 | 1
+16 | newcastle united | total | total | 22 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 24 | 1
+17 | stoke city | 2008–9 | premier league | 36 | 3 | 0 | 0 | 0 | 0 | — | — | 36 | 3
+18 | stoke city | 2009–10 | premier league | 31 | 2 | 1 | 0 | 0 | 0 | — | — | 32 | 2
+19 | stoke city | 2010–11 | premier league | 14 | 1 | 2 | 0 | 0 | 0 | — | — | 16 | 1
+20 | stoke city | total | total | 81 | 6 | 3 | 0 | 0 | 0 | 0 | 0 | 84 | 6
+21 | west ham united | 2011–12 | championship | 29 | 0 | 0 | 0 | 0 | 0 | — | — | 29 | 0
+22 | west ham united | total | total | 29 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 29 | 0
+23 | hull city | 2012–13 | championship | 31 | 4 | 0 | 0 | 2 | 0 | — | — | 33 | 4
+24 | hull city | 2013–14 | premier league | 3 | 0 | 3 | 0 | 1 | 0 | — | — | 7 | 0
+25 | hull city | total | total | 34 | 4 | 3 | 0 | 3 | 0 | 0 | 0 | 40 | 4
+26 | career total | career total | career total | 380 | 26 | 12 | 0 | 6 | 0 | 13 | 0 | 411 | 26"
+767,Which isotope has been reported?,"the reported isotopes are 253rf, 254rf, 255rf, 256rf, 257rf, 257mrf, 258rf, 259rf, 259mrf, 260rf, 261rf, 261mrf, 262rf, 263rf,",sixteen different isotopes have been reported with atomic masses from 253 to 270 (with the exceptions of 264 and 269).,select isotope from T;,20,120,"isotope
+253rf
+254rf
+255rf
+256rf
+257rf
+257mrf
+258rf
+259rf
+259mrf
+260rf
+261rf
+261mrf
+262rf
+263rf
+263mrf ?
+265rf
+266rf
+267rf
+268rf
+270rf"
+1812,Who's the winner of the championship and who is in the second place?,"the winner of the 1922 open championship was walter hagen, and jim barnes, george duncan, and j.h. taylor tied for second place.","walter hagen was the leader at 149, two strokes ahead of jim barnes, george duncan and j.h. taylor.","select player, place from T where place = ""1"" or place = ""t2"";",8,50,"player | place
+walter hagen | 1
+jim barnes | t2
+george duncan | t2
+j.h. taylor | t2"
+id,question,response,answer,sql,r_num_cell,t_num_cell,linear_table
+15064,What significant career achievement did Yu make in 2011?,"in 2011, yu zheng won the most popular screenwriter award at the grand ceremony of movie & tv new forces, the best screenwriter award at the 16th asian television awards, and the screenwriter award at the youku film and television award.","in 2011 yu was noted for palace, which earned him a best screenwriter award at the 16th asian television awards.","select award, category, result from T where year = 2011;",9,49,"award | category | result
+grand ceremony of movie & tv new forces | most popular screenwriter | won
+16th asian television awards | best screenwriter | won
+youku film and television award | screenwriter award | won"
+1834,How's Huang Yu-ting doing in the 2009 World Games?,"huang yu-ting performed well in the 2009 world games. she won gold medals in the following events: women's 300 m time trial, women's 500 m sprint, and women's 1000 m sprint.","as an inline speed skater, huang won three gold medals at the 2009 world games in chinese taipei: 300 m time trial, 500 m sprint, and 1000 m sprint.",select * from T,55,55,"row_number | event | gold | silver | bronze
+0 | men's 300 m time trial | lo wei-lin, chinese taipei | andrés felipe muñoz, colombia | pedro causil, colombia
+1 | men's 500 m sprint | andrés felipe muñoz, colombia | lo wei-lin, chinese taipei | lee myung-kyu, south korea
+2 | men's 1000 m sprint | pedro causil, colombia | alexis contin, france | claudio naselli, italy
+3 | men's 10000 m points elimination | yann guyader, france | nelson garzón, colombia | daniel álvarez, venezuela
+4 | men's 15000 m elimination | jorge luis cifuentes, colombia | yann guyader, france | andrés felipe muñoz, colombia
+5 | none | none | none | none
+6 | women's 300 m time trial | huang yu-ting, chinese taipei | hsu chiao-jen, chinese taipei | lim jin-seon, south korea
+7 | women's 500 m sprint | huang yu-ting, chinese taipei | lim jin-seon, south korea | jercy puello, colombia
+8 | women's 1000 m sprint | huang yu-ting, chinese taipei | hsu chiao-jen, chinese taipei | nicole begg, new zealand
+9 | women's 10000 m points elimination | woo hyo-sook, south korea | marta ramírez, colombia | nicole begg, new zealand
+10 | women's 15000 m elimination | woo hyo-sook, south korea | marta ramírez, colombia | pan yi-chin, chinese taipei"
+21624,"When did Art Howe coach the Yale Bulldogs, and what was his overall record with the team?",art howe coached the yale bulldogs in the year 1912 and his overall record with the team was the yale bulldogs (independent) (1912).,howe led the yale football team as head coach for one year (1912) and compiled a 7–1–1 record.,"select year, overall from T where team = ""yale bulldogs (independent) (1912)"";",2,49,"year | overall
+yale bulldogs (independent) (1912) | yale bulldogs (independent) (1912)"
+16730,What shows did Marisol Nichols appear in during 1996?,"marisol nichols appeared in the shows ""my guys"", ""due south"", and ""beverly hills, 90210"" in 1996.","in 1996, marisol nichols appeared in my guys, due south, and beverly hills, 90210.",select title from T where year = 1996;,3,160,"title
+my guys
+due south
+beverly hills, 90210"
+10064,How did the last two finishers perform in the Women's 800 metre freestyle?,"the last two finishers in the women's 800 metre freestyle were sarah köhler from germany, who finished in 8th place with a time of 8:27.75, and lotte friis from denmark, who finished in 7th place with a time of 8:24.",denmark's lotte friis recorded a time of 8:24.50 and germany's sarah köhler recorded a time of 8:27.75 at the olympics.,"select rank, name, nationality, time from T order by row_number desc limit 2;",8,56,"rank | name | nationality | time
+8.0 | sarah köhler | germany | 8:27.75
+7.0 | lotte friis | denmark | 8:24.5"
+21159,How did the Unionist Candidate perform in the East Antrim election in the 1910's?,"the unionist candidate, robert mccalmont, won the election in east antrim in the 1910's with 15,206 votes.","the unionist candidate had a victory by 15,206 votes to sinn féin's 861 votes.",select * from T,42,42,"row_number | party | party1 | candidate | votes | _ | ±
+0 | none | irish unionist | robert mccalmont | 15206 | 94.6 | n/a
+1 | none | sinn féin | daniel dumigan | 861 | 5.4 | n/a
+2 | majority | majority | majority | 14345 | 89.3 | n/a
+3 | turnout | turnout | turnout | 16067 | 64.8 | n/a
+4 | registered electors | registered electors | registered electors | 24798 | nan | none
+5 | none | irish unionist hold | irish unionist hold | swing | nan | none"
+12617,Who finished 2nd at the 2014 Commonwealth games and what time did they achieve?,adam gemili finished 2nd at the 2014 commonwealth games in the 100m event with a time of 10.1 seconds.,"in the 2014 commonwealth games, gemili finished the 100m in second position with a time of 10.10 seconds.","select competition, position, event, notes from T where year = 2014 and position = ""2nd"";",8,175,"competition | position | event | notes
+commonwealth games | 2nd | 100m | 10.1
+commonwealth games | 2nd | 4 × 100 m relay | 38.02"
+21070,"When was ""I've Got a Feeling"" released?","""i've got a feeling"" was released on october 7, 1997.","""i've got a feeling"" was released, through atlantic, in the united states on october 7, 1997 and in australia in 1998.",select date from T where row_number = 0;,1,15,"date
+1997-10-7"
+13839,What and when were Tom Felton's first two roles?,"tom felton's first two roles were in ""the borrowers"" (1997) and ""anna and the king"" (1999).",tom felton made his debut in the role of peagreen clock in the borrowers in 1997 and portrayed louis t. leonowens in anna and the king in 1999.,"select title, year from T limit 2;",4,145,"title | year
+the borrowers | 1997
+anna and the king | 1999"
+20930,How many votes did Labour beat the National British Party by?,labour beat the national british party by 192 votes.,labour defeated the british national party by 192 votes.,select * from T,56,56,"row_number | party | party1 | candidate | votes | _ | ±
+0 | none | labour | mick corser | 913 | 38.9 | 6.8
+1 | none | bnp | andrew terry | 721 | 30.7 | 2.3
+2 | none | conservative | sheila courts | 410 | 17.4 | 3.7
+3 | none | liberal democrat | bernard wright | 174 | 7.4 | 6.4
+4 | none | green | ronnie cashmore | 132 | 5.6 | 5.6
+5 | majority | majority | majority | 192 | 8.2 | 7.3
+6 | turnout | turnout | turnout | 2350 | 27.4 | 1.2
+7 | none | labour hold | labour hold | swing | 4.5 | nan"
+12516,What were the results of the 1990 Colorado gubernatorial election?,the results of the 1990 colorado gubernatorial election were as follows:,"democrat roy romer defeated republican nominee, john andrews with 61.89% of the vote.","select candidate, party, votes from T;",21,49,"candidate | party | votes
+roy romer | none | 626032
+john andrews | none | 358403
+david aitken | none | 18930
+david livingston | none | 7907
+majority | majority | 267629
+turnout | turnout | 1011272
+democratic hold | none | swing"
+17544,Which player had the lowest individual score and by how much was it lower than any other player?,"the player with the lowest individual score in the 1980 eisenhower trophy was david suddards, and his score was 11 points lower than any other player.","hal sutton had the lowest individual score of 12-under-par 276, six strokes better than any other player.","select player, min(score) - max(score) as difference from T;",2,60,"player | difference
+david suddards | -11"
+21045,"In the 86th United States Congress, What date was the end of Richard M. Simpson's service, and who was his successor?","the end of richard m. simpson's service in the 86th united states congress was on january 7, 1960. his successor was douglas h. elliott.","in the 86th united states congress, richard m. simpson (r) served until january 7, 1960 and was succeeded by douglas h. elliott (r) on april 26, 1960, who served until june 19, 1960.",select * from T,102,102,"row_number | district | vacator | reason_for_change | successor | date_of_successors_formal_installation
+0 | missouri 4th | george h. christopher (d) | died 1959-1-23 | william j. randall (d) | 1959-3-3
+1 | new york 43rd | daniel a. reed (r) | died 1959-2-19 | charles goodell (r) | 1959-5-26
+2 | ohio 6th | james g. polk (d) | died 1959-4-28 | ward miller (r) | 1960-11-8
+3 | hawaii territory at-large | john a. burns (d) | hawaii achieved statehood. | seat eliminated 1959-8-21 | seat eliminated 1959-8-21
+4 | hawaii at-large | new seat | hawaii achieved statehood 1959-8-21 | daniel inouye (d) | 1959-8-21
+5 | illinois 12th | charles a. boyle (d) | died 1959-11-4 | vacant | not filled this term
+6 | iowa 4th | steven v. carter (d) | died 1959-11-4 | john h. kyl (r) | 1959-12-15
+7 | pennsylvania 17th | alvin bush (r) | died 1959-11-5 | herman t. schneebeli (r) | 1960-4-26
+8 | new york 23rd | isidore dollinger (d) | resigned 1959-12-31 | jacob h. gilbert (d) | 1960-3-8
+9 | pennsylvania 18th | richard m. simpson (r) | died 1960-1-7 | douglas h. elliott (r) | 1960-4-26
+10 | north carolina 12th | david m. hall (d) | died 1960-1-29 | roy a. taylor (d) | 1960-6-25
+11 | washington 3rd | russell v. mack (r) | died 1960-3-28 | julia butler hansen (d) | 1960-11-8
+12 | pennsylvania 18th | douglas h. elliott (r) | died 1960-6-19 | j. irving whalley (r) | 1960-11-8
+13 | north dakota at-large | quentin n. burdick (d) | resigned 1960-8-8, after becoming u.s. senator | vacant | not filled this term
+14 | massachusetts 5th | edith nourse rogers (r) | died 1960-9-10 | vacant | not filled this term
+15 | wyoming at-large | edwin k. thomson (r) | died 1960-12-9 | vacant | not filled this term
+16 | new york 5th | albert h. bosch (r) | resigned 1960-12-31, after being elected judge of court of queens county | vacant | not filled this term"
+10083,"What roles did Sandra Peabody play in Tarot and Annie Get Your Gun, respectively?","sandra peabody played the role of ""the sun"" in tarot and the role of ""minnie"" in annie get your gun.","peabody appeared as the sun in an off-broadway production of tarot (1970), which she followed with the role as minnie in annie get your gun (1973-1974).","select role from T where title = ""tarot"" or title = ""annie get your gun"";",2,10,"role
+the sun
+minnie"
+1789,How close was Texas' 21st congressional district election?,"the texas' 21st congressional district election was close with lamar smith, the republican candidate, receiving 169,924 votes and lainey melnick, the democratic candidate, receiving 65,834 votes. lamar smith won with a majority of 96,929 votes. the turnout for the election was 236","in the texas's 21st congressional district election, lamar smith defeated lainey melnick with 68.9 percent of the vote, with a majority of 96929 votes.","select candidate, votes, ± from T;",18,42,"candidate | votes | ±
+lamar smith | 169924 | 11.09
+lainey melnick | 65834 | 3.39
+james arthur strohm | 7687 | 16.7
+majority | 96929 | nan
+turnout | 236284 | nan
+republican hold | swing | nan"
+17067,What are all the non-Leo awards for which Rickards received a solo nomination?,"rickards received solo nominations for the teen choice awards in the categories of female breakout star, choice tv actress - fantasy/sci-fi, and choice tv actress - action.","rickards has been nominated for five teen choice awards: four for choice tv actress in fantasy, sci-fi, or action, and one for female breakout star in 2014.","select award, category, nominee from T where nominee = ""emily bett rickards"" and award != ""leo awards"";",15,105,"award | category | nominee
+teen choice awards | female breakout star | emily bett rickards
+teen choice awards | choice tv actress - fantasy/sci-fi | emily bett rickards
+teen choice awards | choice tv actress - fantasy/sci-fi | emily bett rickards
+teen choice awards | choice tv actress - action | emily bett rickards
+teen choice awards | choice tv actress - action | emily bett rickards"
+11595,What films did Aaron Taylor-Johnson appear in in 2017 and 2018?,"aaron taylor-johnson appeared in ""the wall"" in 2017 and ""outlaw king"" and ""1000000 little pieces"" in 2018.","in 2017, aaron taylor-johnson appeared in doug liman's the wall and, in 2018, appeared in outlaw king as well as a milliom little pieces.","select title, year from T where year in (2017, 2018);",6,168,"title | year
+the wall | 2017
+outlaw king | 2018
+1000000 little pieces | 2018"
+10549,What awards did Aksoy win for Love in Another Language?,aksoy won the best actress award for love in another language at the ankara international film festival in 2009 and at the bursa silk road film festival in 2009.,saadet aksoy's 2009 love in another language brought her best actress awards at ankara international film festival and bursa silk road film festival.,select * from T,54,54,"row_number | year | organisation | award | work | result
+0 | 2007 | sarajevo film festival | best actress | egg | won
+1 | 2007 | antalya golden orange film festival | best newcomer | egg | won
+2 | 2007 | valdivia international film festival | best actress | egg | won
+3 | 2008 | siyad awards | best actress in a leading role | egg | won
+4 | 2008 | yeşilçam film awards | young talent | egg | won
+5 | 2008 | ankara international film festival | best female newcomer | egg | won
+6 | 2008 | i̇smail dümbüllü awards | best film actress | egg | won
+7 | 2009 | ankara international film festival | best actress | love in another language | won
+8 | 2009 | bursa silk road film festival | best actress | love in another language | won"
+2034,How many Best Actress Awards did Choi win in 1994 and where were they from?,choi myung-gil won two best actress awards in 1994. she won the best actress award at the 16th 3 continents festival and the 15th blue dragon film awards.,"choi received 2 best actress awards for rosy life, one at the 16th three continents festival and the other in the 15th blue dragon film awards.","select award, category from T where year = 1994 and result = 'won' and category = 'best actress';",4,156,"award | category
+16th 3 continents festival | best actress
+15th blue dragon film awards | best actress"
+1770,What year was Rosie Huntington-Whiteley most successful?,rosie huntington-whiteley was most successful in the year 2011.,in 2011 rosie huntington-whiteley won 3 awards and was nominated for the teen choice awards choice movie actress: summer award.,"select year from T where result = ""won"" group by year order by count(*) desc limit 1;",1,72,"year
+2011"
+8524,Who were the top 2 finishers in the 1952 Summer Olympics – Men's 110 metres hurdles?,the top 2 finishers in the 1952 summer olympics - men's 110 metres hurdles were harrison dillard and jack davis.,automatic timing showed dillard had a time of 13.91 and davis recorded a time of 14.00.,"select rank, name from T order by rank asc limit 2;",4,36,"rank | name
+None | harrison dillard
+None | jack davis"
+33,What movies and roles did Morris play in 1997?,"in 1997, haviland morris played the role of korben dallas's mother in the movie ""the fifth element"" and the role of karen pruitt in the movie ""home alone 3"".",morris played korben dallas's mother in the fifth element and karen pruitt in home alone 3 in 1997.,"select title, role from T where year = 1997;",4,100,"title | role
+the fifth element | korben dallas's mother
+home alone 3 | karen pruitt"
+7783,Who received the silver and bronze medals for the women's 400 metres hurdles at the 1992 Summer Olympics?,sandra farmer-patrick (usa) received the silver medal and janeene vickers (usa) received the bronze medal for the women's 400 meters hurdles at the 1992 summer olympics.,"farmer-patrick was in second, winning silver in 53.69 secs, while vickers narrowly held on for the bronze medal from ledovskaya, both being timed at 54.31 secs.",select * from T,32,32,"row_number | rank | final | time
+0 | none | sally gunnell (gbr) | 53.23
+1 | none | sandra farmer-patrick (usa) | 53.69
+2 | none | janeene vickers (usa) | 54.31
+3 | 4. | tatyana ledovskaya (eun) | 54.31
+4 | 5. | vera ordina (eun) | 54.83
+5 | 6. | margarita ponomaryova (eun) | 54.83
+6 | 7. | deon hemmings (jam) | 55.58
+7 | — | myrtle bothma (rsa) | dnf"
+9853,"What is the population breakdown of Nurpur Jattan by gender, and how many houses does it have?","the population breakdown of nurpur jattan is 401 males and 362 females, with a total population of 763. it has a total of 157 houses.","nurpur jattan has total number of 157 houses and population of 763, of which include 401 males and 362 females.","select male, female, total from T where particulars = ""population"" or particulars = ""total no. of houses"";",6,45,"male | female | total
+none | none | 157
+401 | 362 | 763"
+1262,What did Kathryn Beaumont star in 1953?,"kathryn beaumont starred in the movie ""peter pan"" in 1953.",kathryn beaumont starred in the voice role of wendy darling in peter pan (1953).,select title from T where year = 1953;,1,65,"title
+peter pan"
+8567,What are the total statistics of Talwandi Mehma?,"the total statistics of talwandi mehma are as follows:
+- total number of houses: 258
+- total population: 1,396
+- population in the age group 0-6 years: 141
+- scheduled castes (sc): 984
+- scheduled tribes (st): 0","talwandi mehma has total number of 258 houses and a population of 1,396 of which include 715 males and 681 females.","select particulars, total from T;",20,50,"particulars | total
+total no. of houses | 258
+total population | 1396
+in the age group 0–p6y | 141
+scheduled castes (sc) | 984
+scheduled tribes (st) | 0
+literates | 912
+illiterate | 484
+total worker | 471
+main worker | 305
+marginal worker | 166"
+1804,Which competitions did Fabrizio Donato win gold medal?,"fabrizio donato won the gold medal in the mediterranean games in 2001, the european indoor championships in 2009, and the european championships in 2012.","fabrizio donato won gold medals at the 2001 mediterranean games with a record of 17.05 metres and the 2009 european indoor championships, a championship record of 17.59 metres.","select competition, year from T where position = ""1st"";",6,198,"competition | year
+mediterranean games | 2001
+european indoor championships | 2009
+european championships | 2012"
+12122,"Who did Wayne Kerrins play for in the third division, and what seasons did he play for them?","wayne kerrins played for fulham in the third division, and he played for them in the seasons 1986-87, 1987-88, and 1988-89.","wayne kerrins played for fulham in the third division in 1986–87, 1987–88, and 1988–89.","select club, season from T where division = ""third division"";",6,108,"club | season
+fulham | 1986–87
+fulham | 1987–88
+fulham | 1988–89"
+8270,Which albums did Maylee Todd release on the Do Right Music label and in which years?,"maylee todd released the albums ""choose your own adventure"" in 2010, ""do right! serato pressing featuring maylee todd"" in 2011, ""escapology"" in 2013, and ""acts of love"" in 2017 on the do right music label.",maylee todd released her first album choose your own adventure in 2010 and escapology in 2013 on the do right music label.,select * from T,25,25,"row_number | year | title | label | format
+0 | 2010 | choose your own adventure | do right music | cd
+1 | 2011 | do right! serato pressing featuring maylee todd | do right music | 12"" vinyl & digital download
+2 | 2013 | escapology | do right music | cd, lp
+3 | 2014 | dirty power | ark analog | none
+4 | 2017 | acts of love | do right music | cd, lp"
+10502,How many males and females are there in Mithra households?,there are no males and females in mithra households.,mithra has a total number of 80 houses and a population of 350 which includes 185 males and 165 females.,"select male, female from T where particulars = ""total no. of houses"";",2,45,"male | female
+none | none"
+9243,What did Daniela Ramirez do in 2012?,"in 2012, daniela ramirez appeared in the movie ""american reunion"" as selena and in the movie ""premium rush"" as vanessa.","in 2012, ramirez appeared in two roles: selena in american reunion and vanessa in premium rush.","select title, role from T where year = 2012;",4,95,"title | role
+american reunion | selena
+premium rush | vanessa"
+2255,What marathons did Feyisa Lilesa run in 2010?,"in 2010, feyisa lilesa ran in the xiamen international marathon in xiamen, china where he finished 1st, the rotterdam marathon in rotterdam, netherlands where he finished 4th, and the chicago marathon in chicago, united states where he finished 3rd.","feyisa lilesa ran at the 2010 chicago marathon, at the 2010 rotterdam marathon, and at the xiamen international marathon.","select competition, venue, position, event from T where year = 2010 and event = ""marathon"";",12,77,"competition | venue | position | event
+xiamen international marathon | xiamen, china | 1st | marathon
+rotterdam marathon | rotterdam, netherlands | 4th | marathon
+chicago marathon | chicago, united states | 3rd | marathon"
+11703,"Which of Smacksoft's albums were nominated for Best Modern Rock Album at the Korean Music Awards, and when were they nominated?","smacksoft's albums ""shines in the dark"" and ""follow your heart"" were nominated for best modern rock album at the korean music awards in 2010 and 2013, respectively.",two of smacksoft's albums were nominated for best modern rock album at the korean music awards: shines in the dark in 2010 and follow your heart in 2013.,select * from T,14,14,"row_number | year | award | category | nominated_work | result | ref
+0 | 2010 | korean music awards | best modern rock album | shines in the dark | nominated | None
+1 | 2013 | korean music awards | best modern rock album | follow your heart | nominated | None"
+21257,"When did Anthony Alonzo win Metro Manila Film Festival awards and for which works, respectively?","anthony alonzo won metro manila film festival awards in 1983 for the work ""bago kumalat ang kamandag"" and in 1987 for the work ""anak badjao"".",anthony alonzo won the best actor awards from the metro manila film festival for bago kumalat ang kamandag in 1983 and for anak badjao in 1987.,"select year, work from T where award_giving_body = ""metro manila film festival"" and result = ""won"";",4,12,"year | work
+1983 | bago kumalat ang kamandag
+1987 | anak badjao"
+9053,What were the lead roles played by Minal Khan in 2017?,"in 2017, minal khan played the lead roles as hina afaq in ""sun yaara"", semi in ""malkin"", haya in ""beti to main bhi hun"", khadija in ""laut ke chalay aana"", kiran in ""dil nawaz",khan's first lead role was in urdu 1's beti to main bhi hun (2017) as haya and followed with another lead role in hum tv's parchayee as pari.,"select title, role from T where year = 2017;",12,120,"title | role
+sun yaara | hina afaq
+malkin | semi
+beti to main bhi hun | haya
+laut ke chalay aana | khadija
+dil nawaz | kiran
+parchayee | pari"
+17677,What were the Peak Positions on the Mainstream chart of three New Medicine's singles in 2010 and 2011?,"the peak positions on the mainstream chart of three new medicine's singles in 2010 and 2011 were as follows:
+- ""laid"" reached a peak position of 32.
+- ""race you to the bottom"" reached a peak position of 19.
+- ""rich kids"" reached a peak position","""laid"" hit number 32, ""race you to the bottom"" hit number 19 and rich kids"" hit number 31 on the mainstream chart.","select title, peak_positions from T where year in (2010, 2011) and peak_positions != ""—"";",6,36,"title | peak_positions
+""laid"" | 32
+""race you to the bottom"" | 19
+""rich kids"" | 31"
+2127,What were the results of the 1956 United States presidential election in Wyoming?,"in the 1956 united states presidential election in wyoming, dwight d. eisenhower (inc.) received 74,573 votes and adlai stevenson received 49,554 votes.","wyoming was won by dwight d. eisenhower with 60.08% of the vote, against adlai stevenson with 39.92% of the vote.","select candidate, votes from T where party != ""total votes"";",4,18,"candidate | votes
+dwight d. eisenhower (inc.) | 74573
+adlai stevenson | 49554"
+15547,How was Hawkins doing in the 2014 Commonwealth Games?,"in the 2014 commonwealth games, callum hawkins finished in 20th place in the 10000 m event, which was held in glasgow, united kingdom.","hawkins competed at the 2014 commonwealth games held in glasgow in the 10,000 metres, finishing 20th.","select competition, venue, position, event from T where year = 2014 and competition = ""commonwealth games"";",4,133,"competition | venue | position | event
+commonwealth games | glasgow, united kingdom | 20th | 10000 m"
+320,Did Joshua Jackson ever star in the Simpsons?,"yes, joshua jackson starred in the simpsons in 2000 as jesse grass.","in 2000, joshua jackson starred in the simpsons, voicing the character of jesse grass in the episode ""lisa the tree hugger"".","select * from T where title = ""the simpsons"";",5,80,"row_number | year | title | role | notes
+7 | 2000 | the simpsons | jesse grass | voice; episode: ""lisa the tree hugger"""
+20746,What year did Allkja play for Elbasani in the Albanian Second Division?,allkja played for elbasani in the albanian second division in the season 2017-2018.,allkja played for elbasani in the 2017–18 albanian second division.,"select season from T where club = ""elbasani"" and league = ""albanian second division"";",1,60,"season
+2017–18"
+21526,"Where did Marcos Acuña have the most matches, goals, and assists totals and assists and how many of each did he have.?",there is no information available in the table to answer the question.,"at ferro, acuña played a total of 117 matches, with 5 goals and 23 assists.","select club, league, season, total, total1, total2 from T order by total desc limit 1;",6,256,"club | league | season | total | total1 | total2
+ferro carril oeste | none | none | none | none | none"
+1431,Do any cities have more than one museum?,"yes, bujumbura has more than one museum.",the living museum of bujumbura and the geological museum of burundi are located in bujumbura.,"SELECT location, COUNT(*) FROM T GROUP BY location HAVING COUNT(*) > 1;",2,18,"location | COUNT(*)
+bujumbura | 2"
+1516,What was Owen McDonnell's first role for something made by RTE?,"owen mcdonnell's first role for something made by rte was sergeant jack driscoll in the tv show ""single-handed"".",owen mcdonnell played sergeant jack driscoll in rté's single-handed (2007-10).,"select title, role from T where notes = ""rté"" order by years asc limit 1;",2,120,"title | role
+single-handed | sergeant jack driscoll"
+16773,"What were Fofana's times, events, and venues in 2015 and 2016?","in 2015, hassane fofana participated in the 60 m hurdles event in prague, czech republic, with a time of 7.75 seconds. in 2016, he participated in the 110 m hurdles event in amsterdam, netherlands, with a time of 13.52 seconds.",hassane fofana finished in 13.52 in the 110 meters hurdles (amsterdam 2016) and in 7.75 in the 60 meters hurdles (prague 2015).,"select event, venue, notes from T where year in (2015, 2016);",6,63,"event | venue | notes
+60 m hurdles | prague, czech republic | 7.75
+110 m hurdles | amsterdam, netherlands | 13.52"
+12510,What are the populations of the three largest ethnic groups?,"the populations of the three largest ethnic groups in vancouver kingsway are as follows:
+1. chinese: 37,355
+2. european: 32,905
+3. total population: 103,760","the three largest ethnic groups are chinese (36%), european (31.7%) and filipino (12.5%).","select ethnic_groups_in_vancouver_kingsway_2016_source__21, population from T order by population desc limit 3;",6,75,"ethnic_groups_in_vancouver_kingsway_2016_source__21 | population
+total population | 103760
+chinese | 37355
+european | 32905"
+9796,"What were the minimum and maximum prizes earned, and who won the least?","the minimum prize earned was $947,172, the maximum prize earned was $10,000,000, and bruno politano won the least.","the final table's minimum prize was $730,725 which was earned by mark newhouse and the maximum was $10,000,000.","select min(prize), max(prize), name from T;",3,72,"min(prize) | max(prize) | name
+$10000000 | $947172 | bruno politano"
+20887,What club and league did Giourkas Seitaridis appear in for the 2003–04 season?,"in the 2003-04 season, giourkas seitaridis appeared for panathinaikos in the alpha ethniki league.","in the 2003–04 season, giourkas seitaridis appeared in alpha ethniki with panathinaikos.",select * from T,336,336,"row_number | club_performance | club_performance1 | club_performance2 | league | league1 | cup | cup1 | continental | continental1 | others | others1 | total | total1
+0 | season | club | league | apps | goals | apps | goals | apps | goals | apps | goals | apps | goals
+1 | greece | greece | greece | league | league | greek cup | greek cup | europe | europe | others | others | total | total
+2 | 1998–99 | pas giannina | beta ethniki | 6 | 0 | – | – | – | – | – | – | 6 | 0
+3 | 1999–0 | pas giannina | beta ethniki | 24 | 3 | – | – | – | – | – | – | 24 | 3
+4 | 2000–1 | pas giannina | alpha ethniki | 10 | 2 | – | – | – | – | – | – | 10 | 2
+5 | 2000–1 | panathinaikos | alpha ethniki | 12 | 0 | – | – | 2 | 1 | – | – | 14 | 1
+6 | 2001–2 | panathinaikos | alpha ethniki | 19 | 0 | 1 | 0 | 7 | 0 | – | – | 27 | 0
+7 | 2002–3 | panathinaikos | alpha ethniki | 25 | 0 | 2 | 0 | 2 | 0 | – | – | 29 | 0
+8 | 2003–4 | panathinaikos | alpha ethniki | 21 | 0 | 6 | 0 | 8 | 0 | – | – | 35 | 0
+9 | portugal | portugal | portugal | league | league | portuguese cup | portuguese cup | europe | europe | others | others | total | total
+10 | 2004–5 | porto | primeira liga | 23 | 0 | 2 | 0 | 11 | 0 | – | – | 36 | 0
+11 | russia | russia | russia | league | league | russian cup | russian cup | europe | europe | others | others | total | total
+12 | 2005 | dynamo moscow | premier league | 8 | 0 | – | – | – | – | – | – | 8 | 0
+13 | 2006 | dynamo moscow | premier league | 0 | 0 | – | – | – | – | – | – | 0 | 0
+14 | spain | spain | spain | league | league | copa del rey | copa del rey | europe | europe | others | others | total | total
+15 | 2006–7 | atlético madrid | la liga | 31 | 0 | 2 | 0 | – | – | – | – | 33 | 0
+16 | 2007–8 | atlético madrid | la liga | 14 | 0 | – | – | 4 | 1 | – | – | 18 | 1
+17 | 2008–9 | atlético madrid | la liga | 14 | 0 | 2 | 0 | 4 | 0 | – | – | 20 | 0
+18 | greece | greece | greece | league | league | greek cup | greek cup | europe | europe | playoffs | playoffs | total | total
+19 | 2009–10 | panathinaikos | superleague | 8 | 0 | 2 | 0 | – | – | – | – | 10 | 0
+20 | 2010–11 | panathinaikos | superleague | 7 | 0 | 2 | 0 | – | – | – | – | 9 | 0
+21 | 2011–12 | panathinaikos | superleague | 2 | 0 | – | – | – | – | 1 | 0 | 3 | 0
+22 | 2012–13 | panathinaikos | superleague | 24 | 0 | 3 | 0 | 5 | 0 | 1 | 0 | 33 | 0
+23 | career total | career total | career total | 248 | 5 | 22 | 0 | 43 | 2 | 2 | 0 | 315 | 7"
+9080,How many workers in Main work were engaged as cultivators and Agricultural Labourers?,"in the main work category, there were 124 workers engaged as cultivators and 90 workers engaged as agricultural laborers.",workers engaged in main work were 124 cultivators and 90 agricultural labourers.,select * from T,145,145,"row_number | particulars | total | male | female
+0 | total no. of houses | 190 | nan | nan
+1 | total | 946 | 493.0 | 453.0
+2 | in the age group 0–p6y | 93 | 56.0 | 37.0
+3 | scheduled castes (sc) | 288 | 155.0 | 133.0
+4 | scheduled tribes (st) | 0 | 0.0 | 0.0
+5 | literates | 618 | 335.0 | 283.0
+6 | illiterate | 328 | 158.0 | 170.0
+7 | total worker | 317 | 286.0 | 31.0
+8 | main worker | 307 | 278.0 | 29.0
+9 | main worker - cultivator | 124 | 120.0 | 4.0
+10 | main worker - agricultural labourers | 90 | 84.0 | 6.0
+11 | main worker - household industries | 4 | 3.0 | 1.0
+12 | main worker - other | 89 | 71.0 | 18.0
+13 | marginal worker | 10 | 8.0 | 2.0
+14 | marginal worker - cultivator | 2 | 1.0 | 1.0
+15 | marginal worker - agriculture labourers | 2 | 2.0 | 0.0
+16 | marginal worker - household industries | 1 | 0.0 | 1.0
+17 | marginal workers - other | 5 | 5.0 | 0.0
+18 | marginal worker (3-p6m) | 5 | 4.0 | 1.0
+19 | marginal worker - cultivator (3-p6m) | 1 | 1.0 | 0.0
+20 | marginal worker - agriculture labourers (3-p6m) | 0 | 0.0 | 0.0
+21 | marginal worker - household industries (3-p6m) | 1 | 0.0 | 1.0
+22 | marginal worker - other (3-p6m) | 3 | 3.0 | 0.0
+23 | marginal worker (0-p3m) | 5 | 4.0 | 1.0
+24 | marginal worker - cultivator (0-p3m) | 1 | 0.0 | 1.0
+25 | marginal worker - agriculture labourers (0-p3m) | 2 | 2.0 | 0.0
+26 | marginal worker - household industries (0-p3m) | 0 | 0.0 | 0.0
+27 | marginal worker - other workers (0-p3m) | 2 | 2.0 | 0.0
+28 | non worker | 629 | 207.0 | 422.0"
+717,When and where did Sampson star as “Ozzy”?,"sampson starred as ""ozzy"" in the walking dead in 2019.","in 2019, sampson starred as “ozzy” in the series the walking dead.",select * from T,130,130,"row_number | year | title | role | notes
+0 | 1996-2000 | recovery | co-host | various episodes
+1 | 2001 | blue heelers | glenn rossiter | episode: ""letter of the law""
+2 | 2002 | blue heelers | tony costa | episode: ""fishing for dummies""
+3 | 2002 | short cuts | dj | episode: ""what a feeling""
+4 | 2003 | stingers | ali | episode: ""cul-de-sac""
+5 | 2003 | greeks on the roof | dimi | 11 episodes
+6 | 2004 | the secret life of us | tyrone | episode: ""stretching the friendship""
+7 | 2005 | the secret life of us | video shop guy/tyrone | episode: ""the character question""
+8 | 2006-2009 | thank god you're here | himself | none
+9 | 2007 | wilfred | cyros | episode: ""dog eat dog""
+10 | 2007 | the king | ugly dave gray | tv movie
+11 | 2007 | chandon pictures | bevan | episode: ""cousins"" episode: ""bevan's heaven""
+12 | 2008 | underbelly | michael thorneycroft | 3 episodes
+13 | 2008 | time trackers | leonardo da vinci | episode: ""da vinci""
+14 | 2010 | the librarians | xavier fisher | 4 episodes
+15 | 2010-2011 | spirited | zach hannigan | 15 episodes
+16 | 2012 | beaconsfield | brett 'cress' cresswell | tv movie
+17 | 2012 | howzat! kerry packer's war | allan johnston | episode: ""1.1"" episode: ""1.2""
+18 | 2013 | paper giants: magazine wars | patrick bowring | tv miniseries, 2 episodes
+19 | 2014 | party tricks | wayne duffy | 6 episodes
+20 | 2015 | fargo | bear gerhardt | recurring role; 9 episodes
+21 | 2016-2017 | shut eye | fonso marks | 20 episodes
+22 | 2018 | nightflyers | rowan | main role
+23 | 2018 | voltron: legendary defender | ranveig (voice) | episode: ""kral zera""
+24 | 2018 | drunk history | hughes | episode: ""death""
+25 | 2019 | the walking dead | ozzy | 2 episodes"
+21182,Who were the winner and runner up in the 2016 presidential election in New Jersey?,the winner and runner up in the 2016 presidential election in new jersey are not provided in the given sql query result.,the 2016 united states presidential election in new jersey was won by hillary clinton with 55.5% of the vote over donald trump's 41.35%.,select candidate from T where votes = (select max(votes) from T);,1,77,"candidate
+turnout"
+7921,"What kind of voice work did Shelly Blond do in 2007 and 2014, and in which productions?","in 2007 and 2014, shelly blond did voice work in ""snow white: the sequel"" where she voiced cinderella, and in ""moomins on the riviera"" where she voiced audrey glamour.","shelley blond is the voice of cinderella in snow white: the sequel, and audrey glamour in the 2014 film moomins on the riviera.","select title, role, notes from T where year in (2007, 2014) and notes like '%voice%';",6,20,"title | role | notes
+snow white: the sequel | cinderella | voice
+moomins on the riviera | audrey glamour | voice"
+10226,Who won the election and by how many seats?,"in the 1995 ivorian parliamentary election, the democratic party of côte d'ivoire - african democratic rally won with 148 seats, winning by a majority of 134 seats.","the result was a victory for the democratic party of côte d'ivoire – african democratic rally, which won 148 of the 175 seats.","select party, seats from T;",10,30,"party | seats
+democratic party of côte d'ivoire – african democratic rally | 148
+rally of the republicans | 14
+ivorian popular front | 12
+vacant | 1
+total | 175"
+17674,What was Thunder doing in the 2011 movie Padam Padam?,"in the 2011 movie padam padam, thunder had a cameo role as yang kang-woo.","in 2011, thunder had a cameo role in padam padam, where he played the role of yang kang-woo.",select * from T,48,48,"row_number | title | year | network | role | notes
+0 | welcome to the show | 2011 | sbs | himself | cameo; sitcom
+1 | moon tni 90 | 2011 | mnet | koo jun-yup | fictional drama
+2 | padam padam | 2011 | kbs | yang kang-woo | cameo
+3 | strongest k-pop survival | 2012 | channel a | himself | cameo
+4 | nail shop paris | 2013 | mbc plus media | jin | lead role
+5 | make a woman cry | 2015 | mbc | kang hyun-seo | supporting role
+6 | we broke up | 2015 | cj e&m | himself | cameo; web drama
+7 | woman with a suitcase | 2016 | mbc | cheondung | cameo (episode 5)"
+11222,What was the total number of houses and the male and female population of Bhandal Bet?,"bhandal bet has a total of 585 houses and a population of 2,884, with 1,486 males and 1,398 females.","bhandal bet has a total number of 585 houses and a population of 2,884 of which include 1,486 males and 1,398 females.","select particulars, total, male, female from T where particulars = ""total no. of houses"" or particulars = ""population"" or particulars = ""child (0-6)"";",12,45,"particulars | total | male | female
+total no. of houses | 585 | none | none
+population | 2884 | 1486 | 1398
+child (0-6) | 306 | 162 | 144"
+1811,"Which categories of Tony Awards did ""A View from the Bridge"" win?","""a view from the bridge"" won the tony award for best revival of a play and the tony award for best direction of a play.",a view from the bridge won the tony award for best revival of a play and ivo van hove won the tony award for best direction of a play.,select * from T,90,90,"row_number | year | award_ceremony | category | nominee | result
+0 | 2016 | tony award | best revival of a play | best revival of a play | won
+1 | 2016 | tony award | best performance by a leading actor in a play | mark strong | nominated
+2 | 2016 | tony award | best direction of a play | ivo van hove | won
+3 | 2016 | tony award | best scenic design of a play | jan versweyveld | nominated
+4 | 2016 | tony award | best lighting design of a play | jan versweyveld | nominated
+5 | 2016 | drama desk award | outstanding revival of a play | outstanding revival of a play | won
+6 | 2016 | drama desk award | outstanding actor in a play | mark strong | nominated
+7 | 2016 | drama desk award | outstanding actress in a play | nicola walker | nominated
+8 | 2016 | drama desk award | outstanding director of a play | ivo van hove | won
+9 | 2016 | outer critics circle award | outstanding revival of a play | outstanding revival of a play | nominated
+10 | 2016 | outer critics circle award | outstanding actor in a play | mark strong | nominated
+11 | 2016 | outer critics circle award | outstanding actress in a play | nicola walker | nominated
+12 | 2016 | outer critics circle award | outstanding director of a play | ivo van hove | won
+13 | 2016 | drama league award | distinguished revival of a play | distinguished revival of a play | won
+14 | 2016 | theatre world award | theatre world award | mark strong | won"
+21241,What ratio of total votes did Pierre Bertho earn during the 1946 Dahomey and Togo by-election?,pierre bertho earned 644 votes out of the total votes during the 1946 dahomey and togo by-election.,pierre bertho of the popular republican movement was the candidate elected with 644 of the 818 votes casted.,"select votes from T where candidate = ""pierre bertho"" and party = ""popular republican movement"";",1,25,"votes
+644"
+14571,How many stations does Koumi Line have altogether and what are they?,"the koumi line has a total of 30 stations. the stations are: aonuma, haguroshita, higashi-komoro, iwamurada, kai-koizumi, kai-ōizumi, kaize, kita-nakagomi, kiyos","koumi line has 31 stations including kobuchizawa station in hokuto, yamanashi and komoro station in komoro, nagano.","select count(station), station from T group by station;",64,288,"count(station) | station
+1 | aonuma
+1 | haguroshita
+1 | higashi-komoro
+1 | iwamurada
+1 | kai-koizumi
+1 | kai-ōizumi
+1 | kaize
+1 | kita-nakagomi
+1 | kiyosato
+1 | kobuchizawa
+1 | koumi
+1 | managashi
+1 | matsubarako
+1 | misato
+1 | mitsuoka
+1 | nakagomi
+1 | nakasato
+1 | namezu
+1 | nobeyama
+1 | otome
+1 | saku-hirose
+1 | saku-uminokuchi
+1 | sakudaira
+1 | shinano-kawakami
+1 | station
+1 | takaiwa
+1 | tatsuokajō
+1 | umijiri
+1 | usuda
+1 | yachiho
+1 | ōtabe
+1 | 小諸"
+21603,When did Alessandra Negrini comprise the role of Clara in what movie?,"alessandra negrini played the role of clara in the movie ""olho no olho"" in 1993.",alessandra negrini played the role of clara in olho no olho (1993).,"select year, title from T where role = ""clara"" and title is not null;",2,130,"year | title
+1993 | olho no olho"
+1507,Was is the latest IETF standards documentation and when was it released?,"the latest ietf standards documentation is ""tftp windowsize option"" and it was released in january 2015.",the tftp windowsize option (rfc 7440) was published in january 2015.,"select title, published from T order by published desc limit 1;",2,66,"title | published
+tftp windowsize option | 2015-1"
+12107,What percentage of votes held the 1940 Bow and Bromley election seat for labour?,the 1940 bow and bromley election seat was held by the labour party with 95.8% of the votes.,"on a reduced turnout, key held the 1940 bow and bromley by-election seat for labour with 95.8% of the votes.",select * from T,35,35,"row_number | party | party1 | candidate | votes | _ | ±
+0 | none | labour | charles key | 11594 | 95.8 | +18.2
+1 | none | communist | isabel brown | 506 | 4.2 | n/a
+2 | majority | majority | majority | 11088 | 91.6 | +3.6
+3 | turnout | turnout | turnout | 12100 | 32.4 | −27.1
+4 | none | labour hold | labour hold | swing | nan | none"
+21092,How many votes did Judith Flanagan Kennedy defeat Clancy with in 2009?,judith flanagan kennedy defeated clancy with 27 votes in 2009.,"in 2009, clancy was defeated by judith flanagan kennedy by a total of 8,043 votes to 8,016.",select * from T,28,28,"row_number | party | party1 | candidate | votes | _ | ±
+0 | none | nonpartisan | judith flanagan kennedy | 8043 | 49.94 | None
+1 | none | nonpartisan | edward j. clancy jr. | 8016 | 49.78 | None
+2 | none | write-in | write-in | 45 | 0.28 | None
+3 | turnout | turnout | turnout | 16104 | 33.1 | None"
+14990,"In which locations did Keila Costa compete in late May and early June, and how did she perform in late May?","keila costa competed in brazil, specifically in belém, in late may. in late may, she performed in the long jump event and achieved a result of 6.88 meters with a wind of -0.1 m/s.","on 20 may 2007, keila costa jumped 6.88 metres in belém, and also participated in são paulo on 7 june 2013.",select * from T,35,35,"row_number | event | result | venue | date
+0 | outdoor | outdoor | outdoor | outdoor
+1 | 100 m | 12.43 s (wind: +0.5 m/s) | brazil belém | 2005-5-6
+2 | long jump | 6.88 m (wind: -0.1 m/s) | brazil belém | 2007-5-20
+3 | triple jump | 14.58 m (wind: +2 m/s) | brazil são paulo | 2013-6-7
+4 | indoor | indoor | indoor | indoor
+5 | long jump | 6.64 m | france paris-bercy | 2009-2-13
+6 | triple jump | 14.11 m | russia moscow | 2006-3-10"
+11319,Which television series did Morgan simultaneously appear in 2005 and 2006?,"morgan simultaneously appeared in ""the o.c."" and ""weeds"" in 2005, and in ""jam"" in 2006.","in 2005 and 2006, morgan simultaneously appeared in three television series: in the series supernatural as john winchester, in a recurring role in grey's anatomy as denny duquette, and as judah botwin in two episodes of the series weeds.","select title, year from T where year = 2005 or year = 2006;",6,150,"title | year
+the o.c. | 2005
+weeds | 2005
+jam | 2006"
+8404,Has Alexandria Daddario reprised any of her roles for multiple films?,"yes, alexandra daddario has reprised her role as annabeth chase in multiple films.","in 2013, daddario reprised her role as annabeth chase in the film percy jackson: sea of monsters, which is the sequel to percy jackson & the olympians: the lightning thief.","SELECT role, COUNT(*) FROM T GROUP BY role HAVING COUNT(*) > 1;",4,145,"role | COUNT(*)
+annabeth chase | 2
+n/a | 2"
+20761,What percentage of the vote did each candidate receive?,"declan o'scanlon jr. received 25.6% of the vote, caroline casagrande received 25.5% of the vote, mike panter received 25.0% of the vote, and amy mallet received 23.9% of the vote.","o'scanlon, casagrande, panter and mallet received 25.6%, 25.5%, 25.0% and 23.9% of the vote.","select candidate, votes, _ from T;",15,35,"candidate | votes | _
+declan o'scanlon jr. | 24493 | 25.6
+caroline casagrande | 24352 | 25.5
+mike panter | 23842 | 25.0
+amy mallet | 22870 | 23.9
+total votes | 95557 | 100.0"
+11374,Which films did Raghava Lawrence act in 2000?,"in 2000, raghava lawrence acted in the films ""unnai kodu ennai tharuven"" and ""parthen rasithen"".",raghava lawrence acted in unnai kodu ennai tharuven (2000) and in parthen rasithen (2000).,select film from T where year = 2000;,2,108,"film
+unnai kodu ennai tharuven
+parthen rasithen"
+21057,What channel and definition did The U Too began broadcasting on?,the u too began broadcasting on channel 26.2 in 480i definition.,the u too began broadcasting on wmeu-cd simulcast channel 26.2 in 16:9 standard definition.,"select channel, video from T where programming = ""simulcast of wmeu-cd"";",2,36,"channel | video
+26.2 | 480i"
+10055,What happened to the two heaviest ships Gerhard Bigalk attacked?,the table does not provide information about the fate of the two heaviest ships attacked by gerhard bigalk.,"gerhard bigalk damaged one ship of 8,096 grt, and sunk one warship of 11,000 tons.","select name, fate from T where tonnage_grt > 10000;",2,42,"name | fate
+hms audacity | sunk"
+13051,"What singles did Baby D release in 1995 and 1996, and which album were they from?","in 1995 and 1996, baby d released the singles ""(everybody's got to learn sometime) i need your loving"" and ""so pure"" from the album ""deliverance"". they also released the single ""take me to heaven"" from the album ""deliverance"".","baby d's single ""(everybody's got to learn sometime) i need your loving"" was released in 1995 and ""so pure"" and ""take me to heaven"" in 1996, all from the album deliverance.","select single, album from T where year in (1995, 1996);",6,132,"single | album
+""(everybody's got to learn sometime) i need your loving"" | deliverance
+""so pure"" | deliverance
+""take me to heaven"" | deliverance"
+1870,"What awards did Patricia Routledge win for producing ""Keeping Up Appearances""?","patricia routledge won the british comedy award for best tv comedy actress in 1991 for her role in ""keeping up appearances.""","for keeping up appearances, patricia routledge was nominated for the bafta tv award for best light entertainment performance in 1992 and 1993.",select * from T,54,54,"row_number | year | award | category | work | result
+0 | 1968 | tony award | best actress in a musical | darling of 2023-11-27 | won
+1 | 1979 | olivier award | best supporting actress | and a nightingale sang... | nominated
+2 | 1985 | olivier award | best supporting performance | richard iii | nominated
+3 | 1988 | olivier award | best actress in a musical | candide | won
+4 | 1989 | bafta tv award | best actress | talking heads: a lady of letters | nominated
+5 | 1991 | british comedy award | best tv comedy actress | keeping up appearances | won
+6 | 1992 | bafta tv award | best light entertainment performance | keeping up appearances | nominated
+7 | 1992 | olivier award | best actress | talking heads | nominated
+8 | 1993 | bafta tv award | best light entertainment performance | keeping up appearances | nominated"
+1775,Did George Rose win any awards for Featured Actor?,"no, george rose was nominated for a tony award for best performance by a featured actor in a musical.","in 1979, george rose won the drama desk award for outstanding featured actor in a play for the kingfisher.","select award, result from T where category = 'best performance by a featured actor in a musical';",2,72,"award | result
+tony award | nominated"
+2289,What awards did Amber Kuo receive for starring in the film The Year of Happiness and Love?,amber kuo received a nomination for best actress at the 45th golden bell awards for starring in the film the year of happiness and love.,amber kuo was nominated in 2010 for best actress at the 45th golden bell awards for her role in the happy times of that year.,select * from T,30,30,"row_number | year | award | category | nominated_work | result
+0 | 2010 | 12th taipei film festival | best new talent | au revoir taipei | won
+1 | 2010 | 45th golden bell awards | best actress | 2023 of happiness and love | nominated
+2 | 2012 | 14th taipei film festival | best supporting actress | love | won
+3 | 2012 | 49th golden horse awards | best supporting actress | love | nominated
+4 | 2013 | 13th chinese film media awards | best supporting actress | love | nominated"
+706,When did ANA fly its last flight of Airbus A321-100?,ana flew its last flight of airbus a321-100 in 2008.,"ana flew its last flight of an airbus a321-100, in 2008.","select year_retired from T where aircraft = ""airbus a321-100"";",1,120,"year_retired
+2008"
+20704,Who played in Johnson's of Native Son?,margaret qualley played mary dalton in rashid johnson's native son.,"in 2019, qualley played mary dalton in rashid johnson's of native son.",select * from T,90,90,"row_number | year | title | role | director | notes
+0 | 2013 | palo alto | raquel | gia coppola | none
+1 | 2016 | the nice guys | amelia | shane black | none
+2 | 2016 | kenzo world | margaret | spike jonze | advertisement for kenzo
+3 | 2016 | dream girl | nora | lauren caris cohan | short film
+4 | 2017 | novitiate | sister cathleen harris | maggie betts | none
+5 | 2017 | the vanishing of sidney hall | alexandra | shawn christensen | none
+6 | 2017 | death note | mia sutton | adam wingard | none
+7 | 2018 | light beings | girl | natasha khan | short film
+8 | 2018 | donnybrook | delia angus | tim sutton | none
+9 | 2019 | io | sam walden | jonathan helpert | none
+10 | 2019 | native son | mary dalton | rashid johnson | none
+11 | 2019 | adam | casey | rhys ernst | none
+12 | 2019 | once upon a time in hollywood | kitty kat | quentin tarantino | post-production
+13 | 2019 | strange but true | melissa | rowan athale | post-production
+14 | tba | against all enemies | tba | benedict andrews | post-production"
+7867,What are some television series that Andy Gross appeared as a ventriloquist?,"andy gross appeared as a ventriloquist in the television series ""beverly hills, 90210"" and ""after judgment"".","andy gross acted as ventriloquist in television series such as beverly hills, 90210, las vegas and after judgment.","select title from T where role = ""ventriloquist"";",2,48,"title
+beverly hills, 90210
+after judgment"
+8564,Which roles did Olivia Cooke star in?,"olivia cooke starred in the roles of meg demoys, nancy linnet, emma decody, loch ness monster, becky sharp, and none.","olivia cooke played the role of emma decody in bates motel from 2013 to 2017, and in 2018 starred as becky sharp in vanity fair.",select role from T;,6,30,"role
+meg demoys
+nancy linnet
+emma decody
+loch ness monster
+becky sharp
+none"
+11699,In which Marathi language shows did Hattangad act?,"hattangadi acted in the marathi language shows ""char divas sasuche,"" ""vahinisaheb,"" and ""honar sun me hya gharchi.""","hattangadi acted in the marathi char divas sasuche on etv marathi, vahinisaheb and honar sun me hya gharchi on zee marathi","select title from T where language = ""marathi"";",3,54,"title
+char divas sasuche
+vahinisaheb
+honar sun me hya gharchi"
+1792,What Off-Broadway roles did Patti Murin play?,"patti murin played the following off-broadway roles: 
+1. mirette - ensemble
+2. lysistrata jones - lysistrata jones
+3. fly tni - daphne
+4. transport group theatre company - lysistrata jones",patti murin played the off-broadway roles of ensemble in mirette at the york theatre company and daphne in fly by night at playwrightd horizons.,select * from T,138,138,"row_number | years | production | role | location | category
+0 | 2002 | crazy for you | polly baker | broward stage door theatre | regional
+1 | 2003 | how to succeed in business without really trying | rosemary pilkington | broward stage door theatre | regional
+2 | 2003 | parade | mrs. frances phagan | broward stage door theatre | regional
+3 | 2004 | annie get your gun | annie oakley | broward stage door theatre | regional
+4 | 2005 | princesses | tam / annabelle | 5th avenue theatre | out of town tryout
+5 | 2005 | mirette | ensemble | york theatre company | off-broadway
+6 | 2006 | beauty and the beast | belle | various | american tour
+7 | 2007 | xanadu | swing (u/s clio / kira) | helen hayes theatre | broadway
+8 | 2007 | xanadu | euterpe, siren, '40s singer, thetis (replacement) | helen hayes theatre | broadway
+9 | 2007 | xanadu | dance captain (replacement) | helen hayes theatre | broadway
+10 | 2010 | give it up! | lysistrata jones | dallas theater center | regional
+11 | 2011 | transport group theatre company | lysistrata jones | off-broadway | none
+12 | 2011 | the little mermaid | princess ariel | the muny | regional
+13 | 2011 | lysistrata jones | lysistrata jones | walter kerr theatre | broadway
+14 | 2012–13 | wicked | glinda (replacement) | various | first national tour
+15 | 2013 | love's labour's lost | princess | delacorte theater | shakespeare in the park
+16 | 2014 | fly tni | daphne | playwrights horizons | off-broadway
+17 | 2014 | holiday inn | linda mason | goodspeed opera house | regional
+18 | 2015 | lady, be good | susie trevor | new york city center | encores!
+19 | 2015 | holiday inn | linda mason | the muny | regional
+20 | 2016 | nerds | sally | longacre theatre | broadway (cancelled)
+21 | 2017 | frozen | princess anna | buell theatre | out of town tryout
+22 | 2018 | frozen | princess anna | st. james theatre | broadway"
+21407,What television roles did Talitha Bateman play in 2014 and 2015?,"in 2014 and 2015, talitha bateman played the role of a cheerleader in ""maker shack agency"" and the role of scarlett kincaid in ""hart of dixie"".",talitha bateman appeared in the pilot episode of maker shack agency in 2014 and played as scarlett kincaid in three episodes of hart of dixie in 2015.,"select title, role from T where year in (2014, 2015);",4,35,"title | role
+maker shack agency | cheerleader
+hart of dixie | scarlett kincaid"
+945,Which single-episode role did Julie Warner play in 2009?,"in 2009, julie warner played the role of rose pinchbinder in the tv show ""true jackson, vp"" and the role of andrea schillo in the tv show ""crash"".","in 2009, julie warner played rose pinchbinder in the tv show true jackson, vp in the episode ""keeping tabs"".","select title, role from T where year = 2009;",4,160,"title | role
+true jackson, vp | rose pinchbinder
+crash | andrea schillo"
+7932,"Who was Speakers of the House of Representatives of Yemen until 1993, and who replaced him?",dr. yasin said numan was the speaker of the house of representatives of yemen until 1993. it is not specified who replaced him in the given information.,"in yemen, numan was the speaker of parliament, until the election of 1993 when he was replaced by abdullah ibn husayn al-ahmar.","select name, took_office, left_office from T where left_office <= 1993;",3,15,"name | took_office | left_office
+dr. yasin said numan | 1990 | 1993"
+8302,Who was God's Army 2: States of Grace (2005) directed by and which two films were also directed by the same director?,god's army 2: states of grace (2005) was directed by richard dutcher. the two other films directed by richard dutcher are brigham city (2001) and god's army (2000).,god's army 2: states of grace (2005) – a sequel to god's army by richard dutcher and brigham city (2001) was also directed by dutcher.,select * from T,128,128,"row_number | title | year | studio | actors | director | budget | gross
+0 | the best p2y | 2003 | halestorm entertainment | k.c. clyde, kirby heyborne, david nibley, cameron hopkin, scott christopher, michael flynn | scott s. anderson | $400000 | $1163450
+1 | the book of mormon movie, vol. 1: the journey | 2003 | halestorm entertainment | noah danby, kirby heyborne, jacque gray, bryce chamberlain, jan gardner, ron frederickson | gary rogers | $1500000 | $1680020
+2 | brigham city | 2001 | zion films | richard dutcher, matthew a. brown, wilford brimley, carrie morgan, jongiorgi enos, tayva patch | richard dutcher | $900000 | $852206
+3 | charly | 2002 | none | jeremy hoop, randy king, heather beers | adam thomas anderegg | $950000 | $813685
+4 | forever strong | 2008 | lonesome highway productions | sean faris, gary cole, penn badgley, arielle kebbel, sean astin, neal mcdonough, olesya rulin | ryan little | none | $719556
+5 | god's army | 2000 | zion films | matthew a. brown, richard dutcher, jacque gray, desean terry, michael buster, luis robledo, jeff kelly, john pentecost, lynne carr | richard dutcher | $300000 | $2637726
+6 | god's army 2: states of grace | 2005 | zion films | lucas fleischer, jeffrey scott kelly, j.j. boone | richard dutcher | $800000 | $203144
+7 | the saratov approach | 2013 | 3 coin productions, saratov films | corbin allred, maclain nelson, nikita bogolyubov, alex veadov | garrett batty | $ | $2146999
+8 | inspired guns | 2014 | pitch white entertainment | shona kay, dashieli wolf, jarrod phillips, rick macy, charan prabhakar, christian busath, alix maria taulbee | adam white | $175000 | none
+9 | the other side of heaven | 2001 | walt disney pictures | christopher gorham, anne hathaway | mitch davis | $7000000 | $4720371
+10 | the r.m. | 2003 | halestorm entertainment | kirby heyborne, daryn tufts, will swenson, britani bateman, tracy ann evans, merrill dodge, michael birkeland, maren ord, gary crowton | kurt hale | $500000 | $1111615
+11 | saints and soldiers | 2003 | excel entertainment group | corbin allred, alexander niver, kirby heyborne, lawrence bagby, peter aste holden | ryan little | $780000 | $1310470
+12 | saturday's warrior | 1989 | fieldbrook entertainment | erik hickenlooper, cori jacobsen, davison cheney, bart hickenlooper | bob williams | none | none
+13 | the singles ward | 2002 | halestorm entertainment | will swenson, connie young, kirby heyborne, daryn tufts, michael birkeland, lincoln hoppe | kurt hale | $500000 | $1250798
+14 | the work and the glory | 2004 | excel entertainment group | sam hennings, brenda strong, eric johnson, alexander carroll, tiffany dupont, jonathan scarfe | russell holt | $7500000 | $3347647
+15 | meet the mormons | 2014 | excel entertainment group & intellectual reserve, inc. | jermaine sullivan, ken niumatalolo, carolina muñoz marin, bishnu adhukari, gail halvorsen, dawn armstrong, jenna kim jones | blair treu | none | $5883132 (all proceeds donated to the american red cross)"
+12409,When and in what play did Brooks Ashmanskas appear as Alan?,"brooks ashmanskas appeared as alan in the play ""god of carnage"" in the year 2012.",brooks ashmanskas appeared in god of carnage in 2012 as alan.,select * from T,160,160,"row_number | year | show | role | notes
+0 | 1995 | songs for a new world | man 2 | off-broadway
+1 | 1995 | how to succeed in business without really trying | bud frump | broadway, 1995 – 1996
+2 | 1997 | dream | performer | broadway, (xxxx-4-31997-7-6,p-9402d)
+3 | 1998 | little me | pinchley junior/steward/assistant director/doctor | broadway, (1998-11-121999-2-7,p87d)
+4 | 1999 | animal crackers | unknown | arena stage
+5 | 2000 | on a clear day you can see forever | performer | ny city center, 2000-2
+6 | 2001 | amphitryon | sosia | huntington theatre company, (xxxx-3-92001-4-8,p-8005d)
+7 | 2003 | gypsy | mr. goldstone/pastey | broadway, (2003-5-12004-5-20,p385d)
+8 | 2004 | a midsummer tni's dream | francis flute | williamstown theatre festival, (2004-7-142004-7-25,p11d)
+9 | 2004 | the producers | carmen ghia | broadway, 2004 - 2006
+10 | 2006 | martin short: fame becomes me | comedy all star | broadway, (2006-8-172007-1-7,p143d)
+11 | 2007 | present laughter | roland maule | huntington theatre company
+12 | 2007 | the ritz | chris | broadway, (xxxx-10-112007-12-9,p-5785d)
+13 | 2008 | broadway: 3 generations | performer | kennedy center
+14 | 2008 | she loves me | georg nowack | huntington theatre company, may/2008-6
+15 | 2008 | she loves me | georg nowack | williamstown theatre festival, july/2008-8
+16 | 2008 | a flea in her ear | dr. finache | williamstown theatre festival, 2008-8
+17 | 2009 | rich and famous | bing | american conservatory theatre - sf, jan/2009-2
+18 | 2009 | knickerbocker | unknown | williamstown theatre festival
+19 | 2009 | she stoops to conquer | tony lumpkin | mccarter theater, (xxxx-10-132009-11-1,p-5094d)
+20 | 2010 | present laughter | roland maule | broadway, (xxxx-1-212010-3-21,p-4689d)
+21 | 2010 | promises, promises | mr. dobitch | broadway, (2010-4-252011-1-2,p252d)
+22 | 2011 | burn this | larry | mark taper forum
+23 | 2012 | 1776 | john adams | ford's theatre
+24 | 2012 | god of carnage | alan | huntington theatre company
+25 | 2013 | clive | clive | off-broadway, jan. – 2013-3
+26 | 2013 | johnny baseball | unknown | williamstown theatre festival, july/2013-8
+27 | 2014 | bullets over broadway | warner purcell | broadway, (xxxx-4-102014-8-24,p-3151d)
+28 | 2015 | something rotten! | brother jeremiah | broadway, (2015-4-222016-1-13,p266d)
+29 | 2016 | shuffle along, or the making of the musical sensation of 1921 | al/izzy/mr. broadway/carlo | broadway, (2016-4-212016-7-24,p94d)
+30 | 2016 | the prom | barry glickman | alliance theatre, august/2016-9
+31 | 2018 | the prom | barry glickman | broadway, 2018-9 –"
+9726,Which roles did Brandt play in 2011?,"brandt played the roles of fatima tazi, naevia, camille jordanson, valerie khoury, adriana, violet, and cassie in 2011.","in 2011, lesley-ann brandt appeared in a beautiful soul as angela barry.",select role from T where year = 2011;,7,105,"role
+fatima tazi
+naevia
+camille jordanson
+valerie khoury
+adriana
+violet
+cassie"
+21213,Which Grammy Award did Aguilera win in 2004 and what song was it for?,"in 2004, aguilera won the grammy award for best female pop vocal performance for the song ""beautiful"".","in 2004, aguilera won a grammy award for the best female pop vocal performance for ""beautiful"".",select * from T,147,147,"row_number | year | nominated_work | category | award | result | ref
+0 | 2003 | ""dirrty"" (with redman) | best pop collaboration with vocals | grammy award | nominated | None
+1 | 2003 | ""beautiful"" (music video) | special recognition | glaad media award | won | None
+2 | 2003 | stripped | choice music – album | teen choice award | nominated | None
+3 | 2003 | ""dirrty"" | best female video | mtv video music award | nominated | None
+4 | 2003 | ""dirrty"" | best pop video | mtv video music award | nominated | None
+5 | 2003 | ""dirrty"" | best dance video | mtv video music award | nominated | None
+6 | 2003 | ""dirrty"" | best choreography | mtv video music award | nominated | None
+7 | 2003 | ""dirrty"" | video of 2023 | mobo award | won | None
+8 | 2003 | ""dirrty"" | song of 2023 | q award | won | None
+9 | 2003 | stripped | best album | mtv europe music award | nominated | None
+10 | 2003 | ""beautiful"" | best song | mtv europe music award | nominated | None
+11 | 2004 | ""beautiful"" | best female pop vocal performance | grammy award | won | None
+12 | 2004 | ""can't hold us down"" (with lil' kim) | best pop collaboration with vocals | grammy award | nominated | None
+13 | 2004 | stripped | best pop vocal album | grammy award | nominated | None
+14 | 2004 | ""beautiful"" | favorite video | mtv asia award | nominated | None
+15 | 2004 | stripped | best international album | brit award | nominated | None
+16 | 2004 | stripped | international album of 2023 | juno award | nominated | None
+17 | 2004 | ""fighter"" | video of 2023 | juno award | won | None
+18 | 2004 | ""the voice within"" | best female video | mtv video music award | nominated | None
+19 | 2004 | ""the voice within"" | best cinematography | mtv video music award | nominated | None
+20 | 2004 | ""the voice within"" | viewer's choice | mtv video music award | nominated | None"
+7979,What songs did CJ Baran produce for Carly Rae Jepsen and for what album?,"cj baran produced the songs ""emotion"" and ""let's get lost"" for carly rae jepsen's album ""e-mo-tion"".","cj baran wrote and produced the songs ""emotion"" and ""let's get lost"" of carly rae jepsen's album e-mo-tion.",select * from T,105,105,"row_number | group | song | album | role
+0 | panic! at the disco | ""victorious"" | death of a bachelor | writer, producer
+1 | empire cast | ""do it"" feat. becky g | empire: music from 'without a country' ep | writer
+2 | carly rae jepsen | ""emotion"" | e-mo-tion | writer, producer
+3 | carly rae jepsen | ""let's get lost"" | e-mo-tion | writer, producer
+4 | melanie martinez | ""pity party"" | cry baby | writer, producer
+5 | coin | ""talk too much"" | none | writer
+6 | melanie martinez | ""cake"" | cry baby | writer, producer
+7 | bea miller | ""dracula"" | not an apology | writer, producer
+8 | mika | ""promiseland"" | no place in heaven | writer
+9 | pentatonix | ""cracked"" | pentatonix | writer
+10 | simple plan | ""i don't wanna go to bed"" feat. nelly | none | writer
+11 | pixie lott | ""till the sun comes out"" | young foolish happy | writer, producer
+12 | pixie lott | ""everybody hurts sometimes"" | young foolish happy | writer, producer
+13 | cody simpson | ""surfboard"" | none | writer, producer
+14 | cody simpson | ""if you left him for me"" | surfer's paradise | writer, producer
+15 | lea michele | ""gone 2023-11-27tni"" | louder | writer, producer
+16 | the royal concept | ""fashion"" | smile ep | writer, producer
+17 | the cab | ""these are the lies"" | lock me up ep | writer, producer
+18 | andrew mcmahon | ""so close"" | zombies on broadway | writer, producer
+19 | 1 ok rock | ""1 way ticket"" | ambitions | writer
+20 | ansel elgort | ""thief"" | none | writer"
+12360,What awards did Kapoor & Sons win and was nominated for?,kapoor & sons won the indian film festival of melbourne award and was nominated for the filmfare awards.,kapoor & sons earned khan the diversity award at the indian film festival of melbourne and a nomination for best supporting actor at the filmfare awards.,"select award, result from T where work = ""kapoor & sons"";",4,147,"award | result
+indian film festival of melbourne | won
+filmfare awards | nominated"
+21594,"In 2005 and 2006, which Telugu language films did Santhoshi appear in?","in 2005 and 2006, santhoshi appeared in the telugu language films ""nuvvostanante nenoddantana"", ""okkade"", and ""bangaram"".","santhoshi appeared in telugu films such as nuvvostanante nenoddantana (2005), okkade (2005), and bangaram (2006).","select film from T where year in (2005, 2006) and language = ""telugu"";",3,120,"film
+nuvvostanante nenoddantana
+okkade
+bangaram"
+1488,Does Oklahoma have any indoor football teams?,"yes, oklahoma has an indoor football team called the oklahoma defenders.",the oklahoma defenders are an indoor football team that plays in the cpifl in tulsa.,"select club from T where type = ""indoor football"";",1,21,"club
+oklahoma defenders"
+11646,What were the results of Conor Dwyer and Connor Jaeger?,conor dwyer finished in 4th place with a time of 3:44.01 and connor jaeger finished in 5th place with a time of 3:44.16.,"conor dwyer (3:44.01) and fellow american connor jaeger (3:44.16) finished off the podium in fourth and fifth respectively, separated by a 0.15-second margin.",select * from T,56,56,"row_number | rank | lane | name | nationality | time | notes
+0 | nan | 5 | horton, mackmack horton | australia | 3:41.55 | None
+1 | nan | 6 | sun yang | china | 3:41.68 | None
+2 | nan | 3 | detti, gabrielegabriele detti | italy | 3:43.49 | None
+3 | 4.0 | 4 | dwyer, conorconor dwyer | united states | 3:44.01 | None
+4 | 5.0 | 1 | jaeger, connorconnor jaeger | united states | 3:44.16 | None
+5 | 6.0 | 7 | guy, jamesjames guy | great britain | 3:44.68 | None
+6 | 7.0 | 2 | mckeon, daviddavid mckeon | australia | 3:45.28 | None
+7 | 8.0 | 8 | pothain, jordanjordan pothain | france | 3:49.07 | None"
+id,question,response,answer,sql,r_num_cell,t_num_cell,linear_table
+10069,"What is the height, drop and length of the new roller coaster made by Rocky Mountain Construction?","the height of the new roller coaster made by rocky mountain construction is 153 ft or 47 m, the drop is 147 ft or 45 m, and the length is 4200 ft or 1300 m.","manufactured by rocky mountain construction, the new texas giant stands 153 ft (47 m) tall and features a 79° drop stretching 147 ft (45 m).",select * from T,40,40,"row_number | statistic | texas_giant | new_texas_giant
+0 | years | 1990–2009 | 2011–present
+1 | manufacturer | dinn corporation | rocky mountain construction
+2 | designer | curtis d. summers | alan schilke
+3 | track | wood | steel
+4 | height | 143 ft or 44 m | 153 ft or 47 m
+5 | drop | 137 ft or 42 m | 147 ft or 45 m
+6 | length | 4920 ft or 1500 m | 4200 ft or 1300 m
+7 | speed | 62 mph or 100 km/h | 65 mph or 105 km/h
+8 | max vertical angle | 53° | 79°
+9 | trains | philadelphia toboggan coasters (ptc) | gerstlauer"
+2112,How did the Liberal Party do on the Two-party-preferred result?,the liberal party did not participate in the two-party-preferred result for the 1996 strathfield state by-election.,"in strathfield, the liberal party gained a swing of 2.28% on a two-party preferred basis.","select party, candidate, votes, ± from T;",48,84,"party | candidate | votes | ±
+none | bruce maccarthy | 15772 | 2.79
+none | jane timbrell | 10484 | 6.67
+none | amelia newman | 1793 | +0.8
+none | janne peterson | 1460 | none
+none | damien maher | 1323 | none
+none | richard hill | 298 | none
+informal votes | informal votes | 744 | 3.21
+turnout | turnout | 31874 | 9.88
+2-party-preferred result | 2-party-preferred result | 2-party-preferred result | 2-party-preferred result
+none | bruce maccarthy | 17462 | +2.28
+none | jane timbrell | 12522 | 2.28
+none | liberal hold | swing | none"
+1842,Who won Oklahoma in the 1940 presidential election and by how much?,"franklin d. roosevelt (inc.) won oklahoma in the 1940 presidential election with 474,313 votes.","oklahoma was won by incumbent president franklin d. roosevelt, with 57.41% of the votes, against wendell willkie, with 42.23% of the votes.","select candidate, votes from T where party1 = ""democratic"" order by votes desc limit 1;",2,24,"candidate | votes
+franklin d. roosevelt (inc.) | 474313"
+11757,Which two videos did Gary Dourdan appear in for Janet Jackson and Eric B and Rakim?,"gary dourdan appeared in the videos ""again"" by janet jackson and ""move the crowd"" by eric b and rakim.","gary dourdan appeared in janet jackson's video titled ""again"", and in the music video ""move the crowd"" by eric b & rakim.","select title, artist from T ",8,20,"title | artist
+move the crowd | erik b & rakim
+again | janet jackson
+soulful energy xchange | wanted
+what's your number? | cypress hill featuring tim armstrong"
+14447,"What were Gillian Anderson's appearances in 2005, 2010, 2011, and continuously from 2013-2015?","in 2005, gillian anderson appeared in ""bleak house"" as lady dedlock. in 2010, she appeared in ""any human heart"" as wallis, duchess of windsor. in 2011, she appeared in ""the crimson petal and the white"" as mrs. castaway","gillian anderson appeared as lady dedlock in bleak house (2005), wallis simpson in any human heart (2010), miss havisham in great expectations (2011), and dr. bedelia du maurier on hannibal (2013–2015).","select title, role, year from T where year in (2005, 2010, 2011) or (year >= 2013 and year <= 2015);",36,145,"title | role | year
+bleak house | lady dedlock | 2005
+any human heart | wallis, duchess of windsor | 2010
+the crimson petal and the white | mrs. castaway | 2011
+moby dick | elizabeth | 2011
+great expectations | miss havisham | 2011
+fa | dsu stella gibson | 2013–2016
+hannibal | dr. bedelia du maurier | 2013–2015
+crisis | meg fitch | 2014
+robot chicken | fairy godmother/fiona (voice) | 2014
+national theatre live | blanche dubois | 2014
+top gear | herself | 2015
+the widowmaker | narrator | 2015"
+9532,Who did Dianna Agron play in Midnight: Life Behind Bars and CSI:NY?,the given sql query does not provide any information about the roles played by dianna agron in midnight: life behind bars and csi:ny.,"agron played kelly in the 2006 film after midnight: life behind bars, but her role in csi:ny was jessica grant, who appears in one episode.",select role from T ,11,55,"role
+drunk girl
+jessica grant
+lexi
+gia mellon
+kelly
+jenny budosh
+debbie marshall
+harper
+kelly rand
+sadie
+quinn fabray"
+8162,"When did James Hamilton Lewis (D), James M. Slattery (D), and  Charles W. Brooks (R) were formally installed?","james hamilton lewis (d), james m. slattery (d), and charles w. brooks (r) were formally installed on april 14, 1939 and november 22, 1940.","james hamilton lewis (d), until april 9, 1939 james m. slattery (d), april 14, 1939 – november 21, 1940 charles w. brooks (r), from november 22, 1940.","select date_of_successors_formal_installation from T where successor = ""james m. slattery (d)"" or successor = ""charles w. brooks (r)"" or vacator = ""j. hamilton lewis (d)"";",2,48,"date_of_successors_formal_installation
+1939-4-14
+1940-11-22"
+21550,What awards and nominations did the telenova Verdades Secretas earn at the 2016 International Emmy Awards?,"at the 2016 international emmy awards, the telenovela verdades secretas earned the following awards and nominations:
+- won the award for best telenovela
+- grazi massafera was nominated for best actress in a telenovela.","at the 2016 international emmy awards, verdades secretas earned a nomination for best actress, for grazi massafera's performance, and, won best telenovela.","select award, category, nominated, result from T ",84,126,"award | category | nominated | result
+prêmio extra de televisão | best telenovela | walcyr carrasco | won
+prêmio extra de televisão | best actor | rodrigo lombardi | won
+prêmio extra de televisão | best actress | marieta severo | won
+prêmio extra de televisão | best supporting actor | rainer cadete | won
+prêmio extra de televisão | best supporting actress | grazi massafera | won
+prêmio extra de televisão | best supporting actress | agata moreira | nominated
+prêmio extra de televisão | best new actress | camila queiroz | won
+melhores do ano | best actor of telenovela | rodrigo lombardi | nominated
+melhores do ano | best actress of telenovela | drica moraes | nominated
+melhores do ano | best supporting actor | rainer cadete | won
+melhores do ano | best supporting actress | grazi massafera | won
+melhores do ano | best new actress | agata moreira | nominated
+melhores do ano | best new actress | camila queiroz | nominated
+melhores do ano | best new actor | gabriel leone | nominated
+troféu apca | best telenovela | walcyr carrasco | won
+troféu apca | best actress | drica moraes | nominated
+troféu apca | best actress | grazi massafera | won
+troféu apca | best actress | marieta severo | nominated
+troféu apca | best director | mauro mendonça filho | won
+international emmy awards | best telenovela | walcyr carrasco | won
+international emmy awards | best actress | grazi massafera | nominated"
+8458,Who were the last two finishers in the women's 200 metre individual medley at the 2012 Summer Olympics and what were their times?,the last two finishers in the women's 200 metre individual medley at the 2012 summer olympics were katinka hosszú with a time of 2:14.19 and hannah miley with a time of 2:11.29.,"great britain's hannah miley and hungary's katinka hosszú finished 7th and 8th with times of 2:11.29 and 2:14.19, respectively.","select name, time from T order by rank desc limit 2;",4,56,"name | time
+katinka hosszú | 2:14.19
+hannah miley | 2:11.29"
+8961,How did Judd do compared to Marc Murphy and Brendan Fevola in the 2008 Carlton Football Club season?,"in the 2008 carlton football club season, chris judd received 472 votes, marc murphy received 417 votes, and brendan fevola received 373 votes.",judd (472 votes) won ahead of marc murphy (417 votes) and brendan fevola (373 votes).,"select player, votes from T where pos = ""1st"" or pos = ""2nd"" or pos = ""3rd"";",6,40,"player | votes
+chris judd | 472
+marc murphy | 417
+brendan fevola | 373"
+id,question,response,answer,sql,r_num_cell,t_num_cell,linear_table
+10097,"What roles did Johanna Wokalek play in Silent Resident and North Face, respectively?",the roles that johanna wokalek played in silent resident and north face are not provided in the given table.,johanna wokalek played anna in silent resident in 2007 and starred as luise fellner in north face.,select role from T ,15,75,"role
+rose
+ilse
+alma mahler
+emilia galotti
+lene thurner
+ruth von roll
+leila
+anna
+luise fellner
+gudrun ensslin
+johanna von ingelheim
+cecilia kuper
+tiffany blechschmid
+claire kornitzer
+nora"
+20779,W'hat country did Leandro de Oliveira represent at the 2011 World Cross Country Championships and how did he place?,leandro de oliveira represented brazil at the 2011 world cross country championships and he placed 73rd.,leandro de oliveira represented brazil at the 2011 world cross country championships and placed 73rd in the 12 km race.,"select competition, position from T ",38,133,"competition | position
+representing brazil | representing brazil
+south american u23 championships | 5th
+south american road mile championships | 1st
+south american championships | 2nd
+universiade | 37th (h)
+universiade | 20th
+south american road mile championships | 2nd
+south american road mile championships | 2nd
+ibero-american championships | 3rd
+ibero-american championships | 1st
+world cross country championships | 73rd
+world cross country championships | 17th
+south american road mile championships | 1st
+south american championships | 1st
+pan american games | 18th (sf)
+ibero-american championships | 1st
+south american road mile championships | 1st
+ibero-american championships | 6th
+south american road mile championships | 1st"
+10585,Which British steamers did UB-16 sink in April 1916?,"ub-16 sank the following british steamers in april 1916: boy horace, e&c, economy, leuctra, tunisiana, westward ho!, mangara, emblem, victorious, nimrod, evelyn, foam crest, sunshine, springflower, young harry, perth, robert adamson","ub-16 sank two british steamers: the 2,978-ton robert adamson on the 10thand the 3,091-ton tregantle on the 22nd.","select name, nationality, fate from T ",81,162,"name | nationality | fate
+boy horace | united kingdom | sunk
+e&c | united kingdom | sunk
+economy | united kingdom | sunk
+leuctra | united kingdom | sunk
+tunisiana | united kingdom | sunk
+westward ho! | united kingdom | sunk
+mangara | united kingdom | sunk
+emblem | united kingdom | sunk
+victorious | united kingdom | sunk
+nimrod | united kingdom | sunk
+evelyn | united kingdom | sunk
+foam crest | united kingdom | sunk
+sunshine | united kingdom | sunk
+springflower | united kingdom | sunk
+young harry | united kingdom | sunk
+perth | united kingdom | sunk
+elziena helena | netherlands | damaged
+robert adamson | united kingdom | sunk
+tregantle | united kingdom | sunk
+john wilson | norway | sunk
+velox | norway | sunk
+arie | netherlands | sunk
+kongsli | norway | damaged
+hms recruit | royal navy | sunk
+lisette | united kingdom | sunk
+ruth | united kingdom | sunk
+sunk: damaged: total: | 19652 5953 25605 | none"
+7941,In which titles does Jo Hartley appear as a character whose name begins with C?,"jo hartley appears as a character whose name begins with c in the titles ""me and her (short film)"" and ""this is england.""","hartley has appeared in this is england (2006), and in as cynthia, and me and her as coleen.",select title from T where role like 'C%';,3,96,"title
+me and her (short film)
+this is england
+ill manors"
+8176,"How many ECHO Awards was Unheilig nominated for, what were they and how many did they win?",unheilig was nominated for a total of 27 echo awards and they won the bambi award.,"in 2011, unheilig was nominated for five echo awards (best video national for geboren um zu leben, echo radio, most successful production team, best national rock/alternative group and album of the year for große freiheit) and won three.","select count(*) as total_nominations, award, result from T ",3,162,"total_nominations | award | result
+27 | bambi | won"
+9963,Who placed in fifth and sixth place and with what times?,larsen jensen placed fifth with a time of 14:48.16 and david davies placed sixth with a time of 14:52.11.,"u.s. swimmer larsen jensen, placed fifth with a time 14:48.16, and was followed in the sixth spot by great britain's david davies in 14:52.11.","select name, time from T where rank in (5, 6);",4,56,"name | time
+larsen jensen | t14:48.16
+david davies | t14:52.11"
+21659,When and where did the Shinee World The Best 2018 start and end?,"the shinee world the best 2018 started on february 17, 2018, and ended on february 27, 2018, in tokyo, japan.","shinee's activities in japan kicked off in osaka dome on february 17, 2018 and ended in tokyo dome on february 27, 2018.","select min(date) as start_date, max(date) as end_date, city, country from T;",4,20,"start_date | end_date | city | country
+2018-2-17 | 2018-2-27 | tokyo | japan"
+10302,What were the highest-grossing films before January 14 after Martian?,"the highest-grossing films before january 14 after ""the martian"" were ""the revenant"" ($54,100,000), ""bridge of spies"" ($70,800,000), ""the big short"" ($44,600,000), ""spotlight"" ($28,800,000","mad max: fury road was the second-highest-grossing film with $153.6 million followed by the revenant ($54.1 million), the big short ($44.6 million), and spotlight ($28.8 million).","select film, pre_nomination_before_jan_14 from T where pre_nomination_before_jan_14 > (select pre_nomination_before_jan_14 from T where film = ""the martian"");",12,48,"film | pre_nomination_before_jan_14
+the revenant | $54100000
+bridge of spies | $70800000
+the big short | $44600000
+spotlight | $28800000
+brooklyn | $22800000
+room | $5200000"
+1758,How did Keith Fraser do in the men's giant slalom after race 1?,there is no information provided about keith fraser's performance in the men's giant slalom after race 1.,"keith fraser finished race 2 in a faster time of 1 minute and 19.83 seconds, which led him to the 63rd position.","select race_1 from T where athlete = ""keith fraser"" and event = ""men's giant slalom"";",1,28,"race_1
+1:21.93"
+21579,When did Gordon Hodgson join Liverpool and how many total career goals did he score with the club?,gordon hodgson joined liverpool in the 1925-26 season and scored a total of 378 career goals with the club.,"hodgson joined liverpool in 1925, scoring 241 goals for the club.","select season, total from T where club = ""liverpool"";",24,264,"season | total
+1925–26 | 12
+1926–27 | 40
+1927–28 | 32
+1928–29 | 41
+1929–30 | 37
+1930–31 | 41
+1931–32 | 43
+1932–33 | 39
+1933–34 | 40
+1934–35 | 36
+1935–36 | 17
+total | 378"
+1698,What happened to the total appearances of Tsuneyasu Miyamoto in 2005 after 2004?,the total appearances of tsuneyasu miyamoto in 2005 increased from 34 to 37.,"after 25 total appearances for gamba osaka in the 2004 j1 league season, miyamoto appeared 36 times in the 2005 season.","select total, total1 from T ",50,350,"total | total1
+apps | goals
+total | total
+none | none
+22 | 0
+33 | 1
+37 | 0
+34 | 0
+33 | 0
+29 | 0
+24 | 1
+33 | 2
+25 | 0
+36 | 3
+40 | 2
+total | total
+10 | 0
+15 | 0
+2 | 0
+total | total
+39 | 1
+12 | 0
+5 | 0
+417 | 10
+27 | 0
+444 | 10"
+14201,"Who succeeded Virgil Chapman in March 1951, and who succeeded them in 1952? ","in march 1951, virgil chapman was succeeded by william a. purtell (r). in 1952, william a. purtell was succeeded by prescott bush (r), john s. cooper (r), charles e. potter (r), and dwight griswold (r).","virgil chapman (d) was until march 8, 1951 and thomas r. underwood (d) is from march 19, 1951 until november 4, 1952 where john sherman cooper (r) is from november 5, 1952.","select successor, date_of_successors_formal_installation from T where vacator = ""virgil chapman (d)"" and date_of_successors_formal_installation like ""1951-03%"" or date_of_successors_formal_installation like ""1952%"";",10,60,"successor | date_of_successors_formal_installation
+william a. purtell (r) | 1952-8-29
+prescott bush (r) | 1952-11-5
+john s. cooper (r) | 1952-11-5
+charles e. potter (r) | 1952-11-5
+dwight griswold (r) | 1952-11-5"
+2220,Who won the 1992 Wellington Central by-election and by how many majority votes?,chris laidlaw won the 1992 wellington central by-election with a majority of 855 votes.,the 1992 wellington central by-election was won by chris laidlaw with a majority of 855.,"select candidate, votes, ± from T;",42,98,"candidate | votes | ±
+chris laidlaw | 6075 | 2.55
+pauline gardiner | 5220 | 6.9
+denis welch | 3407 | 4.361
+david stevenson | 389 | nan
+ian douglas | 263 | nan
+wayne chapman | 154 | nan
+tim shadbolt | 64 | nan
+anthony catford | 40 | nan
+john carter | 17 | nan
+felicty coggan | 14 | nan
+victor bryers | 1 | nan
+majority | 855 | 4.34
+turnout | 15644 | 25.372
+labour hold | swing | nan"
+12103,"What Grammy nominations and awards did ""Slither"" and ""Contraband"" get in 2005?","in 2005, ""slither"" and ""contraband"" received nominations for the grammy award for best hard rock performance and the grammy award for best rock song.","dave kushner's slither won the 2005 grammy award for best hard rock performance for ""slither"" and he was nominated for rock album of the year in 2005 for ""contraband"".","select award, result from T ",16,40,"award | result
+kerrang! award for best international newcomer | won
+billboard music award for rock artist of 2023 | nominated
+grammy award for best hard rock performance | won
+grammy award for best rock song | nominated
+grammy award for best rock album | nominated
+radio music award for song of 2023/rock radio | nominated
+primetime emmy award for outstanding main title theme music | nominated
+ascap award | won"
+7871,How much money did Vale pay Stoke City for Jackie Mudie and Ron Wilson?,"vale paid stoke city £12,000 for both jackie mudie and ron wilson.","in november 1963, vale paid stoke city £12,000 for both jackie mudie (scotland) and ron wilson (scotland).","select fee from T where name = ""jackie mudie"" or name = ""ron wilson"";",2,48,"fee
+£12000
+£12000"
+12966,What were the achievements of Alex Yunevich during hit football career? ,the achievements of alex yunevich during his football career are not provided in the given information.,"alex yunevich served at central state from 1934 to 1936 and at alfred university from 1937 to 1976, compiling a career college football record of 186–98–13.","select year, team, overall, conference, standing, bowl_playoffs from T where row_number = 0;",6,63,"year | team | overall | conference | standing | bowl_playoffs
+central state bearcats (independent) (1934–1936) | central state bearcats (independent) (1934–1936) | central state bearcats (independent) (1934–1936) | central state bearcats (independent) (1934–1936) | central state bearcats (independent) (1934–1936) | central state bearcats (independent) (1934–1936)"
+2123,How did Ezenwo Wike win the election?,"ezenwo wike won the 2015 rivers state gubernatorial election as the candidate of the ""none"" party, receiving a total of 1,083 votes.",ezenwo wike won the election with 97.65 percent of the vote against four other opponents.,"select party, candidate, votes from T where candidate = ""ezenwo wike"";",3,36,"party | candidate | votes
+none | ezenwo wike | 1083"
+12952,"When Gerry Fitt (Independent) lost his Members of Parliament seat, and who won it?",gerry fitt lost his members of parliament seat when paul maskey from sinn féin won it.,"gerry fitt an independent, lost his members of parliament seat in 1983 and was won by gerry adams of sinn féin.","select election, member, party from T ",81,135,"election | member | party
+nan | james horner haslett | conservative
+nan | thomas sexton | irish parliamentary
+nan | thomas sexton | irish national federation
+nan | h. o. arnold-forster | liberal unionist
+nan | joseph devlin | irish parliamentary
+1918.0 | constituency abolished | constituency abolished
+1922.0 | constituency recreated | constituency recreated
+nan | robert lynn | ulster unionist
+nan | w. e. d. allen | ulster unionist
+nan | w. e. d. allen | new party
+nan | alexander browne | ulster unionist
+nan | jack beattie | labour (ni)
+nan | jack beattie | independent labour
+nan | jack beattie | federation of labour
+nan | jack beattie | irish labour
+nan | james macmanaway | ulster unionist
+nan | thomas teevan | ulster unionist
+nan | jack beattie | irish labour
+nan | patricia mclaughlin | ulster unionist
+nan | james kilfedder | ulster unionist
+nan | gerry fitt | republican labour
+nan | gerry fitt | social democratic and labour
+nan | gerry fitt | independent
+nan | gerry adams | sinn féin
+nan | joe hendron | social democratic and labour
+nan | gerry adams | sinn féin
+nan | paul maskey | sinn féin"
+21473,"In the 1947 Tour De France, how many stages did the course consist of and what was the total course distance?","the 1947 tour de france consisted of 21 stages and the total course distance was 9,272 km.","the 1947 tour de france total race distance was 21 stages over 4,642 km (2,884 mi).","select count(stage) as num_stages, sum(distance) as total_distance from T;",2,216,"num_stages | total_distance
+21.0 | 9272.0"
+9810,What was the Hunter Mariners record at their home field?,the hunter mariners had a record of 7 wins and 1 loss at their home field.,the hunter mariners won seven from nine matches at their home field.,"select round, home, score, away from T where home = ""hunter mariners"";",36,144,"round | home | score | away
+1 | hunter mariners | 16–20 | canterbury-bankstown bulldogs
+4 | hunter mariners | 38–10 | north queensland cowboys
+7 | hunter mariners | 18–10 | auckland warriors
+8 | hunter mariners | 36–16 | perth reds
+11 | hunter mariners | 30–6 | penrith panthers
+12 | hunter mariners | 24–6 | brisbane broncos
+13 | hunter mariners | 16–12 | canberra raiders
+14 | hunter mariners | 10–2 | adelaide rams
+18 | hunter mariners | 16–28 | cronulla-sutherland sharks"
+9860,What roles did Nathan Pelle play in 2012?,"in 2012, nathan pelle played the roles of bryce in csi: miami, calvin in 90210, and rikki smooth in pair of kings.","nathan pelle acted on the tv as rikki smooth in the pair of kings, bryce as csi: miami, and as calvin in the 2012 90210.","select title, role from T where year = 2012;",6,50,"title | role
+csi: miami | bryce
+90210 | calvin
+pair of kings | rikki smooth"
+10690,What is the total number of houses and male and female populations of Bhooi?,"bhooi has a total of 242 houses and a population of 1,178, with 613 males and 565 females.","bhooi has a total number of 242 houses and population of 1,178 of which include 613 males and 565 females.",select * from T,45,45,"row_number | particulars | total | male | female
+0 | total no. of houses | 242 | none | none
+1 | population | 1178 | 613 | 565
+2 | child (0-6) | 138 | 63 | 75
+3 | schedule caste | 641 | 333 | 308
+4 | schedule tribe | 0 | 0 | 0
+5 | literacy | 77.98 % | 84.91 % | 70.2 %
+6 | total workers | 466 | 340 | 126
+7 | main worker | 297 | 0 | 0
+8 | marginal worker | 169 | 80 | 89"
+17656,How was the The Ade of Ads promoted?,the table does not provide any information about the promotion of the age of ads.,"in the sufjan stevens discography, in 2010, the age of adz was promoted by ""i walked"" and ""too much"".","select peak_chart_positions, peak_chart_positions1, peak_chart_positions2, peak_chart_positions3, peak_chart_positions4, peak_chart_positions5 from T ",102,170,"peak_chart_positions | peak_chart_positions1 | peak_chart_positions2 | peak_chart_positions3 | peak_chart_positions4 | peak_chart_positions5
+us rock | bel (fl) | fra | hun | por | sco
+— | — | — | — | — | —
+— | — | — | — | — | —
+— | — | — | — | — | —
+— | — | — | — | — | —
+— | — | — | — | — | —
+— | — | — | — | — | —
+— | — | — | — | — | —
+— | — | — | — | — | —
+— | — | — | — | — | —
+— | — | — | — | — | —
+— | — | — | — | — | —
+— | — | — | — | — | —
+13 | — | 44 | 34 | 93 | 67
+— | — | — | — | — | —
+— | — | — | — | — | —
+""—"" denotes a title that did not chart, or was not released in that territory. | ""—"" denotes a title that did not chart, or was not released in that territory. | ""—"" denotes a title that did not chart, or was not released in that territory. | ""—"" denotes a title that did not chart, or was not released in that territory. | ""—"" denotes a title that did not chart, or was not released in that territory. | ""—"" denotes a title that did not chart, or was not released in that territory."
+21044,For what club and division was Gelson a player in the 1962–63 season?,"in the 1962-63 season, peter gelson was a player for brentford in the fourth division.",gelson was a player in brentford's fourth division in the 1962–63 season.,"select club, league from T where season = ""1962–63"";",2,192,"club | league
+brentford | fourth division"
+11416,Who won in the first three places of The Newcomers Manx Grand Prix race?,"in the first three places of the newcomers manx grand prix race, the winners were robert dunlop from northern ireland (rank 1), steve hislop from scotland (rank 2), and ian lougher from wales (rank 3).",the newcomers manx grand prix race was won by robert dunlop from steve hislop in 2nd place and ian lougher in 3rd place at an race speed of 100.62.,"select rider, team, rank from T where rank <= 3;",9,18,"rider | team | rank
+northern ireland robert dunlop | yamaha | 1
+scotland steve hislop | yamaha | 2
+wales ian lougher | yamaha | 3"
+13743,What were the names and vote differential between the top two candidates in the 2009 Narla election?,the names of the top two candidates in the 2009 narla election were bhupinder singh and srikant hota. the vote differential between them was 0.88.,"in the 2009 election, inc candidate bhupinder singh defeated bjp candidate srikant hota by a margin of 27,512 votes.","select candidate, ± from T ",30,105,"candidate | ±
+bhupinder singh | 0.88
+srikant hota | none
+nilamani sahu | none
+zakir hussain | none
+santosh kumar mund | none
+kailash chandra jain | none
+ashok kumar chand | none
+sapan kumar pattnaik | none
+jagajiban barik | none
+judhisti sa | none
+mohan jani | none
+suresh choudhury | none
+majority | none
+turnout | 2.57
+inc gain from bjd | inc gain from bjd"
+9349,What roles did Seth Gilliam have from 1996-1997?,"from 1996-1997, seth gilliam had the roles of altameyer in ""courage under fire"", sugar watkins in ""starship troopers"", and tyrone in ""tar"".",seth gilliam played sugar watkins in the 1997 film starship troopers and as altameyer in the 1996 film courage under fire.,"select title, role from T where year between 1996 and 1997;",6,85,"title | role
+courage under fire | altameyer
+starship troopers | sugar watkins
+tar | tyrone"
+17245,"How did Jacqueline Pusey perform in the 1976, 1977, and 1978 CARIFTA Games?","jacqueline pusey performed well in the carifta games in 1976, 1977, and 1978. she won the following medals: 
+- in 1976, she won 2nd place in the 100m and 200m events, and 1st place in","jacqueline pusey was the 100/200 m runner-up at the 1976 carifta games, won the 400 m at the 1977 carifta games, a quadruple gold medal win at the 1978 carifta games where she won the 200 m, 400 m, and both relays.","select competition, venue, position, event from T where year in (1976, 1977, 1978) and competition = ""carifta games"";",32,203,"competition | venue | position | event
+carifta games | nassau, bahamas | 2nd | 100 m
+carifta games | nassau, bahamas | 2nd | 200 m
+carifta games | nassau, bahamas | 1st | 4 × 400 m relay
+carifta games | bridgetown, barbados | 1st | 400 m
+carifta games | nassau, bahamas | 1st | 200 m
+carifta games | nassau, bahamas | 1st | 400 m
+carifta games | nassau, bahamas | 1st | 4 × 100 m relay
+carifta games | nassau, bahamas | 1st | 4 × 400 m relay"
+17592,"Who won the 2009 Election, by what margin?","in the 2009 election, pramod kumar mallick from the bjd party won with a margin of 50,653 votes.","in the 2009 election, biju janata dal candidate pramod kumar mallick defeated indian national congress candidate artratrana malik by a margin of 50,653 votes.",select * from T,56,56,"row_number | party | party1 | candidate | votes | _ | ±
+0 | none | bjd | pramod kumar mallick | 90058 | 65.45 | None
+1 | none | inc | artratrana malik | 40005 | 28.88 | None
+2 | none | bjp | sushanta kumar mallick | 4921 | 3.55 | None
+3 | none | independent | sandhyarani das | 1719 | 1.24 | None
+4 | none | bsp | santosh kumar mallick | 1218 | 0.88 | None
+5 | majority | majority | majority | 50653 | 36.57 | None
+6 | turnout | turnout | turnout | 1,38,534 | 64.56 | None
+7 | registered electors | registered electors | registered electors | 2,14,580 | nan | None"
+1826,What movies did Randall Park play in 2014? What roles did he play?,"in 2014, randall park played in the movies ""neighbors"", ""sex tape"", ""they came together"", and ""the interview"". he played the roles of rep, edward, martinson, and kim jong-un, respectively.","in 2014, randall park played a role of rep in ""neighbors"" and starred in ""sex tape"" as edward, he also played martinson in ""they came together"" and played the role of kim jong-un in ""the interview"".","select title, role from T where year = 2014;",8,130,"title | role
+neighbors | rep
+sex tape | edward
+they came together | martinson
+the interview | kim jong-un"
+1459,Did Laverne Cox ever appear as herself in any works?,"yes, laverne cox appeared as herself in ""i want to work for diddy"", ""transform me"", and ""lip sync battle"".","laverne cox appeared as herself in i want to work for diddy (2008), transform me (2010), and lip sync battle (2016-2019).","select title, role from T where role = ""herself"";",6,65,"title | role
+i want to work for diddy | herself
+transform me | herself
+lip sync battle | herself"
+21559,"Which countries came in first and second during the 1958 Eisenhower Trophy, and what were their respective scores?","during the 1958 eisenhower trophy, australia and the united states came in first and second respectively. both countries had a score of 918.","australia won the eisenhower trophy, beating the united states by 222 to 224, in a playoff after both teams had finished on 918.","select country, score from T where row_number in (0, 1);",4,145,"country | score
+australia | 244-226-221-227=918
+united states | 233-232-225-228=918"
+2252,How many games did Peter Lee play with the Pittsburgh Penguins?,peter lee did not play any regular season games with the pittsburgh penguins.,peter lee played 431 national hockey league games with the pittsburgh penguins..,select regular_season from T ,30,480,"regular_season
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None"
+21553,Which candidates participated in the 2016 Kentucky Republican Primary for United States Senate and how many votes did each candidate receive?,"in the 2016 kentucky republican primary for united states senate, the candidates who participated were rand paul, james gould, and stephen slaughter. rand paul received 169,180 votes, james gould received 16,611 votes, and stephen slaughter received 13,728 votes.","paul of the republican party won the 2016 united states senate elections receiving 169,180 votes, james gould received 16,611 and stephen slaughter received 13,728.","select candidate, votes from T ",8,24,"candidate | votes
+rand paul | 169180
+james gould | 16611
+stephen slaughter | 13728
+total votes | 199519"
+15052,Who won the 1945 election and what proportion of the seats did they win?,there is missing information in the provided table. the table only shows the result for invalid/blank votes and does not provide information about the winning party or the proportion of seats they won.,"the result was a victory for the austrian people's party, which received 85 of the 165 seats.","select parties, seats from T where seats = (select max(seats) from T);",2,42,"parties | seats
+invalid/blank votes | –"
+10606,What film roles did Alex D. Linz have in 1997?,"in 1997, alex d. linz had the film role of alex pruitt in the movie ""home alone 3"".",alex d. linz starred in the films home alone 3 in 1997 as alex pruitt.,"select title, role from T where year = 1997;",2,90,"title | role
+home alone 3 | alex pruitt"
+9856,How many fans attended the October 9th and October 10th Cleveland Indians games?,"a total of 81,897 fans attended the october 9th and october 10th cleveland indians games.","81,897 fans attended 1948 cleveland indians season but one day later, that record was broken during game 5.","select attendance from T where date in (""october 9"", ""october 10"");",2,30,"attendance
+81897
+86288"
+12710,"Who came in second to Fabian Coulthard during the 2016 Clipsal 500 Top Ten Shootout, and what was his time?","chaz mostert from australia came in second to fabian coulthard during the 2016 clipsal 500 top ten shootout, with a time of 1:21.3071.","of the remaining runners, mostert got closest to coulthard's time with 1:21.3071.","select driver, time from T where pos = 2;",2,77,"driver | time
+australia chaz mostert | 1:21.3071"
+14923,What and when were Akhila Kishore's first two films?,"akhila kishore's first two films were ""padhe padhe"" released in 2013 and ""kathai thiraikathai vasanam iyakkam"" released in 2014.","akhila kishore made her debut in the kannada film padhe padhe (2013), and appeared in kathai thiraikathai vasanam iyakkam (2014).","select film, year from T limit 2;",4,30,"film | year
+padhe padhe | 2013
+kathai thiraikathai vasanam iyakkam | 2014"
+10674,How many of each type of sponsor did the 1998 Winter Olympics have?,"the 1998 winter olympics had 18 worldwide olympic partners, 18 gold sponsors, and 18 official supporters and suppliers.","the 1998 winter olympics had 11 worldwide olympic partners, eight gold sponsors, and 18 official supporters and suppliers.","select count(worldwide_olympic_partners) as num_worldwide_olympic_partners, count(gold_sponsors) as num_gold_sponsors, count(official_supporters_and_suppliers) as num_official_supporters_and_suppliers from T;",3,72,"num_worldwide_olympic_partners | num_gold_sponsors | num_official_supporters_and_suppliers
+18 | 18 | 18"
+21442,By what vote count and percentage did Mia B. Love lose to Jim Matheson?,"mia b. love lost to jim matheson by a vote count of 119,803 and a percentage of 48.84%.","love lost the election to jim matheson by 768 votes out of 245,277 votes cast, a difference of 0.31%.","select votes, _ from T ",10,30,"votes | _
+119803 | 48.84
+119035 | 48.53
+6439 | 2.63
+245277 | 100
+democratic win (new seat) | democratic win (new seat)"
+12227,What was Noel Comia Jr awarded for in 2017 as best actor at Cinemalaya?,"noel comia jr was awarded for his performance in the film ""kiko boksingero"" as the best actor at cinemalaya in 2017.","in 2017, noel jr. was awarded the best actor at the cinemalaya 2017 for kiko boksingero.","select award, category, work, result from T ",64,96,"award | category | work | result
+27th aliw awards | best child performer | kapi’s hua mulan | won
+2015 philstage gawad buhay! | male featured performance in a musical | repertory philippines’ secret garden | cited
+2015 philstage gawad buhay! | outstanding male lead performance in a musical | tanghalang pilipino’s prinsipe munti | nominated
+29th aliw awards | best child performer | repertory philippines’ secret garden | won
+2016 philstage gawad buhay! | male featured performance in a musical | ballet philippines’ awitin mo at isasayaw ko | cited
+cinemalaya 2017 | best actor | kiko boksingero | won
+30th aliw awards | best child performer | atlantis productions' fun home | won
+the 2017 broadwayworld regional award | best actor (musical) | peta's tagu-taguan, nasaan ang buwan? | won
+34th pmpc star awards for movies | movie child performer of 2023 | kiko boksingero | nominated
+2017 philstage gawad buhay! | male featured performance in a play | peta's ang buhay ni galileo | nominated
+famas 2018 | best actor | kiko boksingero | nominated
+gawad urian 2018 | best actor | kiko boksingero | nominated
+awit awards 2018 | best song written for movie/tv/stage play | alaalarawan (kiko boksingero) | nominated
+ycc film desk | best performance | kiko boksingero | nominated
+urduja film festival 2018 | best young actor | kiko boksingero | won
+31st aliw awards | hall of fame awardee | best child performer | won"
+14705,Who won the 1969 Turkish general election and how many seats did they win?,there is no information provided in the table or query result about the winner of the 1969 turkish general election and the number of seats they won.,"the 1969 turkish general election result was a victory for the justice party, which won 256 of the 450 seats.","select party, seats from T order by seats desc limit 1;",2,72,"party | seats
+invalid/blank votes | –"
+9630,What role did Melonie Diaz take after 2005?,"after 2005, melonie diaz took on various roles including young laurie, unnamed actress, anna, brianne, mimi, cristina, veronica, clara, alma, ivonne, marissa, gwen, liana, isabelle, sophina, jen,","melonie diaz appeared as blanca in lords of dogtown (2005) and as laurie in a guide to recognizing your saints (2006), and she was nominated for an independent spirit award for best supporting female.",select role from T where year > 2005;,23,135,"role
+young laurie
+unnamed actress
+anna
+brianne
+mimi
+cristina
+veronica
+clara
+alma
+ivonne
+marissa
+gwen
+liana
+isabelle
+sophina
+jen
+carmen
+ellie
+dany wilkins
+ms. meier
+mia
+gloria
+juani"
+12323,What was the voter turnout for the 2004 Philippine presidential election?,the voter turnout for the 2004 philippine presidential election was not provided in the given table.,"in 2004 philippine presidential election, out of the 43,895,324 registered voters, there was a voter turn-out of 76.34%.","select votes from T where candidates = ""none"";",7,72,"votes
+12905808
+11782232
+3510080
+2082762
+1988218
+none
+none"
+12125,How did Lansiquot perform in the 2018 European Championships in Berlin?,"in the 2018 european championships in berlin, lansiquot finished 5th in the 100m race with a time of 11.74 seconds. she also won gold medals in the 4x100m relay with times of 44.18 seconds and 42.52 seconds. additionally, she","in 2018, at the european championships in berlin, lansiquot placed sixth in the 100 metres, before winning a gold medal in the 4 × 100 metres event.","select position, event, notes from T ",21,49,"position | event | notes
+5th | 100 m | 11.74
+1st | 4 × 100 m | 44.18
+4th | 100 m | 11.37
+4th | 100 m | 11.58
+1st | 4 × 100 m | 42.52
+6th | 100 m | 11.14
+1st | 4 × 100 m | 41.8"
+8345,What award nomination did Kin Stanely receive for the role Lillian Farmer in the film Frances (1982) and what role did she play in the film The Right Stuff (1983)?,"kim stanley received an academy award nomination for best supporting actress and a golden globe award nomination for best supporting actress - motion picture for her role as lillian farmer in the film frances (1982). in the film the right stuff (1983), she played the role of pancho barnes.",kim stanley received a nomination for the academy award for best supporting actress as farmer in film frances (1982) and appeared as pancho barnes in the right stuff (1983).,"select notes, role from T ",12,30,"notes | role
+none | emily ann faulkner
+voice, uncredited | scout as an adult – narrator
+laurel award for top dramatic performance, female (3rd place) national board of review award for best actress new york film critics circle award for best actress nominated-academy award for best actress nominated-bafta award for best actress in a leading role; | myra savage
+none | masha
+nominated-academy award for best supporting actress nominated-golden globe award for best supporting actress – motion picture | lillian farmer
+none | pancho barnes"
+21248,Which French league and club team did Andreas Wolf play for during the 2012-13 season?,andreas wolf played for ligue 2 and the club team during the 2012-13 season.,wolf played for the monaco club in ligue 2 during the 2012-2013 season.,"select league, club from T ",40,240,"league | club
+division | club
+germany | germany
+bundesliga | 2001–2
+bundesliga | 2002–3
+2. bundesliga | 2003–4
+bundesliga | 2004–5
+bundesliga | 2005–6
+bundesliga | 2006–7
+bundesliga | 2007–8
+2. bundesliga | 2008–9
+bundesliga | 2009–10
+bundesliga | 2010–11
+bundesliga | 2011–12
+france | france
+ligue 2 | 2011–12
+ligue 2 | 2012–13
+ligue 1 | 2013–14
+germany | total
+france | total
+career total | career total"
+2124,How long did Matthews play for the OLA Jr A Whitby Warriors?,there is no information provided in the table or sql query about how long mark matthews played for the ola jr a whitby warriors.,matthews played for the ola jr a whitby warriors for three years.,"select regular_season, regular_season1, regular_season2, regular_season3, regular_season4, playoffs, playoffs1, playoffs2, playoffs3, playoffs4 from T ",60,96,"regular_season | regular_season1 | regular_season2 | regular_season3 | regular_season4 | playoffs | playoffs1 | playoffs2 | playoffs3 | playoffs4
+None | gp | g | a | pts | pim | None | gp | g | a
+None | 20 | 28 | 36 | 64 | 10 | None | none | none | none
+None | 12 | 20 | 32 | 52 | none | None | none | none | none
+None | 13 | 34 | 39 | 73 | 6 | None | none | none | none
+None | none | none | none | none | none | None | none | none | none
+None | none | none | none | none | none | None | none | none | none"
+12569,"Did Kipsubai Koskei win a medal at any events in the African Championships, and if so what was his time and was it record-breaking?","yes, kipsubai koskei won medals in the 1500m, 5000m, and 10000m events at the east and central african championships. his times were 3:41.6 in the 1500m, t13:50.3 in the 5000","kipsubai koskei got a gold medal in the 10,000 metres at the african championships, which he won in a championship record time of 28:11.70 minutes.","select competition, event, position, notes from T where competition = ""east and central african championships"" and position = ""1st"";",16,91,"competition | event | position | notes
+east and central african championships | 1500 m | 1st | 3:41.6
+east and central african championships | 5000 m | 1st | t13:50.3
+east and central african championships | 10000 m | 1st | 28:48.36
+east and central african championships | 10000 m | 1st | 28:59.1"
+14076,"What roles did Louise Crawford play on Neighbors, and when did she play them?","louise crawford played the roles of katrina (2016-2017), ellen crabb (2013, 2016-), hostess (2014), leah (2012), reporter at bomb site (2012), susie (2011), sally fraser (2011), connie (2011), tam","louise crawford appeared in neighbours as abby stafford in 2007 and as ""detective ellen crabb"" in 2013, reprising the role again in 2016.","select role, year from T ",54,135,"role | year
+katrina | 2016-2017
+ellen crabb | 2013, 2016–
+hostess | 2014
+leah | 2012
+reporter at bomb site | 2012
+susie | 2011
+sally fraser | 2011
+connie | 2011
+tammy | 2010
+jen | 2008
+sgt. karen hatzic | 2007
+abby stafford | 2007
+spunky girl | 2005
+lisa jones | 2005
+waitress | 2004
+box office manager | 2004
+second prisoner | 2003
+lycia | 2002
+waitress | 2002
+series host | 2001
+lycia | 2001
+lynette newman | 2000
+lucy hill | 1998
+selina roberts | 1996
+series host | 1996
+shelley radcliffe | 1995
+judy | 1994"
+12329,How did Biden do in the 1972 US Senate election?,"in the 1972 us senate election, joe biden received 116,006 votes, which accounted for 50.48% of the total votes.","biden won the 1972 united states senate elections by a margin of 3,162 votes.","select candidate, votes, _ from T where candidate = ""joe biden"";",3,49,"candidate | votes | _
+joe biden | 116006 | 50.48%"
+931,"What role did William Moseley play in the 2016 film ""Friend Request""?","william moseley did not play a role in the 2016 film ""friend request"" according to the given table.","in 2016, moseley starred as tyler in the film friend request.",select role from T ,17,85,"role
+peter pevensie
+peter pevensie
+peter pevensie
+wheeler
+cameron ainsworth
+daniel lombardio
+anderl gruber
+gerry cross
+jared
+tyler
+young man
+cy
+aysel
+cam harrison
+dook adams
+jaroslav žižka
+none"
+21451,When and where did Esperanza Spalding win the Jazz Artist of the Year award?,esperanza spalding won the jazz artist of the year award in 2011 at the boston music awards.,"in 2011, spalding won ""jazz artist of the year"" at the boston music awards.","select year, event from T where award = ""jazz artist of 2023"";",2,48,"year | event
+2011 | boston music awards"
+12425,How did Napolitano perform compared to the other candidates?,"napolitano received 5580 votes, but there is no information provided about the votes received by other candidates, so it is not possible to determine how napolitano performed compared to the other candidates.","on election day, napolitano was the top vote-getter with 5,580 votes, outpacing her republican running mates as well as her democrat opponents.","select candidate, votes from T where candidate = ""victoria napolitano"";",2,36,"candidate | votes
+victoria napolitano | 5580"
+16753,What was the competition name and Fuamatu's position and throw distance for his second-to-last competition?,the competition name was the pacific games and fuamatu's position was 2nd in the shot put event with a throw distance of 18.11 m.,"fuamatu won silver at the 2011 pacific games, his second-to-last competition, with a throw of 18.11 metres.","select competition, position, event, notes from T where row_number = (select max(row_number) - 1 from T);",4,70,"competition | position | event | notes
+pacific games | 2nd | shot put | 18.11 m"
+20773,How many seats did the Radical Left win and how many total seats were there?,the radical left won 79 seats out of a total of 79 seats in the 1848 swiss federal election.,the radical left won 79 of the 111 seats.,"select seats, sum(seats) from T where party = ""radical left"";",2,40,"seats | sum(seats)
+79 | 79"
+10097,"What roles did Johanna Wokalek play in Silent Resident and North Face, respectively?","in silent resident, johanna wokalek played the role of anna. in north face, she played the role of luise fellner.",johanna wokalek played anna in silent resident in 2007 and starred as luise fellner in north face.,"select title, role from T ",30,75,"title | role
+rose bernd | rose
+aimée & jaguar | ilse
+alma – a show biz ans ende | alma mahler
+emilia galotti | emilia galotti
+hierankl | lene thurner
+die kirschenkönigin | ruth von roll
+barfuss | leila
+silent resident | anna
+north face | luise fellner
+the baader meinhof complex | gudrun ensslin
+pope joan | johanna von ingelheim
+the (2023-11-282023-11-29,p1d) | cecilia kuper
+the pursuit of unhappiness | tiffany blechschmid
+landgericht | claire kornitzer
+freedom | nora"
+12367,What span of days was the 2019 Eric Clapton World Tour in Tokyo for?,"the 2019 eric clapton world tour was in tokyo for a span of 8 days, from april 13th to april 20th.",the eric clapton world tour 2019 was in tokyo on 13 april 2019 through 20 april 2019.,"select min(date), max(date) from T where city = ""tokyo"";",2,147,"min(date) | max(date)
+2019-4-13 | 2019-4-20"
+1475,Did Drew Cary make any appearances as himself?,"yes, drew carey made appearances as himself in the movies ""the big tease,"" ""the aristocrats,"" and ""jack and jill.""",carey appeared as himself in the aristocrats (2005) and provided cameos as himself in the big tease (1999) and jack and jill (2011).,"select title, role from T where role = ""himself"";",6,30,"title | role
+the big tease | himself
+the aristocrats | himself
+jack and jill | himself"
+21072,What named roles did Bel Kutner play in 1997 and 1999?,"in 1997, bel kutner played the role of helena jordão ferraz. in 1999, bel kutner played the roles of maria gonzaga do amaral and none.","in 1997, bel kutner appeared in anjo mau as helena jordão ferraz and in 1999 she played maria gonzaga do amaral in chiquinha gonzaga.","select role, year from T where year in (1997, 1999);",6,160,"role | year
+helena jordão ferraz | 1997
+maria gonzaga do amaral | 1999
+none | 1999"
+8317,"According to the Census of India, how many houses were in Jatike, what was the total population and how many makes and females were in that total population?","according to the census of india, jatike had a total of 190 houses. the total population was not provided, and the number of males and females in the population was also not provided.","according to the census of india, jatike has a total number of 190 houses and population of 946, of which 493 are males and 453 are females.","select particulars, total, male, female from T where row_number = 0;",4,145,"particulars | total | male | female
+total no. of houses | 190 | None | None"
+1616,Did Langenkamp play any roles in only a television pilot?,"yes, langenkamp played the role of hope sherman in the television pilot ""suburban beat"".","in 1985, langenkamp played as hope sherman in a tv pilot suburban beat.","select title, role from T where notes = ""television pilot"";",2,115,"title | role
+suburban beat | hope sherman"
+21301,How many league and overall appearances did Joe Maloney have while playing for Shrews?,joe maloney had 14 league appearances and 14 overall appearances while playing for shrews.,joe maloney made 237 league appearances and 249 appearances overall in shrews.,"select league, total from T ",32,192,"league | total
+apps | apps
+6 | 6
+6 | 6
+12 | 12
+45 | 46
+46 | 50
+43 | 44
+43 | 44
+46 | 51
+14 | 14
+237 | 249
+14 | 14
+19 | 20
+7 | 7
+26 | 27
+276 | 289"
+9209,In what year was Bruce M. Fischer most active?,bruce m. fischer was most active in the year 1971.,"in 1971 bruce m. fischer was most active, appearing in 4 films: a town called hell, doc, captain apache, and man in the wilderness.","SELECT year, COUNT(*) as activity_count
+FROM T
+GROUP BY year
+ORDER BY activity_count DESC
+LIMIT 1;",2,100,"year | activity_count
+1971 | 4"
+20717,Which club did Masahiro Iwata play for in 2002?,masahiro iwata played for nagoya grampus 8 in 2002.,"in 2002, masahiro iwata played for japan football league (jfl) club sc tottori.","select club_performance1, club_performance2, league, league1, cup, cup1, league_cup, league_cup1, total, total1 from T;",130,156,"club_performance1 | club_performance2 | league | league1 | cup | cup1 | league_cup | league_cup1 | total | total1
+club | league | apps | goals | apps | goals | apps | goals | apps | goals
+japan | japan | league | league | emperor's cup | emperor's cup | j.league cup | j.league cup | total | total
+nagoya grampus 8 | j1 league | 7 | 0 | none | none | 1 | 0 | 8 | 0
+nagoya grampus 8 | j1 league | 1 | 0 | none | none | 0 | 0 | 1 | 0
+sc tottori | football league | 6 | 0 | none | none | none | none | 6 | 0
+sc tottori | football league | 10 | 1 | none | none | none | none | 10 | 1
+sc tottori | football league | 18 | 1 | none | none | none | none | 18 | 1
+fc gifu | regional leagues | none | none | none | none | none | none | none | none
+fc gifu | regional leagues | none | none | none | none | none | none | none | none
+fc gifu | football league | 21 | 1 | none | none | none | none | 21 | 1
+fc gifu | j2 league | 14 | 0 | none | none | none | none | 14 | 0
+japan | japan | 77 | 3 | 0 | 0 | 1 | 0 | 78 | 3
+total | total | 77 | 3 | 0 | 0 | 1 | 0 | 78 | 3"
+479,When did Admiral Özden Örnek serve in the Turkish Naval Forces?,"admiral özden örnek served in the turkish naval forces from august 28, 2003, to august 26, 2005.",özden örnek was the commander of the turkish naval forces from 2003 to 2005.,"select took_office, left_office from T where commander = ""admiral özden örnek"";",2,156,"took_office | left_office
+2003-8-28 | 2005-8-26"
+14712,"What award did Waldman's arrangement of the ""Spiderman Theme"" win and when?","randy waldman's arrangement of the ""spiderman theme"" won a grammy award in both 2019 and 1984.","waldman's arrangement of the ""spiderman theme"" won the grammy award for best arrangement, instrumental and vocals at the grammy awards in 2019.","select award, year from T ",6,21,"award | year
+grammy award | 1984
+grammy award | 2019
+grammy award | 2019"
+8589,What are the two remaining issues?,the two remaining issues are the marshall jtm45 2245thw and the marshall jtm45 1963.,"in 2014 marshall reissued a ""handwired"" 30 w 2245thw based on the jtm45.",select * from T,48,48,"row_number | model_number | watts | dates | features | notes
+0 | jtm45 | 35–45 | 1963–1964 | 2 channels, 4 inputs | also available in bass and pa versions
+1 | 1963 | 50 | 1965–1966 | 4 channels, 8 inputs | pa version; ""jtm50 mk iii""
+2 | 1985 | 45 | 1965–1966 | 2 channels, 4 inputs | pa version of jtm50 mk ii
+3 | 1986 | 45 | 1965–1966 | high treble and normal channels | bass version of jtm50 mk ii
+4 | 1987 | 45 | 1965–1966 | high treble and normal channels | lead version of jtm50 mk ii; also with tremolo as model t1987
+5 | 1989 | 45 | 1965–1966 | for electronic organs | also with tremolo as model t1989
+6 | jtm 45 (2245) | 30 | 1989– | 2 channels, 4 inputs | reissue of original jtm45 (1987)
+7 | 2245thw | 30 | 2014– | handwired head, circuitry identical with bluesbreaker | none"
+443,What role did Rebolledo play in 2000?,"in 2000, rebolledo played the role of lt. orra.","in 2000, rebolledo appeared as lt. orra on the law & order episode ""vaya con dios"".",select role from T where year = 2000;,1,45,"role
+lt. orra"
+21620,Little Glee Monster won what award in what 2018 event in Europe?,little glee monster won the award for best japanese act at the 2018 mtv europe music awards.,"in 2018, little glee monster won an award at the 2018 mtv europe music awards for best japanese act category.","select award, category from T ",4,12,"award | category
+mtv video music awards japan | best cinematography
+mtv europe music awards | best japanese act"
+9858,"Who were the first and second place finishers, and how much did first win by?","the first and second place finishers in the women's 400 metres at the 2008 summer olympics were christine ohuruogu and shericka williams, respectively. ohuruogu won by a margin of 0.07 seconds.","christine ohuruogu ran in 49.62 seconds, just pipping shericka williams by 0.07 seconds in 2008 summer olympics – women's 400 metres.","select name, rank, time from T ",24,56,"name | rank | time
+ohuruogu, christinechristine ohuruogu | none | 49.62
+williams, sherickashericka williams | none | 49.69
+richards, sanyasanya richards | none | 49.93
+gushchina, yuliayulia gushchina | 4 | 50.01
+whyte, rosemarierosemarie whyte | 5 | 50.68
+montsho, amantleamantle montsho | 6 | 51.18
+kapachinskaya, anastasiaanastasia kapachinskaya | dsq | 50.03
+firova, tatianatatiana firova | dsq | 50.11"
+8192,"Which sectors were 59.5%, 8.2%, and 5.2% of employees in Paris engaged in?","in paris, 59.5% of employees were engaged in the commerce, transport, services sector, 8.2% were engaged in the industry sector, and 5.2% were engaged in the construction sector.","59.5 percent of employees in paris are engaged in commerce, transport and services, 8.2 percent in industry and 5.2 percent in construction.",select sector from T ,5,20,"sector
+agriculture
+industry
+construction
+commerce, transport, services
+administration, education, health, social services"
+12132,What categories was Esom nominated for in 2014?,esom was nominated for the category of best new actress in 2014.,"in 2014, esom was nominated for scarlet innocence for the best new actress category.","select category from T where year = 2014 and result = ""nominated"";",2,84,"category
+best new actress
+best new actress"
+12417,How does the number of cast votes compared to registered voters in the Inverness-shire election?,"in the inverness-shire election, there were 669 registered voters, but the number of cast votes is not provided in the table.",467 votes were cast in the inverness-shire (uk parliament constituency) while the number of registered electors was 669.,"select votes, _ from T;",12,42,"votes | _
+257 | 55
+210 | 45
+47 | 10
+467 | 69.8
+669 | none
+swing | n/a"
+8384,Which songs brought the consecutive wins as Favorite Artist Philippines at the 2002 and 2003 MTV Asia Awards for Regine Velasquez?,"the songs ""to reach you"" and ""sa aking pag-iisa (remix)"" brought consecutive wins as favorite artist philippines at the 2002 and 2003 mtv asia awards for regine velasquez.","""to reach you"" and ""sa aking pag-iisa"", gave velasquez two consecutive wins as favorite artist philippines at the 2002 and 2003 mtv asia awards.","select nominee___work from T where year in (2002, 2003) and award = ""favorite artist philippines"" and result = ""won"";",2,18,"nominee___work
+""to reach you""
+""sa aking pag-iisa (remix)"""
+484,What did Buddy Miller win the Grammy Awards for?,"buddy miller won the grammy award for best traditional gospel album in 2010 for his work ""downtown church"".","miller produced patty griffin's downtown church, which was released in 2010 and won a grammy award for best traditional gospel album.","select year, category, work from T where result = ""won"";",3,20,"year | category | work
+2010 | best traditional gospel album | downtown church"
+8479,When did Mikael Nilsson score his first international goal?,"mikael nilsson scored his first international goal on november 20, 2002 in a friendly match.","mikael nilsson scored his first two international goals on november 20th, 2002 against the cazech republic in a 3-3 draw.",select date from T where score = '1–1' and result = '3–3' and competition = 'friendly';,1,24,"date
+2002-11-20"
+9521,What were Grace Victoria Cox's longest running roles?,"grace victoria cox's longest running role was as melanie cross in the tv show ""under the dome"" from 2014-2015.",grace victoria cox is known for playing as melanie cross in under the dome (2014–15) and as veronica sawyer in heathers (2018).,"select title, role, year from T order by length(year) desc limit 1;",3,35,"title | role | year
+under the dome | melanie cross | 2014–2015"
+21284,How did Louis Oosthuizen perform compared to Calcavecchia in the second round of the 2010 Open Championship?,"in the second round of the 2010 open championship, louis oosthuizen scored 67, while calcavecchia scored 67 as well.","louis oosthuizen shot 67 to move into first place at 132 (−12), five shots ahead of calcavecchia.","select player, score from T where place = 1 or place = 2;",4,78,"player | score
+louis oosthuizen | 65-67=132
+mark calcavecchia | 70-67=137"
+10229,What are some 2018 films that Farmiga took part in?,"in 2018, farmiga took part in the films ""what they had,"" ""the long dumb road,"" ""the nun,"" ""we have always lived in the castle,"" and ""the mule.""","farmiga played as emma ertz in the film, what they had and in the film, the long dumb road both of which premiered in 2018.",select title from T where year = 2018;,5,90,"title
+what they had
+the long dumb road
+the nun
+we have always lived in the castle
+the mule"
+592,What record did Leisel Jones achieve on August 12?,there is no record specified for leisel jones on august 12 in the table.,leisel jones established an olympic record of 1:05.17 in women's 100 metre breaststroke.,"select record from T where name = ""leisel jones"" and date = ""august 12"";",1,14,"record
+or"
+11321,In the 1975 National 500 Who won the race and what advantage did the winner receive?,richard petty won the race and received no differential/advantage as indicated by a differential of 0.,richard petty beat benny parsons which gave him an 878 points advantage after the 1975 national 500.,"select driver, differential from T ",20,50,"driver | differential
+richard petty | 0
+benny parsons | 878
+dave marcis | 879
+james hylton | 898
+richard childress | 933
+cecil gordon | 1083
+darrell waltrip | 1176
+elmo langley | 1328
+cale yarborough | 1394
+buddy baker | 1471"
+14686,What were the main events in Vosk's career in 2016?,"in 2016, jessica vosk starred in the following productions: 
+1. ""the bridges of madison county"" as a swing at the gerald schoenfeld theatre on broadway.
+2. ""finding neverland"" as miss bassett/ensemble at the lunt-fontanne theatre on broadway.
+3","vosk worked in the 2015-2016 production, fiddler on the roof, and then joined the cast of the national tour of wicked, in the role of elphaba.","select production, role, location, category from T ",24,36,"production | role | location | category
+west side story | anita | louise m. davies symphony hall | san francisco symphony concert
+the bridges of madison county | swing | gerald schoenfeld theatre | broadway
+finding neverland | miss bassett / ensemble | lunt-fontanne theatre | broadway
+fiddler on the roof | fruma sarah / golde (understudy) | broadway theatre | broadway
+wicked | elphaba | n/a | national tour
+wicked | elphaba | gershwin theatre | broadway"
+1651,Did a candidate achieve a majority in the Tatton election?,"yes, a candidate achieved a majority in the tatton election. martin bell received 29,354 votes, which was a majority of 11,077 votes.","martin bell, from the independent party, achieved a majority of 11,077 votes over neil hamilton, from the conservative party.","select candidate, votes, ± from T;",39,91,"candidate | votes | ±
+martin bell | 29354 | n/a
+neil hamilton | 18277 | 17.6
+sam hill | 295 | n/a
+simon kinsey | 184 | n/a
+burnel penhaul | 128 | n/a
+john muir | 126 | n/a
+michael kennedy | 123 | n/a
+david bishop | 116 | n/a
+ralph nicholas | 113 | n/a
+julian price | 73 | n/a
+majority | 11077 | none
+turnout | 48792 | none
+independent gain from conservative | swing | none"
+11556,"Which films did Amulya star in 2008, 2010 and 2013?","amulya starred in the films ""chaitrada chandrama"" (2008), ""premism"" (2010), ""naanu nanna kanasu"" (2010), and ""shravani subramanya"" (2013).","amulya starred in the films, chaitrada chandrama (2008), naanu nanna kanasu (2010), and shravani subramanya (2013).","select film, year from T where year in (2008, 2010, 2013);",8,120,"film | year
+chaitrada chandrama | 2008
+premism | 2010
+naanu nanna kanasu | 2010
+shravani subramanya | 2013"
+1689,What happened in the election in Wyoming?,"in the 1964 united states presidential election in wyoming, lyndon b. johnson (inc.) received 80,718 votes and barry goldwater received 61,998 votes.","wyoming was won by incumbent lyndon b. johnson (d), with 56.56 percent of the vote, against barry goldwater (r), with 43.44 percent of the vote.","select party, candidate, votes from T where party != ""total votes"";",6,18,"party | candidate | votes
+none | lyndon b. johnson (inc.) | 80718
+none | barry goldwater | 61998"
+8033,What roles did Daniel Ings play between 2014 and 2017?,"between 2014 and 2017, daniel ings played the roles of rex in ""uncle"", robbie in ""mount pleasant"", luke in ""lovesick"", terence black in ""endeavour"", matt taverner in ""w1a"", simon in ""vera"", and commander mike parker in","daniel ings, appeared as matt taverner, in w1a (2014–2015), as simon in vera (2016), and as commander mike parker, in the crown (2016–2017).","select title, role from T where year between 2014 and 2017;",14,65,"title | role
+uncle | rex
+mount pleasant | robbie
+lovesick | luke
+endeavour | terence black
+w1a | matt taverner
+vera | simon
+the crown | commander mike parker"
+20996,Who won the Amsterdam Marathon in 1988 and the Rotterdam Marathon in 1989?,elena murgoci won the amsterdam marathon in 1988 and the rotterdam marathon in 1989.,elena murgoci won the amsterdam marathon in 1988 and the rotterdam marathon in 1989.,"select competition, position, year from T where (competition = ""amsterdam marathon"" and year = 1988) or (competition = ""rotterdam marathon"" and year = 1989);",6,35,"competition | position | year
+amsterdam marathon | 1st | 1988
+rotterdam marathon | 1st | 1989"
+12913,In which two films did Ray Fisher first appear as a cameo role?,"ray fisher first appeared in a cameo role in the films ""batman v superman: dawn of justice"" as victor stone/cyborg.",ray fisher appeared first in a cameo role of victor stone / cyborg in batman v superman: dawn of justice (2016) and then in justice league (2017).,"select title, role from T where notes = ""cameo"";",2,10,"title | role
+batman v superman: dawn of justice | victor stone / cyborg"

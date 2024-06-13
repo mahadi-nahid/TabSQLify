@@ -1,0 +1,1295 @@
+id,question,response,answer,sql,r_num_cell,t_num_cell,linear_table
+14571,How many stations does Koumi Line have altogether and what are they?,"koumi line has a total of 30 stations. the stations are:
+aonuma, haguroshita, higashi-komoro, iwamurada, kai-koizumi, kai-ōizumi, kaize, kita-nakagomi, kiyos","koumi line has 31 stations including kobuchizawa station in hokuto, yamanashi and komoro station in komoro, nagano.","select count(station), station from T group by station;",64,288,"count(station) | station
+1 | aonuma
+1 | haguroshita
+1 | higashi-komoro
+1 | iwamurada
+1 | kai-koizumi
+1 | kai-ōizumi
+1 | kaize
+1 | kita-nakagomi
+1 | kiyosato
+1 | kobuchizawa
+1 | koumi
+1 | managashi
+1 | matsubarako
+1 | misato
+1 | mitsuoka
+1 | nakagomi
+1 | nakasato
+1 | namezu
+1 | nobeyama
+1 | otome
+1 | saku-hirose
+1 | saku-uminokuchi
+1 | sakudaira
+1 | shinano-kawakami
+1 | station
+1 | takaiwa
+1 | tatsuokajō
+1 | umijiri
+1 | usuda
+1 | yachiho
+1 | ōtabe
+1 | 小諸"
+21473,"In the 1947 Tour De France, how many stages did the course consist of and what was the total course distance?","the 1947 tour de france consisted of 21 stages and the total course distance was 9,272 kilometers.","the 1947 tour de france total race distance was 21 stages over 4,642 km (2,884 mi).","select count(stage) as num_stages, sum(distance) as total_distance from T;",2,216,"num_stages | total_distance
+21.0 | 9272.0"
+2252,How many games did Peter Lee play with the Pittsburgh Penguins?,peter lee did not play any games with the pittsburgh penguins in the regular season.,peter lee played 431 national hockey league games with the pittsburgh penguins..,select regular_season from T;,30,480,"regular_season
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None"
+21387,How many games did Shay Given play during the 2014-2015 Premier League season and for which club?,"during the 2014-2015 premier league season, shay given played 10 games for aston villa.",shay given has played three games in the 2014–15 premier league season for aston villa.,"select club, season, league, total from T where season = ""2014–15"" and league = ""premier league"";",4,462,"club | season | league | total
+aston villa | 2014–15 | premier league | 10"
+1752,When did season 6 of Reborn! air?,"season 6 of reborn! aired on the following dates: 2009-7-11, 2009-7-18, 2009-7-25, 2009-8-1, 2009-8-8, 2009-8-15, 2009","season 6 of reborn! aired between july 11, 2009 and october 3, 2009.",select original_airdate from T;,26,104,"original_airdate
+2009-7-11
+shoichi irie tells tsuna that in order to open the vongola box, the 7 arcobaleno seals are needed. in order to obtain the seals, tsuna needs to overcome the arcobaleno trials.
+2009-7-18
+back in the past, the 7 arcobaleno are heading to namimori to present tsuna with their trials. meanwhile, in the future, irie is telling tsuna and his friends the details before sending them to the past.
+2009-7-25
+2023-12-10, tsuna's class receives 2 transfer students, monta hariyama and himeko hariyama. during the break, tsuna is attacked by lal mirch of their time period who reveals she will be the observer of the arcobaleno trials.
+2009-8-1
+colonnello continues to overwhelm the 2. he is defeated when gokudera distracts colonnello for tsuna to use x-burner on him.
+2009-8-8
+mukuro and hibari continue their battle and lal appears announcing this is the second trial. skull calls his pet octopus to combat but tsuna easily defeats it.
+2009-8-15
+tsuna, yamamoto and ryohei are called out to namimori middle school where they encounter mammon, who reveals he has kyoko hostage.
+2009-8-22
+tsuna returns home after completing the trial. 2023-12-10, tsuna receives a letter from the arcobaleno, fong, who is also revealed to be i-pin's martial arts sensei.
+2009-8-29
+tsuna and his friends discuss who the remaining arcobaleno are. at that moment, a woman wielding an orange pacifier, named aria, arrives with haru and kyoko and reveals that she will give tsuna his next trial.
+2009-9-5
+reborn tells tsuna and his guardians to assemble at namimori island for the next trial. when everyone reaches namimori island, the trial is revealed to be a battle of tsuna's family against reborn.
+2009-9-12
+while tsuna's family is recuperating, verde completes the first stage for his box weapons and decides to seek out the vongola rings to help him complete the second stage.
+2009-9-19
+verde sends out robots to seek the tsuna's missing 2 guardians, lambo and hibari. hibari defeats his robot and fong defeats the robot pursuing lambo.
+2009-9-26
+verde demands tsuna and his guardians to surrender the vongola ring in return for the arcobaleno's lives. tsuna refuses to compiles as the rings will be needed for the future battles and declares they shall defeat verde and save the arcobaleno.
+2009-10-3
+tsuna, with his hyper intuition, feels that verde is nearby and finds verde hiding in a nearby island. verde declares his research is complete after gathering data on the vongola rings' flames and states he will not need the vongola rings any more."
+1679,What singles followed up Heaven 17's Pleasure One?,"the table does not provide information about the album ""pleasure one"" by heaven 17. therefore, we cannot determine the singles that followed it up based on the given table.","heaven 17's pleasure one was followed up in 1988 with the album teddy bear, duke & psycho, featuring the singles ""train of love in motion"" and ""the ballad of go go brown"".","select single, year from T;",64,480,"single | year
+single | year
+""(we don't need this) fascist groove thang"" | 1981
+""i'm your money"" | 1981
+""play to win"" | 1981
+""penthouse and pavement"" | 1981
+""the height of the fighting (he-la-hu)"" | 1982
+""let me go"" | 1982
+""who'll stop the rain"" | 1982
+""temptation"" | 1983
+""we live so fast"" | 1983
+""come live with me"" | 1983
+""crushed by the wheels of industry"" | 1983
+""sunset present_ref"" | 1984
+""this is mine"" | 1984
+""...(and that's no lie)"" | 1985
+""the foolish thing to do"" (feat. jimmy ruffin) | 1986
+""contenders"" | 1986
+""trouble"" | 1987
+""the ballad of go go brown"" | 1988
+""train of love in motion"" | 1988
+""temptation"" (brothers in rhythm remix) | 1992
+""(we don't need this) fascist groove thang"" (the rapino brothers remixes) | 1993
+""penthouse and pavement"" (the tommy d remixes) | 1993
+""designing heaven"" | 1996
+""we blame love"" | 1997
+""with this ring let me go"" (molella & phil jay present heaven 17 meets fast eddie) | 1998
+""hands up to heaven"" | 2006
+""i'm gonna make you fa in love with me"" | 2007
+""don't fear the reaper"" | 2008
+""only after dark (7"" & cd-r ltd ed. of 100 – o.a.d event release)"" | 2013
+""illumination"" & ""pray"" (limited edition vinyl) | 2014
+""captured"" & ""unseen"" (limited edition vinyl) | 2016"
+14967,"What major career event happened to Ben Chorley in 2015-2016, and where did he play before and after?","in 2015-2016, ben chorley played for bromley.","after two seasons at portsmouth, ben chorley joined national league club bromley at the start of the 2015–16 season.","select season, club from T where season between 2015 and 2016;",2,448,"season | club
+2015–16 | bromley"
+21627,How many overall goals and appearances did Iván de la Peña make for the Spanish La Liga League?,iván de la peña made a total of 269 appearances and scored 24 goals in the spanish la liga league.,iván de la peña made 19 goals in 269 games for barcelona and espanyol in la liga.,"select league, club_performance, total, total1 from T;",108,378,"league | club_performance | total | total1
+apps | season | apps | goals
+league | spain | total | total
+31 | 1995–96 | 42 | 9
+33 | 1996–97 | 41 | 3
+17 | 1997–98 | 21 | 2
+league | italy | total | total
+14 | 1998–99 | 19 | 1
+league | france | total | total
+12 | 1999–2000 | 19 | 1
+league | spain | total | total
+9 | 2000–1 | 12 | 0
+league | italy | total | total
+1 | 2001–2 | 2 | 0
+league | spain | total | total
+29 | 2002–3 | 29 | 0
+25 | 2003–4 | 25 | 1
+29 | 2004–5 | 30 | 3
+30 | 2005–6 | 44 | 0
+26 | 2006–7 | 38 | 1
+12 | 2007–8 | 15 | 0
+22 | 2008–9 | 22 | 4
+4 | 2009–10 | 5 | 0
+2 | 2010–11 | 2 | 0
+269 | total | 327 | 24
+15 | total | 21 | 1
+12 | total | 19 | 1
+296 | career total | 367 | 26"
+20827,How many goals did Ashley Williams score for the Swans and how many appearances did Ashley make?,ashley williams scored a total of 14 goals for the swans and made a total of 322 appearances.,"ashley williams had 352 appearances for the swans, scoring 14 goals.","select club, season, league, league1, league2, total, total1 from T;",189,378,"club | season | league | league1 | league2 | total | total1
+club | season | division | apps | goals | apps | goals
+hednesford town | 2001–2 | southern league premier division | 2 | 0 | 4 | 0
+hednesford town | 2002–3 | southern league premier division | 33 | 0 | 42 | 0
+hednesford town | 2003–4 | southern league premier division | 11 | 0 | 14 | 0
+hednesford town | total | total | 46 | 0 | 60 | 0
+stockport county | 2003–4 | second division | 10 | 0 | 10 | 0
+stockport county | 2004–5 | league 1 | 44 | 1 | 49 | 2
+stockport county | 2005–6 | league 2 | 36 | 1 | 38 | 1
+stockport county | 2006–7 | league 2 | 46 | 1 | 50 | 1
+stockport county | 2007–8 | league 2 | 26 | 0 | 29 | 0
+stockport county | total | total | 162 | 3 | 175 | 4
+swansea city | 2007–8 | league 1 | 3 | 0 | 3 | 0
+swansea city | 2008–9 | championship | 46 | 2 | 51 | 2
+swansea city | 2009–10 | championship | 46 | 5 | 46 | 5
+swansea city | 2010–11 | championship | 46 | 3 | 53 | 3
+swansea city | 2011–12 | premier league | 37 | 1 | 40 | 1
+swansea city | 2012–13 | premier league | 37 | 0 | 41 | 0
+swansea city | 2013–14 | premier league | 34 | 1 | 43 | 1
+swansea city | 2014–15 | premier league | 37 | 0 | 39 | 0
+swansea city | 2015–16 | premier league | 36 | 2 | 36 | 2
+swansea city | total | total | 322 | 14 | 352 | 14
+everton | 2016–17 | premier league | 36 | 1 | 39 | 1
+everton | 2017–18 | premier league | 24 | 1 | 34 | 2
+everton | 2018–19 | premier league | 0 | 0 | 0 | 0
+everton | total | total | 60 | 2 | 73 | 3
+stoke city (loan) | 2018–19 | championship | 33 | 1 | 37 | 1
+career total | career total | career total | 624 | 20 | 698 | 22"
+21688,"In the 1929 Tour De France, how many stages did the course consist of and what was the total course distance?","the 1929 tour de france consisted of 22 stages and the total course distance was 10,544 kilometers.","the 1929 tour de france consisted of 22 stages and over 5,286 km (3,285 mi) total distance.","select count(distinct stage) as num_stages, sum(distance) as total_distance from T;",2,207,"num_stages | total_distance
+22.0 | 10544.0"
+21615,"When was the single ""Whenever You Need Somebody"" first released?","the single ""whenever you need somebody"" was first released in 1987.","""whenever you need somebody"" was released in 1987.",select * from T,448,448,"row_number | year | title | peak_chart_positions | peak_chart_positions1 | peak_chart_positions2 | peak_chart_positions3 | peak_chart_positions4 | peak_chart_positions5 | peak_chart_positions6 | peak_chart_positions7 | peak_chart_positions8 | peak_chart_positions9 | peak_chart_positions10 | certifications | album
+0 | year | title | uk | aus | bel | can | ger | ire | nl | nz | swe | swi | us | certifications | album
+1 | 1987 | ""never gonna give you up"" | 1 | 1 | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 2 | 1 | uk: platinum can: gold ger: gold swe: gold us: gold au: gold | whenever you need somebody
+2 | 1987 | ""whenever you need somebody"" | 3 | 3 | 2 | — | 1 | 3 | 2 | 9 | 1 | 1 | — | none | whenever you need somebody
+3 | 1987 | ""when i fa in love"" ""my arms keep missing you"" | 2 | 5 | 1 | — | 6 | 2 | 3 | 25 | 12 | 14 | — | uk: silver | whenever you need somebody
+4 | 1988 | ""together forever"" | 2 | 19 | 2 | 1 | 5 | 1 | 12 | 10 | — | 14 | 1 | can: gold | whenever you need somebody
+5 | 1988 | ""it would take a strong strong man"" | — | — | — | 1 | — | — | — | — | — | — | 10 | none | whenever you need somebody
+6 | 1988 | ""she wants to dance with me"" | 6 | 15 | 3 | 1 | 10 | 4 | 8 | 10 | 12 | 12 | 6 | none | hold me in your arms
+7 | 1988 | ""take me to your heart"" | 8 | 41 | 11 | — | 10 | 5 | 11 | 43 | 10 | 16 | — | none | hold me in your arms
+8 | 1989 | ""hold me in your arms"" | 10 | 77 | 25 | — | 32 | 7 | 35 | — | — | — | — | none | hold me in your arms
+9 | 1989 | ""giving up on love"" | — | — | — | 45 | — | — | — | — | — | — | 38 | none | hold me in your arms
+10 | 1989 | ""ain't too proud to beg"" | — | — | — | — | — | — | — | — | — | — | 89 | none | hold me in your arms
+11 | 1991 | ""cry for help"" | 7 | 13 | 5 | 4 | 14 | 9 | 11 | — | 17 | — | 7 | none | free
+12 | 1991 | ""move right out"" | 58 | 110 | — | 36 | 52 | — | 66 | — | — | — | 81 | none | free
+13 | 1991 | ""never knew love"" | 70 | — | 42 | — | — | — | — | — | — | — | — | none | free
+14 | 1993 | ""the ones you love"" | 48 | 132 | — | 54 | 54 | — | — | — | — | — | — | none | body & soul
+15 | 1993 | ""hopelessly"" | 33 | — | — | 8 | — | — | — | — | — | — | 28 | none | body & soul
+16 | 2001 | ""sleeping"" | — | — | — | — | 60 | — | — | — | — | 69 | — | none | keep it turned on
+17 | 2001 | ""keep it turned on"" | — | — | — | — | — | — | — | — | — | — | — | none | keep it turned on
+18 | 2010 | ""lights out"" | 97 | — | — | — | — | — | — | — | — | — | — | none | my red book (unreleased)
+19 | 2012 | ""goodbye but not the end"" | — | — | — | — | — | — | — | — | — | — | — | none | my red book (unreleased)
+20 | 2016 | ""keep singing"" | 127 | — | 75 | — | — | — | — | — | — | — | — | none | 50
+21 | 2016 | ""angels on my side"" | — | — | — | — | — | — | — | — | — | — | — | none | 50
+22 | 2016 | ""dance"" | — | — | — | — | — | — | — | — | — | — | — | none | 50
+23 | 2018 | ""beautiful life"" | — | — | 69 | — | — | — | — | — | — | — | — | none | beautiful life
+24 | 2018 | ""empty heart"" | — | — | — | — | — | — | — | — | — | — | — | none | beautiful life
+25 | 2018 | ""try"" | — | — | — | — | — | — | — | — | — | — | — | none | beautiful life
+26 | 2018 | ""she makes me"" | — | — | — | — | — | — | — | — | — | — | — | none | beautiful life
+27 | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory. | ""—"" denotes a single that did not chart or was not released in that territory."
+1745,For what club did O'Connor play the most?,o'connor played the most for gillingham.,"o'connor made 148 appearances and played for five seasons with bournemouth from 1985 to 1990, more than with any other club.",select club from T group by club order by count(*) desc limit 1;,1,406,"club
+gillingham"
+11883,What years did Vasili Kuznetsov work as the Chairman of the Presidium of the supreme soviet union?,"vasili kuznetsov worked as the chairman of the presidium of the supreme soviet union from november 10, 1982, to june 16, 1983, and from february 9, 1984, to april 11, 1984, and from march 10,","vasili kuznetsov was chairman of the presidium of the supreme soviet of the soviet union from 1982 to 1983, for a second time in 1984 and for a third time in 1985.","select term_of_office from T where name_birth–death = ""vasili kuznetsov (1901–1990)"";",3,132,"term_of_office
+(1982-11-101983-6-16,p218d)
+(1984-2-91984-4-11,p62d)
+(1985-3-101985-7-27,p139d)"
+17130,How effective was Jean-Luc Grand-Pierre's performance during his debit in the American Hockey League? ,"there is no information provided in the table or sql query about jean-luc grand-pierre's performance during his debut in the american hockey league. therefore, it is not possible to determine how effective his performance was.","after playing four seasons in the quebec major junior hockey league, jean-luc grand-pierre made debut in the american hockey league with the rochester americans during the 1997–98 season, with ten points and 211 penalty minutes in 75 games.","select regular_season, regular_season1, regular_season2, regular_season3, regular_season4, playoffs, playoffs1, playoffs2, playoffs3, playoffs4 from T;",300,480,"regular_season | regular_season1 | regular_season2 | regular_season3 | regular_season4 | playoffs | playoffs1 | playoffs2 | playoffs3 | playoffs4
+None | gp | g | a | pts | pim | None | gp | g | a
+None | 46 | 1 | 4 | 5 | 27 | None | — | — | —
+None | 59 | 10 | 13 | 23 | 126 | None | — | — | —
+None | 67 | 13 | 21 | 34 | 209 | None | 13 | 1 | 4
+None | 58 | 9 | 24 | 33 | 196 | None | 13 | 5 | 8
+None | 75 | 4 | 6 | 10 | 211 | None | 4 | 0 | 0
+None | 16 | 0 | 1 | 1 | 17 | None | — | — | —
+None | 55 | 5 | 4 | 9 | 90 | None | — | — | —
+None | 11 | 0 | 0 | 0 | 15 | None | 4 | 0 | 0
+None | 62 | 5 | 8 | 13 | 124 | None | 17 | 0 | 1
+None | 64 | 1 | 4 | 5 | 73 | None | — | — | —
+None | 81 | 2 | 6 | 8 | 90 | None | — | — | —
+None | 41 | 1 | 0 | 1 | 64 | None | — | — | —
+None | 2 | 1 | 0 | 1 | 6 | None | — | — | —
+None | 16 | 0 | 0 | 0 | 12 | None | — | — | —
+None | 27 | 2 | 2 | 4 | 26 | None | — | — | —
+None | 13 | 1 | 0 | 1 | 14 | None | — | — | —
+None | — | — | — | — | — | None | 4 | 0 | 1
+None | 11 | 1 | 1 | 2 | 45 | None | 10 | 1 | 2
+None | 45 | 10 | 9 | 19 | 176 | None | — | — | —
+None | 44 | 9 | 14 | 23 | 63 | None | 9 | 1 | 1
+None | 63 | 3 | 5 | 8 | 82 | None | — | — | —
+None | 47 | 5 | 8 | 13 | 135 | None | 9 | 1 | 1
+None | 7 | 0 | 0 | 0 | 10 | None | — | — | —
+None | 37 | 6 | 2 | 8 | 146 | None | 10 | 0 | 3
+None | 7 | 0 | 0 | 0 | 47 | None | — | — | —
+None | 19 | 2 | 3 | 5 | 55 | None | — | — | —
+None | 44 | 2 | 5 | 7 | 91 | None | 6 | 1 | 1
+None | 7 | 3 | 3 | 6 | 12 | None | — | — | —
+None | 269 | 7 | 13 | 20 | 311 | None | 4 | 0 | 0"
+17125,How was Ben Howland's first season at Mississippi State?,"in ben howland's first season at mississippi state, the team had an overall record of 14-17 and a conference record of 7-11. they finished in 11th place in the conference and did not participate in any postseason tournaments.","in ben howland's first season, mississippi state finished with a record of 14–17 (7–11 sec).","select overall, conference, standing, postseason from T where team = ""mississippi state"";",16,231,"overall | conference | standing | postseason
+14–17 | 7–11 | 11th | none
+16–16 | 6–12 | 12th | none
+25–12 | 9–9 | t–7th | nit semifinal
+23–11 | 10–8 | t–6th | ncaa division i round of 64"
+2201,What events do Eric Cray hold the record for?,eric cray holds the record for the 100m and 400m hurdles events.,eric cray holds the filipino record in the 400 metres hurdles and 100 metres.,"select event, record from T where athlete = ""eric cray"";",4,240,"event | record
+100 m | 10.25 (0e-55 m/s)
+400 m hurdles | 48.98"
+12771,How did Boyzone perform as a band during the year 2010 with their releases?,"in 2010, boyzone had two releases. their single ""gave it all away"" reached the top position on the charts, while their single ""love is a hurricane"" reached number 39.","in 2010, ""gave it all away"", the single from boyzone discography's album brother, peaked at number 9 in the uk and number 1 in ireland; ""love is a hurricane"" was also released as a single from the album.","select single, year, peak_chart_positions from T where year = 2010;",6,450,"single | year | peak_chart_positions
+""gave it all away"" | 2010 | 1
+""love is a hurricane"" | 2010 | 39"
+20795,How well did Peralta play at the 2015 CONCACAF Gold Cup?,"the given sql query does not provide any information about peralta's performance at the 2015 concacaf gold cup. therefore, we cannot determine how well he played at the tournament based on the given table and query.","peralta played at the 2015 concacaf gold cup and scored a 6–0 defeat of cuba in chicago, as well as a 3–1 win against jamaica in philadelphia.","select goal, date, venue, opponent, score, result, competition from T;",182,208,"goal | date | venue | opponent | score | result | competition
+1.0 | 2011-8-10 | lincoln financial field, philadelphia, united states | united states | 1–0 | 1–1 | friendly
+2.0 | 2012-1-25 | reliant stadium, houston, united states | venezuela | 3–1 | 3–1 | friendly
+3.0 | 2012-10-12 | bbva compass stadium, houston, united states | guyana | 1–0 | 3–0 | 2014 fifa world cup qualification
+4.0 | 2012-10-16 | estadio corona, torreón, mexico | el salvador | 1–0 | 2–0 | 2014 fifa world cup qualification
+5.0 | 2013-8-14 | metlife stadium, east rutherford, united states | ivory coast | 2–0 | 4–1 | friendly
+6.0 | 2013-8-14 | metlife stadium, east rutherford, united states | ivory coast | 3–0 | 4–1 | friendly
+7.0 | 2013-9-6 | estadio azteca, mexico city, mexico | honduras | 1–0 | 1–2 | 2014 fifa world cup qualification
+8.0 | 2013-10-11 | estadio azteca, mexico city, mexico | panama | 1–0 | 2–1 | 2014 fifa world cup qualification
+9.0 | 2013-10-15 | estadio nacional de costa rica, san josé, costa rica | costa rica | 1–1 | 1–2 | 2014 fifa world cup qualification
+10.0 | 2013-10-30 | qualcomm stadium, san diego, united states | finland | 3–1 | 4–2 | friendly
+11.0 | 2013-11-13 | estadio azteca, mexico city, mexico | new zealand | 2–0 | 5–1 | 2014 fifa world cup qualification
+12.0 | 2013-11-13 | estadio azteca, mexico city, mexico | new zealand | 4–0 | 5–1 | 2014 fifa world cup qualification
+13.0 | 2013-11-20 | westpac stadium, wellington, new zealand | new zealand | 1–0 | 4–2 | 2014 fifa world cup qualification
+14.0 | 2013-11-20 | westpac stadium, wellington, new zealand | new zealand | 2–0 | 4–2 | 2014 fifa world cup qualification
+15.0 | 2013-11-20 | westpac stadium, wellington, new zealand | new zealand | 3–0 | 4–2 | 2014 fifa world cup qualification
+16.0 | 2014-1-30 | alamodome, san antonio, united states | south korea | 1–0 | 4–0 | friendly
+17.0 | 2014-6-13 | arena das dunas, natal, brazil | cameroon | 1–0 | 1–0 | 2014 fifa world cup
+18.0 | 2015-7-9 | soldier field, chicago, united states | cuba | 1–0 | 6–0 | 2015 concacaf gold cup
+19.0 | 2015-7-9 | soldier field, chicago, united states | cuba | 3–0 | 6–0 | 2015 concacaf gold cup
+20.0 | 2015-7-9 | soldier field, chicago, united states | cuba | 5–0 | 6–0 | 2015 concacaf gold cup
+21.0 | 2015-7-26 | lincoln financial field, philadelphia, united states | jamaica | 3–0 | 3–1 | 2015 concacaf gold cup
+22.0 | 2015-10-10 | rose bowl, pasadena, united states | united states | 2–1 | 3–2 | 2015 concacaf cup
+23.0 | 2016-6-9 | rose bowl, pasadena, united states | jamaica | 2–0 | 2–0 | copa américa centenario
+24.0 | 2016-10-11 | toyota park, bridgeview, united states | panama | 1–0 | 1–0 | friendly
+25.0 | 2017-6-21 | fisht olympic stadium, sochi, russia | new zealand | 2–1 | 2–1 | 2017 fifa confederations cup
+26.0 | 2017-10-10 | estadio olímpico metropolitano, san pedro sula, honduras | honduras | 1–0 | 2–3 | 2018 fifa world cup qualification"
+10421,Did Grease set a record for longest performance run?,"yes, grease set a record for the longest performance run with 3,388 performances.","closed in 1980, grease's 3,388-performance run was the longest in broadway history and was surpassed by a chorus line on september 29, 1983.","select title, performances from T where title = ""grease"";",2,144,"title | performances
+grease | 3388"
+12033,What did Gerd Muller do after his career in the Bundesliga?,"after his career in the bundesliga, gerd muller played for tsv 1861 nördlingen in the bezirksliga schwaben during the 1963-64 season, and then he played for bayern munich in the regionalliga süd during the 1964-65 season.","after his career in the bundesliga, gerd müller moved to the fort lauderdale strikers of the north american soccer league (nasl) in 1979.","select club_performance, club_performance1, club_performance2, league, league1, cup, cup1, continental, continental1, continental2, other, other1, total, total1 from T where league != ""Bundesliga"";",350,400,"club_performance | club_performance1 | club_performance2 | league | league1 | cup | cup1 | continental | continental1 | continental2 | other | other1 | total | total1
+season | club | league | apps | goals | apps | goals | comp | apps | goals | apps | goals | apps | goals
+1963–64 | tsv 1861 nördlingen | bezirksliga schwaben | 31 | 51 | — | — | — | — | — | — | — | 31 | 51
+1964–65 | bayern munich | regionalliga süd | 26 | 33 | — | — | — | — | — | 6 | 6 | 32 | 39
+1965–66 | bayern munich | bundesliga | 33 | 15 | 6 | 1 | — | — | — | — | — | 39 | 16
+1966–67 | bayern munich | bundesliga | 32 | 28 | 4 | 7 | cwc | 9 | 8 | — | — | 45 | 43
+1967–68 | bayern munich | bundesliga | 34 | 19 | 4 | 4 | cwc | 8 | 7 | — | — | 46 | 30
+1968–69 | bayern munich | bundesliga | 30 | 30 | 5 | 7 | — | — | — | — | — | 35 | 37
+1969–70 | bayern munich | bundesliga | 33 | 38 | 3 | 4 | ec | 2 | 0 | — | — | 38 | 42
+1970–71 | bayern munich | bundesliga | 32 | 22 | 7 | 10 | icfc | 8 | 7 | — | — | 47 | 39
+1971–72 | bayern munich | bundesliga | 34 | 40 | 6 | 5 | cwc | 8 | 5 | — | — | 48 | 50
+1972–73 | bayern munich | bundesliga | 33 | 36 | 5 | 7 | ec | 6 | 11 | 5 | 12 | 49 | 67
+1973–74 | bayern munich | bundesliga | 34 | 30 | 4 | 5 | ec | 10 | 8 | — | — | 48 | 43
+1974–75 | bayern munich | bundesliga | 33 | 23 | 3 | 2 | ec | 7 | 5 | — | — | 43 | 30
+1975–76 | bayern munich | bundesliga | 22 | 23 | 6 | 7 | ec | 7 | 5 | — | — | 34 | 35
+1976–77 | bayern munich | bundesliga | 25 | 28 | 4 | 11 | ec | 4 | 5 | — | — | 37 | 48
+1977–78 | bayern munich | bundesliga | 33 | 24 | 3 | 4 | uefa | 6 | 4 | — | — | 42 | 32
+1978–79 | bayern munich | bundesliga | 19 | 9 | 2 | 4 | — | — | — | — | — | 21 | 13
+total | bayern munich | bundesliga | 427 | 365 | none | none | none | none | none | none | none | none | none
+total | bayern munich | bayern total | 453 | 398 | 62 | 78 | — | 79 | 69 | 11 | 18 | 605 | 564
+german football total | german football total | german football total | 484 | 449 | 62 | 78 | — | 79 | 69 | 13 | 20 | 636 | 615
+1979 | fort lauderdale strikers | nasl | 25 | 19 | — | — | — | — | — | — | — | 25 | 19
+1980 | fort lauderdale strikers | nasl | 29 | 14 | — | — | — | — | — | — | — | 29 | 14
+1981 | fort lauderdale strikers | nasl | 17 | 5 | — | — | — | — | — | — | — | 17 | 5
+total | fort lauderdale strikers | nasl | 71 | 38 | — | — | — | — | — | — | — | 71 | 38
+career total | career total | career total | 555 | 487 | 62 | 78 | — | 79 | 69 | 11 | 18 | 707 | 653"
+14820,Which people served as representative of the Pennsylvania 9 district during which dates?,"david bard served as the representative of the pennsylvania 9 district until december 11, 1815. thomas burnside then succeeded him and served until december 3, 1816. after that, william p. maclay took over as the representative of the pennsylvania 9 district.","david bard (dr) served as representative until march 12, 1815, and was replaced by thomas burnside (dr) from december 11, 1815, until april, 1816 and later by william p. maclay (dr), starting december 3, 1816.","select vacator, successor, date_of_successors_formal_installation from T where district = ""pennsylvania 9"";",6,192,"vacator | successor | date_of_successors_formal_installation
+david bard (dr) | thomas burnside (dr) | 1815-12-11
+thomas burnside (dr) | william p. maclay (dr) | 1816-12-3"
+16253,What was the overall score for Muskingum during 1925 to 1927?,muskingum had an overall score of 17-2 in the 1925-26 season and 19-2 in the 1926-27 season.,"during the 1925–26 and 1926–27 season, lange led the muskingum basketball team to records of 17–2 and 19–2.","select overall, season from T where team = ""muskingum"" and season between ""1925"" and ""1927"";",4,189,"overall | season
+17–2 | 1925–26
+19–2 | 1926–27"
+17492,What path does Military Trail in Florida take?,"military trail in florida runs through multiple counties including broward, palm beach, and hillsboro canal. it passes through cities such as pompano beach, deerfield beach, boca raton, delray beach, golf, atlantis, and greenacres. it connects various roads and highways such as sample road, hills","as military trail (florida) enters delray beach, military connects with linton boulevard (cr 782) and west atlantic avenue (sr 806).","select county, location, mi, km, destinations, notes from T;",186,217,"county | location | mi | km | destinations | notes
+broward | pompano beach | 0e-55 | 0e-55 | sr 834 (sample road) / andrews avenue extension south | none
+broward | deerfield beach | 2.5 | 4.02 | sr 869 (southwest 10th street) to sawgrass expressway | none
+broward | deerfield beach | 3.2 | 5.15 | sr 810 (hillsboro boulevard) to i-95 | none
+hillsboro canal | hillsboro canal | 3.900.0 | 6.280.0 | bridge (southern ter-0cr 809) | bridge (southern ter-0cr 809)
+palm beach | boca raton | 1.6 | 2.575 | palmetto park road (cr 798) to i-95 | none
+palm beach | boca raton | 2.5 | 4.023 | town center road to i-95 / turnpike – town center | also serves sr 808
+palm beach | boca raton | 4.4 | 7.081 | spanish river boulevard east | former sr 800
+palm beach | boca raton | 4.8 | 7.725 | sr 794 east / cr 794 west (yamato road) to i-95 | western ter-0sr 794
+palm beach | delray beach | 7.9 | 12.714 | linton boulevard (cr 782) to i-95 | none
+palm beach | delray beach | 9.2 | 14.806 | sr 806 (west atlantic avenue) to i-95 / florida's turnpike | none
+palm beach | golf | 12.9 | 20.761 | woolbright road (cr 792) to i-95 | none
+palm beach | ​ | 14 | 22.531 | sr 804 (boynton beach boulevard) to i-95 / florida's turnpike | none
+palm beach | ​ | 15.3 | 24.623 | gateway boulevard to i-95 | none
+palm beach | ​ | 17.2 | 27.681 | hypoluxo road to i-95 | none
+palm beach | atlantis | 18.4 | 29.612 | cr 812 (lantana road) to i-95 | none
+palm beach | greenacres | 19.7 | 31.704 | melaleuca lane to i-95 | none
+palm beach | greenacres | 20.359 | 32.765 | sr 802 (lake worth road) to florida's turnpike | transition from cr 809 to sr 809
+palm beach | ​ | 21.122 | 33.993 | 10th avenue north to i-95 | none
+palm beach | palm springs | 22.66 | 36.468 | sr 882 (forest hill boulevard) to i-95 / us 441 | none
+palm beach | royal palm estates | 24.491 | 39.414 | us 98 / sr 80 (southern boulevard) to i-95 / florida's turnpike / us 441 – airport | diamond interchange
+palm beach | haverhill | 25.461 | 40.976 | belvedere road to i-95 – palm beach international airport | none
+palm beach | westgate | 26.499 | 42.646 | sr 704 (okeechobee boulevard) to i-95 / florida's turnpike – airport | none
+palm beach | west palm beach | 30.149 | 48.52 | cr 702 (45th street) to i-95 | none
+palm beach | riviera beach | 31.53 | 50.743 | sr 710 (martin luther king jr. boulevard / beeline highway) | none
+palm beach | riviera beach | 31.788 | 51.158 | sr 708 (blue heron boulevard) to i-95 / us 1 – va hospital | none
+palm beach | palm beach gardens | 33.545 | 53.985 | northlake boulevard (cr 809a) | none
+palm beach | palm beach gardens | 35.561 | 57.23 | sr 786 (pga boulevard) to i-95 / florida's turnpike | transition from sr 809 to cr 809
+palm beach | palm beach gardens | 35.961 | 57.874 | i-95 north – daytona beach | exit 79c on i-95
+palm beach | palm beach gardens–jupiter line | 38.661 | 62.219 | donald ross road to i-95 | none
+palm beach | jupiter | 42.161 | 67.852 | sr 706 (indiantown road) to i-95 / florida's turnpike | northern ter-0cr 809
+1 mi = 1.609 km; 1 km = 0.621 mi route transition | 1 mi = 1.609 km; 1 km = 0.621 mi route transition | 1 mi = 1.609 km; 1 km = 0.621 mi route transition | 1 mi = 1.609 km; 1 km = 0.621 mi route transition | 1 mi = 1.609 km; 1 km = 0.621 mi route transition | 1 mi = 1.609 km; 1 km = 0.621 mi route transition"
+2020,Did Nate Thompson change any teams during the 2012–13 NHL season?,"no, nate thompson did not change teams during the 2012–13 nhl season.","during the 2012–13 nhl season, nate thompson played for the alaska aces of the echl, and later returned to the lightning.",select * from T,448,448,"row_number | _ | _1 | _2 | regular_season | regular_season1 | regular_season2 | regular_season3 | regular_season4 | playoffs | playoffs1 | playoffs2 | playoffs3 | playoffs4 | _3 | _4
+0 | season | team | league | None | gp | g | a | pts | pim | None | gp | g | a | pts | pim
+1 | 2001–2 | seattle thunderbirds | whl | None | 69 | 13 | 26 | 39 | 42 | None | 11 | 1 | 3 | 4 | 13
+2 | 2002–3 | seattle thunderbirds | whl | None | 61 | 10 | 24 | 34 | 48 | None | 15 | 5 | 4 | 9 | 6
+3 | 2003–4 | seattle thunderbirds | whl | None | 65 | 13 | 23 | 36 | 24 | None | — | — | — | — | —
+4 | 2004–5 | seattle thunderbirds | whl | None | 58 | 19 | 15 | 34 | 39 | None | 12 | 1 | 2 | 3 | 2
+5 | 2004–5 | providence bruins | ahl | None | — | — | — | — | — | None | 11 | 0 | 1 | 1 | 4
+6 | 2005–6 | providence bruins | ahl | None | 74 | 8 | 10 | 18 | 58 | None | 3 | 0 | 0 | 0 | 10
+7 | 2006–7 | providence bruins | ahl | None | 67 | 8 | 15 | 23 | 74 | None | 13 | 0 | 2 | 2 | 9
+8 | 2006–7 | boston bruins | nhl | None | 4 | 0 | 0 | 0 | 0 | None | — | — | — | — | —
+9 | 2007–8 | providence bruins | ahl | None | 75 | 19 | 20 | 39 | 83 | None | 10 | 2 | 3 | 5 | 4
+10 | 2008–9 | new york islanders | nhl | None | 43 | 2 | 2 | 4 | 49 | None | — | — | — | — | —
+11 | 2009–10 | new york islanders | nhl | None | 39 | 1 | 5 | 6 | 39 | None | — | — | — | — | —
+12 | 2009–10 | tampa bay lightning | nhl | None | 32 | 1 | 3 | 4 | 17 | None | — | — | — | — | —
+13 | 2010–11 | tampa bay lightning | nhl | None | 79 | 10 | 15 | 25 | 29 | None | 18 | 1 | 3 | 4 | 4
+14 | 2011–12 | tampa bay lightning | nhl | None | 68 | 9 | 6 | 15 | 21 | None | — | — | — | — | —
+15 | 2012–13 | alaska aces | echl | None | 24 | 7 | 14 | 21 | 23 | None | — | — | — | — | —
+16 | 2012–13 | tampa bay lightning | nhl | None | 45 | 7 | 8 | 15 | 17 | None | — | — | — | — | —
+17 | 2013–14 | tampa bay lightning | nhl | None | 81 | 9 | 7 | 16 | 27 | None | 4 | 0 | 0 | 0 | 0
+18 | 2014–15 | anaheim ducks | nhl | None | 80 | 5 | 13 | 18 | 39 | None | 12 | 2 | 4 | 6 | 6
+19 | 2015–16 | san diego gulls | ahl | None | 2 | 0 | 0 | 0 | 0 | None | — | — | — | — | —
+20 | 2015–16 | anaheim ducks | nhl | None | 49 | 3 | 3 | 6 | 47 | None | 7 | 2 | 0 | 2 | 2
+21 | 2016–17 | san diego gulls | ahl | None | 3 | 0 | 1 | 1 | 2 | None | — | — | — | — | —
+22 | 2016–17 | anaheim ducks | nhl | None | 30 | 1 | 1 | 2 | 14 | None | 17 | 2 | 4 | 6 | 6
+23 | 2017–18 | ottawa senators | nhl | None | 43 | 4 | 7 | 11 | 10 | None | — | — | — | — | —
+24 | 2017–18 | los angeles kings | nhl | None | 26 | 1 | 5 | 6 | 10 | None | 4 | 0 | 0 | 0 | 0
+25 | 2018–19 | los angeles kings | nhl | None | 53 | 4 | 2 | 6 | 17 | None | — | — | — | — | —
+26 | 2018–19 | montreal canadiens | nhl | None | 25 | 1 | 6 | 7 | 0 | None | — | — | — | — | —
+27 | nhl totals | nhl totals | nhl totals | None | 697 | 58 | 83 | 141 | 336 | None | 62 | 7 | 11 | 18 | 18"
+21565,"When was Rich Maloney the head coach of the Michigan Wolverines, and what was his overall record with the team?",rich maloney was the head coach of the michigan wolverines from 2003-2012. his overall record with the team was 256-144-1.,"rich maloney is the head coach of the michigan wolverines where he compiled a record of 341–244 in 10 seasons, from 2003 to 2012.",select * from T,217,217,"row_number | season | team | overall | conference | standing | postseason
+0 | ball state cardinals (mid-american conference) (1996–2002) | ball state cardinals (mid-american conference) (1996–2002) | ball state cardinals (mid-american conference) (1996–2002) | ball state cardinals (mid-american conference) (1996–2002) | ball state cardinals (mid-american conference) (1996–2002) | ball state cardinals (mid-american conference) (1996–2002)
+1 | 1996 | ball state | 32–20–1 | 16–14 | t–5th | none
+2 | 1997 | ball state | 40–19 | 21–10 | 2nd | mac tournament
+3 | 1998 | ball state | 39–18 | 23–8 | 1st (west) | mac tournament
+4 | 1999 | ball state | 42–18 | 25–6 | 1st (west) | mac tournament
+5 | 2000 | ball state | 34–23 | 18–8 | t–1st (west) | mac tournament
+6 | 2001 | ball state | 35–23 | 21–5 | 1st (west) | mac tournament
+7 | 2002 | ball state | 34–23 | 17–9 | 2nd (west) | mac tournament
+8 | ball state: | ball state: | 256–144–1 | 141–60 | none | none
+9 | michigan wolverines (big 10 conference) (2003–2012) | michigan wolverines (big 10 conference) (2003–2012) | michigan wolverines (big 10 conference) (2003–2012) | michigan wolverines (big 10 conference) (2003–2012) | michigan wolverines (big 10 conference) (2003–2012) | michigan wolverines (big 10 conference) (2003–2012)
+10 | 2003 | michigan | 30–27 | 16–14 | 3rd | big 10 tournament
+11 | 2004 | michigan | 34–26 | 19–13 | t–3rd | big 10 tournament
+12 | 2005 | michigan | 42–19 | 17–12 | t–4th | atlanta regional
+13 | 2006 | michigan | 43–21 | 23–9 | 1st | atlanta regional
+14 | 2007 | michigan | 42–19 | 21–7 | 1st | corvallis super regional
+15 | 2008 | michigan | 46–14 | 26–5 | 1st | ann arbor regional
+16 | 2009 | michigan | 30–25 | 9–15 | 7th | none
+17 | 2010 | michigan | 35–22 | 14–10 | 2nd | big 10 tournament
+18 | 2011 | michigan | 17–37 | 7–16 | 10th | none
+19 | 2012 | michigan | 22–34 | 8–16 | 10th | none
+20 | michigan: | michigan: | 341–244 | 160–117 | none | none
+21 | ball state cardinals (mid-american conference) (2013–present) | ball state cardinals (mid-american conference) (2013–present) | ball state cardinals (mid-american conference) (2013–present) | ball state cardinals (mid-american conference) (2013–present) | ball state cardinals (mid-american conference) (2013–present) | ball state cardinals (mid-american conference) (2013–present)
+22 | 2013 | ball state | 31–24 | 15–12 | 2nd (west) | mac tournament
+23 | 2014 | ball state | 39–18 | 22–4 | 1st (west) | mac tournament
+24 | 2015 | ball state | 33–25 | 14-8 | 3rd (west) | mac tournament
+25 | 2016 | ball state | 33–26 | 15-9 | 1st (west) | mac tournament
+26 | 2017 | ball state | 30–28 | 14–10 | 3rd (west) | mac tournament
+27 | 2018 | ball state | 32–26 | 17–10 | 3rd | mac tournament
+28 | ball state: | ball state: | 198–147 | 97–53 | none | none
+29 | total: | total: | 795–535–1 | none | none | none
+30 | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion"
+21394,Hayden Mullins made how many appearances in Portsmouth and was the loaned to what club for Championship?,hayden mullins made a total of 114 appearances in portsmouth. he was loaned to reading for the championship.,"hayden mullins made 129 appearances for portsmouth, then he joined championship side reading.","select club, season, league, league1, league2 from T;",140,392,"club | season | league | league1 | league2
+club | season | division | apps | goals
+crystal palace | 1998–99 | division 1 | 40 | 5
+crystal palace | 1999–2000 | division 1 | 45 | 10
+crystal palace | 2000–1 | division 1 | 41 | 1
+crystal palace | 2001–2 | division 1 | 43 | 0
+crystal palace | 2002–3 | division 1 | 43 | 2
+crystal palace | 2003–4 | division 1 | 10 | 0
+crystal palace | total | total | 222 | 18
+west ham united | 2003–4 | division 1 | 27 | 0
+west ham united | 2004–5 | championship | 37 | 1
+west ham united | 2005–6 | premier league | 35 | 0
+west ham united | 2006–7 | premier league | 30 | 2
+west ham united | 2007–8 | premier league | 34 | 0
+west ham united | 2008–9 | premier league | 17 | 1
+west ham united | total | total | 180 | 4
+portsmouth | 2008–9 | premier league | 17 | 0
+portsmouth | 2009–10 | premier league | 18 | 0
+portsmouth | 2010–11 | championship | 45 | 2
+portsmouth | 2011–12 | championship | 34 | 1
+portsmouth | total | total | 114 | 3
+reading (loan) | 2011–12 | championship | 7 | 0
+birmingham city | 2012–13 | championship | 28 | 2
+birmingham city | 2013–14 | championship | 8 | 0
+birmingham city | total | total | 36 | 2
+notts county (loan) | 2013–14 | league 1 | 16 | 1
+notts county | 2014–15 | league 1 | 32 | 0
+notts county | total | total | 48 | 1
+career total | career total | career total | 607 | 28"
+21399,"In the 1969 Tour De France, when did the race occur, how many stages did the course consist of, and what was the total course distance?","the 1969 tour de france took place on june 28th, consisted of 27 stages, and had a total distance of 8,235.0 kilometers.","1969 tour de france took place between 28 june and 20 july, with 22 stages covering a distance of 4,117 km (2,558 mi).","select date, count(distinct stage) as num_stages, sum(distance) as total_distance from T;",3,216,"date | num_stages | total_distance
+28 june | 27 | 8235.0"
+831,"Who starred in the 1962 movie ""Girls' Hostel""?","the movie ""girls' hostel"" starred ajit khan, nalini jaywant, johnny walker, and shashi raj.","girls' hostel, is a 1962 hindi drama film starring, nalini jaywant, johnny walker, ajit, shashi raj and geetanjali.",select * from T,150,150,"row_number | title | director | cast | genre | notes
+0 | china town | shakti samanta | shammi kapoor, shakila, helen, madan puri, jeevankala, mridula, s. n. banerjee, kanu roy | romantic thriller | music: ravi lyrics: majrooh sultanpuri
+1 | deccan queen | akkoo | samar roy, krishna kumari, sheela kashmiri, indira bansal, maqbul, habib | action | music: sardul kwatra lyrics: aziz kashmiri, k. bakshi
+2 | dil tera diwana | b. r. panthulu | shammi kapoor, mala sinha, mehmood, shobha khote, pran, om prakash, manmohan krishna, mohan choti, ulhas, mumtaz begum | romantic drama | music: shankar jaikishan lyrics: hasrat jaipuri, shailendra
+3 | dr. vidya | rajendra bhatia | vyjayantimala, manoj kumar, madan puri, prem chopra, mumtaz, sunder, helen, nazir hussain | social family drama | music: s. d. burman lyrics: majrooh sultanpuri
+4 | durga pooja | b. k. adarsh | anant kumar, jaymala, b m vyas, naazi, hiralal | devotional | music: shivram lyrics: pandit indra
+5 | dilli ka dada | r. s. tara | sheikh mukhtar, shekhar, sahira, mukri, nishi, kumar | action | music: datta naik lyrics: sahir ludhianvi, jan nisar akhtar
+6 | ek musafir ek hasina | raj khosla | sadhana, joy mukherjee, malika, rajendranath, kamal kapoor, dhumal, jagdish raj | romantic drama | s. mukherjee production. music: o. p. nayyar lyrics: raja mehdi ali khan, shevan rizvi, s. h. bihari
+7 | gangu | pramod chakravorty | sheikh mukhtar, naaz, chandrashekhar, sulochana, madan puri, mohan choti | action | music: kalyanji anandji lyrics: prem dhawan
+8 | girls' hostel | ravindra dave | ajit khan, nalini jaywant, johnny walker, shashi raj, geetanjali, chand burque | romantic drama | music: ravi lyrics: s. h. bihari, gulshan bawra
+9 | gyarah hazaar ladkiyan | k. a. abbas | bharat bhushan, mala sinha, david, mukri, murad, nadira, helen, baby farida | social romantic drama | music: n. dutta lyrics: majrooh sultanpuri
+10 | 0.5 ticket | b. kalidas | kishore kumar, madhubala, pran, shammi, tun tun, manorama, helen | romantic comedy | music: salil chowdhury lyrics: shailendra
+11 | hame bhi jeene do | m. g. ramachandran | m. g. ramachandran, b. saroja devi, p. bhanumati | none | music s. m. subbaiah naidu lyrics: b. s. kalla, saraswati kumar deepak
+12 | hamen khelne do | r. k. sharma | chaman puri, neena chopra, dubey, master raja | children | producer: children's film society, india. music: anil biswas
+13 | hariyali aur rasta | vijay bhatt | manoj kumar, mala sinha, om prakash, shashikala, manmohan krishna, jagdeep, surendra, helen | romantic family drama | music: shankar jaikishan lyrics: shailendra, hasrat jaipuri
+14 | hawa mahal | b j patel | rajan, helen, bela bose, sulochana, jeevan, tiwari, murad | fantasy | music: avinash vyas lyrics: saraswati kumar deepak, raja mehdi ali khan, aziz kashmiri
+15 | hong kong | pachhi | ashok kumar, b. saroja devi, k. n. singh, om prakash, helen, babu rao, king kong (wrestler) | action thriller | music: o. p. nayyar lyrics: raja mehdi ali khan, qamar jalalabadi, shewan rizvi, s. h. bihari
+16 | isi ka naam duniya hai | shakti samanta | ashok kumar, mehmood shayama, om prakash, sahira, k. n. singh, helen, nazir hussain | socia family drama | music: ravi lyrics: s. h. bihari
+17 | jadoo mahal | aakkoo | helen, azad, hiralal, ram kumar, krishna kumari | fantasy | music: bulo c rani lyrics: shewan rizvi
+18 | jai ho mohabbat ki | vithaldas panchotia | paresh banerjee, meera, mirza musharraf, najma, heera sawant, helen, v panchotia, sulbha kataria | comedy drama | music: harbanslal, amar singh, moti babu lyrics: pandit madhur
+19 | jadugar daku | chandrakant | p. jairaj, jabeen, madhumalti, helen, maruti, bela bose, tun tun | fantasy | music: s. n. tripathi lyrics: prem dhawan
+20 | jhoola | k. shankar | sunil dutt, vyjayantimala, pran, rajendranath, sulochana, tun tun, manmohan krishna, raj mehra | family drama | music: salil chowdhary lyrics: rajendra krishan
+21 | kailashpati | dhirubhai desai | mahesh desai, sumitra devi, padmarani, niranajan sharma, jeevan | mythological | music: avinash vyas lyrics: madan bharti
+22 | kala chashma | k. vinod | manju, amarnath, madan puri, maruti, sheela kashmiri, jeevankala, sheikh | action crime | music: sardul kwatra lyrics: bismil ludhianvi
+23 | kala samundar | r. p. ashk | p. jairaj, chitra, maruti, hiralal, tun tun, radhika | action | music: datta naik lyrics: sahir ludhianvi, ram prakash ashq, anand bakshi
+24 | king kong | babubhai mistri | dara singh, kumkum, randhawa, king kong (wrestler), uma dutt, leela mishra, chandrashekhar, kamal mehra | action | music: chitragupta lyrics: majrooh sultanpuri"
+16913,When and in what division did Jordan last play for Milan?,jordan last played for milan in the 1984-1985 season in the first division.,jordan's last season with milan was in serie b.,"select season, league from T;",60,420,"season | league
+season | division
+1970–71 | first division
+1971–72 | first division
+1972–73 | first division
+1973–74 | first division
+1974–75 | first division
+1975–76 | first division
+1976–77 | first division
+1977–78 | first division
+total | total
+1977–78 | first division
+1978–79 | first division
+1979–80 | first division
+1980–81 | first division
+total | total
+1981–82 | serie a
+1982–83 | serie b
+total | total
+1983–84 | serie a
+total | total
+1984–85 | first division
+1985–86 | first division
+1986–87 | first division
+total | total
+1986–87 | third division
+1987–88 | third division
+1988–89 | third division
+1989–90 | third division
+total | total
+career total | career total"
+1693,Were any Social Dramas released between July and September?,"no, there were no social dramas released between july and september in the list of bollywood films of 1992.","kal ki awaz, released august 21 and directed by ravi chopra, was a social drama.","select title, genre from T;",62,217,"title | genre
+jaagruti | action/drama
+parda hai parda | drama
+chamatkar | comedy
+aaj ka goonda raj | crime/action
+honeymoon | romance
+mashooq | romance
+payal | romance
+zulm ki hukumat | action
+nishchaiy | romance
+sapne sajan ke | musical/romance
+police aur mujrim | crime/drama
+bekhudi | musical/romance
+humshakal | crime/drama
+radha ka sangam | romance
+tahalka | action
+khel | comedy/drama
+deedar | romance/drama
+mehboob mere mehboob | romance
+bol radha bol | romance/comedy
+kal ki awaz | social drama
+jeena marna tere sang | action
+isi ka naam zindagi | comedy
+heer ranjha | romance
+aasman se gira | fantasy
+angaar | romance
+bewaffa se waffa | romance/drama
+balwaan | action
+waqt ka badshah | action
+junoon | romance/musical
+sangeet | romance/drama
+dilwale kabhi na hare | romance/drama"
+11423,How did the membership change in the senate of the 79th United States Congress (Washington state)?,"in the senate of the 79th united states congress in washington state, monrad wallgren (d) resigned on january 9, 1945, after being elected governor of washington. hugh mitchell (d) was appointed as his successor on january 10, 1945. hugh mitchell (d) then","senator in the 79th united states congress (washington state), monrad wallgren (d), was until january 9, 1945 then hugh mitchell (d), from january 10, 1945 till december 25, 1946 and harry p. cain (r), from december 26, 1946.","select vacator, reason_for_change, successor, date_of_successors_formal_installation from T where state_class = ""washington (1)"";",8,126,"vacator | reason_for_change | successor | date_of_successors_formal_installation
+monrad wallgren (d) | resigned 1945-1-9, after being elected governor of washington. successor was appointed to serve until the next election. | hugh mitchell (d) | 1945-1-10
+hugh mitchell (d) | resigned 1946-12-25. successor was appointed to finish the term already having to be elected the next term. | harry p. cain (r) | 1946-12-26"
+15032,Which were the first two teams Flitney played for in 2016-17 and how many games did he play for the first one?,the information provided does not include any data about flitney's teams and games in the 2016-17 season.,flitney played the first nine games of the 2016–17 season for eastleigh and then played for the national league south side whitehawk in 2016–17 as well.,select * from T,378,378,"row_number | club | season | league | league1 | league2 | fa_cup | fa_cup1 | league_cup | league_cup1 | other | other1 | total | total1
+0 | club | season | division | apps | goals | apps | goals | apps | goals | apps | goals | apps | goals
+1 | brighton & hove albion (loans) | 2003–4 | second division | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0
+2 | brighton & hove albion (loans) | 2003–4 | second division | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0
+3 | doncaster rovers | 2004–5 | league 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
+4 | barnet | 2005–6 | league 2 | 35 | 0 | 1 | 0 | 2 | 0 | 0 | 0 | 38 | 0
+5 | barnet | 2006–7 | league 2 | 15 | 0 | 1 | 0 | 2 | 0 | 2 | 0 | 20 | 0
+6 | barnet | barnet total | barnet total | 50 | 0 | 2 | 0 | 4 | 0 | 2 | 0 | 58 | 0
+7 | grays athletic | 2007–8 | conference premier | 30 | 0 | 0 | 0 | — | — | 0 | 0 | 30 | 0
+8 | grays athletic | 2008–9 | conference premier | 6 | 0 | 0 | 0 | — | — | 0 | 0 | 6 | 0
+9 | grays athletic | grays athletic total | grays athletic total | 36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 36 | 0
+10 | croydon athletic (loan) | 2008–9 | isthmian division 1 south | none | none | none | none | — | — | none | none | none | none
+11 | croydon athletic | 2009–10 | isthmian division 1 south | none | none | none | none | — | — | none | none | none | none
+12 | dover athletic | 2009–10 | conference south | 16 | 0 | 0 | 0 | — | — | 2 | 0 | 18 | 0
+13 | dover athletic | 2010–11 | conference south | 40 | 0 | 7 | 0 | — | — | 1 | 0 | 48 | 0
+14 | dover athletic | dover total | dover total | 56 | 0 | 7 | 0 | 0 | 0 | 3 | 0 | 66 | 0
+15 | gillingham | 2011–12 | league 2 | 27 | 0 | 3 | 0 | 1 | 0 | 0 | 0 | 31 | 0
+16 | eastleigh (loan) | 2012–13 | conference south | 7 | 0 | 0 | 0 | — | — | 1 | 0 | 8 | 0
+17 | eastleigh | 2012–13 | conference south | 19 | 0 | 0 | 0 | — | — | 2 | 0 | 21 | 0
+18 | eastleigh | 2013–14 | conference south | 40 | 0 | 2 | 0 | — | — | 4 | 0 | 46 | 0
+19 | eastleigh | 2014–15 | conference premier | 46 | 0 | 3 | 0 | — | — | 4 | 0 | 53 | 0
+20 | eastleigh | 2015–16 | national league | 30 | 0 | 5 | 0 | — | — | 2 | 0 | 37 | 0
+21 | eastleigh | 2016–17 | national league | 9 | 0 | 0 | 0 | — | — | 0 | 0 | 9 | 0
+22 | eastleigh | eastleigh total | eastleigh total | 144 | 0 | 10 | 0 | 0 | 0 | 12 | 0 | 166 | 0
+23 | whitehawk | 2016–17 | national league south | 7 | 0 | 2 | 0 | — | — | 2 | 0 | 11 | 0
+24 | bromley | 2016–17 | national league | 14 | 0 | 0 | 0 | — | — | 1 | 0 | 15 | 0
+25 | eastleigh | 2017–18 | national league | 12 | 0 | 1 | 0 | — | — | 0 | 0 | 13 | 0
+26 | career total | career total | career total | 356 | 0 | 25 | 0 | 5 | 0 | 21 | 0 | 407 | 0"
+21455,During which season and for what league did Jesper Grønkjær play the most games for Copenhagen?,jesper grønkjær played the most games for copenhagen during the 1995-96 season in the superliga league.,grønkjær played the highest number of games in his copenhagen career during the 2009–10 season and played in the superliga.,select * from T,434,434,"row_number | club_performance | club_performance1 | club_performance2 | league | league1 | cup | cup1 | league_cup | league_cup1 | continental | continental1 | total | total1
+0 | season | club | league | apps | goals | apps | goals | apps | goals | apps | goals | apps | goals
+1 | denmark | denmark | denmark | league | league | danish cup | danish cup | league cup | league cup | europe | europe | total | total
+2 | 1995–96 | aab | superliga | 29 | 3 | none | none | none | none | none | none | none | none
+3 | 1996–97 | aab | superliga | 28 | 1 | none | none | none | none | none | none | none | none
+4 | 1997–98 | aab | superliga | 29 | 6 | none | none | none | none | none | none | none | none
+5 | netherlands | netherlands | netherlands | league | league | knvb cup | knvb cup | league cup | league cup | europe | europe | total | total
+6 | 1998–99 | ajax | eredivisie | 25 | 8 | 4 | 2 | 0 | 0 | 4 | 0 | 33 | 10
+7 | 1999–2000 | ajax | eredivisie | 25 | 3 | 1 | 0 | 0 | 0 | 4 | 0 | 30 | 3
+8 | 2000–1 | ajax | eredivisie | 5 | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 6 | 2
+9 | england | england | england | league | league | fa cup | fa cup | league cup | league cup | europe | europe | total | total
+10 | 2000–1 | chelsea | premier league | 14 | 1 | 2 | 2 | 0 | 0 | 0 | 0 | 16 | 3
+11 | 2001–2 | chelsea | premier league | 13 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 16 | 0
+12 | 2002–3 | chelsea | premier league | 30 | 4 | 5 | 1 | 2 | 0 | 2 | 0 | 39 | 5
+13 | 2003–4 | chelsea | premier league | 31 | 2 | 4 | 0 | 3 | 0 | 10 | 1 | 48 | 3
+14 | 2004–5 | birmingham city | premier league | 16 | 0 | 0 | 0 | 2 | 1 | 0 | 0 | 18 | 1
+15 | spain | spain | spain | league | league | copa del rey | copa del rey | supercopa de españa | supercopa de españa | europe | europe | total | total
+16 | 2004–5 | atlético madrid | la liga | 16 | 0 | none | none | none | none | none | none | none | none
+17 | germany | germany | germany | league | league | dfb-pokal | dfb-pokal | other | other | europe | europe | total | total
+18 | 2005–6 | vfb stuttgart | bundesliga | 25 | 0 | 2 | 0 | 1 | 0 | 7 | 0 | 35 | 0
+19 | denmark | denmark | denmark | league | league | danish cup | danish cup | league cup | league cup | europe | europe | total | total
+20 | 2006–7 | copenhagen | superliga | 21 | 5 | 4 | 0 | none | none | 6 | 1 | 31 | 6
+21 | 2007–8 | copenhagen | superliga | 25 | 3 | 3 | 1 | none | none | 7 | 1 | 35 | 5
+22 | 2008–9 | copenhagen | superliga | 14 | 2 | 0 | 0 | none | none | 2 | 0 | 16 | 2
+23 | 2009–10 | copenhagen | superliga | 29 | 2 | 1 | 0 | none | none | 12 | 4 | 42 | 6
+24 | 2010–11 | copenhagen | superliga | 25 | 4 | 1 | 0 | none | none | 12 | 2 | 38 | 4
+25 | total | denmark | denmark | 200 | 26 | none | none | none | none | none | none | none | none
+26 | total | netherlands | netherlands | 55 | 12 | 7 | 3 | 0 | 0 | 9 | 1 | 69 | 15
+27 | total | england | england | 104 | 7 | 14 | 3 | 7 | 1 | 12 | 1 | 137 | 12
+28 | total | spain | spain | 16 | 0 | none | none | none | none | none | none | none | none
+29 | total | germany | germany | 25 | 0 | 2 | 0 | 1 | 0 | 7 | 0 | 35 | 0
+30 | career total | career total | career total | 400 | 45 | none | none | none | none | none | none | none | none"
+12347,How well did Todd Hlushko perform in his two seasons with the Canadian National Team?,the information provided does not give any specific data about todd hlushko's performance with the canadian national team.,"todd hlushko played with the canadian national team for two seasons, scoring 44 goals in 113 games combined.","select regular_season, regular_season1, regular_season2, regular_season3, regular_season4, playoffs, playoffs1, playoffs2, playoffs3, playoffs4 from T;",310,496,"regular_season | regular_season1 | regular_season2 | regular_season3 | regular_season4 | playoffs | playoffs1 | playoffs2 | playoffs3 | playoffs4
+None | gp | g | a | pts | pim | None | gp | g | a
+None | 66 | 28 | 18 | 46 | 71 | None | 7 | 5 | 3
+None | 25 | 9 | 17 | 26 | 31 | None | — | — | —
+None | 40 | 27 | 17 | 44 | 39 | None | 6 | 2 | 4
+None | 66 | 9 | 14 | 23 | 55 | None | — | — | —
+None | 74 | 16 | 35 | 51 | 113 | None | — | — | —
+None | 58 | 22 | 26 | 48 | 10 | None | — | — | —
+None | 55 | 22 | 6 | 28 | 61 | None | — | — | —
+None | 9 | 6 | 0 | 6 | 4 | None | 6 | 2 | 1
+None | 2 | 1 | 0 | 1 | 0 | None | — | — | —
+None | 2 | 0 | 1 | 1 | 2 | None | 1 | 0 | 0
+None | 46 | 22 | 10 | 32 | 36 | None | 4 | 2 | 2
+None | 4 | 0 | 0 | 0 | 6 | None | — | — | —
+None | 35 | 14 | 13 | 27 | 70 | None | 16 | 8 | 1
+None | 58 | 7 | 11 | 18 | 49 | None | — | — | —
+None | 13 | 0 | 1 | 1 | 27 | None | — | — | —
+None | 33 | 10 | 14 | 24 | 48 | None | 21 | 13 | 4
+None | 82 | 24 | 26 | 50 | 78 | None | — | — | —
+None | — | — | — | — | — | None | 2 | 0 | 0
+None | 55 | 13 | 28 | 41 | 78 | None | 10 | 5 | 2
+None | 54 | 18 | 19 | 37 | 126 | None | 10 | 1 | 1
+None | 49 | 10 | 27 | 37 | 40 | None | 12 | 1 | 2
+None | 52 | 15 | 13 | 28 | 26 | None | 7 | 2 | 1
+None | 48 | 9 | 12 | 21 | 28 | None | 6 | 0 | 0
+None | 41 | 3 | 9 | 12 | 83 | None | — | — | —
+None | 4 | 2 | 7 | 9 | 0 | None | — | — | —
+None | 16 | 8 | 20 | 28 | 33 | None | — | — | —
+None | 24 | 8 | 22 | 30 | 10 | None | 3 | 0 | 3
+None | 263 | 77 | 86 | 163 | 326 | None | 47 | 25 | 8
+None | 79 | 8 | 13 | 21 | 84 | None | 3 | 0 | 0
+None | 299 | 68 | 108 | 176 | 381 | None | 45 | 9 | 6"
+21014,What season did Coreau fail to earn a win in five appearances of the American Hockey League (AHL) with the Grand Rapids Griffins and won just once with the Toledo Walleye of the ECHL ?,coreau failed to earn a win in the 2013-14 season in five appearances with the grand rapids griffins in the american hockey league (ahl) and won just once with the toledo walleye of the echl.,"during the 2013–14 season, coreau had failed to earn a win in five appearances of the american hockey league (ahl) with the grand rapids griffins and won just once with the toledo walleye of the echl.",select * from T,414,414,"row_number | _ | _1 | _2 | regular_season | regular_season1 | regular_season2 | regular_season3 | regular_season4 | regular_season5 | regular_season6 | regular_season7 | regular_season8 | playoffs | playoffs1 | playoffs2 | playoffs3 | playoffs4 | playoffs5 | playoffs6 | playoffs7 | _3 | _4
+0 | season | team | league | None | gp | w | l | ot | min | ga | so | gaa | sv% | None | gp | w | l | min | ga | so | gaa | sv%
+1 | 2008–9 | peterborough stars | ojhl | None | 12 | 8 | 1 | 1 | 637 | 23 | 0 | 2.16 | 0.93 | None | 2 | — | — | — | — | — | 0e-55 | 1
+2 | 2009–10 | lincoln stars | ushl | None | 38 | 7 | 22 | 4 | 1988 | 120 | 1 | 3.62 | 0.882 | None | — | — | — | — | — | — | — | —
+3 | 2010–11 | northern michigan | ccha | None | 15 | 5 | 5 | 2 | 662 | 41 | 0 | 3.71 | 0.909 | None | — | — | — | — | — | — | — | —
+4 | 2011–12 | northern michigan | ccha | None | 23 | 12 | 7 | 2 | 1244 | 46 | 1 | 2.22 | 0.928 | None | — | — | — | — | — | — | — | —
+5 | 2012–13 | northern michigan | ccha | None | 38 | 15 | 19 | 4 | 2181 | 98 | 1 | 2.7 | 0.919 | None | — | — | — | — | — | — | — | —
+6 | 2013–14 | grand rapids griffins | ahl | None | 5 | 0 | 4 | 0 | 205 | 15 | 0 | 4.39 | 0.873 | None | — | — | — | — | — | — | — | —
+7 | 2013–14 | toledo walleye | echl | None | 20 | 1 | 12 | 6 | 1146 | 77 | 0 | 4.03 | 0.879 | None | — | — | — | — | — | — | — | —
+8 | 2014–15 | toledo walleye | echl | None | 8 | 5 | 2 | 0 | 439 | 22 | 0 | 3.01 | 0.897 | None | — | — | — | — | — | — | — | —
+9 | 2014–15 | grand rapids griffins | ahl | None | 25 | 16 | 8 | 1 | 1475 | 54 | 3 | 2.2 | 0.927 | None | 1 | 0 | 1 | 58 | 3 | 0 | 3.1 | 0.875
+10 | 2015–16 | grand rapids griffins | ahl | None | 47 | 29 | 15 | 2 | 2742 | 111 | 6 | 2.43 | 0.923 | None | 3 | 2 | 1 | 159 | 5 | 0 | 1.89 | 0.949
+11 | 2016–17 | grand rapids griffins | ahl | None | 33 | 19 | 11 | 3 | 1979 | 77 | 2 | 2.33 | 0.917 | None | 19 | 15 | 4 | 1141 | 54 | 0 | 2.89 | 0.909
+12 | 2016–17 | detroit red wings | nhl | None | 14 | 5 | 4 | 3 | 712 | 41 | 2 | 3.46 | 0.887 | None | — | — | — | — | — | — | — | —
+13 | 2017–18 | grand rapids griffins | ahl | None | 38 | 21 | 10 | 5 | 2214 | 93 | 2 | 2.52 | 0.913 | None | 3 | 1 | 2 | 156 | 5 | 1 | 1.92 | 0.924
+14 | 2017–18 | detroit red wings | nhl | None | 7 | 0 | 5 | 1 | 381 | 27 | 0 | 4.26 | 0.867 | None | — | — | — | — | — | — | — | —
+15 | 2018–19 | san diego gulls | ahl | None | 13 | 3 | 6 | 3 | 672 | 40 | 0 | 3.57 | 0.895 | None | — | — | — | — | — | — | — | —
+16 | 2018–19 | san antonio rampage | ahl | None | 32 | 12 | 13 | 6 | 1731 | 91 | 2 | 3.15 | 0.886 | None | — | — | — | — | — | — | — | —
+17 | nhl totals | nhl totals | nhl totals | None | 21 | 5 | 9 | 4 | 1093 | 68 | 2 | 3.74 | 0.88 | None | — | — | — | — | — | — | — | —"
+1778,Did Darryl Edestrand play much in the NHL?,"based on the given table, it is not possible to determine if darryl edestrand played much in the nhl.","darryl edestrand played 455 games in the nhl for the st. louis blues, philadelphia flyers, pittsburgh penguins, boston bruins, and los angeles kings.","select regular_season, regular_season1, regular_season2, regular_season3, regular_season4, playoffs, playoffs1, playoffs2, playoffs3, playoffs4 from T;",260,416,"regular_season | regular_season1 | regular_season2 | regular_season3 | regular_season4 | playoffs | playoffs1 | playoffs2 | playoffs3 | playoffs4
+None | gp | g | a | pts | pim | None | gp | g | a
+None | — | 15 | 30 | 45 | 144 | None | — | — | —
+None | 5 | 0 | 0 | 0 | 0 | None | — | — | —
+None | 45 | 4 | 20 | 24 | 132 | None | — | — | —
+None | 17 | 1 | 2 | 3 | 10 | None | — | — | —
+None | 7 | 0 | 1 | 1 | 4 | None | — | — | —
+None | 12 | 0 | 0 | 0 | 2 | None | — | — | —
+None | 53 | 2 | 32 | 34 | 84 | None | 7 | 0 | 3
+None | 74 | 7 | 23 | 30 | 108 | None | 15 | 1 | 5
+None | 2 | 0 | 0 | 0 | 6 | None | — | — | —
+None | 71 | 10 | 30 | 40 | 106 | None | 6 | 0 | 1
+None | 72 | 6 | 30 | 36 | 109 | None | 4 | 0 | 0
+None | 77 | 10 | 23 | 33 | 52 | None | 4 | 0 | 2
+None | 78 | 15 | 24 | 39 | 88 | None | — | — | —
+None | 3 | 0 | 0 | 0 | 0 | None | — | — | —
+None | 52 | 3 | 8 | 11 | 20 | None | 16 | 1 | 2
+None | 68 | 1 | 9 | 10 | 56 | None | 3 | 0 | 1
+None | 77 | 4 | 17 | 21 | 103 | None | 12 | 1 | 3
+None | 42 | 4 | 13 | 17 | 62 | None | 12 | 1 | 3
+None | 17 | 0 | 3 | 3 | 16 | None | 3 | 0 | 0
+None | 64 | 6 | 27 | 33 | 28 | None | — | — | —
+None | 1 | 0 | 0 | 0 | 0 | None | — | — | —
+None | 13 | 0 | 2 | 2 | 15 | None | 2 | 1 | 1
+None | 55 | 1 | 4 | 5 | 46 | None | 2 | 0 | 0
+None | 57 | 3 | 17 | 20 | 34 | None | — | — | —
+None | 455 | 34 | 90 | 124 | 404 | None | 24 | 3 | 9"
+8303,What are the scientific names of the reptiles from Alabama and New Mexico and do the state names appear in the common names as well?,"the scientific name of the reptile from alabama is pseudemys alabamensis, and the scientific name of the reptile from new mexico is cnemidophorus neomexicanus. the state names do not appear in the common names of the reptiles.",alabama and new mexico appeared in both common names (alabama red-bellied turtle and new mexico whiptail lizard) and scientific names (pseudemys alabamensis and cnemidophorus neomexicanus).,"select scientific_name, state_reptile from T where state = ""alabama"" or state = ""new mexico"";",4,224,"scientific_name | state_reptile
+pseudemys alabamensis | alabama red-bellied turtle
+cnemidophorus neomexicanus | new mexico whiptail lizard"
+20800,When was Parkash Singh Badal the Chief Minister of Punjab state?,parkash singh badal was the chief minister of punjab state from 2007-03-01 to 2017-03-16.,"parkash singh badal is an indian politician who was chief minister of punjab state from 1970 to 1971, from 1977 to 1980, from 1997 to 2002, and from 2007 to 2017.","select term_of_office, term_of_office1, term_of_office2 from T;",69,253,"term_of_office | term_of_office1 | term_of_office2
+1966-11-1 | 1967-3-8 | p127d
+1967-3-8 | 1967-11-25 | p262d
+1967-11-25 | 1968-8-23 | p272d
+1968-8-23 | 1969-2-17 | p178d
+1969-2-17 | 1970-3-27 | p1y, p38d
+1970-3-27 | 1971-6-14 | p1y, p79d
+1971-6-14 | 1972-3-17 | p277d
+1972-3-17 | 1977-4-30 | p5y, p44d
+1977-4-30 | 1977-6-20 | p51d
+1977-6-20 | 1980-2-17 | p2y, p242d
+1980-2-17 | 1980-6-6 | p110d
+1980-6-6 | 1983-10-6 | p3y, p122d
+1983-10-6 | 1985-9-29 | p1y, p358d
+1985-9-29 | 1987-6-11 | p1y, p255d
+1987-6-11 | 1992-2-25 | p4y, p259d
+1992-2-25 | 1995-8-31 | p3y, p187d
+1996-11-21 | p1y, p82d | b.k.n. chhibber
+1996-11-21 | 1997-2-11 | b.k.n. chhibber
+1997-2-12 | 2002-2-26 | b.k.n. chhibber
+2002-2-26 | 2007-3-1 | p5y, p3d
+2007-3-1 | 2012-3-14 | p10y, p15d
+2012-3-14 | 2017-3-16 | p10y, p15d
+2017-3-16 | incumbent | p2y, p45d"
+1714,Were any Greek records tied?,"no, there were no greek records tied.","in 2016, nicholas scarvelis tied mihail stamatoyiannis' 2010 record of 20.36 m in the shot put event.",select * from T where record = record;,184,184,"row_number | event | record | athlete | date | meet | place | ref
+0 | 50 m | 5.71 | georgios theodoridis | 1998-1-17 | none | ? | None
+1 | 50 m | 5.71 | georgios theodoridis | 2001-2-25 | meeting pas de calais | france liévin, france | None
+2 | 60 m | 6.5 | haralabos papadias | 1997-3-7 | world championships | france paris, france | None
+3 | 200 m | 20.62 | alexis alexopoulos | 1996-2-11 | none | greece piraeus, greece | None
+4 | 400 m | 46.36 | konstantinos kenteris | 1999-2-13 | none | greece piraeus, greece | None
+5 | 800 m | 1:48.64 | konstadínos nakópoulos | 2014-1-28 | vienna indoor classic | austria vienna, austria | None
+6 | 1500 m | 3:39.63 | panagiotis papoulias | 1998-2-1 | none | greece piraeus, greece | None
+7 | 3000 m | 7:43.66 | panagiotis papoulias | 1998-2-21 | none | greece piraeus, greece | None
+8 | 60 m hurdles | 7.6 | konstadinos douvalidis | 2014-2-25 | prague indoor | czech republic prague, czech republic | None
+9 | high jump | 2.35 m | lambros papakostas | 1995-3-12 | world championships | spain barcelona, spain | None
+10 | pole vault | 5.85 m | konstantinos filippidis | 2017-3-3 | european championships | serbia belgrade, serbia | None
+11 | pole vault | 5.85 m | konstantinos filippidis | 2018-2-8 | meeting ville de madrid | spain madrid, spain | None
+12 | long jump | 8.23 m | louis tsatoumas | 2014-2-8 | 28th greek championships | greece piraeus, greece | None
+13 | long jump | 8.23 m | miltiadis tentoglou | 2019-2-8 | villa de madrid indoor meeting | spain madrid, spain | None
+14 | long jump | 8.38 m | miltiadis tentoglou | 2019-3-3 | european championships | united kingdom glasgow, united kingdom | None
+15 | triple jump | 17.12 m | dimitrios tsiamis | 2006-2-18 | none | greece athens, greece | None
+16 | shot put | 20.36 m | mihail stamatoyiannis | 2010-2-17 | none | greece paiania, greece | None
+17 | shot put | 20.36 m a | nicholas scarvelis | 2016-1-16 | none | united states flagstaff, united states | None
+18 | weight throw | 23.73 m | spirídon zoullién | 2006-3-11 | ncaa men's division i championships | united states fayetteville, united states | None
+19 | heptathlon | 6032 pts | prodromos korkizoglou | (2000-2-112000-2-12,p1d) | none | greece piraeus, greece | None
+20 | heptathlon | 6.91 (60 m), 7.15 m (long jump), 15.34 m (shot put), 1.99 m (high jump) / 8 (60 m hurdles), 5 m (pole vault), 2:49.61 (1000 m) | 6.91 (60 m), 7.15 m (long jump), 15.34 m (shot put), 1.99 m (high jump) / 8 (60 m hurdles), 5 m (pole vault), 2:49.61 (1000 m) | 6.91 (60 m), 7.15 m (long jump), 15.34 m (shot put), 1.99 m (high jump) / 8 (60 m hurdles), 5 m (pole vault), 2:49.61 (1000 m) | 6.91 (60 m), 7.15 m (long jump), 15.34 m (shot put), 1.99 m (high jump) / 8 (60 m hurdles), 5 m (pole vault), 2:49.61 (1000 m) | 6.91 (60 m), 7.15 m (long jump), 15.34 m (shot put), 1.99 m (high jump) / 8 (60 m hurdles), 5 m (pole vault), 2:49.61 (1000 m) | None
+21 | 5000 m walk | t19:8.74 | aléxandros papamihaíl | 2016-2-13 | greek championships | greece piraeus, greece | None
+22 | 4x400 m relay | 3:10.16 | greece georgios ikonomidis dimitrios giepos georgios doupis stilianos dimotsios | 2001-3-10 | world championships | portugal lisbon, portugal | None"
+795,Who is the starring actor of Aastik?,the starring actor of aastik is shahu modak.,"aastik is a 1956 hindi film starring shahu modak, paro devi and meenakshi.",select * from T,174,174,"row_number | title | director | cast | genre | notes
+0 | 26 january | ramesh saigal | ajit, nalini jaywant, nishi, johnny walker, b. m. vyas, leela mishra, sapru, randhir, cuckoo, gajanan jagirdar, chaman puri, jagdish sethi | fantasy costume drama | music: c. ramchandra lyrics: rajendra krishan
+1 | aabroo | chaturbhuj doshi | kamini kaushal, kishore kumar, smriti biswas, amir bano, madan puri, achala sachdev, roopmala, tun tun, joginder singh lal | romance | music: bulo c. rani lyrics: d. n. madhok, gopal singh nepali, raja mehdi ali khan
+2 | aan baan | d. d. kashyap | ajit, nalini jaywant, usha kiran, pran, mahipal, manmohan krishna, ulhas, niranjan sharma | drama action | music: husnlal bhagatram lyrics: qamar jalalabadi
+3 | aankh ka nasha | ved madan | anita guha, m. rajan, shammi, helen, w. m. khan, amar, chaman puri, raj mehra | costume action | music: dhani ram lyrics: harsh
+4 | aastik | s. p. kalla | shahu modak, paro devi, meenakshi, b. m. vyas, praveen paul | devotional | music: narayan dutt lyrics: s. p. kalla
+5 | alam ara | nanubhai vakil | daljeet, chitra, tiwari, niranjan sharma, minu mumtaz, w. m. khan, heera sawant, maruti, rajan haksar | costume action | music: a. r. qureshi lyrics: shewan rizvi
+6 | amarsingh rathaur | jaswant zaveri | p. jairaj, nirupa roy, veena, murad, sapru, minu mumtaz, ratnamala, yashodhara katju, sunder, helen | historical | music: sanmukh babu lyrics: bharat vyas
+7 | anjaan | m. sadiq | vyjayantimala, pradeep kumar, premnath, jeevan, mubarak, johnny walker, shammi, amar, helen, raj mehra, ram avtar | romance drama | music: hemant kumar lyrics: rajendra krishan
+8 | anuraag | madhusadan | mukesh, usha kiran, pratima devi, tun tun, shivraj, mridula | social | music: mukesh lyrics: indeevar, kaif irfani
+9 | arab ka saudagar | s. d. narang | pradeep kumar, smriti biswas, shashikala, sunder, kathana, s. d. narang | costume action | music: hemant kumar lyrics: s.h. bihari, ravi
+10 | awara shahzadi | pyarelal | meena shorey, daljeet, sheila ramani, johnny walker, malika, maqbul, heera sawant, habib | action costume | music: nashad, jimmy lyrics: sartaj rahmani, khawar zaman
+11 | awaz | zia sarhadi | nalini jaywant, usha kiran, rajendra kumar, murad, mukri, zul vellani, leela chitnis, nazir hussain, jayant, sapru | social | music: salil chowdhury lyrics: shailendra, zia sarhadi, vishwamitra adil, prem dhawan
+12 | ayodhyapati | s. fattelal | usha kiran, abhi bhattacharya, anant kumar, achala sachdev, sapru, kanchanmala, ratnamala, manorama | mythology | music: ravi lyrics: saraswati kumar deepak
+13 | badal aur bijli | maurice | manhar desai, ameeta, yashodhara katju, kumar, manorama, anwar hussain, rajan haksar, heera sawant, habib | action | music: bipin babul lyrics: anjum jaipuri
+14 | badshah salamat | prem sinha | chandrashekhar, shyama, smriti biswas, bhagwan, amarnath, minu mumtaz, b. m. vyas, tiwari, heera sawant, anwar hussain | costume action | music: bulo c. rani lyrics: pyarelal santoshi, raja mehdi ali khan, shafiq kanpuri, vinay kumar, k. razdan
+15 | baghdad ka jadu a.k.a. magic of baghdad | john cawas | john cawas, nadia, krishna kumari, vijaya chaudhary, nazir kashmiri, ratan kumar | action fantasy | music: shafi m. nagri lyrics: preetam dehlvi
+16 | bajrang bali | manibhai vyas | mahipal, nirupa roy, chandrashekhar, tiwari, minu mumtaz, moni chatterjee, kammo, kamal kapoor | religious | music: s. n. tripathi lyrics: b. d. mishra
+17 | bal ramayan | vijay bhatt | shahu modak, shobhana samarth, prem adib | children religious | none
+18 | bandhan | hemchander chander | meena kumari, pradeep kumar, motilal, shashikala, david, achala sachdev, leela mishra, minu mumtaz, nana palsikar, kammo | drama | music: hemant kumar lyrics: rajendra krishan
+19 | basant bahar | raja nawathe | bharat bhushan, nimmi, kumkum, om prakash, manmohan krishna, chand burque, leela chitnis | romance musical | music: shankar jaikishan lyrics: shailendra and hasrat jaipuri
+20 | basant panchami | jayant desai | nirupa roy, anant kumar, kumkum, jeevan, radhakishan, s. n. tripathi, niranjan sharma, naazi | devotional | music: chitragupta lyrics: kavi pradeep
+21 | bhagam bhag | bhagwan | bhagwan, kishore kumar, smriti biswas, kumkum, shashikala, badri prasad, tiwari, kanchanmala, parshuram | comedy | music: o. p. nayyar lyrics: majrooh sultanpuri
+22 | bhai-bhai | m. v. raman | ashok kumar, shyama, kishore kumar, nimmi, david, om prakash, daisy irani, shivraj | family drama | music: madan mohan lyrics: rajendra krishan
+23 | c.i.d. | raj khosla | dev anand, shakila, johnny walker, introducing: waheeda rehman, k. n. singh, minu mumtaz, mehmood, jagdish raj, tun tun, sheela vaz | crime suspense romance | music: o. p. nayyar lyrics: majrooh sultanpuri
+24 | caravan | rafiq rizvi | mahipal, shakila, yashodra katju, hiralal | action | music: mohinder singh sarna lyrics: tanvir naqvi
+25 | char dost | nitin bose | vishwanath, kamar, bhola, kammo | children | produced by children's film society. music: b. balsara lyrics: uday khanna
+26 | char minar | ravindra dave | nasir khan, bhagwan, jabeen, anjali devi, rashid khan, helen, naazi | costume drama | music: sardul kwatra lyrics: vishwamitra adil
+27 | chhoo mantar | m. sadiq | johnny walker, karan dewan, shyama, anita guha, gajanan jagirdar, amar, raj mehra, nazir kashmiri | comedy | music: o. p. nayyar lyrics: jan nisar akhtar
+28 | chori chori | anant thakur | raj kapoor, nargis, pran, johnny walker, gope, bhagwan, rajasulochana | romantic comedy | music: shankar jaikishan won the filmfare award for best music director. lyrics: shailendra and hasrat jaipuri"
+12106,Who did Juninho play for in the FA Cup and League Cup in 1997?,juninho played for middlesbrough in the fa cup and league cup in 1997.,juninho played for middlesbrough in the fa cup and league cup in 1997.,select * from T,462,462,"row_number | club_performance | club_performance1 | club_performance2 | league | league1 | cup | cup1 | league_cup | league_cup1 | continental | continental1 | total | total1
+0 | season | club | league | apps | goals | apps | goals | apps | goals | apps | goals | apps | goals
+1 | brazil | brazil | brazil | league | league | copa do brasil | copa do brasil | league cup | league cup | south america | south america | total | total
+2 | 1993 | são paulo | série a | 16 | 1 | none | none | none | none | none | none | none | none
+3 | 1994 | são paulo | série a | 19 | 2 | none | none | none | none | none | none | none | none
+4 | 1995 | são paulo | série a | 9 | 0 | none | none | none | none | none | none | none | none
+5 | england | england | england | league | league | fa cup | fa cup | league cup | league cup | europe | europe | total | total
+6 | 1995–96 | middlesbrough | premier league | 21 | 2 | 0 | 0 | 0 | 0 | none | none | 21 | 2
+7 | 1996–97 | middlesbrough | premier league | 36 | 10 | 6 | 2 | 6 | 1 | none | none | 48 | 13
+8 | spain | spain | spain | league | league | copa del rey | copa del rey | copa de la liga | copa de la liga | europe | europe | total | total
+9 | 1997–98 | atlético madrid | la liga | 23 | 6 | 2 | 1 | none | none | 6 | 2 | 31 | 9
+10 | 1998–99 | atlético madrid | la liga | 32 | 8 | 6 | 1 | none | none | 9 | 4 | 44 | 13
+11 | england | england | england | league | league | fa cup | fa cup | league cup | league cup | europe | europe | total | total
+12 | 1999–2000 | middlesbrough | premier league | 28 | 4 | 1 | 0 | 6 | 1 | none | none | 35 | 5
+13 | brazil | brazil | brazil | league | league | copa do brasil | copa do brasil | league cup | league cup | south america | south america | total | total
+14 | 2000 | vasco da gama | série a | 22 | 4 | none | none | none | none | none | none | none | none
+15 | 2001 | vasco da gama | série a | 15 | 4 | none | none | none | none | none | none | none | none
+16 | 2002 | flamengo | série a | 0 | 0 | none | none | none | none | none | none | none | none
+17 | england | england | england | league | league | fa cup | fa cup | league cup | league cup | europe | europe | total | total
+18 | 2002–3 | middlesbrough | premier league | 10 | 3 | 0 | 0 | 0 | 0 | none | none | 10 | 3
+19 | 2003–4 | middlesbrough | premier league | 31 | 8 | 1 | 0 | 6 | 1 | none | none | 38 | 9
+20 | scotland | scotland | scotland | league | league | scottish cup | scottish cup | league cup | league cup | europe | europe | total | total
+21 | 2004–5 | celtic | premier league | 14 | 1 | 2 | 0 | 2 | 0 | 4 | 0 | 22 | 1
+22 | brazil | brazil | brazil | league | league | copa do brasil | copa do brasil | league cup | league cup | south america | south america | total | total
+23 | 2005 | palmeiras | série a | 37 | 14 | none | none | none | none | none | none | none | none
+24 | 2006 | palmeiras | série a | 26 | 6 | none | none | none | none | none | none | none | none
+25 | australia | australia | australia | league | league | cup | cup | league cup | league cup | asia | asia | total | total
+26 | 2007–8 | sydney | a-league | 14 | 0 | none | none | none | none | none | none | none | none
+27 | country | brazil | brazil | 144 | 31 | none | none | none | none | none | none | none | none
+28 | country | england | england | 126 | 27 | none | none | none | none | none | none | none | none
+29 | country | spain | spain | 55 | 14 | none | none | none | none | none | none | none | none
+30 | country | scotland | scotland | 14 | 1 | none | none | none | none | none | none | none | none
+31 | country | australia | australia | 14 | 0 | none | none | none | none | none | none | none | none
+32 | total | total | total | 353 | 73 | none | none | none | none | none | none | none | none"
+813,Which 1958 films did Akkoo direct?,"akkoo directed the films ""al hilal"" and ""bhola shikaar"" in 1958.",bollywood's akkoo directed both al hilal and bhola shikaar in 1958.,"select title, director from T;",48,144,"title | director
+12 o'clock | pramod chakravorty
+aakhri dao | mahesh kaul
+adalat | kalidas
+aji bas shukriya | mohammed husain
+alladin ka chirag | t. r. raghunath
+al hilal | akkoo
+amar deep | t. prakash rao
+baghi sipahi | bhagwandas verma
+balyogi upmanyu | harsukh bhatt
+bhala aadmi | bhagwan
+bhola shikaar | akkoo
+chaalbaaz | nanabhai bhatt
+chalti ka naam gaadi | satyen bose
+chandan | m. v. raman
+chandu | majnu
+chaubees ghante | dwarka khosla
+circus sundari | chandrakant, c. m. trivedi
+daughter of sindbad | ratilal
+detective | shakti samanta
+devar bhabhi | kedar kapoor
+dilli ka thug | s. d. narang
+do mastane | harish tara
+do phool | a.r. kardar
+dulhan | v. m. vyas"
+14563,"How long did Eddie Olczyk's NHL career last, and what was his final overall record like?",the given table does not provide information about the length of eddie olczyk's nhl career or his overall record.,"eddie olczyk played 1,031 nhl games and produced 342 goals and 452 assists for a total of 794 points between 1984 and 2000.","select regular_season, regular_season1, regular_season2, regular_season3, regular_season4, playoffs, playoffs1, playoffs2, playoffs3, playoffs4 from T;",250,400,"regular_season | regular_season1 | regular_season2 | regular_season3 | regular_season4 | playoffs | playoffs1 | playoffs2 | playoffs3 | playoffs4
+None | gp | g | a | pts | pim | None | gp | g | a
+None | 42 | 50 | 92 | 142 | 54 | None | — | — | —
+None | 62 | 21 | 47 | 68 | 36 | None | — | — | —
+None | 70 | 20 | 30 | 50 | 67 | None | 15 | 6 | 5
+None | 79 | 29 | 50 | 79 | 47 | None | 3 | 0 | 0
+None | 79 | 16 | 35 | 51 | 119 | None | 4 | 1 | 1
+None | 80 | 42 | 33 | 75 | 55 | None | 6 | 5 | 4
+None | 80 | 38 | 52 | 90 | 75 | None | — | — | —
+None | 79 | 32 | 56 | 88 | 78 | None | 5 | 1 | 2
+None | 18 | 4 | 10 | 14 | 13 | None | — | — | —
+None | 61 | 26 | 31 | 57 | 69 | None | — | — | —
+None | 64 | 32 | 33 | 65 | 67 | None | 6 | 2 | 1
+None | 25 | 8 | 12 | 20 | 26 | None | — | — | —
+None | 46 | 13 | 16 | 29 | 26 | None | — | — | —
+None | 37 | 3 | 5 | 8 | 28 | None | 1 | 0 | 0
+None | 20 | 2 | 1 | 3 | 4 | None | — | — | —
+None | 13 | 2 | 8 | 10 | 8 | None | — | — | —
+None | 51 | 27 | 22 | 49 | 65 | None | 6 | 1 | 2
+None | 67 | 21 | 23 | 44 | 45 | None | — | — | —
+None | 12 | 4 | 7 | 11 | 6 | None | 5 | 1 | 0
+None | 56 | 11 | 11 | 22 | 35 | None | 6 | 2 | 0
+None | 7 | 2 | 2 | 4 | 6 | None | — | — | —
+None | 61 | 10 | 15 | 25 | 29 | None | — | — | —
+None | 33 | 2 | 2 | 4 | 12 | None | — | — | —
+None | 1031 | 342 | 452 | 794 | 874 | None | 57 | 19 | 15"
+12608,What record did John Cook lead the Badgers with in 1997?,"in 1997, john cook led the badgers to a record of 30-3 overall and 19-1 in the conference, finishing tied for 1st place.",john cook led the badgers in the 1997 big 10 with a 19–1 conference record and with a 30–3 overall record.,"select overall, conference, standing from T where season = 1997;",3,231,"overall | conference | standing
+30–3 | 19–1 | t–1st"
+21283,What are José Théodore's respective GAA stats with each team he played for during the 2005-06 season?,there is no information provided in the given table and sql query about josé théodore's gaa stats with each team he played for during the 2005-06 season.,josé théodore 3.04 gaa with the avalanche combined with his 3.46 rating earned from his previous play with the canadiens.,"select _2, regular_season8 from T;",64,736,"_2 | regular_season8
+league | gaa
+qmjhl | 3.78
+qmjhl | 3.61
+qmjhl | 4.8
+qmjhl | 2.97
+ahl | —
+qmjhl | 3.38
+nhl | 6.67
+ahl | 3.55
+nhl | 3.87
+ahl | 2.85
+nhl | —
+nhl | 3.29
+ahl | 2.87
+nhl | 2.1
+ahl | 3
+nhl | 2.57
+nhl | 2.11
+nhl | 2.9
+nhl | 2.27
+sel | 2.46
+nhl | 3.46
+nhl | 3.04
+nhl | 3.26
+nhl | 2.44
+ahl | 3.02
+nhl | 2.87
+nhl | 2.81
+nhl | 2.71
+nhl | 2.46
+nhl | 3.29
+nhl totals | 2.68"
+13802,What are Hayle Ibrahimov's major achievements?,"hayle ibrahimov's major achievements include setting the azerbaijani records in the 3000m race with a time of 7:34.57 on may 10, 2013, at the qatar athletic super grand prix held in doha, qatar, and setting the record in the 5000m",hayle ibrahimov is the azerbaijani record holder in the 3000 metres and in the 5000 metres.,"select event, record, date, meet, place from T where athlete = ""hayle ibrahimov"";",10,264,"event | record | date | meet | place
+3000 m | 7:34.57 | 2013-5-10 | qatar athletic super grand prix | qatar doha, qatar
+5000 m | t13:9.17 | 2014-8-28 | weltklasse zürich | switzerland zürich, switzerland"
+12393,How many goals and appearances did Mullins make for West Ham?,mullins made 180 appearances and scored 4 goals for west ham.,"mullins made a total of 213 appearances for west ham, scoring 7 goals.","select club, season, league, league1, league2, total, total1 from T;",196,392,"club | season | league | league1 | league2 | total | total1
+club | season | division | apps | goals | apps | goals
+crystal palace | 1998–99 | division 1 | 40 | 5 | 47 | 5
+crystal palace | 1999–2000 | division 1 | 45 | 10 | 49 | 11
+crystal palace | 2000–1 | division 1 | 41 | 1 | 51 | 1
+crystal palace | 2001–2 | division 1 | 43 | 0 | 47 | 0
+crystal palace | 2002–3 | division 1 | 43 | 2 | 52 | 3
+crystal palace | 2003–4 | division 1 | 10 | 0 | 11 | 0
+crystal palace | total | total | 222 | 18 | 257 | 20
+west ham united | 2003–4 | division 1 | 27 | 0 | 34 | 1
+west ham united | 2004–5 | championship | 37 | 1 | 45 | 1
+west ham united | 2005–6 | premier league | 35 | 0 | 42 | 1
+west ham united | 2006–7 | premier league | 30 | 2 | 32 | 3
+west ham united | 2007–8 | premier league | 34 | 0 | 39 | 0
+west ham united | 2008–9 | premier league | 17 | 1 | 21 | 1
+west ham united | total | total | 180 | 4 | 213 | 7
+portsmouth | 2008–9 | premier league | 17 | 0 | none | none
+portsmouth | 2009–10 | premier league | 18 | 0 | 27 | 0
+portsmouth | 2010–11 | championship | 45 | 2 | 49 | 2
+portsmouth | 2011–12 | championship | 34 | 1 | 36 | 1
+portsmouth | total | total | 114 | 3 | 129 | 3
+reading (loan) | 2011–12 | championship | 7 | 0 | none | none
+birmingham city | 2012–13 | championship | 28 | 2 | 30 | 2
+birmingham city | 2013–14 | championship | 8 | 0 | 9 | 0
+birmingham city | total | total | 36 | 2 | 39 | 2
+notts county (loan) | 2013–14 | league 1 | 16 | 1 | none | none
+notts county | 2014–15 | league 1 | 32 | 0 | 35 | 0
+notts county | total | total | 48 | 1 | 51 | 1
+career total | career total | career total | 607 | 28 | 696 | 33"
+12369,What was Michael Winterbottom's contribution to the episodes of the mad woman in 1993?,"michael winterbottom directed the episodes of ""the mad woman"" in 1993.","in 1993, michael winterbottom directed the episodes of the mad woman in the attic in jimmy mcgovern's cracker.","select directed_by from T where title like ""%mad woman%"" and original_airdate like ""1993%"" and directed_by = ""michael winterbottom"";",2,98,"directed_by
+michael winterbottom
+michael winterbottom"
+21103,What is the top songs of the Album ancient hearts of 1988?,"the top songs of the album ""ancient heart"" in 1988 are ""good tradition"" (chart position 10) and ""twist in my sobriety"" (chart position 22).","tanita tikaram achieved chart success with the singles ""twist in my sobriety"" and ""good tradition"" from her 1988 debut album, ancient heart.","select title, chart_positions from T where album = ""ancient heart"" and year = 1988;",4,360,"title | chart_positions
+""good tradition"" | 10
+""twist in my sobriety"" | 22"
+1909,What team and league did Guillaume Desbiens appear in the 2005-06 season?,guillaume desbiens appeared for the gwinnett gladiators in the echl league during the 2005-06 season.,"in the 2005–06 season, guillaume desbiens appeared for the chicago wolves of the ahl and the gwinnett gladiators of the echl.",select * from T,384,384,"row_number | _ | _1 | _2 | regular_season | regular_season1 | regular_season2 | regular_season3 | regular_season4 | playoffs | playoffs1 | playoffs2 | playoffs3 | playoffs4 | _3 | _4
+0 | season | team | league | None | gp | g | a | pts | pim | None | gp | g | a | pts | pim
+1 | 2001–2 | rouyn-noranda huskies | qmjhl | None | 65 | 14 | 10 | 24 | 115 | None | 4 | 1 | 1 | 2 | 9
+2 | 2002–3 | rouyn-noranda huskies | qmjhl | None | 64 | 15 | 18 | 33 | 233 | None | 4 | 0 | 0 | 0 | 4
+3 | 2003–4 | rouyn-noranda huskies | qmjhl | None | 58 | 20 | 21 | 41 | 199 | None | 11 | 2 | 2 | 4 | 24
+4 | 2004–5 | rouyn-noranda huskies | qmjhl | None | 56 | 27 | 16 | 43 | 206 | None | 10 | 1 | 4 | 5 | 25
+5 | 2005–6 | chicago wolves | ahl | None | 3 | 0 | 0 | 0 | 7 | None | — | — | — | — | —
+6 | 2005–6 | gwinnett gladiators | echl | None | 65 | 33 | 27 | 60 | 187 | None | 17 | 10 | 6 | 16 | 38
+7 | 2006–7 | chicago wolves | ahl | None | 54 | 3 | 6 | 9 | 118 | None | 6 | 0 | 1 | 1 | 2
+8 | 2007–8 | chicago wolves | ahl | None | 23 | 2 | 1 | 3 | 30 | None | 1 | 0 | 1 | 1 | 0
+9 | 2007–8 | gwinnett gladiators | echl | None | 10 | 2 | 5 | 7 | 46 | None | 8 | 3 | 6 | 9 | 10
+10 | 2008–9 | manitoba moose | ahl | None | 78 | 21 | 26 | 47 | 158 | None | 22 | 4 | 8 | 12 | 18
+11 | 2009–10 | manitoba moose | ahl | None | 67 | 19 | 15 | 34 | 144 | None | 6 | 3 | 6 | 9 | 17
+12 | 2009–10 | vancouver canucks | nhl | None | 1 | 0 | 0 | 0 | 2 | None | — | — | — | — | —
+13 | 2010–11 | manitoba moose | ahl | None | 53 | 11 | 16 | 27 | 104 | None | 13 | 1 | 3 | 4 | 31
+14 | 2010–11 | vancouver canucks | nhl | None | 12 | 0 | 0 | 0 | 10 | None | — | — | — | — | —
+15 | 2011–12 | abbotsford heat | ahl | None | 59 | 3 | 11 | 14 | 114 | None | — | — | — | — | —
+16 | 2011–12 | calgary flames | nhl | None | 10 | 0 | 0 | 0 | 25 | None | — | — | — | — | —
+17 | 2012–13 | chicago wolves | ahl | None | 52 | 4 | 4 | 8 | 118 | None | — | — | — | — | —
+18 | 2013–14 | lake erie monsters | ahl | None | 62 | 8 | 6 | 14 | 200 | None | — | — | — | — | —
+19 | 2014–15 | dornbirner ec | ebel | None | 53 | 12 | 12 | 24 | 148 | None | — | — | — | — | —
+20 | 2015–16 | hdd olimpija ljubljana | ebel | None | 6 | 0 | 0 | 0 | 6 | None | — | — | — | — | —
+21 | 2015–16 | sheffield steelers | eihl | None | 29 | 7 | 16 | 23 | 96 | None | 2 | 1 | 0 | 1 | 2
+22 | 2016–17 | sheffield steelers | eihl | None | 52 | 8 | 15 | 23 | 130 | None | 4 | 2 | 0 | 2 | 2
+23 | nhl totals | nhl totals | nhl totals | None | 23 | 0 | 0 | 0 | 37 | None | — | — | — | — | —"
+12366,What was the history of C. M. Newton as the head coach?,"as the head coach, c. m. newton had the following history:","c. m. newton served as the head coach at transylvania from 1956 to 1968, alabama from 1968 to 1980, and vanderbilt from 1981 to 1989, compiling a record of 509–375.","select season, team, overall, conference, standing, postseason from T;",168,196,"season | team | overall | conference | standing | postseason
+transylvania pioneers () (1956–1968) | transylvania pioneers () (1956–1968) | transylvania pioneers () (1956–1968) | transylvania pioneers () (1956–1968) | transylvania pioneers () (1956–1968) | transylvania pioneers () (1956–1968)
+transylvania: | transylvania: | 169–137 | none | none | none
+alabama crimson tide (southeastern conference) (1968–1980) | alabama crimson tide (southeastern conference) (1968–1980) | alabama crimson tide (southeastern conference) (1968–1980) | alabama crimson tide (southeastern conference) (1968–1980) | alabama crimson tide (southeastern conference) (1968–1980) | alabama crimson tide (southeastern conference) (1968–1980)
+1968–69 | alabama | 4–20 | 1–17 | 10th | none
+1969–70 | alabama | 8–18 | 5–13 | 9th | none
+1970–71 | alabama | 10–16 | 6–12 | t–8th | none
+1971–72 | alabama | 18–8 | 13–5 | 3rd | none
+1972–73 | alabama | 22–8 | 13–5 | t–2nd | nit fourth place
+1973–74 | alabama | 22–4 | 15–3 | t–1st | none
+1974–75 | alabama | 22–5 | 15–3 | t–1st | ncaa division i first round
+1975–76 | alabama | 23–5 | 15–3 | 1st | ncaa division i second round
+1976–77 | alabama | 25–6 | 14–4 | 3rd | nit fourth place
+1977–78 | alabama | 17–10 | 11–7 | 4th | none
+1978–79 | alabama | 22–11 | 11–7 | t–3rd | nit third place
+1979–80 | alabama | 18–12 | 12–6 | t–3rd | nit second round
+alabama: | alabama: | 211–123 | 131–85 | none | none
+vanderbilt commodores (southeastern conference) (1981–1989) | vanderbilt commodores (southeastern conference) (1981–1989) | vanderbilt commodores (southeastern conference) (1981–1989) | vanderbilt commodores (southeastern conference) (1981–1989) | vanderbilt commodores (southeastern conference) (1981–1989) | vanderbilt commodores (southeastern conference) (1981–1989)
+1981–82 | vanderbilt | 15–13 | 7–11 | t–7th | none
+1982–83 | vanderbilt | 19–14 | 9–9 | t–4th | nit second round
+1983–84 | vanderbilt | 14–15 | 8–10 | t–7th | none
+1984–85 | vanderbilt | 11–17 | 4–14 | 10th | none
+1985–86 | vanderbilt | 13–15 | 7–11 | 7th | none
+1986–87 | vanderbilt | 18–16 | 7–11 | t–8th | nit quarterfinal
+1987–88 | vanderbilt | 20–11 | 10–8 | t–4th | ncaa division i sweet 16
+1988–89 | vanderbilt | 19–14 | 12–6 | t–2nd | ncaa division i first round
+vanderbilt: | vanderbilt: | 129–115 | 64–80 | none | none
+total: | total: | 509–375 | none | none | none
+national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion"
+17085,What teams and leagues did Engelland play for in 2003-04?,"in 2003-04, engelland played for the las vegas wranglers in the echl and the lowell lock monsters in the ahl.",deryk engelland split the 2003–04 season between the las vegas wranglers of the echl and the lowell lock monsters of the american hockey league (ahl).,select * from T,448,448,"row_number | _ | _1 | _2 | regular_season | regular_season1 | regular_season2 | regular_season3 | regular_season4 | playoffs | playoffs1 | playoffs2 | playoffs3 | playoffs4 | _3 | _4
+0 | season | team | league | None | gp | g | a | pts | pim | None | gp | g | a | pts | pim
+1 | 1998–99 | moose jaw warriors | whl | None | 2 | 0 | 0 | 0 | 0 | None | — | — | — | — | —
+2 | 1999–0 | moose jaw warriors | whl | None | 55 | 0 | 5 | 5 | 62 | None | 4 | 0 | 0 | 0 | 0
+3 | 2000–1 | moose jaw warriors | whl | None | 65 | 4 | 11 | 15 | 157 | None | 4 | 0 | 0 | 0 | 10
+4 | 2001–2 | moose jaw warriors | whl | None | 56 | 7 | 10 | 17 | 102 | None | 12 | 0 | 2 | 2 | 27
+5 | 2002–3 | moose jaw warriors | whl | None | 65 | 3 | 8 | 11 | 199 | None | 13 | 1 | 1 | 2 | 20
+6 | 2003–4 | las vegas wranglers | echl | None | 35 | 2 | 11 | 13 | 63 | None | 2 | 0 | 0 | 0 | 0
+7 | 2003–4 | lowell lock monsters | ahl | None | 26 | 0 | 0 | 0 | 34 | None | — | — | — | — | —
+8 | 2004–5 | las vegas wranglers | echl | None | 72 | 5 | 16 | 21 | 138 | None | — | — | — | — | —
+9 | 2005–6 | south carolina stingrays | echl | None | 35 | 3 | 13 | 16 | 20 | None | — | — | — | — | —
+10 | 2005–6 | hershey bears | ahl | None | 37 | 0 | 4 | 4 | 77 | None | 1 | 0 | 0 | 0 | 0
+11 | 2006–7 | hershey bears | ahl | None | 44 | 4 | 6 | 10 | 95 | None | 14 | 0 | 0 | 0 | 14
+12 | 2006–7 | reading royals | echl | None | 6 | 0 | 3 | 3 | 8 | None | — | — | — | — | —
+13 | 2007–8 | wilkes-barre/scranton penguins | ahl | None | 80 | 2 | 15 | 17 | 141 | None | 23 | 1 | 3 | 4 | 14
+14 | 2008–9 | wilkes-barre/scranton penguins | ahl | None | 80 | 3 | 11 | 14 | 143 | None | 12 | 0 | 2 | 2 | 6
+15 | 2009–10 | wilkes-barre/scranton penguins | ahl | None | 71 | 5 | 6 | 11 | 121 | None | 4 | 0 | 1 | 1 | 7
+16 | 2009–10 | pittsburgh penguins | nhl | None | 9 | 0 | 2 | 2 | 17 | None | — | — | — | — | —
+17 | 2010–11 | pittsburgh penguins | nhl | None | 63 | 3 | 7 | 10 | 123 | None | — | — | — | — | —
+18 | 2011–12 | pittsburgh penguins | nhl | None | 73 | 4 | 13 | 17 | 56 | None | 6 | 0 | 1 | 1 | 14
+19 | 2012–13 | rosenborg ihk | get | None | 15 | 1 | 8 | 9 | 43 | None | — | — | — | — | —
+20 | 2012–13 | pittsburgh penguins | nhl | None | 42 | 0 | 6 | 6 | 54 | None | 7 | 0 | 0 | 0 | 8
+21 | 2013–14 | pittsburgh penguins | nhl | None | 56 | 6 | 6 | 12 | 58 | None | — | — | — | — | —
+22 | 2014–15 | calgary flames | nhl | None | 76 | 2 | 9 | 11 | 53 | None | 11 | 0 | 1 | 1 | 50
+23 | 2015–16 | calgary flames | nhl | None | 69 | 3 | 9 | 12 | 54 | None | — | — | — | — | —
+24 | 2016–17 | calgary flames | nhl | None | 81 | 4 | 12 | 16 | 85 | None | 4 | 0 | 0 | 0 | 2
+25 | 2017–18 | vegas golden knights | nhl | None | 79 | 5 | 18 | 23 | 24 | None | 20 | 0 | 2 | 2 | 26
+26 | 2018–19 | vegas golden knights | nhl | None | 74 | 2 | 10 | 12 | 18 | None | 7 | 0 | 1 | 1 | 8
+27 | nhl totals | nhl totals | nhl totals | None | 622 | 29 | 92 | 121 | 542 | None | 55 | 0 | 5 | 5 | 108"
+21294,"In the 2015 Tour De France, where and when did the course start and end, and how long was the course in terms of total distance and total stages?","in the 2015 tour de france, the course started in utrecht, netherlands on july 4th and ended in sèvres to paris (champs-élysées) on july 26th. the total distance of the course was 123.3 km (76.6 mi) and","the 3,360.3 km (2,088 mi) 2015 tour de france race consisted of 21 stages, starting on 4 july in utrecht, the netherlands, and concluding on 26 july with the champs-élysées stage in paris.","select course, date, distance, stage from T where stage = 1 or stage = (select max(stage) from T);",8,192,"course | date | distance | stage
+utrecht (netherlands) | 4 july | 13.8 km (8.6 mi) | 1.0
+sèvres to paris (champs-élysées) | 26 july | 109.5 km (68 mi) | 21.0"
+8477,"How long was Adonis' reign as longest-running show, and when was it's streak beaten?","the given question does not match the information provided in the sql query and table. the table is about the longest-running broadway show ""the phantom of the opera"" and does not mention adonis or any streak being beaten.","adonis had a run of 603 performances, the longest-running show on broadway until 1893.","select title, opening_date, closing_date, performances from T where title = ""the phantom of the opera"";",4,144,"title | opening_date | closing_date | performances
+the phantom of the opera | 1988-1-26 | none | 12927"
+20740,In 2008–09 how did Frese perform as coach at the Maryland Terrapins?,the given table does not provide information about frese's performance as coach at the maryland terrapins in the 2008-09 season.,"in 2008–09, frese was able to coach the team to both the regular season and tournament championships, as well as an ncaa elite eight appearance and 31–5 record.","select season, team, overall, conference, standing, postseason from T;",186,217,"season | team | overall | conference | standing | postseason
+ball state cardinals (mid-american conference) (1999–2001) | ball state cardinals (mid-american conference) (1999–2001) | ball state cardinals (mid-american conference) (1999–2001) | ball state cardinals (mid-american conference) (1999–2001) | ball state cardinals (mid-american conference) (1999–2001) | ball state cardinals (mid-american conference) (1999–2001)
+1999–2000 | ball state | 16–13 | 8–8 | t–6th | none
+2000–1 | ball state | 19–9 | 11–5 | 3rd | none
+ball state: | ball state: | 35–22 (.614) | 19–13 (.594) | none | none
+minnesota golden gophers (big 10 conference) (2001–2002) | minnesota golden gophers (big 10 conference) (2001–2002) | minnesota golden gophers (big 10 conference) (2001–2002) | minnesota golden gophers (big 10 conference) (2001–2002) | minnesota golden gophers (big 10 conference) (2001–2002) | minnesota golden gophers (big 10 conference) (2001–2002)
+2001–2 | minnesota | 22–8 | 11–6 | 3rd | ncaa second round
+minnesota: | minnesota: | 22–8 (.733) | 11–6 (.647) | none | none
+maryland terrapins (atlantic coast conference) (2002–2014) | maryland terrapins (atlantic coast conference) (2002–2014) | maryland terrapins (atlantic coast conference) (2002–2014) | maryland terrapins (atlantic coast conference) (2002–2014) | maryland terrapins (atlantic coast conference) (2002–2014) | maryland terrapins (atlantic coast conference) (2002–2014)
+2002–3 | maryland | 10–18 | 4–13 | 9th | none
+2003–4 | maryland | 18–13 | 9–9 | 3rd | ncaa second round
+2004–5 | maryland | 22–10 | 9–8 | 5th | ncaa second round
+2005–6 | maryland | 34–4 | 14–3 | t–2nd | ncaa champions
+2006–7 | maryland | 28–6 | 11–5 | 3rd | ncaa second round
+2007–8 | maryland | 33–4 | 14–2 | 2nd | ncaa elite 8
+2008–9 | maryland | 31–5 | 15–2 | 1st | ncaa elite 8
+2009–10 | maryland | 21–13 | 6–10 | 9th | wnit third round
+2010–11 | maryland | 24–8 | 9–5 | 4th | ncaa second round
+2011–12 | maryland | 31–5 | 12–4 | 3rd | ncaa elite 8
+2012–13 | maryland | 26–8 | 14–4 | 3rd | ncaa sweet 16
+2013–14 | maryland | 28–7 | 12–4 | 3rd | ncaa final 4
+maryland (acc): | maryland (acc): | 306–101 (.752) | 129–69 (.652) | none | none
+maryland terrapins (big 10 conference) (2014–present) | maryland terrapins (big 10 conference) (2014–present) | maryland terrapins (big 10 conference) (2014–present) | maryland terrapins (big 10 conference) (2014–present) | maryland terrapins (big 10 conference) (2014–present) | maryland terrapins (big 10 conference) (2014–present)
+2014–15 | maryland | 34–3 | 18–0 | 1st | ncaa final 4
+2015–16 | maryland | 31–4 | 16–2 | 1st | ncaa second round
+2016–17 | maryland | 32–3 | 15–1 | t-1st | ncaa sweet 16
+2017–18 | maryland | 26–8 | 12–4 | 2nd | ncaa second round
+2018–19 | maryland | 29-5 | 15-3 | 1st | ncaa second round
+maryland (big 10): | maryland (big 10): | 152–23 (.869) | 78–10 (.886) | none | none
+maryland (overall): | maryland (overall): | 458–124 (.787) | none | none | none
+total: | total: | 515–154 (.770) | none | none | none
+national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion"
+21002,"When did Corona release ""The Rhythm of the Night"" and ""Baby Baby?""","corona released ""the rhythm of the night"" in 1993 and ""baby baby"" in 1995.","corona released ""the rhythm of the night"" in 1993 and ""baby baby"" in 1995.","select year, title from T;",46,368,"year | title
+year | title
+1993 | ""the rhythm of the tni""
+1995 | ""baby baby""
+1995 | ""try me out""
+1995 | ""i don't wanna be a star""
+1996 | ""megamix""
+1997 | ""the power of love""
+1998 | ""walking on music""
+1998 | ""magic touch""
+2000 | ""good love""
+2000 | ""volcano""
+2006 | ""back in time""
+2006 | ""i'll be your lady""
+2008 | ""baby i don't care""
+2009 | ""la playa del sol""
+2010 | ""angel""
+2011 | ""my song (la lai)""
+2012 | ""hurry up"" (featuring mikey p.)
+2013 | ""queen of town""
+2014 | ""stay with me""
+2015 | ""we used to love""
+2016 | ""super model""
+""—"" denotes items that did not chart or were not released in that territory. | ""—"" denotes items that did not chart or were not released in that territory."
+656,What is Hulchul?,hulchul is a bollywood film released in 1951.,hulchul is a 1951 hindi film directed by s k ojha.,select title from T;,27,162,"title
+damad
+daman
+dasavtaar
+deedar
+deepak
+dholak
+dilbar
+do sitare
+ek nazar
+ek tha ladka
+ek tha raja
+for ladies only a.k.a. titli
+ghayal
+hamari shaan
+hanuman patal vijay
+hulchul
+humlog
+ishwar bhakti
+jadoo
+jai mahakali
+jai mahalaxmi
+jai shankar
+jawani ki aag
+johari
+kali ghata
+kashmir
+khazana"
+10105,"When was ""Cats"" the longest-running Broadway show and which show surpassed it?","""cats"" was the longest-running broadway show from october 7, 1982, to september 10, 2000. it was surpassed by ""the phantom of the opera"" which is currently the longest-running broadway show.","""cats"" was the longest-running broadway show from 1997 until 2006, when it was surpassed by ""the phantom of the opera"".","select opening_date, closing_date, title from T;",54,144,"opening_date | closing_date | title
+1988-1-26 | none | the phantom of the opera
+1982-10-7 | 2000-9-10 | cats
+1975-7-25 | 1990-4-28 | a chorus line
+1972-2-14 | 1980-4-13 | grease
+1964-9-22 | 1972-7-2 | fiddler on the roof
+1939-11-8 | 1947-7-12 | life with father
+1933-12-4 | 1941-5-31 | tobacco road
+1923-5-23 | 1927-10-1 | abie's irish rose
+1918-8-26 | 1921-8-27 | lightnin'
+1891-11-9 | 1893-8-7 | a trip to chinatown
+1884-9-4 | 1886-4-17 | adonis
+1880-2-4 | 1881-5-31 | hazel kirke
+1866-9-12 | 1868-1-4 | the black crook
+1853-8-8 | 1854-5-13 | uncle tom's cabin (aiken version)
+1850 | 1850-10-7? | the drunkard
+1844-8-5 | 1844-11-2 | putnam, the iron son of '76
+1833-7-22 | 1833-9-9 | mazeppa, or, the wild horse of ukraine
+1831-1-10 | ? | the elephant of siam and the fire fiend by samuel beazley"
+20799,What was the capacity of Giulești-Valentin Stănescu Stadium in 2011–12 Liga I?,"the capacity of giulești-valentin stănescu stadium in the 2011–12 liga i season was 30,201.","in 2011–12 liga i, giulești-valentin stănescu stadium had a capacity of 11,704.",select universitatea_cluj from T where row_number = 1;,1,115,"universitatea_cluj
+capacity: 30201"
+12733,How did Ben Howland perform during his 10 year career with the Bruins?,"during his 10-year career with the bruins, ben howland had an overall record of 233-107, with a conference record of 123-61. he led the team to three consecutive final four appearances from 2006-2008 and won four pac-10 conference regular season titles. however, he","in his 10 years with the bruins, ben howland had a .685 winning percentage and won four pac-12 conference titles.","select season, team, overall, conference, standing, postseason from T;",198,231,"season | team | overall | conference | standing | postseason
+northern arizona lumberjacks (big sky conference) (1994–1999) | northern arizona lumberjacks (big sky conference) (1994–1999) | northern arizona lumberjacks (big sky conference) (1994–1999) | northern arizona lumberjacks (big sky conference) (1994–1999) | northern arizona lumberjacks (big sky conference) (1994–1999) | northern arizona lumberjacks (big sky conference) (1994–1999)
+1994–95 | northern arizona | 9–17 | 4–10 | 7th | none
+1995–96 | northern arizona | 7–19 | 3–11 | 7th | none
+1996–97 | northern arizona | 21–7 | 13–1 | 1st | nit first round
+1997–98 | northern arizona | 21–8 | 12–2 | 1st | ncaa division i round of 64
+1998–99 | northern arizona | 21–8 | 12–4 | 2nd | none
+northern arizona: | northern arizona: | 79–59 (.572) | 44–28 (.611) | none | none
+pittsburgh panthers (big east conference) (1999–2003) | pittsburgh panthers (big east conference) (1999–2003) | pittsburgh panthers (big east conference) (1999–2003) | pittsburgh panthers (big east conference) (1999–2003) | pittsburgh panthers (big east conference) (1999–2003) | pittsburgh panthers (big east conference) (1999–2003)
+1999–0 | pittsburgh | 13–15 | 5–11 | 11th | none
+2000–1 | pittsburgh | 19–14 | 7–9 | 5th (west) | nit second round
+2001–2 | pittsburgh | 29–6 | 13–3 | 1st (west) | ncaa division i sweet 16
+2002–3 | pittsburgh | 28–5 | 13–3 | t–1st (west) | ncaa division i sweet 16
+pittsburgh: | pittsburgh: | 89–40 (.690) | 38–26 (.594) | none | none
+ucla bruins (pacific-10/pac-12 conference) (2003–2013) | ucla bruins (pacific-10/pac-12 conference) (2003–2013) | ucla bruins (pacific-10/pac-12 conference) (2003–2013) | ucla bruins (pacific-10/pac-12 conference) (2003–2013) | ucla bruins (pacific-10/pac-12 conference) (2003–2013) | ucla bruins (pacific-10/pac-12 conference) (2003–2013)
+2003–4 | ucla | 11–17 | 7–11 | t–7th | none
+2004–5 | ucla | 18–11 | 11–7 | t–3rd | ncaa division i round of 64
+2005–6 | ucla | 32–7 | 14–4 | 1st | ncaa division i runner-up
+2006–7 | ucla | 30–6 | 15–3 | 1st | ncaa division i final 4
+2007–8 | ucla | 35–4 | 16–2 | 1st | ncaa division i final 4
+2008–9 | ucla | 26–9 | 13–5 | 2nd | ncaa division i round of 32
+2009–10 | ucla | 14–18 | 8–10 | t–5th | none
+2010–11 | ucla | 23–11 | 13–5 | 2nd | ncaa division i round of 32
+2011–12 | ucla | 19–14 | 11–7 | t–5th | none
+2012–13 | ucla | 25–10 | 13–5 | 1st | ncaa division i round of 64
+ucla: | ucla: | 233–107 (.685) | 118–58 (.670) | none | none
+mississippi state bulldogs (southeastern conference) (2015–present) | mississippi state bulldogs (southeastern conference) (2015–present) | mississippi state bulldogs (southeastern conference) (2015–present) | mississippi state bulldogs (southeastern conference) (2015–present) | mississippi state bulldogs (southeastern conference) (2015–present) | mississippi state bulldogs (southeastern conference) (2015–present)
+2015–16 | mississippi state | 14–17 | 7–11 | 11th | none
+2016–17 | mississippi state | 16–16 | 6–12 | 12th | none
+2017–18 | mississippi state | 25–12 | 9–9 | t–7th | nit semifinal
+2018–19 | mississippi state | 23–11 | 10–8 | t–6th | ncaa division i round of 64
+mississippi state: | mississippi state: | 78–56 (.582) | 32–40 (.444) | none | none
+total: | total: | 479–262 (.646) | none | none | none
+national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion"
+10207,What are the state reptiles of South Carolina and Florida?,"the state reptile of south carolina is the loggerhead sea turtle, and the state reptiles of florida are the american alligator (state reptile) and the gopher tortoise (state tortoise).","in the united states, the loggerhead sea turtle is the state reptile of south carolina and also the state saltwater reptile of florida.",select * from T,224,224,"row_number | state | state_reptile | scientific_name | year_adopted | conservation_status | photograph | references
+0 | alabama | alabama red-bellied turtle | pseudemys alabamensis | 1990 | endangered | a red-bellied turtle with its limbs retracted and head mostly retracted face on, sand on shell. | None
+1 | arizona | arizona ridge-nosed rattlesnake | crotalus willardi subspecies willardi | 1986 | least concern | an arizona ridge-nosed rattlesnake somewhat coiled up facing right. | None
+2 | california | desert tortoise | gopherus agassizii | 1972 | vulnerable | a desert tortoise standing on dry and cracked sand. the shell is faded and abraded. | None
+3 | colorado | western painted turtle | chrysemys picta subspecies bellii | 2008 | least concern | a western painted turtle facing away from the viewer on top of a dirt-patch overlooking water. | None
+4 | florida | american alligator (state reptile) | alligator mississippiensis | 1987 | least concern | a large american alligator standing 0.5 on sand and 0.5 on grass. | None
+5 | florida | loggerhead sea turtle (state saltwater reptile) | caretta caretta | 2008 | vulnerable | a loggerhead sea turtle swimming in an aquarium. | None
+6 | florida | gopher tortoise (state tortoise) | gopherus polyphemus | 2008 | vulnerable | an abraded tortoise walking on sandy ground. | None
+7 | georgia | gopher tortoise | gopherus polyphemus | 1989 | vulnerable | an abraded tortoise walking on sandy ground. | None
+8 | illinois | painted turtle | chrysemys picta | 2005 | least concern | a midland painted turtle standing on rocky ground and facing the viewer. | None
+9 | kansas | ornate box turtle | terrapene ornata | 1986 | near threatened | an ornate box turtle with a slightly dirty carapace raising its head. | None
+10 | louisiana | american alligator | alligator mississippiensis | 1983 | least concern | a large american alligator standing 0.5 on sand and 0.5 on grass. | None
+11 | maryland | diamondback terrapin | malaclemys terrapin | 1994 | near threatened | a diamondback terrapin standing on a log with its head raised and body facing left. | None
+12 | massachusetts | garter snake | thamnophis (whole genus) | 2006 | least concern | a garter snake | None
+13 | michigan | painted turtle | chrysemys picta | 1995 | least concern | a midland painted turtle standing on rocky ground and facing the viewer. | None
+14 | mississippi | american alligator | alligator mississippiensis | 2005 | least concern | a large american alligator standing 0.5 on sand and 0.5 on grass. | None
+15 | missouri | 3-toed box turtle | terrapene carolina subspecies triunguis | 2007 | near threatened | a 3-toed box turtle standing on a turtle facing left. | None
+16 | nevada | desert tortoise | gopherus agassizii | 1989 | vulnerable | a desert tortoise standing on dry and cracked sand. the shell is faded and abraded. | None
+17 | new mexico | new mexico whiptail lizard | cnemidophorus neomexicanus | 2003 | least concern | a small brown lizard with yellow stripes standing on a tan substrate. | None
+18 | new york | common snapping turtle | chelydra serpentina | 2006 | least concern | a common snapping turtle standing on all fours with its head slightly retracted and facing left. | None
+19 | north carolina | eastern box turtle | terrapene carolina subspecies carolina | 1979 | near threatened | a bright yellow and black eastern box turtle looking at the viewer and facing toward the right. | None
+20 | ohio | northern black racer | coluber constrictor subspecies constrictor | 1995 | least concern | an extreme close-up of a black racer's head: black eyes and a pointed snout are featured. | None
+21 | oklahoma | common collared lizard | crotaphytus collaris | 1969 | least concern | a gray lizard with brown and yellow-orange markings standing on a rock in bright sunshine. | None
+22 | south carolina | loggerhead sea turtle | caretta caretta | 1988 | vulnerable | a loggerhead sea turtle swimming in an aquarium. | None
+23 | tennessee | eastern box turtle | terrapene carolina subspecies carolina | 1995 | near threatened | a bright yellow and black eastern box turtle looking at the viewer and facing toward the right. | None
+24 | texas | texas horned lizard | phrynosoma cornutum | 1993 | least concern | a lizard with intimidating spikes on its head and back standing on a log. | None
+25 | vermont | painted turtle | chrysemys picta | 1994 | least concern | a midland painted turtle standing on rocky ground and facing the viewer. | None
+26 | west virginia | timber rattlesnake | crotalus horridus | 2008 | least concern | a black, gray, and brown snake somewhat coiled up and looking at the viewer. | None
+27 | wyoming | horned lizard | phrynosoma (whole genus) | 1993 | least concern | a fat looking horned lizard perched on a bright gray rock. | None"
+21363,When did Kevin Stalling lead the Illinois State Redbirds to postseason tournaments and what was his overall coaching record with the school?,kevin stallings led the illinois state redbirds to postseason tournaments in the seasons 1994-95 and 1995-96. his overall coaching record with the school was 123-63.,the redbirds compiled a record of 123–63 during kevin stallings six-year tenure and reached the ncaa tournament and the nit twice each.,"select season, postseason, overall from T;",99,231,"season | postseason | overall
+illinois state redbirds (missouri valley conference) (1993–1999) | illinois state redbirds (missouri valley conference) (1993–1999) | illinois state redbirds (missouri valley conference) (1993–1999)
+1993–94 | none | 16–11
+1994–95 | nit second round | 20–13
+1995–96 | nit second round | 22–12
+1996–97 | ncaa division i round of 64 | 24–6
+1997–98 | ncaa division i round of 32 | 25–6
+1998–99 | none | 16–15
+illinois state: | none | 123–63 (.661)
+vanderbilt commodores (southeastern conference) (1999–2016) | vanderbilt commodores (southeastern conference) (1999–2016) | vanderbilt commodores (southeastern conference) (1999–2016)
+1999–0 | nit first round | 19–11
+2000–1 | none | 15–15
+2001–2 | nit second round | 17–15
+2002–3 | none | 11–18
+2003–4 | ncaa division i sweet 16 | 23–10
+2004–5 | nit quarterfinal | 20–14
+2005–6 | nit first round | 17–13
+2006–7 | ncaa division i sweet 16 | 22–12
+2007–8 | ncaa division i round of 64 | 26–8
+2008–9 | none | 19–12
+2009–10 | ncaa division i round of 64 | 24–9
+2010–11 | ncaa division i round of 64 | 23–11
+2011–12 | ncaa division i round of 32 | 25–11
+2012–13 | none | 16–17
+2013–14 | none | 15–16
+2014–15 | nit quarterfinal | 21–14
+2015–16 | ncaa division i first 4 | 19–14
+vanderbilt: | none | 332–220 (.601)
+pittsburgh panthers (atlantic coast conference) (2016–2018) | pittsburgh panthers (atlantic coast conference) (2016–2018) | pittsburgh panthers (atlantic coast conference) (2016–2018)
+2016–17 | none | 16–17
+2017–18 | none | 8–24
+pittsburgh: | none | 24–41 (.369)
+total: | none | 479–324 (.597)
+national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion | national champion postseason invitational champion conference regular season champion conference regular season and conference tournament champion division regular season champion division regular season and conference tournament champion conference tournament champion"
+21421,What team did Keogh join after departing Perth in 2015?,keogh joined ratchaburi after departing perth in 2015.,"after departing perth in 2015, keogh joined the, thai premier league side ratchaburi.","select club from T where season = ""2015"" and club != ""perth"";",1,420,"club
+ratchaburi"
+21492,How many total seasons and appearances did David Martin rack up before leaving Milton Keynes Dons?,"before leaving milton keynes dons, david martin racked up a total of 15 seasons and 401 appearances.","in 2017, after nine seasons and 339 appearances for the club, martin left mk dons.","select season, total from T;",58,406,"season | total
+season | apps
+2003–4 | 2
+total | 2
+2005–6 | 0
+2006–7 | 0
+2007–8 | 0
+2008–9 | 0
+2009–10 | 0
+total | 0
+2006–7 | 10
+2008–9 | 30
+2009–10 | 3
+2009–10 | 1
+2009–10 | 2
+total | 46
+2004–5 | 20
+2005–6 | 3
+2010–11 | 51
+2011–12 | 56
+2012–13 | 41
+2013–14 | 43
+2014–15 | 47
+2015–16 | 38
+2016–17 | 40
+total | 339
+2017–18 | 4
+2018–19 | 10
+total | 14
+career totals | 401"
+21453,"When did the 1966 Tour de France take place, how many stages did it consist of, and what was the total distance covered by the event?",the 1966 tour de france took place on june 21st. it consisted of 1 stage and covered a total distance of 209 km (130 mi).,"1966 tour de france took place between 21 june and 14 july with 22 stages covering a distance of 4,329 km (2,690 mi).","select date, stage, distance from T where row_number = 0;",3,224,"date | stage | distance
+21 june | 1 | 209 km (130 mi)"
+21076,"What two records does Mariette Van Heerden still hold for Zimbabwe, and when did she set them?","mariette van heerden still holds the records for shot put with a distance of 15.58m, which she set on january 20, 1974, and discus throw with a distance of 55.7m, which she set on march 25, 1984.","van heerden is still the zimbabwean record holder in women's shot put (15.58 metres, set on january 20, 1974) and women's discus (55.70 metres, set on march 25, 1984).","select event, record, date from T where athlete = ""mariette van heerden"";",6,264,"event | record | date
+shot put | 15.58 m | 1974-1-20
+discus throw | 55.7 m | 1984-3-25"
+13806,"How long was the 1967 Tour de France, measured in distance, stages and time?","the 1967 tour de france had a total distance of 4,779 km (2970 mi) and consisted of 22 stages. the race took place from june 29th to july 23rd.","the 1967 tour de france took place between 29 june and 23 july, with 22 stages covering a distance of 4,779 km (2,970 mi).","select distance, stage, date from T;",84,224,"distance | stage | date
+5.775 km (3.588 mi) | 1a | 29 june
+185.5 km (115.3 mi) | 1000000000 | 30 june
+180 km (110 mi) | 2 | 1 july
+248 km (154 mi) | 3 | 2 july
+191 km (119 mi) | 4 | 3 july
+172 km (107 mi) | 5a | 4 july
+17 km (11 mi) | 5000000000 | 4 july
+238 km (148 mi) | 6 | 5 july
+205.5 km (127.7 mi) | 7 | 6 july
+215 km (134 mi) | 8 | 7 july
+belfort | none | 8 july
+238.5 km (148.2 mi) | 9 | 9 july
+243 km (151 mi) | 10 | 10 july
+197 km (122 mi) | 11 | 11 july
+207.5 km (128.9 mi) | 12 | 12 july
+211.5 km (131.4 mi) | 13 | 13 july
+201.5 km (125.2 mi) | 14 | 14 july
+sète | none | 15 july
+230.5 km (143.2 mi) | 15 | 16 july
+188 km (117 mi) | 16 | 17 july
+250 km (160 mi) | 17 | 18 july
+206.5 km (128.3 mi) | 18 | 19 july
+217 km (135 mi) | 19 | 20 july
+222 km (138 mi) | 20 | 21 july
+359 km (223 mi) | 21 | 22 july
+104 km (65 mi) | 22a | 23 july
+46.6 km (29 mi) | 22000000000 | 23 july
+4779 km (2970 mi) | none | total"
+21444,How many times did Bryan robson play for Manchester United and what were his total goals scored?,bryan robson played for manchester united 14 times and scored a total of 99 goals.,bryan robson played 461 times for manchester united and scored 99 goals.,"select club_performance, total, total1 from T where club_performance = ""manchester united"";",42,464,"club_performance | total | total1
+manchester united | none | none
+manchester united | 49 | 15
+manchester united | 47 | 18
+manchester united | 46 | 14
+manchester united | 27 | 7
+manchester united | none | none
+manchester united | none | none
+manchester united | none | none
+manchester united | none | none
+manchester united | 29 | 1
+manchester united | 38 | 5
+manchester united | 17 | 1
+manchester united | 27 | 3
+manchester united | 461 | 99"
+20767,How did Kelly-Ann Baptiste fare at the 2009 world championships?,"kelly-ann baptiste reached the semifinals in both the 100m and 200m events at the 2009 world championships, finishing 5th in the semifinals of the 100m and 4th in the semifinals of the 200m.","in 2009, kelly-ann baptiste participated in the semifinals of the 100 m and 200 m at the world championships, finishing fifth and fourth (22.96), respectively.","select position, event from T where year = 2009 and competition = ""world championships"";",4,224,"position | event
+5th (sf) | 100 m
+4th (sf) | 200 m"

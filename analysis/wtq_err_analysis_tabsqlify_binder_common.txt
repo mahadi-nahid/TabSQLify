@@ -1,0 +1,2116 @@
+
+
+id:  nu-0  Q:  which country had the most cyclists finish within the top 10?  Gold ans:  italy
+TabSQLify Prediction:   spain
+Binder Prediction:  ['esp', 'rus', 'ita', 'ita', 'ita', 'rus', 'esp', 'fra', 'esp', 'fra']
+Table Title:  2008 Clásica de San Sebastián
+
+Table Column:  row_number, rank, cyclist, team, time, uci_protour_points
+Linear Table:
+ row_number | rank | cyclist | team | time | uci_protour_points
+0 | 1 | alejandro valverde (esp) | caisse d'epargne | pt5h 29' 10" | 40
+1 | 2 | alexandr kolobnev (rus) | team csc saxo bank | s.t. | 30
+2 | 3 | davide rebellin (ita) | gerolsteiner | s.t. | 25
+3 | 4 | paolo bettini (ita) | quick step | s.t. | 20
+4 | 5 | franco pellizotti (ita) | liquigas | s.t. | 15
+5 | 6 | denis menchov (rus) | rabobank | s.t. | 11
+6 | 7 | samuel sánchez (esp) | euskaltel-euskadi | s.t. | 7
+7 | 8 | stéphane goubert (fra) | ag2r-la mondiale | + 2" | 5
+8 | 9 | haimar zubeldia (esp) | euskaltel-euskadi | + 2" | 3
+9 | 10 | david moncoutié (fra) | cofidis | + 2" | 1
+
+
+id:  nu-2  Q:  how long did it take for the new york americans to win the national cup after 1936?  Gold ans:  17 years
+TabSQLify Prediction:  based on the table, the new york americans won the national cup in an unknown number of years after 1936. the table only provides information about the national cup for years after 1936, but there is no specific information about when they won it. therefore, we cannot determine how long it took for the new york americans to win the national cup after 1936 based on the given information.
+Binder Prediction:  [0]
+Table Title:  New York Americans (soccer)
+
+Table Column:  row_number, year, division, league, reg_season, playoffs, national_cup
+Linear Table:
+ row_number | year | division | league | reg_season | playoffs | national_cup
+0 | 1931 | 1 | asl | 6th (fa) | no playoff | n/a
+1 | 1932-sp | 1 | asl | 5th? | no playoff | 1st round
+2 | 1932-fa | 1 | asl | 3rd | no playoff | n/a
+3 | 1933-sp | 1 | asl | ? | ? | final
+4 | 1933/34 | n/a | asl | 2nd | no playoff | ?
+5 | 1934/35 | n/a | asl | 2nd | no playoff | ?
+6 | 1935/36 | n/a | asl | 1st | champion (no playoff) | ?
+7 | 1936/37 | n/a | asl | 5th, national | did not qualify | champion
+8 | 1937/38 | n/a | asl | 3rd(t), national | 1st round | ?
+9 | 1938/39 | n/a | asl | 4th, national | did not qualify | ?
+10 | 1939/40 | n/a | asl | 4th | no playoff | ?
+11 | 1940/41 | n/a | asl | 6th | no playoff | ?
+12 | 1941/42 | n/a | asl | 3rd | no playoff | ?
+13 | 1942/43 | n/a | asl | 6th | no playoff | ?
+14 | 1943/44 | n/a | asl | 9th | no playoff | ?
+15 | 1944/45 | n/a | asl | 9th | no playoff | ?
+16 | 1945/46 | n/a | asl | 5th | no playoff | ?
+17 | 1946/47 | n/a | asl | 6th | no playoff | ?
+18 | 1947/48 | n/a | asl | 6th | no playoff | ?
+19 | 1948/49 | n/a | asl | 1st(t) | finals | ?
+20 | 1949/50 | n/a | asl | 3rd | no playoff | ?
+21 | 1950/51 | n/a | asl | 5th | no playoff | ?
+22 | 1951/52 | n/a | asl | 6th | no playoff | ?
+23 | 1952/53 | n/a | asl | 6th | no playoff | semifinals
+24 | 1953/54 | n/a | asl | 1st | champion (no playoff) | champion
+25 | 1954/55 | n/a | asl | 8th | no playoff | ?
+26 | 1955/56 | n/a | asl | 6th | no playoff | ?
+
+
+id:  nu-3  Q:  alfie's birthday party aired on january 19. what was the airdate of the next episode?  Gold ans:  january 26, 1995
+TabSQLify Prediction:   october 15.
+Binder Prediction:  ['1995-01-26 00:00:00']
+Table Title:  My Brother and Me
+
+Table Column:  row_number, series__, season__, title, notes, original_air_date
+Linear Table:
+ row_number | series__ | season__ | title | notes | original_air_date
+0 | 1 | 1 | "the charity" | alfie, dee dee, and melanie are supposed to be helping their parents at a carnival by working the dunking booth. when goo arrives and announces their favorite basketball player, kendall gill, is at the comic book store signing autographs, the boys decide to ditch the carnival. this leaves melanie and jennifer to work the booth and both end up soaked. but the comic book store is packed and much to alfie and dee dee's surprise their father has to interview kendall gill. goo comes up with a plan to get alfie and dee dee, gill's signature before getting them back at the local carnival, but are caught by roger. all ends well for everyone except alfie and goo, who must endure being soaked at the dunking booth. | 1994-10-15
+1 | 2 | 1 | "the practical joke war" | alfie and goo unleash harsh practical jokes on dee dee and his friends. dee dee, harry and donnel retaliate by pulling a practical joke on alfie with the trick gum. after alfie and goo get even with dee dee and his friends, melanie and deonne help them get even. soon, alfie and goo declare a practical joke war on melanie, dee dee and their friends. this eventually stops when roger and jennifer end up on the wrong end of the practical joke war after being announced as the winner of a magazine contest for best family of 2024. they set their children straight for their behavior and will have a talk with their friends' parents as well. | 1994-10-22
+2 | 3 | 1 | "2024-w10-we aunt helen came" | the boy's mother, jennifer, leaves for 2024-w10-we and she leaves the father, roger, in charge. however, he lets the kids run wild. alfie and dee dee's aunt helen then comes to oversee the house until jennifer gets back. meanwhile, alfie throws a basketball at goo, which hits him in the head, giving him temporary amnesia. in this case of memory loss, goo acts like a nerd, does homework on a weekend, wants to be called milton instead of goo, and he even calls alfie alfred. he is much nicer to deonne and dee dee, but is somewhat rude to melanie. the only thing that will reverse this is another hit in the head. | 1994-11-1
+3 | 4 | 1 | "robin hood play" | alfie's school is performing the play robin hood and alfie is chosen to play the part of robin hood. alfie is excited at this prospect, but he does not want to wear tights because he feels that tights are for girls. however, he reconsiders his stance on tights when dee dee wisely tells him not to let that affect his performance as robin hood. | 1994-11-9
+4 | 5 | 1 | "basketball tryouts" | alfie tries out for the basketball team and doesn't make it even after showing off his basketball skills. however, harry, dee dee and donnell make the team. alfie is depressed and doesn't want to attend the celebration party. however, goo sets him straight by telling him it was his own fault for not being a team player and kept the ball to himself. | 1994-11-30
+5 | 6 | 1 | "where's the snake?" | dee dee gets a snake, but he doesn't want his parents to know about it. however, things get complicated when he loses the snake in the house. meanwhile, melanie and deonne are assigned by their teacher to take care of her beloved pet rabbit, duchess for 2024-w10-we. this causes both alfie and dee dee to be concerned for duchess when they learn from goo that snakes eat rabbits. | 1994-12-6
+6 | 7 | 1 | "dee dee's girlfriend" | a girl kisses dee dee in front of harry and donnell. they promise not to tell, but it slips and everyone laughs at dee dee. dee dee ends his friendship with harry and donnell and hangs out with alfie and goo. soon, alfie and goo finally get the 3 to talk to each other. | 1994-12-15
+7 | 8 | 1 | "dee dee's haircut" | dee dee wants to get a hair cut by cool doctor money and have his name shaved in his head. his parents will not let him do this, but goo offers to do it for 5 dollars. however, when goo messes up dee dee's hair and spells his name wrong, his parents find out the truth and dee dee is forced to have his hair shaved off. in addition to that, his friends tease him about his bald head, causing a fight between the boys along with goo and alfie. in a b-story, alfie and goo try to play a practical joke on dee dee involving a jalapeño lollipop. it backfires when roger is the unwitting victim and it leads to him chasing the boys around. | 1994-12-20
+8 | 9 | 1 | "dee dee runs away" | dee dee has been waiting to go to a monster truck show p1w. but alfie and goo's baseball team makes it to the tournament and everyone forgets about the monster truck show. dee dee feels ignored and runs away from home with harry and donnell. it's up to alfie and goo to try and convince him to come home. | 1994-12-28
+9 | 10 | 1 | '"donnell's birthday party" | donnell is having a birthday party and brags about all the dancing and cool people who will be there. harry says that he knows how to dance so dee dee feels left out because he doesn't know how to dance. later on, harry admits to dee dee alone that he can't dance either and only lied so he doesn't get teased by donnell. so, they ask alfie to help them learn how to dance. he refuses to help because dee dee past_ref told on him to roger about his and goo's plans to cheat on their math quiz. alfie eventually agrees, after melanie threatens to refuse to help him with his math homework. soon dee dee and harry learn donnell's secret and were forced to teach him how to dance. after the party, dee dee tells alfie about it and finds out that he knew donnell was a liar. | 1995-1-5
+10 | 11 | 1 | "alfie's birthday party" | goo and melanie pretend they are dating and they leave alfie out of everything. he ends up bored and starts hanging out with dee dee and his friends. however, it just isn't the same without goo. later on, alfie learns about the surprise birthday party that goo and melanie had been planning with everyone else (except for dee dee, who couldn't know since he would've told). | 1995-1-19
+11 | 12 | 1 | "candy sale" | alfie and goo are selling candy to make money for some expensive jackets, but they are not having any luck. however, when dee dee start helping them sell candy, they start to make money and asks him to help them out. soon goo and alfie finds themselves confronted by melanie, deonne, harry and donnell for dee dee's share of the money. they soon learn the boys have used the money to buy 3 expensive jackets for themselves and dee dee as a token of their gratitude. they quickly apologize to alfie and goo for their quick judgment. | 1995-1-26
+12 | 13 | 1 | "the big bully" | dee dee gets beat up at school and his friends try to teach him how to fight back. goo, however, tells him to bluff, but the plan backfires and dee dee gets hit because of it. when alfie confronts the bully, he learns that dee dee was picked on by a girl. alfie and goo decide to confront her. however, when some of their classmates, who happen to be the girls' siblings, learn they are bullying their sister, they intervene. | 1995-2-2
+
+
+id:  nu-10  Q:  in which three consecutive years was the record the same?  Gold ans:  2004,2005,2006
+TabSQLify Prediction:   1988, 1989, and 1990
+Binder Prediction:  [1970, 1974, 1975]
+Table Title:  List of NFC champions
+
+Table Column:  row_number, season, team, record, head_coach, quarterback, leading_rusher, leading_receiver, all_pros, runner_up
+Linear Table:
+ row_number | season | team | record | head_coach | quarterback | leading_rusher | leading_receiver | all_pros | runner_up
+0 | 1970 | dallas cowboys | 10–4 | tom landry* | craig morton | duane thomas | bob hayes* | howley | san francisco 49ers
+1 | 1971 | dallas cowboys† | 11–3 | tom landry* | roger staubach* | duane thomas | bob hayes* | lilly*, niland, wright* | san francisco 49ers
+2 | 1972 | washington redskins | 11–3 | george allen* | billy kilmer | larry brown | charley taylor* | brown, hanburger* | dallas cowboys
+3 | 1973 | minnesota vikings | 12–2 | bud grant* | fran tarkenton* | chuck foreman | john gilliam | eller*, page*, yary* | dallas cowboys
+4 | 1974 | minnesota vikings | 10–4 | bud grant* | fran tarkenton* | chuck foreman | jim lash | page*, yary* | los angeles rams
+5 | 1975 | dallas cowboys | 10–4 | tom landry* | roger staubach* | robert newhouse | drew pearson | none | los angeles rams
+6 | 1976 | minnesota vikings | 11–2–1 | bud grant* | fran tarkenton* | chuck foreman | sammy white | yary* | los angeles rams
+7 | 1977 | dallas cowboys† | 12–2 | tom landry* | roger staubach* | tony dorsett* | drew pearson | harris, herrera, martin, pearson | minnesota vikings
+8 | 1978 | dallas cowboys | 12–4 | tom landry* | roger staubach* | tony dorsett* | tony hill | harris, white* | los angeles rams
+9 | 1979 | los angeles rams | 9–7 | ray malavasi | pat haden | wendell tyler | preston dennard | brooks, youngblood* | tampa bay buccaneers
+10 | 1980 | philadelphia eagles | 12–4 | dick vermeil | ron jaworski | wilbert montgomery | charlie smith | johnson | dallas cowboys
+11 | 1981 | san francisco 49ers† | 13–3 | bill walsh* | joe montana* | ricky patton | dwight clark | dean*, lott* | dallas cowboys
+12 | 1982 | washington redskins† | 8–1 | joe gibbs* | joe theismann | john riggins* | charlie brown | moseley | dallas cowboys
+13 | 1983 | washington redskins | 14–2 | joe gibbs* | joe theismann | john riggins* | charlie brown | butz, grimm*, jacoby, murphy, nelms, riggins*, theismann | san francisco 49ers
+14 | 1984 | san francisco 49ers† | 15–1 | bill walsh* | joe montana* | wendell tyler | dwight clark | fahnhorst | chicago bears
+15 | 1985 | chicago bears† | 15–1 | mike ditka* | jim mcmahon | walter payton* | willie gault | covert, dent*, mcmichael, payton*, singletary* | los angeles rams
+16 | 1986 | new york giants† | 14–2 | bill parcells* | phil simms | joe morris | mark bavaro | bavaro, landeta, morris, taylor* | washington redskins
+17 | 1987 | washington redskins† | 11–4 | joe gibbs* | jay schroeder | george rogers | gary clark | clark, wilburn | minnesota vikings
+18 | 1988 | san francisco 49ers† | 10–6 | bill walsh* | joe montana* | roger craig | jerry rice* | craig, rice* | chicago bears
+19 | 1989 | san francisco 49ers† | 14–2 | george seifert | joe montana* | roger craig | jerry rice* | cofer, lott*, montana*, rice*, | los angeles rams
+20 | 1990 | new york giants† | 13–3 | bill parcells* | phil simms | ottis anderson | stephen baker | johnson, landeta | san francisco 49ers
+21 | 1991 | washington redskins† | 14–2 | joe gibbs* | mark rypien | earnest byner | gary clark | green*, lachey | detroit lions
+22 | 1992 | dallas cowboys† | 13–3 | jimmy johnson | troy aikman* | emmitt smith* | michael irvin* | novacek, smith* | san francisco 49ers
+23 | 1993 | dallas cowboys† | 12–4 | jimmy johnson | troy aikman* | emmitt smith* | michael irvin* | smith*, williams | san francisco 49ers
+24 | 1994 | san francisco 49ers† | 13–3 | george seifert | steve young* | ricky watters | jerry rice* | rice*, sanders*, young* | dallas cowboys
+25 | 1995 | dallas cowboys† | 12–4 | barry switzer | troy aikman* | emmitt smith* | michael irvin* | newton, smith*, woodson | green bay packers
+26 | 1996 | green bay packers† | 13–3 | mike holmgren | brett favre | edgar bennett | antonio freeman | butler, favre | carolina panthers
+27 | 1997 | green bay packers | 13–3 | mike holmgren | brett favre | dorsey levens | antonio freeman | butler, favre | san francisco 49ers
+28 | 1998 | atlanta falcons | 14–2 | dan reeves | chris chandler | jamal anderson | tony martin | anderson | minnesota vikings
+29 | 1999 | st. louis rams† | 13–3 | dick vermeil | kurt warner | marshall faulk* | isaac bruce | carter, faulk*, pace, warner | tampa bay buccaneers
+30 | 2000 | new york giants | 12–4 | jim fassel | kerry collins | tiki barber | amani toomer | none | minnesota vikings
+31 | 2001 | st. louis rams | 14–2 | mike martz | kurt warner | marshall faulk* | torry holt | faulk*, pace, warner, williams* | philadelphia eagles
+32 | 2002 | tampa bay buccaneers† | 12–4 | jon gruden | brad johnson | michael pittman | keyshawn johnson | brooks*, rice, sapp* | philadelphia eagles
+33 | 2003 | carolina panthers | 11–5 | john fox | jake delhomme | stephen davis | steve smith | jenkins | philadelphia eagles
+34 | 2004 | philadelphia eagles | 13–3 | andy reid | donovan mcnabb | brian westbrook | terrell owens | dawkins, owens, sheppard | atlanta falcons
+35 | 2005 | seattle seahawks | 13–3 | mike holmgren | matt hasselbeck | shaun alexander | bobby engram | alexander, hutchinson, jones*, strong | carolina panthers
+36 | 2006 | chicago bears | 13–3 | lovie smith | rex grossman | thomas jones | muhsin muhammad | gould, hester, kreutz, urlacher | new orleans saints
+37 | 2007 | new york giants† | 10–6 | tom coughlin | eli manning | brandon jacobs | plaxico burress | none | green bay packers
+38 | 2008 | arizona cardinals | 9–7 | ken whisenhunt | kurt warner | edgerrin james | larry fitzgerald | fitzgerald | philadelphia eagles
+39 | 2009 | new orleans saints† | 13–3 | sean payton | drew brees | pierre thomas | marques colston | evans | minnesota vikings
+40 | 2010 | green bay packers† | 10–6 | mike mccarthy | aaron rodgers | brandon jackson | greg jennings | clifton, collins, jennings, matthews, woodson | chicago bears
+41 | 2011 | new york giants† | 9–7 | tom coughlin | eli manning | ahmad bradshaw | victor cruz | pierre-paul | san francisco 49ers
+42 | 2012 | san francisco 49ers | 11–4–1 | jim harbaugh | colin kaepernick | frank gore | michael crabtree | bowman, goldson, iupati, lee, smith, willis | atlanta falcons
+43 | 2013 | seattle seahawks† | 13–3 | pete carroll | russell wilson | marshawn lynch | golden tate | sherman, thomas | san francisco 49ers
+
+
+id:  nu-11  Q:  does pat or john have the highest total?  Gold ans:  john
+TabSQLify Prediction:   neither pat nor john has the highest total.
+Binder Prediction:  0
+Table Title:  2012–13 Exeter City F.C. season
+
+Table Column:  row_number, name, league, fa_cup, league_cup, jp_trophy, total
+Linear Table:
+ row_number | name | league | fa_cup | league_cup | jp_trophy | total
+0 | scot bennett | 5 | 0 | 0 | 0 | 5
+1 | danny coles | 3 | 0 | 0 | 0 | 3
+2 | liam sercombe | 1 | 0 | 0 | 0 | 1
+3 | alan gow | 4 | 0 | 0 | 0 | 4
+4 | john o'flynn | 11 | 0 | 1 | 0 | 12
+5 | guillem bauza | 2 | 0 | 0 | 0 | 2
+6 | jimmy keohane | 3 | 0 | 0 | 0 | 3
+7 | pat baldwin | 1 | 0 | 0 | 0 | 1
+8 | jamie cureton | 20 | 0 | 0 | 0 | 20
+9 | arron davies | 3 | 0 | 0 | 0 | 3
+10 | jake gosling | 1 | 0 | 0 | 0 | 1
+11 | own goals | 0 | 0 | 0 | 0 | 0
+12 | total | 0 | 0 | 0 | 0 | 0
+
+
+id:  nu-12  Q:  what is the combined score of year end rankings before 2009?  Gold ans:  440
+TabSQLify Prediction:  504 
+Binder Prediction:  0
+Table Title:  Guillermo García-López
+
+Table Column:  row_number, tournament, _2004, _2005, _2006, _2007, _2008, _2009, _2010, _2011, _2012, _2013, _2014, w–l
+Linear Table:
+ row_number | tournament | _2004 | _2005 | _2006 | _2007 | _2008 | _2009 | _2010 | _2011 | _2012 | _2013 | _2014 | w–l
+0 | australian open | a | 2r | 2r | 2r | 3r | 2r | 1r | 3r | 1r | 1r | 2r | 9–10
+1 | french open | 2r | 1r | 1r | 2r | 2r | 1r | 2r | 3r | 1r | 1r | none | 6–10
+2 | wimbledon | a | 2r | 2r | 1r | 3r | 2r | 1r | 2r | 2r | 1r | none | 7–9
+3 | us open | a | 1r | 1r | 1r | 2r | 2r | 2r | 2r | 2r | 1r | none | 5–9
+4 | win–loss | 1–1 | 2–4 | 2–4 | 2–4 | 6–4 | 3–4 | 2–4 | 6–4 | 2–4 | 0–4 | 1–1 | 27–38
+5 | indian wells masters | a | a | a | 3r | 2r | 1r | 4r | 2r | 3r | a | a | 8–6
+6 | miami masters | a | a | a | 2r | 1r | 1r | 2r | 2r | 2r | a | none | 3–6
+7 | monte-carlo masters | a | 1r | a | 3r | lq | a | 1r | 2r | a | a | none | 2–3
+8 | rome masters | a | a | a | a | a | lq | 3r | 1r | 2r | a | none | 3–3
+9 | madrid masters | a | a | a | lq | lq | 1r | 3r | 3r | 2r | 1r | none | 5–5
+10 | canada masters | a | a | a | a | a | 1r | a | a | a | a | none | 0–1
+11 | cincinnati masters | a | a | a | lq | a | 3r | a | 1r | a | a | none | 2–2
+12 | shanghai masters | not masters series | not masters series | not masters series | not masters series | not masters series | 1r | qf | 2r | q2 | a | none | 4–3
+13 | paris masters | a | a | a | lq | lq | a | a | 2r | 1r | 1r | none | 1–3
+14 | hamburg masters | a | a | 2r | 1r | a | not masters series | not masters series | not masters series | not masters series | not masters series | none | 1–2
+15 | win–loss | 0–0 | 0–1 | 1–1 | 4–4 | 1–2 | 2–6 | 11–6 | 5–8 | 5–5 | 0–2 | none | 29–35
+16 | titles–finals | 0–0 | 0–0 | 0–0 | 0–0 | 0–0 | 1–1 | 1–2 | 0–0 | 0–0 | 0–2 | none | 2–5
+17 | year end ranking | 129 | 91 | 68 | 90 | 62 | 41 | 33 | 39 | 76 | 62 | none | none
+
+
+id:  nu-15  Q:  what was the total number of points scored by the tide in the last 3 games combined.  Gold ans:  68
+TabSQLify Prediction:  0.0 
+Binder Prediction:  [0.0]
+Table Title:  1994 Alabama Crimson Tide football team
+
+Table Column:  row_number, date, opponent_, rank_, site, tv, result, attendance
+Linear Table:
+ row_number | date | opponent_ | rank_ | site | tv | result | attendance
+0 | september 3 | tennessee–chattanooga* | #11 | legion field • birmingham, al | none | w 42–13 | 82109
+1 | september 10 | vanderbilt | #11 | bryant–denny stadium • tuscaloosa, al | jps | w 17–7 | 70123
+2 | september 17 | at arkansas | #12 | razorback stadium • fayetteville, ar | abc | w 13–6 | 52089
+3 | september 24 | tulane* | #11 | legion field • birmingham, al | none | w 20–10 | 81421
+4 | october 1 | georgia | #11 | bryant–denny stadium • tuscaloosa, al | espn | w 29–28 | 70123
+5 | october 8 | southern miss* | #11 | bryant–denny stadium • tuscaloosa, al | none | w 14–6 | 70123
+6 | october 15 | at tennessee | #10 | neyland stadium • knoxville, tn (third saturday in october) | espn | w 17–13 | 96856
+7 | october 22 | ole miss | #8 | bryant–denny stadium • tuscaloosa, al (rivalry) | abc | w 21–10 | 70123
+8 | november 5 | at lsu | #6 | tiger stadium • baton rouge, la (rivalry) | espn | w 35–17 | 75453
+9 | november 12 | at #20 mississippi state | #6 | scott field • starkville, ms (rivalry) | abc | w 29–25 | 41358
+10 | november 19 | #6 auburn | #4 | legion field • birmingham, al (iron bowl) | abc | w 21–14 | 83091
+11 | december 3 | vs. #6 florida | #3 | georgia dome • atlanta, ga (sec championship game) | abc | l 23–24 | 74751
+12 | 1995-1-2 | vs. #13 ohio state* | #6 | citrus bowl • orlando, fl (florida citrus bowl) | abc | w 24–17 | 71195
+
+
+id:  nu-19  Q:  what is the total number of skoda cars sold in the year 2005?  Gold ans:  492,111
+TabSQLify Prediction:  984222.0 
+Binder Prediction:  ['492111']
+Table Title:  Škoda Auto
+
+Table Column:  row_number, model, _1991, _1995, _1996, _1997, _1998, _1999, _2000, _2001, _2002, _2003, _2004, _2005, _2006, _2007, _2008, _2009, _2010, _2011, _2012, _2013
+Linear Table:
+ row_number | model | _1991 | _1995 | _1996 | _1997 | _1998 | _1999 | _2000 | _2001 | _2002 | _2003 | _2004 | _2005 | _2006 | _2007 | _2008 | _2009 | _2010 | _2011 | _2012 | _2013
+0 | škoda felicia | 172000 | 210000 | none | 288458 | 261127 | 241256 | 148028 | 44963 | − | − | − | − | − | − | − | − | − | − | − | −
+1 | škoda octavia | − | − | none | 47876 | 102373 | 143251 | 158503 | 164134 | 164017 | 165635 | 181683 | 233322 | 270274 | 309951 | 344857 | 317335 | 349746 | 387200 | 409360 | 359600
+2 | škoda fabia | − | − | − | − | − | 823 | 128872 | 250978 | 264641 | 260988 | 247600 | 236698 | 243982 | 232890 | 246561 | 264173 | 229045 | 266800 | 255025 | 202000
+3 | škoda superb | − | − | − | − | − | − | − | 177 | 16867 | 23135 | 22392 | 22091 | 20989 | 20530 | 25645 | 44548 | 98873 | 116700 | 106847 | 94400
+4 | škoda roomster | − | − | − | − | − | − | − | − | − | − | − | − | 14422 | 66661 | 57467 | 47152 | 32332 | 36000 | 39249 | 33300
+5 | škoda yeti | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | 11018 | 52604 | 70300 | 90952 | 82400
+6 | škoda rapid | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | 1700 | 9292 | 103800
+7 | škoda citigo | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | 509 | 36687 | 45200
+8 | total | 172000 | 210000 | 261000 | 336334 | 363500 | 385330 | 435403 | 460252 | 445525 | 449758 | 451675 | 492111 | 549667 | 630032 | 674530 | 684226 | 762600 | 879200 | 949412 | 920800
+
+
+id:  nu-21  Q:  who won the most gold medals?  Gold ans:  brazil
+TabSQLify Prediction:   total
+Binder Prediction:  ['total']
+Table Title:  Taekwondo at the 2010 South American Games
+
+Table Column:  row_number, rank, nation, gold, silver, bronze, total
+Linear Table:
+ row_number | rank | nation | gold | silver | bronze | total
+0 | 1 | brazil | 7 | 5 | 3 | 15
+1 | 2 | venezuela | 3 | 2 | 8 | 13
+2 | 3 | colombia | 2 | 3 | 4 | 9
+3 | 4 | chile | 2 | 0 | 2 | 4
+4 | 5 | argentina | 1 | 2 | 5 | 8
+5 | 6 | peru | 1 | 1 | 2 | 4
+6 | 7 | ecuador | 0 | 2 | 2 | 4
+7 | 8 | guyana | 0 | 1 | 0 | 1
+8 | 9 | aruba | 0 | 0 | 1 | 1
+9 | 9 | netherlands antilles | 0 | 0 | 1 | 1
+10 | 9 | panama | 0 | 0 | 1 | 1
+11 | 9 | uruguay | 0 | 0 | 1 | 1
+12 | total | total | 16 | 16 | 30 | 62
+
+
+id:  nu-23  Q:  what yacht had the next best time (smaller time is better) than ausmaid?  Gold ans:  brindabella
+TabSQLify Prediction:  sayonara 
+Binder Prediction:  ['sayonara']
+Table Title:  1998 Sydney to Hobart Yacht Race
+
+Table Column:  row_number, position, sail_number, yacht, state_country, yacht_type, loa_metres, skipper, elapsed_time_d_hh_mm_ss
+Linear Table:
+ row_number | position | sail_number | yacht | state_country | yacht_type | loa_metres | skipper | elapsed_time_d_hh_mm_ss
+0 | 1 | us17 | sayonara | usa | farr ilc maxi | 24.13 | larry ellison | 2:19:3:32
+1 | 2 | c1 | brindabella | nsw | jutson 79 | 24.07 | george snow | 2:21:55:6
+2 | 3 | yc1000 | ausmaid | sa | farr 47 | 14.24 | kevan pearce | 3:6:2:29
+3 | 4 | aus70 | ragamuffin | nsw | farr 50 | 15.15 | syd fischer | 3:6:11:29
+4 | 5 | cok1 | nokia | ci | farr ketch maxi | 25.2 | david witt | 3:9:19:0
+5 | 6 | sm1 | fudge | vic | elliot 56 | 17.07 | peter hansen | 3:11:0:26
+6 | 7 | 6606 | quest | nsw | nelson marek 46 | 14.12 | bob steel | 3:14:41:28
+7 | 8 | 9090 | industrial quest | qld | nelson marek 43 | 13.11 | kevin miller | 3:14:58:46
+8 | 9 | 4826 | aspect computing | nsw | radford 16.5 sloop | 16.5 | david pescud | 3:15:28:24
+9 | 10 | 8338 | afr t00 rambler | nsw | hick 35 | 10.66 | ed psaltis; bob thomas | 3:16:4:40
+
+
+id:  nu-25  Q:  how many times was amanda on the judging panel?  Gold ans:  3
+TabSQLify Prediction:  8 
+Binder Prediction:  [8]
+Table Title:  Britain's Got Talent
+
+Table Column:  row_number, series, premiere, finale, winner, runner_up, third_place, hosts, judging_panel, guest_judges
+Linear Table:
+ row_number | series | premiere | finale | winner | runner_up | third_place | hosts | judging_panel | guest_judges
+0 | 1 | 2007-6-9 | 2007-6-17 | paul potts | damon scott | connie talbot | ant & dec | simon cowell; amanda holden; piers morgan | n/a
+1 | 2 | 2008-4-12 | 2008-5-31 | george sampson | signature | andrew johnston | ant & dec | simon cowell; amanda holden; piers morgan | n/a
+2 | 3 | 2009-4-11 | 2009-5-30 | diversity | susan boyle | julian smith | ant & dec | simon cowell; amanda holden; piers morgan | kelly brook
+3 | 4 | 2010-4-17 | 2010-6-5 | spelbound | twist and pulse | kieran gaffney | ant & dec | simon cowell; amanda holden; piers morgan | louis walsh
+4 | 5 | 2011-4-16 | 2011-6-4 | jai mcdowall | ronan parke | new bounce | ant & dec | simon cowell; amanda holden; david hasselhoff; michael mcintyre | louis walsh
+5 | 6 | 2012-3-24 | 2012-5-12 | ashleigh and pudsey | jonathan and charlotte | only boys aloud | ant & dec | simon cowell; amanda holden; alesha dixon; david walliams | carmen electra
+6 | 7 | 2013-4-13 | 2013-6-8 | attraction | jack carroll | richard & adam | ant & dec | simon cowell; amanda holden; alesha dixon; david walliams | n/a
+7 | 8 | 2014-4-12 | 2014-5-31 | tba | tba | tba | ant & dec | simon cowell; amanda holden; alesha dixon; david walliams | ant & dec
+8 | 9 | 2015 | 2015 | tba | tba | tba | ant & dec | tba | tba
+
+
+id:  nu-34  Q:  natalia varnakova is the same height as which other contestant(s)?  Gold ans:  jahaira novgorodova,carmen jenockova,mariesea mnesiču,patricia valiahmetova,anastasija larkova
+TabSQLify Prediction:   jahaira novgorodova, irina mondroe, natalia melckenberger, anastasija larekova-sin, anna il'ina, and
+Binder Prediction:  0
+Table Title:  Miss Russia 2006
+
+Table Column:  row_number, represent, candidate, in_russian, age, height, hometown
+Linear Table:
+ row_number | represent | candidate | in_russian | age | height | hometown
+0 | adygean republic | alissa joanndova | алисса йоанндова | 19 | 1.83 m (6 ft 0 in) | tulsky
+1 | altai krai | anastasija nindova | анастасия ниндова | 22 | 1.74 m (5 ft 8 1⁄2 in) | barnaul
+2 | altai republic | kassandra melova | кассандра мелова | 18 | 1.79 m (5 ft 10 1⁄2 in) | kosh-agach
+3 | amur oblast | myriam asfry | мыриам асфры | 18 | 1.75 m (5 ft 9 in) | blagoveshchensk
+4 | astrakhan oblast | anastasija heldriova | анастасия хелдриова | 18 | 1.74 m (5 ft 8 1⁄2 in) | astrakhan
+5 | bashkortostan republic | aimee neosaranova | аимее неосаранова | 19 | 1.77 m (5 ft 9 1⁄2 in) | ufa
+6 | belgorod oblast | jahaira novgorodova | яхаира новгородова | 25 | 1.8 m (5 ft 11 in) | belgorod
+7 | buryatian republic | loise egiazarjan | лоисе егиазарян | 20 | 1.85 m (6 ft 1 in) | ulan-ude
+8 | capital city | natalia varnakova | наталиа варнакова | 19 | 1.8 m (5 ft 11 in) | moscow
+9 | chechen republic | carmen jenockova | цармен йеноцкова | 24 | 1.8 m (5 ft 11 in) | urus-martan
+10 | chelyabinsk oblast | tatiana abramenko | татиана абраменко | 21 | 1.74 m (5 ft 8 1⁄2 in) | chelyabinsk
+11 | chukotka okrug | mariesea mnesiču | мариесеа мнесичу | 19 | 1.8 m (5 ft 11 in) | anadyr
+12 | chuvash republic | martha neosova | мартха неосова | 19 | 1.78 m (5 ft 10 in) | cheboksary
+13 | irkutsk oblast | yulia samoylova | ыулиа самоылова | 21 | 1.77 m (5 ft 9 1⁄2 in) | irkutsk
+14 | jewish autonomous oblast | natalia melckenberger | наталиа мелцкенбергер | 20 | 1.75 m (5 ft 9 in) | birobidzhan
+15 | kaluga oblast | tatiana semiletova | татиана семилетова | 20 | 1.73 m (5 ft 8 in) | kaluga
+16 | kamchatka oblast | anastasija jackson | анастасия яцксон | 23 | 1.76 m (5 ft 9 1⁄2 in) | petropavlovsk-kamchatsky
+17 | karachay-cherkess republic | stephanie drjagina | степхание дрягина | 24 | 1.81 m (5 ft 11 1⁄2 in) | kaluga
+18 | kemerovo oblast | ivette sarova | иветте сарова | 20 | 1.82 m (5 ft 11 1⁄2 in) | mezhdurechensk
+19 | khabarovsk krai | anastasija katriova | анастасия катриова | 18 | 1.76 m (5 ft 9 1⁄2 in) | khabarovsk
+20 | khakassian republic | anastasija larekova-sin | анастасия ларекова-син | 23 | 1.81 m (5 ft 11 1⁄2 in) | abakan
+21 | khanty–mansi okrug | alba šaršakova | алба шаршакова | 18 | 1.76 m (5 ft 9 1⁄2 in) | kogalym
+22 | kostroma oblast | ekaterina protod’jakonova | екатерина протодьяконова | 18 | 1.84 m (6 ft 1⁄2 in) | kostroma
+23 | krasnodar krai | patricia valiahmetova | патрициа валиахметова | 20 | 1.8 m (5 ft 11 in) | krasnodar
+24 | kurgan oblast | irina mondroe | ирина мондрое | 25 | 1.79 m (5 ft 10 1⁄2 in) | kurgan
+25 | leningrad oblast | mercedes laplsjfda | мерцедес лаплсйфда | 18 | 1.79 m (5 ft 10 1⁄2 in) | leningrad
+26 | magadan oblast | ekaterina filimonova | екатерина филимонова | 20 | 1.83 m (6 ft 0 in) | magadan
+27 | mari el republic | anna il’ina | анна ильина | 19 | 1.88 m (6 ft 2 in) | medvedevo
+28 | mordovian republic | olga stepančenko | олга степанченко | 20 | 1.75 m (5 ft 9 in) | saransk
+29 | moscow oblast | anastasija rodriguez | анастасия родригуез | 20 | 1.83 m (6 ft 0 in) | khimki
+30 | nenets okrug | sofia meldemendev | софиа мелдемендев | 25 | 1.85 m (6 ft 1 in) | naryan-mar
+31 | north ossetian republic | emilianna ninn | емилианна нинн | 22 | 1.76 m (5 ft 9 1⁄2 in) | vladikavkaz
+32 | novgorod oblast | ekaterina žuravleva | екатерина журавлева | 20 | 1.81 m (5 ft 11 1⁄2 in) | novgorod
+33 | novosibirsk oblast | orianna kleobova | орианна клеобова | 19 | 1.73 m (5 ft 8 in) | novosibirsk
+34 | omsk oblast | vera korobejnikova | вера коробейникова | 20 | 1.82 m (5 ft 11 1⁄2 in) | omsk
+35 | oryol oblast | natalia pavšukova | наталиа павшукова | 19 | 1.79 m (5 ft 10 1⁄2 in) | oryol
+36 | penza oblast | anna milinzova | анна милинзова | 20 | 1.86 m (6 ft 1 in) | penza
+37 | perm krai | svetlana ninkova | светлана нинкова | 22 | 1.73 m (5 ft 8 in) | perm
+38 | pskov oblast | anastasija germonova | анастасия гермонова | 22 | 1.75 m (5 ft 9 in) | pskov
+39 | rostov oblast | tatiana kotova | татиана котова | 21 | 1.81 m (5 ft 11 1⁄2 in) | rostov-on-don
+40 | ryazan oblast | julia sandrova | юлиа сандрова | 20 | 1.74 m (5 ft 8 1⁄2 in) | ryazan
+41 | saint petersburg | maria hernasova | мариа хернасова | 20 | 1.78 m (5 ft 10 in) | saint petersburg
+42 | sakha republic | sardana syromyatnikova | сардана сыромыатникова | 19 | 1.82 m (5 ft 11 1⁄2 in) | yakutia
+43 | sakhalin oblast | jeannette menova | йеаннетте менова | 18 | 1.75 m (5 ft 9 in) | sakhalin
+44 | samara oblast | nadia gurina | надиа гурина | 20 | 1.78 m (5 ft 10 in) | samara
+45 | saratov oblast | anastasija marnolova | анастасия марнолова | 21 | 1.74 m (5 ft 8 1⁄2 in) | saratov
+46 | smolensk oblast | viktoria ševšenko | викториа шевшенко | 19 | 1.73 m (5 ft 8 in) | smolensk
+47 | sverdlovsk oblast | julianna piskunova | юлианна пискунова | 22 | 1.87 m (6 ft 1 1⁄2 in) | sverdlovsk
+48 | tambov oblast | jenna lerova | йенна лерова | 21 | 1.77 m (5 ft 9 1⁄2 in) | tambov
+49 | tatarstan republic | anastasija muhammad | анастасия мухаммад | 19 | 1.84 m (6 ft 1⁄2 in) | kazan
+50 | tomsk oblast | anastasija tristova | анастасия тристова | 23 | 1.78 m (5 ft 10 in) | tomsk
+51 | tuva republic | azida levenok | азида левенок | 18 | 1.81 m (5 ft 11 1⁄2 in) | kyzyl
+52 | tver oblast | anastasija prače’vysky | анастасия прачеьвыскы | 19 | 1.75 m (5 ft 9 in) | tver
+53 | tyumen oblast | andrea maksimova | андреа максимова | 24 | 1.84 m (6 ft 1⁄2 in) | tyumen
+54 | udmurt republic | monica zaharova | моница захарова | 24 | 1.81 m (5 ft 11 1⁄2 in) | izhevsk
+55 | volgograd oblast | indhira perlova | индхира перлова | 21 | 1.78 m (5 ft 10 in) | volgograd
+56 | vologda oblast | rosemary mironova | росемары миронова | 21 | 1.74 m (5 ft 8 1⁄2 in) | vologda
+57 | voronezh oblast | anastasija larkova | анастасия ларкова | 22 | 1.8 m (5 ft 11 in) | voronezh
+58 | yamalo-nenets okrug | ekaterina borzenkova | екатерина борзенкова | 19 | 1.77 m (5 ft 9 1⁄2 in) | tarko-sale
+59 | yaroslavl oblast | emely androlevy | емелы андролевы | 23 | 1.73 m (5 ft 8 in) | yaroslavl
+
+
+id:  nu-35  Q:  how many candidates belong to a party other than republican or democrat?  Gold ans:  0
+TabSQLify Prediction:  7 
+Binder Prediction:  [7]
+Table Title:  United States House of Representatives elections in Colorado, 2008
+
+Table Column:  row_number, district, incumbent, 2008_status, democratic, republican
+Linear Table:
+ row_number | district | incumbent | 2008_status | democratic | republican
+0 | 1 | diana degette | re-election | diana degette | george lilly
+1 | 2 | mark udall | open | jared polis | scott starin
+2 | 3 | john salazar | re-election | john salazar | wayne wolf
+3 | 4 | marilyn musgrave | re-election | betsy markey | marilyn musgrave
+4 | 5 | doug lamborn | re-election | hal bidlack | doug lamborn
+5 | 6 | tom tancredo | open | hank eng | mike coffman
+6 | 7 | ed perlmutter | re-election | ed perlmutter | john w. lerew
+
+
+id:  nu-37  Q:  how many domestic routes out of houston intercontinental have united as a carrier?  Gold ans:  10
+TabSQLify Prediction:  0 
+Binder Prediction:  [0]
+Table Title:  George Bush Intercontinental Airport
+
+Table Column:  row_number, rank, city, passengers, top_carriers
+Linear Table:
+ row_number | rank | city | passengers | top_carriers
+0 | 1 | los angeles, ca | 700000 | american, spirit, united
+1 | 2 | chicago, il | 673000 | american, spirit, united
+2 | 3 | denver, co | 654000 | frontier, spirit, united
+3 | 4 | san francisco, ca | 492000 | united
+4 | 5 | dallas/fort worth, tx | 488000 | american, united
+5 | 6 | newark, nj | 480000 | united
+6 | 7 | las vegas, nv | 442000 | spirit, united
+7 | 8 | charlotte, nc | 441000 | united, us airways
+8 | 9 | atlanta, ga | 400000 | delta, united
+9 | 10 | phoenix, az | 393000 | united, us airways
+
+
+id:  nu-42  Q:  what building had the least height in germany?  Gold ans:  st. mary's church
+TabSQLify Prediction:   st nikolai
+Binder Prediction:  ['st nikolai']
+Table Title:  List of tallest freestanding structures in the world
+
+Table Column:  row_number, name, country, town, height_metres___ft, structural_type, held_record, notes
+Linear Table:
+ row_number | name | country | town | height_metres___ft | structural_type | held_record | notes
+0 | great pyramid of giza | egypt | giza | 146 / 480 | mausoleum | 2570 bc–1311 | due to erosion 2024-3-6 it stands at the height of 138.8 metres (455 ft).
+1 | lincoln cathedral | england | lincoln | 159.7 / 524 | church | 1311–1549 | spire collapsed in 1549; 2024-3-6, stands at a height of 83 metres (272 ft).
+2 | st. mary's church | germany | stralsund | 151 / 500 | church | 1549–1647 | spire destroyed by lightning in 1647; 2024-3-6 stands at a height of 104 metres (341 ft).
+3 | strasbourg cathedral | germany and/or france (2024-3-6 france) | strasbourg | 142 / 470 | church | 1647–1874 | none
+4 | st nikolai | germany | hamburg | 147.3 / 483 | church | 1874–1876 | due to aerial bombing in world war ii the nave was demolished; only the spire remains.
+5 | notre-dame cathedral | france | rouen | 151 / 500 | church | 1876–1880 | none
+6 | cologne cathedral | germany | cologne | 157.4 / 516 | church | 1880–1884 | none
+7 | washington monument | united states | washington, d.c. | 169.3 / 555 | monument | 1884–1889 | none
+8 | eiffel tower | france | paris | 300.6 / 986 | tower | 1889–1930 | currently stands at a height of 324 metres (1063 ft).
+9 | chrysler building | united states | new york city | 319 / 1046 | skyscraper | 1930–1931 | none
+10 | empire state building | united states | new york city | 448 / 1472 | skyscraper | 1931–1967 | none
+11 | ostankino tower | russia | moscow | 540 / 1772 | tower | 1967–1976 | none
+12 | cn tower | canada | toronto | 553 / 1815 | tower | 1976–2007 | none
+13 | burj khalifa | united arab emirates | dubai | 829.8 / 2722 | skyscraper | 2007–present | topped-out on 2009-1-17
+
+
+id:  nu-44  Q:  which year did the team have their most total wins?  Gold ans:  1992
+TabSQLify Prediction:  2014
+Binder Prediction:  0
+Table Title:  List of The Citadel Bulldogs football seasons
+
+Table Column:  row_number, season, conference, head_coach, total_wins, total_losses, total_ties, conference_wins, conference_losses, conference_ties, conference_standing, postseason_result
+Linear Table:
+ row_number | season | conference | head_coach | total_wins | total_losses | total_ties | conference_wins | conference_losses | conference_ties | conference_standing | postseason_result
+0 | 1905 | independent | sidney smith | 2 | 3 | 1 | — | — | — | — | —
+1 | 1906 | independent | ralph foster | 3 | 0 | 0 | — | — | — | — | —
+2 | 1907 | independent | ralph foster | 1 | 5 | 1 | — | — | — | — | —
+3 | 1908 | southern intercollegiate | ralph foster | 4 | 1 | 1 | — | — | — | — | —
+4 | 1909 | southern intercollegiate | sam costen | 4 | 3 | 2 | 0 | 1 | 1 | — | —
+5 | 1910 | southern intercollegiate | sam costen | 3 | 4 | 0 | 1 | 3 | 0 | — | —
+6 | 1911 | southern intercollegiate | l. s. letellier | 5 | 2 | 2 | 1 | 2 | 0 | — | —
+7 | 1912 | southern intercollegiate | l. s. letellier | 3 | 4 | 0 | 0 | 3 | 0 | — | —
+8 | 1913 | southern intercollegiate | george c. rogers | 3 | 4 | 2 | 0 | 2 | 0 | — | —
+9 | 1914 | southern intercollegiate | george c. rogers | 2 | 5 | 0 | 0 | 3 | 0 | — | —
+10 | 1915 | southern intercollegiate | george c. rogers | 5 | 3 | 0 | 2 | 3 | 0 | — | —
+11 | 1916 | southern intercollegiate | harvey o'brien | 6 | 1 | 1 | 4 | 1 | 0 | — | —
+12 | 1917 | southern intercollegiate | harvey o'brien | 3 | 3 | 0 | 1 | 3 | 0 | — | —
+13 | 1918 | southern intercollegiate | harvey o'brien | 0 | 2 | 1 | 0 | 1 | 1 | — | —
+14 | 1919 | southern intercollegiate | george c. rogers | 4 | 4 | 1 | 2 | 4 | 1 | — | —
+15 | 1920 | southern intercollegiate | harvey o'brien | 2 | 6 | 0 | 1 | 5 | 0 | — | —
+16 | 1921 | southern intercollegiate | harvey o'brien | 3 | 3 | 2 | 2 | 3 | 1 | — | —
+17 | 1922 | southern intercollegiate | carl prause | 3 | 5 | 0 | 1 | 2 | 0 | — | —
+18 | 1923 | southern intercollegiate | carl prause | 5 | 3 | 1 | 2 | 1 | 1 | — | —
+19 | 1924 | southern intercollegiate | carl prause | 6 | 4 | 0 | 4 | 2 | 0 | — | —
+20 | 1925 | southern intercollegiate | carl prause | 6 | 4 | 0 | 4 | 2 | 0 | — | —
+21 | 1926 | southern intercollegiate | carl prause | 7 | 3 | 0 | 4 | 3 | 0 | — | —
+22 | 1927 | southern intercollegiate | carl prause | 3 | 6 | 1 | 2 | 3 | 1 | — | —
+23 | 1928 | southern intercollegiate | carl prause | 6 | 3 | 1 | 3 | 3 | 0 | — | —
+24 | 1929 | southern intercollegiate | carl prause | 5 | 4 | 1 | 4 | 0 | 1 | — | —
+25 | 1930 | southern intercollegiate | johnny floyd | 4 | 5 | 2 | 3 | 0 | 1 | — | —
+26 | 1931 | southern intercollegiate | johnny floyd | 5 | 4 | 1 | 4 | 1 | 0 | — | —
+27 | 1932 | southern intercollegiate | tatum gressette | 4 | 5 | 0 | 2 | 2 | 0 | — | —
+28 | 1933 | southern intercollegiate | tatum gressette | 3 | 5 | 1 | 3 | 2 | 0 | — | —
+29 | 1934 | southern intercollegiate | tatum gressette | 3 | 5 | 1 | 2 | 2 | 0 | — | —
+30 | 1935 | southern intercollegiate | tatum gressette | 4 | 3 | 1 | 3 | 1 | 0 | — | —
+31 | 1936 | southern | tatum gressette | 4 | 6 | 0 | 0 | 4 | 0 | 14 | —
+32 | 1937 | southern | tatum gressette | 7 | 4 | 0 | 2 | 3 | 0 | 8 | —
+33 | 1938 | southern | tatum gressette | 6 | 5 | 0 | 2 | 3 | 0 | 10 | —
+34 | 1939 | southern | tatum gressette | 3 | 8 | 0 | 0 | 4 | 0 | 15 | —
+35 | 1940 | southern | bo rowland | 4 | 5 | 0 | 0 | 4 | 0 | 15 | —
+36 | 1941 | southern | bo rowland | 4 | 3 | 1 | 0 | 2 | 1 | 14 | —
+37 | 1942 | southern | bo rowland | 5 | 2 | 0 | 2 | 2 | 0 | 8 | —
+38 | 1943 | no team | no team | no team | no team | no team | no team | no team | no team | no team | no team
+39 | 1944 | no team | no team | no team | no team | no team | no team | no team | no team | no team | no team
+40 | 1945 | no team | no team | no team | no team | no team | no team | no team | no team | no team | no team
+41 | 1946 | southern | j. quinn decker | 3 | 5 | 0 | 1 | 5 | 0 | 15 | —
+42 | 1947 | southern | j. quinn decker | 3 | 5 | 0 | 1 | 4 | 0 | 12 | —
+43 | 1948 | southern | j. quinn decker | 2 | 7 | 0 | 0 | 5 | 0 | 16 | —
+44 | 1949 | southern | j. quinn decker | 4 | 5 | 0 | 2 | 2 | 0 | 7 | —
+45 | 1950 | southern | j. quinn decker | 4 | 6 | 0 | 2 | 3 | 0 | 11 | —
+46 | 1951 | southern | j. quinn decker | 4 | 6 | 0 | 1 | 3 | 0 | 14 | —
+47 | 1952 | southern | j. quinn decker | 3 | 5 | 1 | 1 | 3 | 1 | 13 | —
+48 | 1953 | southern | john d. mcmillan | 2 | 7 | 0 | 1 | 3 | 0 | 9 | —
+49 | 1954 | southern | john d. mcmillan | 2 | 8 | 0 | 0 | 4 | 0 | 9 | —
+50 | 1955 | southern | john sauer | 5 | 4 | 0 | 2 | 2 | 0 | 5 | —
+51 | 1956 | southern | john sauer | 3 | 5 | 1 | 1 | 3 | 0 | 8 | —
+52 | 1957 | southern | eddie teague | 5 | 4 | 1 | 4 | 2 | 0 | 3 | —
+53 | 1958 | southern | eddie teague | 4 | 6 | 0 | 2 | 3 | 0 | 7 | —
+54 | 1959 | southern | eddie teague | 8 | 2 | 0 | 5 | 1 | 0 | 2 | —
+55 | 1960 | southern | eddie teague | 8 | 2 | 1 | 4 | 2 | 0 | 2 | tangerine bowl
+56 | 1961 | southern | eddie teague | 7 | 3 | 0 | 5 | 1 | 0 | 1 | —
+57 | 1962 | southern | eddie teague | 3 | 7 | 0 | 1 | 4 | 0 | 7 | —
+58 | 1963 | southern | eddie teague | 4 | 6 | 0 | 2 | 4 | 0 | 7 | —
+59 | 1964 | southern | eddie teague | 4 | 6 | 0 | 4 | 3 | 0 | 4 | —
+60 | 1965 | southern | eddie teague | 2 | 8 | 0 | 2 | 6 | 0 | 8 | —
+61 | 1966 | southern | red parker | 4 | 6 | 0 | 3 | 5 | 0 | 6 | —
+62 | 1967 | southern | red parker | 5 | 6 | 0 | 2 | 4 | 0 | 7 | —
+63 | 1968 | southern | red parker | 5 | 5 | 0 | 4 | 2 | 0 | 2 | —
+64 | 1969 | southern | red parker | 7 | 3 | 0 | 4 | 2 | 0 | 3 | —
+65 | 1970 | southern | red parker | 5 | 6 | 0 | 4 | 2 | 0 | 2 | —
+66 | 1971 | southern | red parker | 8 | 3 | 0 | 4 | 2 | 0 | 3 | —
+67 | 1972 | southern | red parker | 5 | 6 | 0 | 4 | 3 | 0 | 4 | —
+68 | 1973 | southern | bobby ross | 3 | 8 | 0 | 1 | 6 | 0 | 7 | —
+69 | 1974 | southern | bobby ross | 4 | 7 | 0 | 3 | 4 | 0 | 5 | —
+70 | 1975 | southern | bobby ross | 6 | 5 | 0 | 4 | 3 | 0 | 4 | —
+71 | 1976 | southern | bobby ross | 6 | 5 | 0 | 1 | 4 | 0 | 6 | —
+72 | 1977 | southern | bobby ross | 5 | 6 | 0 | 3 | 2 | 0 | 3 | —
+73 | 1978 | southern | art baker | 5 | 6 | 0 | 2 | 3 | 0 | 5 | —
+74 | 1979 | southern | art baker | 6 | 5 | 0 | 4 | 2 | 0 | 3 | —
+75 | 1980 | southern | art baker | 7 | 4 | 0 | 3 | 2 | 0 | 4 | —
+76 | 1981 | southern | art baker | 7 | 3 | 1 | 3 | 2 | 1 | 4 | —
+77 | 1982 | southern | art baker | 5 | 6 | 0 | 3 | 4 | 0 | 4 | —
+78 | 1983 | southern | tom moore | 3 | 8 | 0 | 1 | 6 | 0 | 7 | —
+79 | 1984 | southern | tom moore | 7 | 4 | 0 | 4 | 2 | 0 | 3 | —
+80 | 1985 | southern | tom moore | 5 | 5 | 1 | 2 | 4 | 1 | 5 | —
+81 | 1986 | southern | tom moore | 3 | 8 | 0 | 0 | 6 | 0 | 8 | —
+82 | 1987 | southern | charlie taaffe | 4 | 7 | 0 | 1 | 5 | 0 | 8 | —
+83 | 1988 | southern | charlie taaffe | 8 | 4 | 0 | 5 | 2 | 0 | 3 | first round
+84 | 1989 | southern | charlie taaffe | 5 | 5 | 1 | 1 | 5 | 1 | 8 | —
+85 | 1990 | southern | charlie taaffe | 7 | 5 | 0 | 4 | 3 | 0 | 3 | first round
+86 | 1991 | southern | charlie taaffe | 7 | 4 | 0 | 5 | 2 | 0 | 2 | —
+87 | 1992 | southern | charlie taaffe | 11 | 2 | 0 | 6 | 1 | 0 | 1 | quarterfinals
+88 | 1993 | southern | charlie taaffe | 5 | 6 | 0 | 4 | 4 | 0 | 4 | —
+89 | 1994 | southern | charlie taaffe | 6 | 5 | 0 | 4 | 4 | 0 | 5 | —
+90 | 1995 | southern | charlie taaffe | 2 | 9 | 0 | 0 | 8 | 0 | 8 | —
+91 | 1996 | southern | don powers | 4 | 7 | 0 | 3 | 5 | 0 | 5 | —
+92 | 1997 | southern | don powers | 6 | 5 | 0 | 4 | 4 | 0 | 4 | —
+93 | 1998 | southern | don powers | 5 | 6 | 0 | 4 | 4 | 0 | 4 | —
+94 | 1999 | southern | don powers | 2 | 9 | 0 | 1 | 7 | 0 | 8 | —
+95 | 2000 | southern | don powers | 2 | 9 | 0 | 1 | 7 | 0 | t-8 | —
+96 | 2001 | southern | ellis johnson | 3 | 7 | 0 | 2 | 6 | 0 | 7 | —
+97 | 2002 | southern | ellis johnson | 3 | 9 | — | 1 | 7 | — | 9 | —
+98 | 2003 | southern | ellis johnson | 6 | 6 | — | 4 | 4 | — | 4 | —
+99 | 2004 | southern | john zernhelt | 3 | 7 | — | 2 | 5 | — | t-5 | —
+100 | 2005 | southern | kevin higgins | 4 | 7 | — | 2 | 5 | — | 7 | —
+101 | 2006 | southern | kevin higgins | 5 | 6 | — | 4 | 3 | — | 4 | —
+102 | 2007 | southern | kevin higgins | 7 | 4 | — | 4 | 3 | — | t-3 | —
+103 | 2008 | southern | kevin higgins | 4 | 8 | — | 2 | 6 | — | 7 | —
+104 | 2009 | southern | kevin higgins | 4 | 7 | — | 2 | 6 | — | 7 | —
+105 | 2010 | southern | kevin higgins | 3 | 8 | — | 1 | 7 | — | t-8 | —
+106 | 2011 | southern | kevin higgins | 4 | 7 | — | 2 | 6 | — | 8 | —
+107 | 2012 | southern | kevin higgins | 7 | 4 | — | 5 | 3 | — | t-4 | —
+108 | 2013 | southern | kevin higgins | 5 | 7 | — | 4 | 4 | — | t-4 | —
+109 | 2014 | southern | mike houston | upcoming | upcoming | upcoming | upcoming | upcoming | upcoming | upcoming | upcoming
+110 | totals:; 105 seasons | 2 conferences | 23 head coaches | total; wins; 473 | total; losses; 536 | total; ties; 32 | 239 conference wins; 55 siaa; 184 socon | 379 conference losses; 58 siaa; 321 socon | 13 conference ties; 8 siaa; 5 socon | regular season; champions; 2 times | 1–0 bowl record; 1–3 playoff record
+
+
+id:  nu-45  Q:  what's the total of deaths that happened in 1939/1940?  Gold ans:  504,000
+TabSQLify Prediction:  543000 
+Binder Prediction:  0
+Table Title:  World War II casualties of Poland
+
+Table Column:  row_number, description_losses, 1939_40, 1940_41, 1941_42, 1942_43, 1943_44, 1944_45, total
+Linear Table:
+ row_number | description_losses | 1939_40 | 1940_41 | 1941_42 | 1942_43 | 1943_44 | 1944_45 | total
+0 | direct war losses | 360000 | none | none | none | none | 183000 | 543000
+1 | murdered | 75000 | 100000 | 116000 | 133000 | 82000 | none | 506000
+2 | deaths in prisons & camps | 69000 | 210000 | 220000 | 266000 | 381000 | none | 1146000
+3 | deaths outside of prisons & camps | none | 42000 | 71000 | 142000 | 218000 | none | 473000
+4 | murdered in eastern regions | none | none | none | none | none | 100000 | 100000
+5 | deaths other countries | none | none | none | none | none | none | 2000
+6 | total | 504000 | 352000 | 407000 | 541000 | 681000 | 270000 | 2770000
+
+
+id:  nu-46  Q:  what is the total number of models covered in the table?  Gold ans:  20
+TabSQLify Prediction:  12 
+Binder Prediction:  [12]
+Table Title:  AC Transit
+
+Table Column:  row_number, year, manufacturer, model, length_feet, quantity, fleet_series, fuel_propulsion, powertrain
+Linear Table:
+ row_number | year | manufacturer | model | length_feet | quantity | fleet_series | fuel_propulsion | powertrain
+0 | 1996 | new flyer | d60 | 60 (articulated) | 30 | 1901-1930* | diesel | detroit diesel series 50; allison b400r
+1 | 1998 | nabi | 416 | 40 | 133 | 3001-3067, 3101-3166* | diesel | cummins m11e; allison b400r
+2 | 1999 | nabi | 40-lfw | 40 | 44 | 4001-4044 | diesel | none
+3 | 2000 | nabi | 40-lfw | 40 | 23 | 7201-7223 | diesel | cummins ism; allison b400r
+4 | 2000 | mci | d4500 | 45 | 30 | 6001-6030 | diesel | none
+5 | 2001 | mci | d4500 | 45 | 10 | 6031-6040 | diesel | none
+6 | 2003 | mci | d4500 | 45 | 39 | 6041-6079 | diesel | none
+7 | 2003 | nabi | 40-lfw | 40 | 46 | 4051-4090 | diesel | cummins isl; allison b400r
+8 | 2003 | van hool | a330 | 40 | 110 | 1001-1110 | diesel | cummins ism; voith d864.3e
+9 | 2003 | van hool | ag300 | 60 | 57 | 2001-2057 | diesel | cummins ism; voith d864.3e
+10 | 2005 | van hool | a300fc | 40 | 3 | fc1-fc3 | hydrogen | none
+11 | 2006 | van hool | a300k | 30 | 50 | 5001-5050 | diesel | cummins isb; voith d864.3e
+12 | 2007 | van hool | ag300 | 60 | 10 | 2101-2110 | diesel | cummins isl; voith d864.3e
+13 | 2007 | van hool | ag300 | 60 | 15 | 2151-2165 | diesel | cummins ism; voith d864.3e
+14 | 2008 | van hool | a300l | 40 | 27 | 1201-1227 | diesel | cummins isl; voith d864.5
+15 | 2008 | van hool | a300k | 30 | 1 | 5099 | diesel-electric hybrid | none
+16 | 2008 | van hool | a300k | 30 | 39 | 5101-5139 | diesel | cummins isb; voith d854.5
+17 | 2010 | van hool | ag300 | 60 | 9 | 2191-2199 | diesel | cummins isl; voith d864.5
+18 | 2010 | van hool | a300l fc | 40 | 12 | fc4-fc16 | hydrogen | none
+19 | 2013 | gillig | low-floor advantage | 40 | 65 | 1301-1365 | diesel | cummins isl 280 hp ; allison b400 6-speed
+20 | 2013 | new flyer | xcelsior d60 | 60 | 23 | 2201-2223 | diesel | cummins isl 330 hp; allison b400 6-speed
+21 | 2013 | gillig | low-floor advantage | 40 | 55 | 6101-6155 | diesel | cummins isl 280 hp; allison b400 6-speed
+
+
+id:  nu-51  Q:  how many countries had at least $1 billion in box office?  Gold ans:  10
+TabSQLify Prediction:  0 
+Binder Prediction:  [11]
+Table Title:  Film industry
+
+Table Column:  row_number, rank, country, box_office, year, box_office_from_national_films
+Linear Table:
+ row_number | rank | country | box_office | year | box_office_from_national_films
+0 | 1.0 | canada/united states | $10800000000 | 2012 | –
+1 | 2.0 | china | $3600000000 | 2013 | 59% (2013)
+2 | 3.0 | japan | $1880000000 | 2013 | 61% (2013)
+3 | 4.0 | united kingdom | $1700000000 | 2012 | 36.1% (2011)
+4 | 5.0 | france | $1700000000 | 2012 | 33.3% (2013)
+5 | 6.0 | south korea | $1470000000 | 2013 | 59.7% (2013)
+6 | 7.0 | india | $1400000000 | 2012 | –
+7 | 8.0 | germany | $1300000000 | 2012 | –
+8 | 9.0 | russia | $1200000000 | 2012 | –
+9 | 10.0 | australia | $1200000000 | 2012 | 4.1% (2011)
+10 | 11.0 | italy | $840000000 | 2013 | 30% (2013)
+11 | 12.0 | brazil | $720000000 | 2013 | 17% (2013)
+12 | nan | world | $34700000000 | 2012 | –
+
+
+id:  nu-56  Q:  total number of cars sold in 2001?  Gold ans:  460,252
+TabSQLify Prediction:  920504.0 
+Binder Prediction:  ['460252']
+Table Title:  Škoda Auto
+
+Table Column:  row_number, model, _1991, _1995, _1996, _1997, _1998, _1999, _2000, _2001, _2002, _2003, _2004, _2005, _2006, _2007, _2008, _2009, _2010, _2011, _2012, _2013
+Linear Table:
+ row_number | model | _1991 | _1995 | _1996 | _1997 | _1998 | _1999 | _2000 | _2001 | _2002 | _2003 | _2004 | _2005 | _2006 | _2007 | _2008 | _2009 | _2010 | _2011 | _2012 | _2013
+0 | škoda felicia | 172000 | 210000 | none | 288458 | 261127 | 241256 | 148028 | 44963 | − | − | − | − | − | − | − | − | − | − | − | −
+1 | škoda octavia | − | − | none | 47876 | 102373 | 143251 | 158503 | 164134 | 164017 | 165635 | 181683 | 233322 | 270274 | 309951 | 344857 | 317335 | 349746 | 387200 | 409360 | 359600
+2 | škoda fabia | − | − | − | − | − | 823 | 128872 | 250978 | 264641 | 260988 | 247600 | 236698 | 243982 | 232890 | 246561 | 264173 | 229045 | 266800 | 255025 | 202000
+3 | škoda superb | − | − | − | − | − | − | − | 177 | 16867 | 23135 | 22392 | 22091 | 20989 | 20530 | 25645 | 44548 | 98873 | 116700 | 106847 | 94400
+4 | škoda roomster | − | − | − | − | − | − | − | − | − | − | − | − | 14422 | 66661 | 57467 | 47152 | 32332 | 36000 | 39249 | 33300
+5 | škoda yeti | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | 11018 | 52604 | 70300 | 90952 | 82400
+6 | škoda rapid | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | 1700 | 9292 | 103800
+7 | škoda citigo | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | − | 509 | 36687 | 45200
+8 | total | 172000 | 210000 | 261000 | 336334 | 363500 | 385330 | 435403 | 460252 | 445525 | 449758 | 451675 | 492111 | 549667 | 630032 | 674530 | 684226 | 762600 | 879200 | 949412 | 920800
+
+
+id:  nu-58  Q:  who was the top placing competitor?  Gold ans:  esther shahamorov
+TabSQLify Prediction:   ze'ev friedman
+Binder Prediction:  ['david berger', 'yossef romano', 'mark slavin']
+Table Title:  Israel at the 1972 Summer Olympics
+
+Table Column:  row_number, name, sport, event, placing, performance
+Linear Table:
+ row_number | name | sport | event | placing | performance
+0 | shaul ladani | athletics | men's 50 km walk | 19 | 4:24:38.6; (also entered for 20 km walk, but did not start)
+1 | esther shahamorov | athletics | women's 100 m | semifinal (5th) | 11.49
+2 | esther shahamorov | athletics | women's 100 m hurdles | semifinal | did not start (left munich before the semifinal)
+3 | dan alon | fencing | men's foil | second round | w5–l5 (1r 3-2, 2r 2-3)
+4 | yehuda weissenstein | fencing | men's foil | second round | w2–l8 (1r 2-3, 2r 0-5)
+5 | yair michaeli | sailing | flying dutchman | 23 | 28-22-22-19-25-19-dns = 171 pts; (left kiel before 7th race)
+6 | itzhak nir | sailing | flying dutchman | 23 | 28-22-22-19-25-19-dns = 171 pts; (left kiel before 7th race)
+7 | henry hershkowitz | shooting | 50 metre rifle prone | 23 | 593/600
+8 | henry hershkowitz | shooting | 50 metre rifle 3 positions | 46 | 1114/1200
+9 | zelig stroch | shooting | 50 metre rifle prone | 57 | 589/600
+10 | shlomit nir | swimming | women's 100 m breaststroke | heats (8th) | 1:20.9
+11 | shlomit nir | swimming | women's 200 m breaststroke | heats (6th) | 2:53.6
+12 | david berger | weightlifting | light-heavyweight <82.5 kg | — | j:132.5 c:122.5 s:— t:—
+13 | ze'ev friedman | weightlifting | bantamweight <56 kg | 12 | j:102.5 c:102.5 s:125 t:330
+14 | yossef romano | weightlifting | middleweight <75 kg | — | (retired injured on third attempt to press 137.5kg)
+15 | gad tsobari | wrestling | freestyle — light flyweight <48 kg | group stage | 0w–2l
+16 | eliezer halfin | wrestling | freestyle — lightweight <68 kg | group stage | 1w–2l
+17 | mark slavin | wrestling | greco-roman — middleweight <82 kg | — | (taken hostage before his scheduled event)
+
+
+id:  nu-60  Q:  what was the only race in 2011?  Gold ans:  giant slalom
+TabSQLify Prediction:   kranjska gora, slovenia
+Binder Prediction:  0
+Table Title:  Carlo Janka
+
+Table Column:  row_number, season, age, overall, slalom, giant_slalom, super_g, downhill, combined
+Linear Table:
+ row_number | season | age | overall | slalom | giant_slalom | super_g | downhill | combined
+0 | 2007 | 20 | 130 | – | 40.0 | – | – | —
+1 | 2008 | 21 | 64 | – | 28.0 | 46 | 46 | 31
+2 | 2009 | 22 | 7 | – | 6.0 | 16 | 16 | 1
+3 | 2010 | 23 | 1 | – | 2.0 | 6 | 2 | 2
+4 | 2011 | 24 | 3 | – | 5.0 | 6 | 9 | 6
+5 | 2012 | 25 | 24 | – | 16.0 | 28 | 17 | 19
+6 | 2013 | 26 | 48 | – | 48.0 | 27 | 38 | 4
+7 | 2014 | 27 | 18 | – | 25.0 | 14 | 20 | 11
+8 | season | date | location | race | nan | none | none | none
+9 | 2009 | 2008-12-13 | val d'isère, france | giant slalom | nan | none | none | none
+10 | 2009 | 2009-1-16 | wengen, switzerland | super combined | nan | none | none | none
+11 | 2010 | 2009-12-4 | beaver creek, usa | super combined | nan | none | none | none
+12 | 2010 | 2009-12-5 | beaver creek, usa | downhill | nan | none | none | none
+13 | 2010 | 2009-12-6 | beaver creek, usa | giant slalom | nan | none | none | none
+14 | 2010 | 2010-1-16 | wengen, switzerland | downhill | nan | none | none | none
+15 | 2010 | 2010-3-10 | garmisch, germany | downhill | nan | none | none | none
+16 | 2010 | 2010-3-12 | garmisch, germany | giant slalom | nan | none | none | none
+17 | 2011 | 2011-3-5 | kranjska gora, slovenia | giant slalom | nan | none | none | none
+
+
+id:  nu-66  Q:  what date is next listed after june 14, 2010.  Gold ans:  december 6, 2010
+TabSQLify Prediction:  2010-9-6 
+Binder Prediction:  ['2010-09-06 00:00:00']
+Table Title:  List of Little People, Big World episodes
+
+Table Column:  row_number, season, episodes, season_premiere, season_finale
+Linear Table:
+ row_number | season | episodes | season_premiere | season_finale
+0 | 1 | 20 | 2006-3-4 | 2006-5-13
+1 | 2 | 52 | 2006-10-7 | 2007-7-16
+2 | 3 | 44 | 2007-10-15 | 2008-6-2
+3 | 4 | 48 | 2008-10-13 | 2009-5-11
+4 | 5 | 40 | 2009-10-12 | 2010-6-14
+5 | 6 | 20 | 2010-9-6 | 2010-12-6
+6 | 7 | 8 | 2013-10-29 | 2013-12-17
+
+
+id:  nu-73  Q:  how many affiliates does tv azteca have all together?  Gold ans:  9
+TabSQLify Prediction:  2 
+Binder Prediction:  [5, 4]
+Table Title:  Television stations in Chiapas
+
+Table Column:  row_number, network_name, flagship, programming_type, owner, affiliates
+Linear Table:
+ row_number | network_name | flagship | programming_type | owner | affiliates
+0 | canal de las estrellas | xew 2 | soap operas, retro movies and sports | televisa | 10
+1 | canal 5 | xhgc 5 | cartoons, movies, and series | televisa | 4
+2 | azteca 7 | xhimt 7 | sports, series, and movies | tv azteca | 5
+3 | galavisión | xeq 9 | retro programming and sports | televisa | 1
+4 | tv 10 chiapas | xhttg | educational | gobierno del estado de chiapas | 7
+5 | azteca 13 | xhdf 13 | news, soap operas, and sports | tv azteca | 4
+6 | independent | none | varies | independent | 3
+
+
+id:  nu-82  Q:  how many teams did not score any goals in the 2006 season?  Gold ans:  1
+TabSQLify Prediction:  0 
+Binder Prediction:  [0]
+Table Title:  Vitaliy Denisov
+
+Table Column:  row_number, season, team, country, division, apps, goals
+Linear Table:
+ row_number | season | team | country | division | apps | goals
+0 | 2004 | cska moscow | russia | 1 | 0 | 0
+1 | 2005 | cska moscow | russia | 1 | 0 | 0
+2 | 2006 | spartak nizhny novgorod | russia | 2 | 36 | 1
+3 | 2006/07 | dnipro dnipropetrovsk | ukraine | 1 | 12 | 0
+4 | 2007/08 | dnipro dnipropetrovsk | ukraine | 1 | 24 | 0
+5 | 2008/09 | dnipro dnipropetrovsk | ukraine | 1 | 22 | 1
+6 | 2009/10 | dnipro dnipropetrovsk | ukraine | 1 | 28 | 0
+7 | 2010/11 | dnipro dnipropetrovsk | ukraine | 1 | 23 | 0
+8 | 2011/12 | dnipro dnipropetrovsk | ukraine | 1 | 16 | 0
+9 | 2012/13 | dnipro dnipropetrovsk | ukraine | 1 | 10 | 1
+10 | 2012/13 | lokomotiv moscow | russia | 1 | 8 | 0
+11 | 2013/14 | lokomotiv moscow | russia | 1 | 14 | 1
+
+
+id:  nu-91  Q:  which country has the larger number of circuits?  Gold ans:  usa
+TabSQLify Prediction:   westwood
+Binder Prediction:  ['country 1']
+Table Title:  1978 Trans-Am season
+
+Table Column:  row_number, round, date, circuit, winning_driver_ta2, winning_vehicle_ta2, winning_driver_ta1, winning_vehicle_ta1
+Linear Table:
+ row_number | round | date | circuit | winning_driver_ta2 | winning_vehicle_ta2 | winning_driver_ta1 | winning_vehicle_ta1
+0 | 1 | may 21 | sears point | greg pickett | chevrolet corvette | gene bothello | chevrolet corvette
+1 | 2 | june 4 | westwood | ludwig heimrath | porsche 935 | nick engels | chevrolet corvette
+2 | 3 | june 11 | portland | tuck thomas | chevrolet monza | bob matkowitch | chevrolet corvette
+3 | 4 | june 25 | mont-tremblant | monte sheldon | porsche 935 | bob tullius | jaguar xjs
+4 | 5 | july 8 | watkins glen‡ | hal shaw, jr.;  monte shelton | porsche 935 | brian fuerstenau;  bob tullius | jaguar xjs
+5 | 6 | august 13 | brainerd | jerry hansen | chevrolet monza | bob tullius | jaguar xjs
+6 | 7 | august 19 | mosport | greg pickett | chevrolet corvette | bob tullius | jaguar xjs
+7 | 8 | september 4 | road america | greg pickett | chevrolet corvette | bob tullius | jaguar xjs
+8 | 9 | october 8 | laguna seca | greg pickett | chevrolet corvette | bob tullius | jaguar xjs
+9 | 10 | november 5 | mexico city | ludwig heimrath | porsche 935 | bob tullius | jaguar xjs
+
+
+id:  nu-94  Q:  how many games were played after october 1st?  Gold ans:  11
+TabSQLify Prediction:  7 
+Binder Prediction:  [7]
+Table Title:  2007–08 in Belgian football
+
+Table Column:  row_number, date, team, competition, round, leg, opponent, location, score
+Linear Table:
+ row_number | date | team | competition | round | leg | opponent | location | score
+0 | july 7 | gent | intertoto cup | round 2 | leg 1, home | cliftonville | jules ottenstadion, ghent | 2-0
+1 | july 14 | gent | intertoto cup | round 2 | leg 2, away | cliftonville | windsor park, belfast | 4-0
+2 | july 21 | gent | intertoto cup | round 3 | leg 1, home | aalborg | jules ottenstadion, ghent | 1-1
+3 | july 29 | gent | intertoto cup | round 3 | leg 2, away | aalborg | energi nord arena, aalborg | 1-2
+4 | july 31 | genk | champions league | qual. round 2 | leg 1, home | sarajevo | cristal arena, genk | 1-2
+5 | august 8 | genk | champions league | qual. round 2 | leg 2, away | sarajevo | asim ferhatović hase stadium, sarajevo | 1-0
+6 | august 15 | anderlecht | champions league | qual. round 3 | leg 1, away | fenerbahçe | şükrü saracoğlu stadium, istanbul | 0-1
+7 | august 16 | standard liège | uefa cup | qual. round 2 | leg 1, away | käerjeng | stade josy barthel, luxembourg | 3-0
+8 | august 29 | anderlecht | champions league | qual. round 3 | leg 2, home | fenerbahçe | constant vanden stock stadium, anderlecht | 0-2
+9 | august 30 | standard liège | uefa cup | qual. round 2 | leg 2, home | käerjeng | stade maurice dufrasne, liège | 1-0
+10 | september 20 | anderlecht | uefa cup | round 1 | leg 1, home | rapid wien | constant vanden stock stadium, anderlecht | 1-1
+11 | september 20 | club brugge | uefa cup | round 1 | leg 1, away | brann | brann stadion, bergen | 1-0
+12 | september 20 | standard liège | uefa cup | round 1 | leg 1, away | zenit st. petersburg | petrovsky stadium, saint petersburg | 0-3
+13 | october 4 | anderlecht | uefa cup | round 1 | leg 2, away | rapid wien | gerhard hanappi stadium, vienna | 1-0
+14 | october 4 | club brugge | uefa cup | round 1 | leg 2, home | brann | jan breydel stadium, bruges | 1-2
+15 | october 4 | standard liège | uefa cup | round 1 | leg 2, home | zenit st. petersburg | stade maurice dufrasne, liège | 1-1
+16 | october 25 | anderlecht | uefa cup | group stage | match 1, home | hapoel tel aviv | constant vanden stock stadium, anderlecht | 2-0
+17 | november 8 | anderlecht | uefa cup | group stage | match 2, away | aalborg | energi nord arena, aalborg | 1-1
+18 | december 6 | anderlecht | uefa cup | group stage | match 3, home | tottenham hotspur | constant vanden stock stadium, anderlecht | 1-1
+19 | december 19 | anderlecht | uefa cup | group stage | match 4, away | getafe | coliseum alfonso pérez, getafe | 1-2
+20 | february 13 | anderlecht | uefa cup | round of 32 | leg 1, home | bordeaux | constant vanden stock stadium, anderlecht | 2-1
+21 | february 21 | anderlecht | uefa cup | round of 32 | leg 2, away | bordeaux | stade chaban-delmas, bordeaux | 1-1
+22 | march 6 | anderlecht | uefa cup | round of 16 | leg 1, home | bayern munich | constant vanden stock stadium, anderlecht | 0-5
+23 | march 12 | anderlecht | uefa cup | round of 16 | leg 2, away | bayern munich | allianz arena, munich | 2-1
+
+
+id:  nu-96  Q:  if italy and brazil combined box office revenues, what would be their new total?  Gold ans:  $1.56 billion
+TabSQLify Prediction:  0.0 
+Binder Prediction:  [0.0]
+Table Title:  Film industry
+
+Table Column:  row_number, rank, country, box_office, year, box_office_from_national_films
+Linear Table:
+ row_number | rank | country | box_office | year | box_office_from_national_films
+0 | 1.0 | canada/united states | $10800000000 | 2012 | –
+1 | 2.0 | china | $3600000000 | 2013 | 59% (2013)
+2 | 3.0 | japan | $1880000000 | 2013 | 61% (2013)
+3 | 4.0 | united kingdom | $1700000000 | 2012 | 36.1% (2011)
+4 | 5.0 | france | $1700000000 | 2012 | 33.3% (2013)
+5 | 6.0 | south korea | $1470000000 | 2013 | 59.7% (2013)
+6 | 7.0 | india | $1400000000 | 2012 | –
+7 | 8.0 | germany | $1300000000 | 2012 | –
+8 | 9.0 | russia | $1200000000 | 2012 | –
+9 | 10.0 | australia | $1200000000 | 2012 | 4.1% (2011)
+10 | 11.0 | italy | $840000000 | 2013 | 30% (2013)
+11 | 12.0 | brazil | $720000000 | 2013 | 17% (2013)
+12 | nan | world | $34700000000 | 2012 | –
+
+
+id:  nu-104  Q:  how long does the swiss open series run for?  Gold ans:  6 days
+TabSQLify Prediction:   7 days
+Binder Prediction:  [0]
+Table Title:  2007 BWF Super Series
+
+Table Column:  row_number, tour, official_title, venue, city, date_start, date_finish, prize_money_usd, report
+Linear Table:
+ row_number | tour | official_title | venue | city | date_start | date_finish | prize_money_usd | report
+0 | 1 | malaysia super series | stadium badminton kuala lumpur | kuala lumpur | january 16 | january 21 | 200000 | report
+1 | 2 | korea open super series | seoul national university gymnasium | seoul | january 23 | january 28 | 300000 | report
+2 | 3 | all england super series | national indoor arena | birmingham | march 6 | march 11 | 200000 | report
+3 | 4 | swiss open super series | st. jakobshalle | basel | march 12 | march 18 | 200000 | report
+4 | 5 | singapore super series | singapore indoor stadium | singapore | may 1 | may 6 | 200000 | report
+5 | 6 | indonesia super series | bung karno stadium | jakarta | may 7 | may 13 | 250000 | report
+6 | 7 | china masters super series | sichuan provincial gymnasium | chengdu | july 10 | july 15 | 250000 | report
+7 | 8 | japan super series | tokyo metropolitan gymnasium | tokyo | september 11 | september 16 | 200000 | report
+8 | 9 | denmark super series | arena fyn | odense | october 23 | october 28 | 200000 | report
+9 | 10 | french super series | stade pierre de coubertin | paris | october 30 | november 4 | 200000 | report
+10 | 11 | china open super series | tianhe gymnasium | guangzhou | november 20 | november 25 | 250000 | report
+11 | 12 | hong kong super series | ma on shan sports centre; queen elizabeth stadium | ma on shan; wan chai | november 26 | december 2 | 200000 | report
+12 | 13 | super series finals | cancelled | cancelled | cancelled | cancelled | 500000 | report
+
+
+id:  nu-110  Q:  how many hard surface courts are there?  Gold ans:  3
+TabSQLify Prediction:  1 
+Binder Prediction:  [1]
+Table Title:  Tommy Robredo career statistics
+
+Table Column:  row_number, outcome, no, date, tournament, surface, opponent, score
+Linear Table:
+ row_number | outcome | no | date | tournament | surface | opponent | score
+0 | runner-up | 1.0 | 2001-4-15 | grand prix hassan ii, casablanca, morocco | clay | guillermo cañas | 5–7, 2–6
+1 | winner | 1.0 | 2001-7-29 | orange warsaw open, sopot, poland | clay | albert portas | 1–6, 7–5, 7–6(7–2)
+2 | runner-up | 2.0 | 2003-7-20 | mercedes cup, stuttgart, germany | clay | guillermo coria | 2–6, 2–6, 1–6
+3 | winner | 2.0 | 2004-5-2 | torneo godó, barcelona, spain | clay | gastón gaudio | 6–3, 4–6, 6–2, 3–6, 6–3
+4 | runner-up | 3.0 | 2005-5-1 | estoril open, estoril, portugal | clay | gastón gaudio | 1–6, 6–2, 1–6
+5 | runner-up | 4.0 | 2006-4-30 | torneo godó, barcelona, spain | clay | rafael nadal | 4–6, 4–6, 0–6
+6 | winner | 3.0 | 2006-5-21 | hamburg masters, hamburg, germany | clay | radek štěpánek | 6–1, 6–3, 6–3
+7 | winner | 4.0 | 2006-7-16 | swedish open, båstad, sweden | clay | nikolay davydenko | 6–2, 6–1
+8 | runner-up | 5.0 | 2007-1-14 | heineken open, auckland, new zealand | hard | david ferrer | 4–6, 2–6
+9 | winner | 5.0 | 2007-8-5 | orange warsaw open, sopot, poland (2) | clay | josé acasuso | 7–5, 6–0
+10 | runner-up | 6.0 | 2007-9-16 | china open, beijing, china | hard (i) | fernando gonzález | 1–6, 6–3, 1–6
+11 | winner | 6.0 | 2007-10-7 | open de moselle, metz, france | hard (i) | andy murray | 0–6, 6–2, 6–3
+12 | runner-up | 7.0 | 2008-6-15 | orange warsaw open, warsaw, poland | clay | nikolay davydenko | 3–6, 3–6
+13 | winner | 7.0 | 2008-7-13 | swedish open, båstad, sweden (2) | clay | tomáš berdych | 6–4, 6–1
+14 | winner | 8.0 | 2009-2-14 | brasil open, costa do sauípe, brazil | clay | thomaz bellucci | 6–3, 3–6, 6–4
+15 | winner | 9.0 | 2009-2-22 | copa telmex, buenos aires, argentina | clay | juan mónaco | 7–5, 2–6, 7–6(7–5)
+16 | winner | 10.0 | 2011-2-6 | chile open, santiago, chile | clay | santiago giraldo | 6–2, 2–6, 7–6(7–5)
+17 | winner | 11.0 | 2013-4-14 | grand prix hassan ii, casablanca, morocco | clay | kevin anderson | 7–6(8–6), 4–6, 6–3
+18 | winner | 12.0 | 2013-7-28 | atp vegeta croatia open umag, umag, croatia | clay | fabio fognini | 6–0, 6–3
+
+
+id:  nu-112  Q:  how many specifications have no active directory federation services?  Gold ans:  1
+TabSQLify Prediction:  26 
+Binder Prediction:  0
+Table Title:  Windows Server 2012
+
+Table Column:  row_number, specifications, foundation, essentials, standard, datacenter
+Linear Table:
+ row_number | specifications | foundation | essentials | standard | datacenter
+0 | distribution | oem only | retail, volume licensing, oem | retail, volume licensing, oem | volume licensing and oem
+1 | licensing model | per server | per server | per cpu pair + cal | per cpu pair + cal
+2 | processor chip limit | 1 | 2 | 64 | 64
+3 | memory limit | 32 gb | 64 gb | 4 tb | 4 tb
+4 | user limit | 15 | 25 | unlimited | unlimited
+5 | file services limits | 1 standalone dfs root | 1 standalone dfs root | unlimited | unlimited
+6 | network policy and access services limits | 50 rras connections and 10 ias connections | 250 rras connections, 50 ias connections, and 2 ias server groups | unlimited | unlimited
+7 | remote desktop services limits | 50 remote desktop services connections | gateway only | unlimited | unlimited
+8 | virtualization rights | n/a | either in 1 vm or 1 physical server, but not both at once | 2 vms | unlimited
+9 | dhcp role | yes | yes | yes | yes
+10 | dns server role | yes | yes | yes | yes
+11 | fax server role | yes | yes | yes | yes
+12 | uddi services | yes | yes | yes | yes
+13 | print and document services | yes | yes | yes | yes
+14 | web services (internet information services) | yes | yes | yes | yes
+15 | windows deployment services | yes | yes | yes | yes
+16 | windows server update services | no | yes | yes | yes
+17 | active directory lightweight directory services | yes | yes | yes | yes
+18 | active directory rights management services | yes | yes | yes | yes
+19 | application server role | yes | yes | yes | yes
+20 | server manager | yes | yes | yes | yes
+21 | windows powershell | yes | yes | yes | yes
+22 | active directory domain services | must be root of forest and domain | must be root of forest and domain | yes | yes
+23 | active directory certificate services | certificate authorities only | certificate authorities only | yes | yes
+24 | active directory federation services | yes | no | yes | yes
+25 | server core mode | no | no | yes | yes
+26 | hyper-v | no | no | yes | yes
+
+
+id:  nu-114  Q:  how many distributions support the x86 architecture?  Gold ans:  29
+TabSQLify Prediction:  28 
+Binder Prediction:  [28]
+Table Title:  Comparison of Linux distributions
+
+Table Column:  row_number, distribution, x86, x86_64, ia64, ppc, ppc64, sparc32, sparc64, arm, hppa, mips, sh, s390, s390x, alpha, m68k
+Linear Table:
+ row_number | distribution | x86 | x86_64 | ia64 | ppc | ppc64 | sparc32 | sparc64 | arm | hppa | mips | sh | s390 | s390x | alpha | m68k
+0 | arch linux | yes (>=i686) | yes | no | discontinued unofficial port | no | no | no | yes; unofficial | no | no | no | no | no | no | no
+1 | backtrack | yes | yes | no | no | no | no | no | yes | no | no | no | no | no | no | no
+2 | bodhi linux | yes | yes | no | no | no | no | no | yes | no | no | no | no | no | no | no
+3 | boss linux | yes | yes | no | yes | yes | no | no | ? | no | no | no | no | no | no | no
+4 | centos | yes | yes | discontinued; 3.5-3.8; 4.1-4.7 | beta; 4 | no | beta; 4.2 | no | no | no | no | no | discontinued; 3.5-3.8; 4.1-4.7 | discontinued; 3.5-3.8; 4.1-4.7 | discontinued; 4.2-4.3 | no
+5 | chakra | no | yes | no | no | no | no | no | ? | no | no | no | no | no | no | no
+6 | crux | yes | yes | no | yes | no | no | no | no | no | no | no | no | no | no | no
+7 | debian | yes | yes; 4+ | discontinued; 3-7 | yes; 2.2+ | yes | discontinued on lenny | yes | yes; 2.2+ | discontinued; 3-5 | yes; 3+ | in progress | discontinued; 3-7 | yes; 7+ | discontinued; 2.1-5 | discontinued; 2-3.1
+8 | fedora | yes | yes | discontinued from; fedora 9 | yes | yes | no | still active but slow in development, last available is; fedora 12; , working on; fedora 18 | yes | no | inactive from; fedora 13 | no | no | yes | no | no
+9 | finnix | yes | yes | no | yes | yes | no | no | no | no | no | no | no | no | no | no
+10 | frugalware | yes | yes | no | no | no | no | no | no | no | no | no | no | no | no | no
+11 | gentoo | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes | yes
+12 | kali linux | yes | yes | no | no | no | no | no | yes | no | no | no | no | no | no | no
+13 | mepis | yes | yes | no | no | no | no | no | yes | no | no | no | no | no | no | no
+14 | mintppc | no | no | no | yes | yes | no | no | no | no | no | no | no | no | no | no
+15 | oes2-linux | yes | yes | no | no | no | no | no | no | no | no | no | no | no | no | no
+16 | openelec | yes | yes | no | no | no | no | no | yes | no | no | no | no | no | no | no
+17 | opensuse | yes | yes | no | no | no | no | partial | partial | no | no | no | no | no | no | no
+18 | openwrt | yes | no | no | yes | no | no | no | yes | no | yes | yes | no | no | no | no
+19 | oracle linux | yes | yes | discontinued; 5 | no | no | no | no | no | no | no | no | no | no | no | no
+20 | red flag linux | yes | yes | discontinued; 3 | no | discontinued; 3 | no | no | no | no | no | no | no | no | no | no
+21 | red hat linux | yes | no | discontinued; 7.1-7.2 | test release; 5.1 | no | discontinued; 4-4.2; 5.1-6.2 | test release; 5.1 | no | no | test release; 5.1 | no | discontinued; 7.2 | discontinued; 7.1 | discontinued; 2.1-7.1 | test release; 5.1
+22 | red hat enterprise linux | discontinued; 2.1-6 | yes; 3+ | discontinued; 2.1-5 | yes; 3+ | yes; 3+ | no | no | no | no | no | no | discontinued; 3-4 | yes; 3+ | no | no
+23 | rxart desktop | yes | no | no | no | no | no | no | no | no | no | no | no | no | no | no
+24 | porteus | yes | yes | no | no | no | no | no | no | no | no | no | no | no | no | no
+25 | scientific linux | yes | yes | discontinued; 3-4 | no | no | no | no | no | no | no | no | no | no | no | no
+26 | shr | no | no | no | no | no | no | no | yes | no | no | no | no | no | no | no
+27 | slackware | yes | yes | no | no | no | discontinued; ? | no | yes | no | no | no | discontinued; ? | discontinued; ? | discontinued; 8.1 | no
+28 | source mage gnu/linux | yes | yes | no | yes | no | no | no | no | no | no | no | no | no | no | no
+29 | suse linux enterprise server | yes | yes | yes | yes | yes | no | no | no | no | no | no | no | yes | no | no
+30 | tor-ramdisk | yes | yes | no | no | no | no | no | no | no | yes | no | no | no | no | no
+31 | ubuntu/kubuntu/xubuntu/lubuntu | yes | yes | no | yes | no | no | no | yes | no | no | no | no | no | no | no
+32 | xbmc | yes | no | no | no | no | no | no | yes | no | no | no | no | no | no | no
+33 | yellow dog linux | no | no | no | yes | yes | no | no | no | no | no | no | no | no | no | no
+34 | distribution | x86 | x86-64 | ia64 | ppc | ppc64 | sparc32 | sparc64 | arm | hppa | mips | sh | s390 | s390x | alpha | m68k
+
+
+id:  nu-116  Q:  are the dates in a consecutive order?  Gold ans:  yes
+TabSQLify Prediction:   no
+Binder Prediction:  0
+Table Title:  WWC Television Championship
+
+Table Column:  row_number, wrestler_, reigns_, date_, place_, notes_
+Linear Table:
+ row_number | wrestler_ | reigns_ | date_ | place_ | notes_
+0 | ron starr | 1.0 | 1986-9-19 | ponce, puerto rico | defeated invader i in a tournament final
+1 | invader i | 1.0 | 1986-11-5 | san juan, puerto rico | none
+2 | jason the terrible | 1.0 | 1987-1-17 | caguas, puerto rico | none
+3 | invader i | 2.0 | 1987-9-18 | san juan, puerto rico | none
+4 | grizzly boone | 1.0 | 1987-10-24 | bayamon, puerto rico | none
+5 | invader i | 3.0 | 1987-11-25 | san juan, puerto rico | held up after a match against super black ninja on 1988-1-8 in san juan, pr
+6 | super black ninja | 1.0 | 1988-2-6 | guaynabo, puerto rico | none
+7 | invader i | 4.0 | 1988-4-2 | bayamon, puerto rico | none
+8 | ron starr | 2.0 | 1988-6-25 | carolina, puerto rico | none
+9 | carlos colon | 1.0 | 1988-8-20 | bayamon, puerto rico | none
+10 | jason the terrible | 2.0 | 1989-1-28 | carolina, puerto rico | none
+11 | carlos colon | 2.0 | 1989-3-1 | carolina, puerto rico | vacant on 1989-5-22 after colon was injured by steve strong on 1989-5-20
+12 | tnt | 1.0 | 1989-6-17 | san juan, puerto rico | defeats abudda dein; vacant on 1990-2-9 when tnt wins the wwc universal heavyweight title
+13 | leo burke | 1.0 | 1990-3-24 | caguas, puerto rico | defeats carlos colon in a tournament final.
+14 | tnt | 2.0 | 1990-4-25 | san juan, puerto rico | won the vacant title
+15 | action jackson (original tnt) | 1.0 | 1991-1-26 | caguas, puerto rico | wins tournament; loses a name match on 1991-3-2 in bayamon, pr
+16 | tnt | 3.0 | 1991-3-30 | bayamon, puerto rico | none
+17 | king kong | 1.0 | 1991-4-20 | bayamon, puerto rico | none
+18 | tnt | 4.0 | 1991-6-1 | bayamon, puerto rico | none
+19 | fidel sierra | 1.0 | 1991-10-19 | bayamon, puerto rico | none
+20 | tnt | 5.0 | 1991-10-26 | carolina, puerto rico | none
+21 | dick murdoch | 1.0 | 1991-11-23 | arroyo, puerto rico | none
+22 | invader i | 5.0 | 1991-12-25 | san juan, puerto rico | none
+23 | dick murdoch | 2.0 | 1992-1-6 | san juan, puerto rico | vacant on 1993-1-6 when murdoch leaves the promotion.
+24 | carlos colon | 3.0 | 1994-6-18 | san juan, puerto rico | defeated mighty koadiak in a tournament final.
+25 | mighty koadiak | 1.0 | 1994 | none | none
+26 | rex king | 1.0 | 1995 | none | none
+27 | sean morley | 1.0 | 1995 | none | none
+28 | ricky santana | 1.0 | 1995 | none | none
+29 | rex king | 2.0 | 1995 | none | none
+30 | pulgarcito | 1.0 | 1995-11-11 | none | none
+31 | mighty koadiak | 2.0 | 1995-11-26 | none | none
+32 | sweet brown sugar (skip young) | 1.0 | 1996-1-6 | caguas, puerto rico | none
+33 | ricky santana | 2.0 | 1996-3-23 | caguas, puerto rico | none
+34 | "jungle" jim steele | 1.0 | 1996-4-20 | caguas, puerto rico | none
+35 | el bronco i | 1.0 | 1996-5-18 | caguas, puerto rico | none
+36 | sean morley | 2.0 | 1996-5-30 | caguas, puerto rico | joins the wwf in 1997, but is still recognized as champion; title becomes vacant on 1999-3-3.
+37 | glamour boy shane | 1.0 | 1999-4-2 | guaynabo, puerto rico | defeated "jungle" jim steele for vacant title.
+38 | mustafa saed | 1.0 | 1999-8-14 | caguas, puerto rico | none
+39 | glamour boy shane | 2.0 | 1999-9-19 | guaynabo, puerto rico | none
+40 | chicky starr | 1.0 | 1999-11-13 | naguabo, puerto rico | none
+41 | glamour boy shane | 3.0 | 2000-1-6 | caguas, puerto rico | none
+42 | rex king | 3.0 | 2000-3-19 | cabo rojo, puerto rico | none
+43 | chris grant | 1.0 | 2001-4-21 | orocovis, puerto rico | none
+44 | alex porteau | 1.0 | 2001-7-7 | carolina, puerto rico | none
+45 | chris grant | 2.0 | 2001-7-21 | orocovis, puerto rico | wins the title by forfeit
+46 | bad boy bradley | 1.0 | 2001-9-8 | bayamón, puerto rico | none
+47 | super gladiator | 1.0 | 2001-10-6 | caguas, puerto rico | none
+48 | ricky santana | 3.0 | 2002-3-16 | aibonito, puerto rico | none
+49 | rico suave | 1.0 | 2002-4-6 | caguas, puerto rico | none
+50 | ray gonzalez | 1.0 | 2002-4-27 | san lorenzo, puerto rico | none
+51 | carlos colon | 4.0 | 2002-6-8 | toa baja, puerto rico | none
+52 | ray gonzalez | 2.0 | 2002-6-15 | caguas, puerto rico | vacates title on 2002-7-1 when he leaves the company.
+53 | wilfredo alejandro | 1.0 | 2002-7-6 | cayey, puerto rico | wins a battle royal for the vacant title.
+54 | fidel sierra | 2.0 | 2002-8-24 | coamo, puerto rico | none
+55 | chris candido | 1.0 | 2003-6-6 | cayey, puerto rico | none
+56 | vengador boricua | 1.0 | 2003-7-19 | carolina, puerto rico | title becomes inactive when vengador boricua leaves the company.
+57 | superstar romeo | 1.0 | 2007-2-3 | caguas, puerto rico | romeo beat barabas jr. to win the reactivated title.
+58 | rico suave | 2.0 | 2007-3-17 | bayamon, puerto rico | none
+59 | crazy rudy | 1.0 | 2007-4-28 | bayamon, puerto rico | none
+60 | ash rubinsky | 1.0 | 2007-11-24 | bayamon, puerto rico | wins a 7-man battle royal.
+61 | b.j. | 1.0 | 2008-1-6 | choliseo, puerto rico | wins the title after winning an 11 man battle royal
+62 | hammett | 1.0 | 2008-3-1 | tao baja, puerto rico | none
+63 | b.j. | 2.0 | 2008-3-15 | lares, puerto rico | none
+64 | chris joel | 1.0 | 2008-5-10 | bayamon, puerto rico | none
+65 | vacant | nan | none | none | chris joel jumps to iwa
+
+
+id:  nu-123  Q:  what were the most labels?  Gold ans:  becket
+TabSQLify Prediction:   "sp"
+Binder Prediction:  ['sp']
+Table Title:  Sinnamon
+
+Table Column:  row_number, year, name, label, hot_black_singles, club_play_singles
+Linear Table:
+ row_number | year | name | label | hot_black_singles | club_play_singles
+0 | 1982 | "he's gonna take you home" | becket | ― | ―
+1 | 1982 | "thanks to you" | becket | #44 | #1
+2 | 1983 | "i need you present_ref" | jive | ― | ―
+3 | 1984 | "thin line" | power house | ― | ―
+4 | 1986 | "say it again" | sp | ― | ―
+5 | 1986 | "say it again" | sp | ― | ―
+6 | 1987 | "send it c.o.d." | new image | ― | ―
+
+
+id:  nu-127  Q:  last year a mf won?  Gold ans:  2010-11
+TabSQLify Prediction:   yes
+Binder Prediction:  0
+Table Title:  PSL Players' Player of the Season
+
+Table Column:  row_number, season, footballer, club, position, nationality
+Linear Table:
+ row_number | season | footballer | club | position | nationality
+0 | 2012-13 | itumeleng khune | kaizer chiefs | gk | south africa
+1 | 2011-12 | siyabonga nomvethe | moroka swallows | fw | south africa
+2 | 2010-11 | thulani serero | ajax cape town | mf | south africa
+3 | 2009-10 | katlego mphela | mamelodi sundowns | fw | south africa
+4 | 2008-9 | teko modise | orlando pirates | mf | south africa
+5 | 2007-8 | itumeleng khune | kaizer chiefs | gk | south africa
+6 | 2006-7 | godfrey sapula | mamelodi sundowns | mf | south africa
+7 | 2005-6 | surprise moriri | mamelodi sundowns | mf | south africa
+8 | 2004-5 | sandile ndlovu | dynamos | fw | south africa
+9 | 2003-4 | tinashe nengomasha | kaizer chiefs | mf | zimbabwe
+10 | 2002-3 | moeneeb josephs | ajax cape town | gk | south africa
+11 | 2001-2 | jabu pule | kaizer chiefs | mf | south africa
+12 | 2000-1 | benjani mwaruwari | jomo cosmos | fw | zimbabwe
+13 | 1999-0 | siyabonga nomvethe | kaizer chiefs | fw | south africa
+14 | 1998-99 | roger feutmba | mamelodi sundowns | mf | cameroon
+15 | 1997-98 | raphael chukwu | mamelodi sundowns | fw | nigeria
+16 | 1996-97 | wilfred mugeyi | bush bucks | fw | zimbabwe
+
+
+id:  nu-129  Q:  how may away games did they win?  Gold ans:  7
+TabSQLify Prediction:  2 
+Binder Prediction:  [2]
+Table Title:  1981 Houston Oilers season
+
+Table Column:  row_number, week, date, opponent, result, attendance
+Linear Table:
+ row_number | week | date | opponent | result | attendance
+0 | 1 | 1981-9-6 | at los angeles rams | w 27–20 | 63198
+1 | 2 | 1981-9-13 | at cleveland browns | w 9–3 | 79483
+2 | 3 | 1981-9-20 | miami dolphins | l 16–10 | 47379
+3 | 4 | 1981-9-27 | at new york jets | l 33–17 | 50309
+4 | 5 | 1981-10-4 | cincinnati bengals | w 17–10 | 44350
+5 | 6 | 1981-10-11 | seattle seahawks | w 35–17 | 42671
+6 | 7 | 1981-10-18 | at new england patriots | l 38–10 | 60474
+7 | 8 | 1981-10-26 | at pittsburgh steelers | l 26–13 | 52732
+8 | 9 | 1981-11-1 | at cincinnati bengals | l 34–21 | 54736
+9 | 10 | 1981-11-8 | oakland raiders | w 17–16 | 45519
+10 | 11 | 1981-11-15 | at kansas city chiefs | l 23–10 | 73984
+11 | 12 | 1981-11-22 | new orleans saints | l 27–24 | 49581
+12 | 13 | 1981-11-29 | atlanta falcons | l 31–27 | 40201
+13 | 14 | 1981-12-3 | cleveland browns | w 17–13 | 44502
+14 | 15 | 1981-12-13 | at san francisco 49ers | l 28–6 | 55707
+15 | 16 | 1981-12-20 | pittsburgh steelers | w 21–20 | 41056
+
+
+id:  nu-138  Q:  how long did the great pyramid of giza hold the record for tallest freestanding structure?  Gold ans:  3881
+TabSQLify Prediction:  2570 bc–1311 
+Binder Prediction:  ['2570 bc–1311']
+Table Title:  List of tallest freestanding structures in the world
+
+Table Column:  row_number, name, country, town, height_metres___ft, structural_type, held_record, notes
+Linear Table:
+ row_number | name | country | town | height_metres___ft | structural_type | held_record | notes
+0 | great pyramid of giza | egypt | giza | 146 / 480 | mausoleum | 2570 bc–1311 | due to erosion 2024-3-6 it stands at the height of 138.8 metres (455 ft).
+1 | lincoln cathedral | england | lincoln | 159.7 / 524 | church | 1311–1549 | spire collapsed in 1549; 2024-3-6, stands at a height of 83 metres (272 ft).
+2 | st. mary's church | germany | stralsund | 151 / 500 | church | 1549–1647 | spire destroyed by lightning in 1647; 2024-3-6 stands at a height of 104 metres (341 ft).
+3 | strasbourg cathedral | germany and/or france (2024-3-6 france) | strasbourg | 142 / 470 | church | 1647–1874 | none
+4 | st nikolai | germany | hamburg | 147.3 / 483 | church | 1874–1876 | due to aerial bombing in world war ii the nave was demolished; only the spire remains.
+5 | notre-dame cathedral | france | rouen | 151 / 500 | church | 1876–1880 | none
+6 | cologne cathedral | germany | cologne | 157.4 / 516 | church | 1880–1884 | none
+7 | washington monument | united states | washington, d.c. | 169.3 / 555 | monument | 1884–1889 | none
+8 | eiffel tower | france | paris | 300.6 / 986 | tower | 1889–1930 | currently stands at a height of 324 metres (1063 ft).
+9 | chrysler building | united states | new york city | 319 / 1046 | skyscraper | 1930–1931 | none
+10 | empire state building | united states | new york city | 448 / 1472 | skyscraper | 1931–1967 | none
+11 | ostankino tower | russia | moscow | 540 / 1772 | tower | 1967–1976 | none
+12 | cn tower | canada | toronto | 553 / 1815 | tower | 1976–2007 | none
+13 | burj khalifa | united arab emirates | dubai | 829.8 / 2722 | skyscraper | 2007–present | topped-out on 2009-1-17
+
+
+id:  nu-139  Q:  how many websites are free of advertising?  Gold ans:  9
+TabSQLify Prediction:  8 
+Binder Prediction:  [8]
+Table Title:  Comparison of educational websites for children
+
+Table Column:  row_number, name, topic, cost, target_age, advertising
+Linear Table:
+ row_number | name | topic | cost | target_age | advertising
+0 | ask a biologist | biology | free | 5+ | none
+1 | archimedes-lab.org | mathematics | free | 10+ | yes - limited
+2 | awesome library | all | free | all | yes - large
+3 | bitesize by the bbc | art & design, business studies, design & technology, dida, drama, english, english literature, french, geography, german, history, ict, irish, maths, music, physical education, religious studies, science, spanish | free | 5-16 | none
+4 | brainpop | science, social studies, english, maths, art & music, health, technology | from us$75/year | 4-17 | none
+5 | cut-the-knot | maths | free | 8+ | yes - extensive
+6 | fact monster | world & news, u.s., people, english, science, math & money, sports | free | 4-14 (k-8) | yes
+7 | geometry from the land of the incas | geometry | free | 12+ | yes - extensive
+8 | hackmath.net | mathematics | free | 9-18 | none
+9 | hyperphysics | physics | free | 15+ | none
+10 | ixl | math | $80/year | 4-12 | ?
+11 | le patron | french | free | 12+ | yes
+12 | learnalberta.ca | everything (mainly aimed at teachers) | free | 5-18 | no
+13 | nafham | multidisciplinary 5-pt20m k-12 school video lessons for arabic students | free | 6-18 | yes
+14 | starfall.com | reading | free | 2-9 | none
+15 | smartygames.com | math games, reading, art, word scramble, spanish, puzzles, kids sudoku and more | free | 2-9 | none
+16 | watchknowlearn | all | free | 2-17 | none
+
+
+id:  nu-140  Q:  which country had the most competitors?  Gold ans:  italy
+TabSQLify Prediction:  based on the table and sql query, the country that had the most competitors is not mentioned. the sql query only provides information about the driver with the highest competitor count, which is éric bernard. so, the answer cannot be determined based on the given information.
+Binder Prediction:  ['alain prost']
+Table Title:  1990 British Grand Prix
+
+Table Column:  row_number, pos, no, driver, constructor, laps, time_retired, grid, points
+Linear Table:
+ row_number | pos | no | driver | constructor | laps | time_retired | grid | points
+0 | 1 | 1 | alain prost | ferrari | 64.0 | 1:18:30.999 | 5.0 | 9.0
+1 | 2 | 5 | thierry boutsen | williams-renault | 64.0 | + 39.092 | 4.0 | 6.0
+2 | 3 | 27 | ayrton senna | mclaren-honda | 64.0 | + 43.088 | 2.0 | 4.0
+3 | 4 | 29 | éric bernard | lola-lamborghini | 64.0 | + 1:15.302 | 8.0 | 3.0
+4 | 5 | 20 | nelson piquet | benetton-ford | 64.0 | + 1:24.003 | 11.0 | 2.0
+5 | 6 | 30 | aguri suzuki | lola-lamborghini | 63.0 | + 1 lap | 9.0 | 1.0
+6 | 7 | 10 | alex caffi | arrows-ford | 63.0 | + 1 lap | 17.0 | nan
+7 | 8 | 4 | jean alesi | tyrrell-ford | 63.0 | + 1 lap | 6.0 | nan
+8 | 9 | 8 | stefano modena | brabham-judd | 62.0 | + 2 laps | 20.0 | nan
+9 | 10 | 25 | nicola larini | ligier-ford | 62.0 | + 2 laps | 21.0 | nan
+10 | 11 | 21 | emanuele pirro | dallara-ford | 62.0 | + 2 laps | 19.0 | nan
+11 | 12 | 24 | paolo barilla | minardi-ford | 62.0 | + 2 laps | 24.0 | nan
+12 | 13 | 26 | philippe alliot | ligier-ford | 61.0 | + 3 laps | 22.0 | nan
+13 | 14 | 28 | gerhard berger | mclaren-honda | 60.0 | throttle | 3.0 | nan
+14 | ret | 2 | nigel mansell | ferrari | 55.0 | gearbox | 1.0 | nan
+15 | ret | 16 | ivan capelli | leyton house-judd | 48.0 | fuel leak | 10.0 | nan
+16 | ret | 12 | martin donnelly | lotus-lamborghini | 48.0 | engine | 14.0 | nan
+17 | ret | 11 | derek warwick | lotus-lamborghini | 46.0 | engine | 16.0 | nan
+18 | ret | 17 | gabriele tarquini | ags-ford | 41.0 | engine | 26.0 | nan
+19 | ret | 9 | michele alboreto | arrows-ford | 37.0 | engine | 25.0 | nan
+20 | ret | 6 | riccardo patrese | williams-renault | 26.0 | chassis | 7.0 | nan
+21 | ret | 3 | satoru nakajima | tyrrell-ford | 20.0 | electrical | 12.0 | nan
+22 | ret | 19 | alessandro nannini | benetton-ford | 15.0 | collision | 13.0 | nan
+23 | ret | 22 | andrea de cesaris | dallara-ford | 12.0 | fuel system | 23.0 | nan
+24 | ret | 23 | pierluigi martini | minardi-ford | 3.0 | alternator | 18.0 | nan
+25 | dns | 15 | maurício gugelmin | leyton house-judd | 0.0 | fuel pump | 15.0 | nan
+26 | dnq | 14 | olivier grouillard | osella-ford | nan | none | nan | nan
+27 | dnq | 7 | david brabham | brabham-judd | nan | none | nan | nan
+28 | dnq | 36 | jj lehto | onyx-ford | nan | none | nan | nan
+29 | dnq | 35 | gregor foitek | onyx-ford | nan | none | nan | nan
+30 | dnpq | 33 | roberto moreno | eurobrun-judd | nan | none | nan | nan
+31 | dnpq | 18 | yannick dalmas | ags-ford | nan | none | nan | nan
+32 | dnpq | 34 | claudio langes | eurobrun-judd | nan | none | nan | nan
+33 | dnpq | 31 | bertrand gachot | coloni-subaru | nan | none | nan | nan
+34 | dnpq | 39 | bruno giacomelli | life | nan | none | nan | nan
+
+
+id:  nu-141  Q:  how many total wins did the citadel bulldogs have before 1908?  Gold ans:  6
+TabSQLify Prediction:  2
+Binder Prediction:  0
+Table Title:  List of The Citadel Bulldogs football seasons
+
+Table Column:  row_number, season, conference, head_coach, total_wins, total_losses, total_ties, conference_wins, conference_losses, conference_ties, conference_standing, postseason_result
+Linear Table:
+ row_number | season | conference | head_coach | total_wins | total_losses | total_ties | conference_wins | conference_losses | conference_ties | conference_standing | postseason_result
+0 | 1905 | independent | sidney smith | 2 | 3 | 1 | — | — | — | — | —
+1 | 1906 | independent | ralph foster | 3 | 0 | 0 | — | — | — | — | —
+2 | 1907 | independent | ralph foster | 1 | 5 | 1 | — | — | — | — | —
+3 | 1908 | southern intercollegiate | ralph foster | 4 | 1 | 1 | — | — | — | — | —
+4 | 1909 | southern intercollegiate | sam costen | 4 | 3 | 2 | 0 | 1 | 1 | — | —
+5 | 1910 | southern intercollegiate | sam costen | 3 | 4 | 0 | 1 | 3 | 0 | — | —
+6 | 1911 | southern intercollegiate | l. s. letellier | 5 | 2 | 2 | 1 | 2 | 0 | — | —
+7 | 1912 | southern intercollegiate | l. s. letellier | 3 | 4 | 0 | 0 | 3 | 0 | — | —
+8 | 1913 | southern intercollegiate | george c. rogers | 3 | 4 | 2 | 0 | 2 | 0 | — | —
+9 | 1914 | southern intercollegiate | george c. rogers | 2 | 5 | 0 | 0 | 3 | 0 | — | —
+10 | 1915 | southern intercollegiate | george c. rogers | 5 | 3 | 0 | 2 | 3 | 0 | — | —
+11 | 1916 | southern intercollegiate | harvey o'brien | 6 | 1 | 1 | 4 | 1 | 0 | — | —
+12 | 1917 | southern intercollegiate | harvey o'brien | 3 | 3 | 0 | 1 | 3 | 0 | — | —
+13 | 1918 | southern intercollegiate | harvey o'brien | 0 | 2 | 1 | 0 | 1 | 1 | — | —
+14 | 1919 | southern intercollegiate | george c. rogers | 4 | 4 | 1 | 2 | 4 | 1 | — | —
+15 | 1920 | southern intercollegiate | harvey o'brien | 2 | 6 | 0 | 1 | 5 | 0 | — | —
+16 | 1921 | southern intercollegiate | harvey o'brien | 3 | 3 | 2 | 2 | 3 | 1 | — | —
+17 | 1922 | southern intercollegiate | carl prause | 3 | 5 | 0 | 1 | 2 | 0 | — | —
+18 | 1923 | southern intercollegiate | carl prause | 5 | 3 | 1 | 2 | 1 | 1 | — | —
+19 | 1924 | southern intercollegiate | carl prause | 6 | 4 | 0 | 4 | 2 | 0 | — | —
+20 | 1925 | southern intercollegiate | carl prause | 6 | 4 | 0 | 4 | 2 | 0 | — | —
+21 | 1926 | southern intercollegiate | carl prause | 7 | 3 | 0 | 4 | 3 | 0 | — | —
+22 | 1927 | southern intercollegiate | carl prause | 3 | 6 | 1 | 2 | 3 | 1 | — | —
+23 | 1928 | southern intercollegiate | carl prause | 6 | 3 | 1 | 3 | 3 | 0 | — | —
+24 | 1929 | southern intercollegiate | carl prause | 5 | 4 | 1 | 4 | 0 | 1 | — | —
+25 | 1930 | southern intercollegiate | johnny floyd | 4 | 5 | 2 | 3 | 0 | 1 | — | —
+26 | 1931 | southern intercollegiate | johnny floyd | 5 | 4 | 1 | 4 | 1 | 0 | — | —
+27 | 1932 | southern intercollegiate | tatum gressette | 4 | 5 | 0 | 2 | 2 | 0 | — | —
+28 | 1933 | southern intercollegiate | tatum gressette | 3 | 5 | 1 | 3 | 2 | 0 | — | —
+29 | 1934 | southern intercollegiate | tatum gressette | 3 | 5 | 1 | 2 | 2 | 0 | — | —
+30 | 1935 | southern intercollegiate | tatum gressette | 4 | 3 | 1 | 3 | 1 | 0 | — | —
+31 | 1936 | southern | tatum gressette | 4 | 6 | 0 | 0 | 4 | 0 | 14 | —
+32 | 1937 | southern | tatum gressette | 7 | 4 | 0 | 2 | 3 | 0 | 8 | —
+33 | 1938 | southern | tatum gressette | 6 | 5 | 0 | 2 | 3 | 0 | 10 | —
+34 | 1939 | southern | tatum gressette | 3 | 8 | 0 | 0 | 4 | 0 | 15 | —
+35 | 1940 | southern | bo rowland | 4 | 5 | 0 | 0 | 4 | 0 | 15 | —
+36 | 1941 | southern | bo rowland | 4 | 3 | 1 | 0 | 2 | 1 | 14 | —
+37 | 1942 | southern | bo rowland | 5 | 2 | 0 | 2 | 2 | 0 | 8 | —
+38 | 1943 | no team | no team | no team | no team | no team | no team | no team | no team | no team | no team
+39 | 1944 | no team | no team | no team | no team | no team | no team | no team | no team | no team | no team
+40 | 1945 | no team | no team | no team | no team | no team | no team | no team | no team | no team | no team
+41 | 1946 | southern | j. quinn decker | 3 | 5 | 0 | 1 | 5 | 0 | 15 | —
+42 | 1947 | southern | j. quinn decker | 3 | 5 | 0 | 1 | 4 | 0 | 12 | —
+43 | 1948 | southern | j. quinn decker | 2 | 7 | 0 | 0 | 5 | 0 | 16 | —
+44 | 1949 | southern | j. quinn decker | 4 | 5 | 0 | 2 | 2 | 0 | 7 | —
+45 | 1950 | southern | j. quinn decker | 4 | 6 | 0 | 2 | 3 | 0 | 11 | —
+46 | 1951 | southern | j. quinn decker | 4 | 6 | 0 | 1 | 3 | 0 | 14 | —
+47 | 1952 | southern | j. quinn decker | 3 | 5 | 1 | 1 | 3 | 1 | 13 | —
+48 | 1953 | southern | john d. mcmillan | 2 | 7 | 0 | 1 | 3 | 0 | 9 | —
+49 | 1954 | southern | john d. mcmillan | 2 | 8 | 0 | 0 | 4 | 0 | 9 | —
+50 | 1955 | southern | john sauer | 5 | 4 | 0 | 2 | 2 | 0 | 5 | —
+51 | 1956 | southern | john sauer | 3 | 5 | 1 | 1 | 3 | 0 | 8 | —
+52 | 1957 | southern | eddie teague | 5 | 4 | 1 | 4 | 2 | 0 | 3 | —
+53 | 1958 | southern | eddie teague | 4 | 6 | 0 | 2 | 3 | 0 | 7 | —
+54 | 1959 | southern | eddie teague | 8 | 2 | 0 | 5 | 1 | 0 | 2 | —
+55 | 1960 | southern | eddie teague | 8 | 2 | 1 | 4 | 2 | 0 | 2 | tangerine bowl
+56 | 1961 | southern | eddie teague | 7 | 3 | 0 | 5 | 1 | 0 | 1 | —
+57 | 1962 | southern | eddie teague | 3 | 7 | 0 | 1 | 4 | 0 | 7 | —
+58 | 1963 | southern | eddie teague | 4 | 6 | 0 | 2 | 4 | 0 | 7 | —
+59 | 1964 | southern | eddie teague | 4 | 6 | 0 | 4 | 3 | 0 | 4 | —
+60 | 1965 | southern | eddie teague | 2 | 8 | 0 | 2 | 6 | 0 | 8 | —
+61 | 1966 | southern | red parker | 4 | 6 | 0 | 3 | 5 | 0 | 6 | —
+62 | 1967 | southern | red parker | 5 | 6 | 0 | 2 | 4 | 0 | 7 | —
+63 | 1968 | southern | red parker | 5 | 5 | 0 | 4 | 2 | 0 | 2 | —
+64 | 1969 | southern | red parker | 7 | 3 | 0 | 4 | 2 | 0 | 3 | —
+65 | 1970 | southern | red parker | 5 | 6 | 0 | 4 | 2 | 0 | 2 | —
+66 | 1971 | southern | red parker | 8 | 3 | 0 | 4 | 2 | 0 | 3 | —
+67 | 1972 | southern | red parker | 5 | 6 | 0 | 4 | 3 | 0 | 4 | —
+68 | 1973 | southern | bobby ross | 3 | 8 | 0 | 1 | 6 | 0 | 7 | —
+69 | 1974 | southern | bobby ross | 4 | 7 | 0 | 3 | 4 | 0 | 5 | —
+70 | 1975 | southern | bobby ross | 6 | 5 | 0 | 4 | 3 | 0 | 4 | —
+71 | 1976 | southern | bobby ross | 6 | 5 | 0 | 1 | 4 | 0 | 6 | —
+72 | 1977 | southern | bobby ross | 5 | 6 | 0 | 3 | 2 | 0 | 3 | —
+73 | 1978 | southern | art baker | 5 | 6 | 0 | 2 | 3 | 0 | 5 | —
+74 | 1979 | southern | art baker | 6 | 5 | 0 | 4 | 2 | 0 | 3 | —
+75 | 1980 | southern | art baker | 7 | 4 | 0 | 3 | 2 | 0 | 4 | —
+76 | 1981 | southern | art baker | 7 | 3 | 1 | 3 | 2 | 1 | 4 | —
+77 | 1982 | southern | art baker | 5 | 6 | 0 | 3 | 4 | 0 | 4 | —
+78 | 1983 | southern | tom moore | 3 | 8 | 0 | 1 | 6 | 0 | 7 | —
+79 | 1984 | southern | tom moore | 7 | 4 | 0 | 4 | 2 | 0 | 3 | —
+80 | 1985 | southern | tom moore | 5 | 5 | 1 | 2 | 4 | 1 | 5 | —
+81 | 1986 | southern | tom moore | 3 | 8 | 0 | 0 | 6 | 0 | 8 | —
+82 | 1987 | southern | charlie taaffe | 4 | 7 | 0 | 1 | 5 | 0 | 8 | —
+83 | 1988 | southern | charlie taaffe | 8 | 4 | 0 | 5 | 2 | 0 | 3 | first round
+84 | 1989 | southern | charlie taaffe | 5 | 5 | 1 | 1 | 5 | 1 | 8 | —
+85 | 1990 | southern | charlie taaffe | 7 | 5 | 0 | 4 | 3 | 0 | 3 | first round
+86 | 1991 | southern | charlie taaffe | 7 | 4 | 0 | 5 | 2 | 0 | 2 | —
+87 | 1992 | southern | charlie taaffe | 11 | 2 | 0 | 6 | 1 | 0 | 1 | quarterfinals
+88 | 1993 | southern | charlie taaffe | 5 | 6 | 0 | 4 | 4 | 0 | 4 | —
+89 | 1994 | southern | charlie taaffe | 6 | 5 | 0 | 4 | 4 | 0 | 5 | —
+90 | 1995 | southern | charlie taaffe | 2 | 9 | 0 | 0 | 8 | 0 | 8 | —
+91 | 1996 | southern | don powers | 4 | 7 | 0 | 3 | 5 | 0 | 5 | —
+92 | 1997 | southern | don powers | 6 | 5 | 0 | 4 | 4 | 0 | 4 | —
+93 | 1998 | southern | don powers | 5 | 6 | 0 | 4 | 4 | 0 | 4 | —
+94 | 1999 | southern | don powers | 2 | 9 | 0 | 1 | 7 | 0 | 8 | —
+95 | 2000 | southern | don powers | 2 | 9 | 0 | 1 | 7 | 0 | t-8 | —
+96 | 2001 | southern | ellis johnson | 3 | 7 | 0 | 2 | 6 | 0 | 7 | —
+97 | 2002 | southern | ellis johnson | 3 | 9 | — | 1 | 7 | — | 9 | —
+98 | 2003 | southern | ellis johnson | 6 | 6 | — | 4 | 4 | — | 4 | —
+99 | 2004 | southern | john zernhelt | 3 | 7 | — | 2 | 5 | — | t-5 | —
+100 | 2005 | southern | kevin higgins | 4 | 7 | — | 2 | 5 | — | 7 | —
+101 | 2006 | southern | kevin higgins | 5 | 6 | — | 4 | 3 | — | 4 | —
+102 | 2007 | southern | kevin higgins | 7 | 4 | — | 4 | 3 | — | t-3 | —
+103 | 2008 | southern | kevin higgins | 4 | 8 | — | 2 | 6 | — | 7 | —
+104 | 2009 | southern | kevin higgins | 4 | 7 | — | 2 | 6 | — | 7 | —
+105 | 2010 | southern | kevin higgins | 3 | 8 | — | 1 | 7 | — | t-8 | —
+106 | 2011 | southern | kevin higgins | 4 | 7 | — | 2 | 6 | — | 8 | —
+107 | 2012 | southern | kevin higgins | 7 | 4 | — | 5 | 3 | — | t-4 | —
+108 | 2013 | southern | kevin higgins | 5 | 7 | — | 4 | 4 | — | t-4 | —
+109 | 2014 | southern | mike houston | upcoming | upcoming | upcoming | upcoming | upcoming | upcoming | upcoming | upcoming
+110 | totals:; 105 seasons | 2 conferences | 23 head coaches | total; wins; 473 | total; losses; 536 | total; ties; 32 | 239 conference wins; 55 siaa; 184 socon | 379 conference losses; 58 siaa; 321 socon | 13 conference ties; 8 siaa; 5 socon | regular season; champions; 2 times | 1–0 bowl record; 1–3 playoff record
+
+
+id:  nu-153  Q:  calculate the average percentage of each selection.  Gold ans:  48.4%,22.52%,25.29%,3.79%
+TabSQLify Prediction:  based on the given table, the average percentage of each selection is as follows:
+- average percentage for nanastasiades: 38.205%
+- average percentage for glillikas: 18.714%
+- average percentage for smalas: 21.103%
+- average percentage for others: 2.278%
+
+therefore, the answer is:
+- average percentage for nanastasiades: 38.205%
+- average percentage for glillikas: 18.714%
+- average percentage for smalas: 21.103%
+- average percentage for others: 2.278%
+Binder Prediction:  [38.20521739130435, 18.714347826086954, 21.10304347826087, 2.2778260869565217]
+Table Title:  Cypriot presidential election, 2013
+
+Table Column:  row_number, polling_firm, source, date_published, nanastasiades, glillikas, smalas, others
+Linear Table:
+ row_number | polling_firm | source | date_published | nanastasiades | glillikas | smalas | others
+0 | rai consultants | [1][dead link] | 2012-9-16 | 37.2% | 14.2% | 21.9% | 1.5%
+1 | evresis | [2] | 2012-9-18 | 35.2% | 17.5% | 19.7% | 1.7%
+2 | noverna | [3] | 2012-9-23 | 35.02% | 15.81% | 17.78% | none
+3 | prime consulting ltd | [4] | 2012-10-7 | 34.7% | 17.4% | 18.5% | none
+4 | cmr cypronetwork / cybc | [5][dead link] | 2012-10-18 | 36.9% | 17% | 23.8% | 1.2%
+5 | evresis | [6] | 2012-11-2 | 36.9% | 17.7% | 20.6% | 1.4%
+6 | rai consultants | [7] | 2012-11-4 | 38.8% | 19.8% | 21.1% | 2.3%
+7 | cmr cypronetwork / cybc | [8] | 2012-11-15 | 36.8% | 18.9% | 22.8% | 1.6%
+8 | prime consulting ltd | [9] | 2012-11-18 | 35.9% | 18.7% | 19.6% | 0.6%
+9 | evresis | [10] | 2012-11-27 | 37.1% | 19.6% | 20.8% | 0.6%
+10 | noverna | [11] | 2012-12-2 | 35.6% | 17.2% | 18.1% | 4.1%
+11 | prime consulting ltd | [12] | 2012-12-3 | 35% | 19.1% | 18.6% | 1.4%
+12 | cmr cypronetwork / cybc | [13][dead link] | 2012-12-17 | 37.1% | 20.4% | 23.1% | 3.1%
+13 | evresis | [14] | 2012-12-22 | 37.4% | 19.8% | 21.8% | 0.5%
+14 | rai consultants ltd | [15][dead link] | 2013-1-13 | 40.3% | 17.9% | 20.5% | 6.1%
+15 | cmr cypronetwork / cybc | [16] | 2013-1-17 | 38% | 19.7% | 23.7% | 2.7%
+16 | prime consulting ltd | [17] | 2013-1-27 | 39.2% | 18.8% | 19.8% | 4%
+17 | evresis | [18] | 2013-2-1 | 40.8% | 19.9% | 22.2% | 2.5%
+18 | prime consulting ltd | [19] | 2013-2-4 | 39.8% | 19.3% | 20% | 3%
+19 | prime consulting ltd | [20] | 2013-2-9 | 40.6% | 19.6% | 20.4% | 2.9%
+20 | rai consultants ltd | [21] | 2013-2-9 | 42.1% | 19.4% | 21.1% | 4.4%
+21 | cmr cypronetwork / cybc | [22] | 2013-2-9 | 39.9% | 20.2% | 24.2% | 3%
+22 | average (only valid votes) | – | – | 48.4% | 22.52% | 25.29% | 3.79%
+
+
+id:  nu-158  Q:  how many different flyby's have been done for the halley comet?  Gold ans:  6
+TabSQLify Prediction:  1 
+Binder Prediction:  0
+Table Title:  List of periodic comets
+
+Table Column:  row_number, comet, discoverers_or_namesakes, orbital_period_years, spacecraft_encounters
+Linear Table:
+ row_number | comet | discoverers_or_namesakes | orbital_period_years | spacecraft_encounters
+0 | t13/halley | halley | 75.32 | giotto (flyby 1986), vega 1 (flyby 1986), vega 2 (flyby 1986), suisei (flyby 1986) ice (distant flyby 1986), sakigake (distant flyby 1986)
+1 | t14/encke | encke | 3.3 | none
+2 | 3d/biela | biela | none | none
+3 | t16/faye | faye | 7.51 | none
+4 | 5d/brorsen | brorsen | none | none
+5 | t18/d'arrest | d'arrest | 6.54 | none
+6 | t19/pons–winnecke | pons & winnecke | 6.36 | none
+7 | t20/tuttle | tuttle | 13.61 | none
+8 | t21/tempel (tempel 1) | tempel | 5.58 | deep impact (impactor/flyby 2005), stardust (flyby 2011)
+9 | t22/tempel (tempel 2) | tempel | 5.37 | none
+10 | t23/tempel–swift–linear | tempel & swift & linear | 6.37 | none
+11 | t12/pons–brooks | pons & brooks | 70.85 | none
+12 | t13/olbers | olbers | 69.52 | none
+13 | t14/wolf | wolf | 8.74 | none
+14 | t15/finlay | finlay | 6.5 | none
+15 | t16/brooks (brooks 2) | brooks | 6.14 | none
+16 | t17/holmes | holmes | 6.88 | none
+17 | 18d/perrine–mrkos | perrine & mrkos | none | none
+18 | t19/borrelly | borrelly | 6.85 | deep space 1 (flyby 2001)
+19 | 20d/westphal | westphal | none | none
+20 | t21/giacobini–zinner | giacobini & zinner | 6.6 | ice (distant flyby 1985)
+21 | t22/kopff | kopff | 6.43 | craf (rendezvous/lander 2000 – cancelled)
+22 | t23/brorsen–metcalf | brorsen & metcalf | 70.52 | none
+23 | t00/schaumasse | schaumasse | 8.25 | none
+24 | 25d/neujmin (neujmin 2) | neujmin | none | none
+25 | 26p/grigg–skjellerup | grigg & skjellerup | 5.31 | giotto (flyby 1992)
+26 | 27p/crommelin | crommelin | 27.93 | none
+27 | 28p/neujmin (neujmin 1) | neujmin | 18.17 | none
+28 | 29p/schwassmann–wachmann (schwassmann–wachmann 1) | schwassmann & wachmann | 14.69 | none
+29 | 30p/reinmuth (reinmuth 1) | reinmuth | 7.34 | none
+30 | 31p/schwassmann–wachmann (schwassmann–wachmann 2) | schwassmann & wachmann | 8.75 | none
+31 | 32p/comas solá | comas solá | 8.8 | none
+32 | 33p/daniel | daniel | 8.07 | none
+33 | 34d/gale | gale | none | none
+34 | 35p/herschel–rigollet | herschel & rigollet | 155 | none
+35 | 36p/whipple | whipple | 8.55 | none
+36 | 37p/forbes | forbes | 6.35 | none
+37 | 38p/stephan–oterma | stephan & oterma | 37.72 | none
+38 | 39p/oterma | oterma | 19.53 | none
+39 | 40p/väisälä (väisälä 1) | väisälä | 10.82 | none
+40 | 41p/tuttle–giacobini–kresák | tuttle & giacobini & kresák | 5.42 | none
+41 | 42p/neujmin (neujmin 3) | neujmin | 10.7 | none
+42 | 43p/wolf–harrington | wolf & harrington | 6.13 | none
+43 | 44p/reinmuth (reinmuth 2) | reinmuth | 7.08 | none
+44 | 45p/honda–mrkos–pajdušáková | honda & mrkos & pajdušáková | 5.26 | none
+45 | 46p/wirtanen | wirtanen | 5.44 | ice (distant flyby 2018 – proposed), chopper (lander 2022—proposed)
+46 | 47p/ashbrook–jackson | ashbrook & jackson | 8.35 | none
+47 | 48p/johnson | johnson | 6.95 | none
+48 | 49p/arend–rigaux | arend & rigaux | 6.73 | none
+49 | 50p/arend | arend | 8.25 | none
+50 | 51p/harrington | harrington | 7.13 | none
+51 | 52p/harrington–abell | harrington & abell | 7.54 | none
+52 | 53p/van biesbroeck | van biesbroeck | 12.6 | none
+53 | 54p/de vico–swift–neat | de vico & swift & neat | 7.38 | none
+54 | 55p/tempel–tuttle | tempel & tuttle | 33.24 | none
+55 | 56p/slaughter–burnham | slaughter & burnham | 11.54 | none
+56 | 57p/du toit–neujmin–delporte | du toit & neujmin & delporte | 6.4 | none
+57 | 58p/jackson–neujmin | jackson & neujmin | 8.24 | none
+58 | 59p/kearns–kwee | kearns & kwee | 9.51 | none
+59 | 60p/tsuchinshan (tsuchinshan 2) | tsuchinshan | 6.56 | none
+60 | 61p/shajn–schaldach | shajn & schaldach | 7.06 | none
+61 | 62p/tsuchinshan (tsuchinshan 1) | tsuchinshan | 6.63 | none
+62 | 63p/wild (wild 1) | wild | 13.25 | none
+63 | 64p/swift–gehrels | swift & gehrels | 9.35 | none
+64 | 65p/gunn | gunn | 6.88 | none
+65 | 66p/du toit | du toit | 14.71 | none
+66 | 67p/churyumov–gerasimenko | churyumov & gerasimenko | 6.45 | rosetta (orbiter 2014)
+67 | 68p/klemola | klemola | 10.83 | none
+68 | 69p/taylor | taylor | 7.65 | none
+69 | 70p/kojima | kojima | 7.06 | none
+70 | 71p/clark | clark | 5.53 | none
+71 | 72d/denning–fujikawa | denning & fujikawa | none | none
+72 | 73p/schwassmann–wachmann (schwassmann–wachmann 3) | schwassmann & wachmann | 5.36 | none
+73 | 74p/smirnova–chernykh | smirnova & chernykh | 8.51 | none
+74 | 75d/kohoutek | kohoutek | ~7 | none
+75 | 76p/west–kohoutek–ikemura | west & kohoutek & ikemura | 6.48 | none
+76 | 77p/longmore | longmore | 6.88 | none
+77 | 78p/gehrels (gehrels 2) | gehrels | 7.22 | none
+78 | 79p/du toit–hartley | du toit & hartley | 5.28 | none
+79 | 80p/peters–hartley | peters & hartley | 8.12 | none
+80 | 81p/wild (wild 2) | wild | 6.41 | stardust (flyby/sample return 2004)
+81 | 82p/gehrels (gehrels 3) | gehrels | 8.43 | none
+82 | 83d/russell (russell 1) | russell | none | none
+83 | 84p/giclas | giclas | 6.97 | none
+84 | 85p/boethin | boethin | 11.81 | none
+85 | 86p/wild (wild 3) | wild | 6.91 | none
+86 | 87p/bus | bus | 6.51 | none
+87 | 88p/howell | howell | 5.49 | none
+88 | 89p/russell (russell 2) | russell | 7.26 | none
+89 | 90p/gehrels (gehrels 1) | gehrels | 14.85 | none
+90 | 91p/russell (russell 3) | russell | 7.67 | none
+91 | 92p/sanguin | sanguin | 12.43 | none
+92 | 93p/lovas (lovas 1) | lovas | 9.2 | none
+93 | 94p/russell (russell 4) | russell | 6.58 | none
+94 | 95p/chiron = minor planet 2060 chiron | kowal | 50.5 | none
+95 | 96p/machholz (machholz 1) | machholz | 5.28 | none
+96 | 97p/metcalf–brewington | metcalf & brewington | 10.51 | none
+97 | 98p/takamizawa | takamizawa | 7.4 | none
+98 | 99p/kowal (kowal 1) | kowal | 15.25 | none
+99 | 100p/hartley (hartley 1) | hartley | 6.35 | none
+100 | 101p/chernykh | chernykh | 13.94 | none
+101 | 102p/shoemaker (shoemaker 1) | c. shoemaker & e. shoemaker | 7.22 | none
+102 | 103p/hartley (hartley 2) | hartley | 6.47 | deep impact (flyby 2010)
+103 | 104p/kowal (kowal 2) | kowal | 5.89 | none
+104 | 105p/singer brewster | singer-brewster | 6.47 | none
+105 | 106p/schuster | schuster | 7.31 | none
+106 | 107p/wilson–harrington = minor planet 4015 wilson–harrington | helin & wilson & harrington | 4.29 | none
+107 | 108p/ciffréo | ciffréo | 7.26 | none
+108 | 109p/swift–tuttle | swift & tuttle | 133.28 | none
+109 | 110p/hartley (hartley 3) | hartley | 6.88 | none
+110 | 111p/helin–roman–crockett | helin & roman & crockett | 8.14 | none
+111 | 112p/urata–niijima | urata & niijima | 6.67 | none
+112 | 113p/spitaler | spitaler | 7.09 | none
+113 | 114p/wiseman–skiff | wiseman & skiff | 6.67 | none
+114 | 115p/maury | maury | 8.76 | none
+115 | 116p/wild (wild 4) | wild | 6.51 | none
+116 | 117p/helin–roman–alu (helin–roman–alu 1) | helin & roman & alu | 8.24 | none
+117 | 118p/shoemaker–levy (shoemaker–levy 4) | c. shoemaker, e. shoemaker & levy | 6.44 | none
+118 | 119p/parker–hartley | parker & hartley | 8.89 | none
+119 | 120p/mueller (mueller 1) | mueller | 8.43 | none
+120 | 121p/shoemaker–holt (shoemaker–holt 2) | c.shoemaker, e.shoemaker & holt | 8.02 | none
+121 | 122p/de vico | de vico | 74.35 | none
+122 | 123p/west–hartley | west & hartley | 7.59 | none
+123 | 124p/mrkos | mrkos | 5.75 | none
+124 | 125p/spacewatch | spacewatch | 5.53 | none
+125 | 126p/iras | iras | 13.41 | none
+126 | 127p/holt–olmstead | holt & olmstead | 6.41 | none
+127 | 128p/shoemaker–holt (shoemaker–holt 1) | c. shoemaker, e. shoemaker & holt | 9.59 | none
+128 | 129p/shoemaker–levy (shoemaker–levy 3) | c. shoemaker, e. shoemaker & levy | 8.89 | none
+129 | 130p/mcnaught–hughes | mcnaught & hughes | 6.66 | none
+130 | 131p/mueller (mueller 2) | mueller | 7.08 | none
+131 | 132p/helin–roman–alu (helin–roman–alu 2) | helin & roman & alu | 8.28 | none
+132 | 133p/elst–pizarro = minor planet 7968 elst–pizarro | elst & pizarro | 5.62 | none
+133 | 134p/kowal–vávrová | kowal & vávrová | 15.6 | none
+134 | 135p/shoemaker–levy (shoemaker–levy 8) | c. shoemaker, e. shoemaker & levy | 7.5 | none
+135 | 136p/mueller (mueller 3) | mueller | 8.62 | none
+136 | 137p/shoemaker–levy (shoemaker–levy 2) | c. shoemaker, e. shoemaker & levy | 9.55 | none
+137 | 138p/shoemaker–levy (shoemaker–levy 7) | c. shoemaker, e. shoemaker & levy | 6.91 | none
+138 | 139p/väisälä–oterma | väisälä & oterma | 9.61 | none
+139 | 140p/bowell–skiff | bowell & skiff | 16.18 | none
+140 | 141p/machholz (machholz 2) | machholz | 5.23 | none
+141 | 142p/ge–wang | ge & wang | 11.09 | none
+142 | 143p/kowal–mrkos | kowal & mrkos | 8.93 | none
+143 | 144p/kushida | kushida | 7.57 | none
+144 | 145p/shoemaker–levy (shoemaker–levy 5) | c. shoemaker, e. shoemaker & levy | 8.66 | none
+145 | 146p/shoemaker–linear | c. shoemaker, e. shoemaker & linear | 8.12 | none
+146 | 147p/kushida–muramatsu | kushida & muramatsu | 7.41 | none
+147 | 148p/anderson–linear | anderson & linear | 7.07 | none
+148 | 149p/mueller (mueller 4) | mueller | 9.02 | none
+149 | 150p/loneos | loneos | 7.66 | none
+150 | 151p/helin | helin | 14.1 | none
+151 | 152p/helin–lawrence | helin & lawrence | 9.54 | none
+152 | 153p/ikeya–zhang | ikeya & zhang | 366.5 | none
+153 | 154p/brewington | brewington | 10.66 | none
+154 | 155p/shoemaker (shoemaker 3) | c. shoemaker & e. shoemaker | 17.09 | none
+155 | 156p/russell–linear | russell & linear | 6.84 | none
+156 | 157p/tritton | tritton | 6.29 | none
+157 | 158p/kowal–linear | kowal & linear | 10.26 | none
+158 | 159p/loneos | loneos | 14.32 | none
+159 | 160p/linear | linear | 7.95 | none
+160 | 161p/hartley–iras | hartley & iras | 21.43 | none
+161 | 162p/siding sp | siding sp | 5.32 | none
+162 | 163p/neat | neat | 7.3 | none
+163 | 164p/christensen | christensen | 6.97 | none
+164 | 165p/linear | linear | 76.7 | none
+165 | 166p/neat | neat | 51.73 | none
+166 | 167p/cineos | cineos | 64.85 | none
+167 | 168p/hergenrother | hergenrother | 6.89 | none
+168 | 169p/neat | neat | 4.2 | none
+169 | 170p/christensen | christensen | 8.63 | none
+170 | 171p/spahr | spahr | 6.7 | none
+171 | 172p/yeung | yeung | 6.59 | none
+172 | 173p/mueller (mueller 5) | mueller | 13.63 | none
+173 | 174p/echeclus = minor planet 60558 echeclus | spacewatch | 35.02 | none
+174 | 175p/hergenrother | hergenrother | 6.34 | none
+175 | 176p/linear = minor planet 118401 linear | linear | 5.71 | none
+176 | 177p/barnard (barnard 2) | barnard | 119.67 | none
+177 | 178p/hug–bell | hug & bell | 7.06 | none
+178 | 179p/jedicke | jedicke | 14.31 | none
+179 | 180p/neat | neat | 7.54 | none
+180 | 181p/shoemaker–levy (shoemaker–levy 6) | c. shoemaker, e. shoemaker & levy | 7.53 | none
+181 | 182p/loneos | loneos | 5.02 | none
+182 | 183p/korlevic–juric | korlevic & juric | 9.58 | none
+183 | 184p/lovas (lovas 2) | lovas | 6.62 | none
+184 | 185p/petriew | petriew | 5.47 | none
+185 | 186p/garradd | garradd | 10.62 | none
+186 | 187p/linear | linear | 9.4 | none
+187 | 188p/linear–mueller | linear & mueller | 9.13 | none
+188 | 189p/neat | neat | 4.99 | none
+189 | 190p/mueller | mueller | 8.74 | none
+190 | 191p/mcnaught | mcnaught | 6.64 | none
+191 | 192p/shoemaker–levy (shoemaker–levy 1) | c. shoemaker, e. shoemaker & levy | 17.29 | none
+192 | 193p/linear–neat | linear & neat | 6.56 | none
+193 | 194p/linear | linear [1] | 8 | none
+194 | 195p/hill | hill | 16.49 | none
+195 | 196p/tichý | tichý iauc 8917 | 7.36 | none
+196 | 197p/linear | linear iauc 8924 | 4.85 | none
+197 | 198p/odas | oca-dlr asteroid survey (odas)[2], iauc 8929 | 6.78 | none
+198 | 199p/shoemaker (shoemaker 4) | c. shoemaker & e. shoemaker cbet 1347 | 14.53 | none
+199 | 200p/larsen | larsen | 10.92 | none
+200 | 201p/loneos | loneos [3] | 6.47 | none
+201 | 202p/scotti | scotti [4] | 7.32 | none
+202 | 203p/korlevic | korlevic iauc 8974 | 10.01 | none
+203 | 204p/linear–neat | linear & neat iauc 8974 | 7 | none
+204 | 205p/giacobini | giacobini (past_ref thought lost and designated d/1896 r2) iauc 8975 | 6.66 | none
+205 | 206p/barnard–boattini | barnard & boattini [past_ref thought lost and designated d/1892 t1 (barnard 3)] iauc 8995 | 5.81 | none
+206 | 207p/neat | neat iauc 8996 | 7.63 | none
+207 | 208p/mcmillan | mcmillan iauc 8997, iauc 9000 | 8.16 | none
+208 | 209p/linear | linear iauc 9002 | 5.04 | none
+209 | 210p/christensen | christensen iauc 9005 | 5.71 | none
+210 | 211p/hill | hill (catalina sky survey) iauc 9001 | 6.71 | none
+211 | 212p/neat | neat iauc 9010 | 7.78 | none
+212 | 213p/van ness | van ness iauc 9017 | 6.34 | none
+213 | 214p/linear | linear iauc 9017 | 6.84 | none
+214 | 215p/neat | neat iauc 9018 | 8.07 | none
+215 | 216p/linear | linear iauc 9021 | 7.63 | none
+216 | 217p/linear | linear | 7.83 | none
+217 | 218p/linear | linear | 6.11 | none
+218 | 219p/linear | linear | 6.98 | none
+219 | 220p/mcnaught | mcnaught | 5.5 | none
+220 | 221p/linear | linear | 6.5 | none
+221 | 222p/linear | linear | 4.83 | none
+222 | 223p/skiff | skiff | 8.42 | none
+223 | 224p/linear–neat | linear & neat | 6.3 | none
+224 | 225p/linear | linear | 6.99 | none
+225 | 226p/pigott–linear–kowalski | pigott & linear & kowalski | 7.32 | none
+226 | 227p/catalina–linear | catalina sky survey & linear | 6.79 | none
+227 | 228p/linear | linear | 8.49 | none
+228 | 229p/gibbs | gibbs (catalina sky survey) | 7.78 | none
+229 | 230p/linear | linear | 6.27 | none
+230 | 231p/linear–neat | linear & neat | 8.08 | none
+231 | 232p/hill | hill (catalina sky survey) | 9.49 | none
+232 | 233p/la sagra | la sagra sky survey | 5.29 | none
+233 | 234p/linear | linear | 7.47 | none
+234 | 235p/linear | linear | 8 | none
+235 | 236p/linear | linear | 7.2 | none
+236 | 237p/linear | linear | 6.57 | none
+237 | 238p/read | read (spacewatch) | 5.63 | none
+238 | 239p/linear | linear | 9.43 | none
+239 | 240p/neat | neat | 7.6 | none
+240 | 241p/linear | linear | 10.79 | none
+241 | 242p/spahr | spahr | 13.2 | none
+242 | 243p/neat | neat | 7.52 | none
+243 | 244p/scotti | scotti | 10.8 | none
+244 | 245p/wise | wise | 8.03 | none
+245 | 246p/neat | neat | 8.06 | none
+246 | 247p/linear | linear | 7.98 | none
+247 | 248p/gibbs | gibbs (catalina sky survey) | 14.63 | none
+248 | 249p/linear | linear | 4.63 | none
+249 | 250p/larson | larson (catalina sky survey) | 7.2 | none
+250 | 251p/linear | linear | 6.52 | none
+251 | 252p/linear | linear | 5.32 | none
+252 | 253p/panstarrs | pan-starrs | 6.47 | none
+253 | 254p/mcnaught | mcnaught | 10.09 | none
+254 | 255p/levy | levy | 5.29 | none
+255 | 256p/linear | linear | 9.96 | none
+256 | 257p/catalina | catalina sky survey | 7.27 | none
+257 | 258p/panstarrs | pan-starrs | 9.22 | none
+258 | 259p/garradd | garradd | 4.5 | none
+259 | 260p/mcnaught | mcnaught | 7.07 | none
+260 | 261p/larson | larson (mount lemmon survey) | 6.8 | none
+261 | 262p/mcnaught–russell | mcnaught & russell | 18.3 | none
+262 | 263p/gibbs | gibbs (catalina sky survey) | 5.36 | none
+263 | 264p/larsen | larsen | 7.68 | none
+264 | 265p/linear | linear | 8.77 | none
+265 | 266p/christensen | christensen | 6.63 | none
+266 | 267p/loneos | loneos | 5.96 | none
+267 | 268p/bernardi | bernardi | 9.76 | none
+268 | 269p/jedicke | v. jedicke & r. jedicke | 19.55 | none
+269 | 270p/gehrels | gehrels | 17.82 | none
+270 | 271p/van houten–lemmon | c. van houten & i. van houten-groeneveld & mount lemmon survey | 18.42 | none
+271 | 272p/neat | neat | 9.36 | none
+272 | 273p/pons–gambart | pons & gambart | 188 | none
+273 | 274p/tombaugh–tenagra | tombaugh & tenagra ii observatory | 9.12 | none
+274 | 275p/hermann | hermann | 13.79 | none
+275 | 276p/vorobjov | vorobjov | 12.5 | none
+276 | 277p/linear | linear | 7.59 | none
+277 | 278p/mcnaught | mcnaught | 7.12 | none
+278 | 279p/la sagra | la sagra sky survey | 6.78 | none
+279 | 280p/larsen | larsen | 9.63 | none
+280 | 281p/moss | morocco oukaimeden sky survey (moss) | 10.69 | none
+281 | 282p | none | 8.76 | none
+282 | 283p/spacewatch | spacewatch | 8.4 | none
+283 | 284p/mcnaught | mcnaught | 7.04 | none
+284 | 285p/linear | linear | 9.52 | none
+285 | 286p/christensen | christensen | 8.37 | none
+286 | 287p/christensen | christensen | 8.54 | none
+287 | 288p/spacewatch = minor planet (300163) 2006 vw139 | spacewatch | 5.32 | none
+288 | 289p/blanpain | blanpain | 5.33 | none
+289 | 290p/jäger | jäger | 15.2 | none
+290 | 291p/neat | neat | 9.71 | none
+291 | 292p/li | li | 15.1 | none
+292 | 293p/spacewatch | spacewatch | 6.94 | none
+293 | 294p/linear | linear | 5.74 | none
+294 | 295p/linear | linear | 12.3 | none
+295 | 296p/garradd | garradd | 6.55 | none
+296 | 297p/beshore | beshore (mount lemmon survey) | 6.39 | none
+
+
+id:  nu-159  Q:  how long is the time frame in years of the table?  Gold ans:  16
+TabSQLify Prediction:  15 
+Binder Prediction:  [15]
+Table Title:  Kansas City Brass
+
+Table Column:  row_number, year, division, league, regular_season, playoffs, open_cup
+Linear Table:
+ row_number | year | division | league | regular_season | playoffs | open_cup
+0 | 1998 | 4 | usisl pdsl | 4th, central | division finals | 1st round
+1 | 1999 | 4 | usl pdl | 5th, heartland | did not qualify | did not qualify
+2 | 2000 | 4 | usl pdl | 4th, rocky mountain | did not qualify | did not qualify
+3 | 2001 | 4 | usl pdl | 5th, rocky mountain | did not qualify | did not qualify
+4 | 2002 | 4 | usl pdl | 5th, heartland | did not qualify | did not qualify
+5 | 2003 | 4 | usl pdl | 5th, heartland | did not qualify | did not qualify
+6 | 2004 | 4 | usl pdl | 6th, heartland | did not qualify | did not qualify
+7 | 2005 | 4 | usl pdl | 3rd, heartland | did not qualify | did not qualify
+8 | 2006 | 4 | usl pdl | 3rd, heartland | did not qualify | did not qualify
+9 | 2007 | 4 | usl pdl | 3rd, heartland | did not qualify | 1st round
+10 | 2008 | 4 | usl pdl | 5th, heartland | did not qualify | did not qualify
+11 | 2009 | 4 | usl pdl | 6th, heartland | did not qualify | did not qualify
+12 | 2010 | 4 | usl pdl | 7th, heartland | did not qualify | did not qualify
+13 | 2011 | 4 | usl pdl | 4th, heartland | did not qualify | did not qualify
+14 | 2012 | 4 | usl pdl | 5th, heartland | did not qualify | did not qualify
+15 | 2013 | 4 | usl pdl | 4th, heartland | did not qualify | did not qualify
+
+
+id:  nu-160  Q:  how many races took place after august?  Gold ans:  6
+TabSQLify Prediction:  1 
+Binder Prediction:  [1]
+Table Title:  1990 IndyCar season
+
+Table Column:  row_number, date, rnd, race_name, circuit, city_location, pole_position, winning_driver, winning_team, report
+Linear Table:
+ row_number | date | rnd | race_name | circuit | city_location | pole_position | winning_driver | winning_team | report
+0 | 1 | april 8 | autoworks 200 | phoenix international raceway | phoenix, arizona | rick mears | rick mears | team penske | report
+1 | 2 | april 22 | toyota long beach grand prix | streets of long beach | long beach, california | al unser, jr. | al unser, jr. | galles-kraco racing | report
+2 | 3 | may 27 | 74th indianapolis 500 | indianapolis motor speedway | speedway, indiana | emerson fittipaldi | arie luyendyk | doug shierson racing | report
+3 | 4 | june 3 | miller genuine draft 200 | milwaukee mile | west allis, wisconsin | rick mears | al unser, jr. | galles-kraco racing | report
+4 | 5 | june 17 | valvoline grand prix of detroit | streets of detroit | detroit, michigan | michael andretti | michael andretti | newman/haas racing | report
+5 | 6 | june 24 | budweiser/g.i.joe's 200 | portland international raceway | portland, oregon | danny sullivan | michael andretti | newman/haas racing | report
+6 | 7 | july 8 | budweiser grand prix of cleveland | cleveland burke lakefront airport | cleveland, ohio | rick mears | danny sullivan | team penske | report
+7 | 8 | july 15 | marlboro grand prix at the meadowlands | meadowlands sports complex | east rutherford, new jersey | michael andretti | michael andretti | newman/haas racing | report
+8 | 9 | july 22 | molson indy toronto | exhibition place | toronto, ontario | danny sullivan | al unser, jr. | galles-kraco racing | report
+9 | 10 | august 5 | marlboro 500 | michigan international speedway | brooklyn, michigan | emerson fittipaldi | al unser, jr. | galles-kraco racing | report
+10 | 11 | august 26 | texaco/havoline grand prix of denver | streets of denver | denver, colorado | teo fabi | al unser, jr. | galles-kraco racing | report
+11 | 12 | september 2 | molson indy vancouver | streets of vancouver | vancouver, british columbia | michael andretti | al unser, jr. | galles-kraco racing | report
+12 | 13 | september 16 | red roof inns 200 | mid-ohio sports car course | lexington, ohio | michael andretti | michael andretti | newman/haas racing | report
+13 | 14 | september 23 | texaco/havoline 200 | road america | elkhart lake, wisconsin | danny sullivan | michael andretti | newman/haas racing | report
+14 | nc | october 6 | marlboro challenge | nazareth speedway | nazareth, pennsylvania | michael andretti | rick mears | team penske | report
+15 | 15 | october 7 | bosch spark plug grand prix | nazareth speedway | nazareth, pennsylvania | bobby rahal | emerson fittipaldi | team penske | report
+16 | 16 | october 21 | champion spark plug 300000 | laguna seca raceway | monterey, california | danny sullivan | danny sullivan | team penske | report
+
+
+id:  nu-176  Q:  how many teams played in a championship game?  Gold ans:  2
+TabSQLify Prediction:  18 
+Binder Prediction:  [18]
+Table Title:  1994 NCAA Women's Division I Basketball Tournament
+
+Table Column:  row_number, conference, __of_bids, record, win _, round_of_32, sweet_sixteen, elite_eight, final_four, championship_game
+Linear Table:
+ row_number | conference | __of_bids | record | win _ | round_of_32 | sweet_sixteen | elite_eight | final_four | championship_game
+0 | southeastern | 6 | 10–6 | 0.625 | 5 | 3 | 1 | 1 | –
+1 | big 10 | 5 | 9–5 | 0.643 | 4 | 2 | 2 | 1 | –
+2 | pacific-10 | 5 | 8–5 | 0.615 | 4 | 2 | 2 | – | –
+3 | southwest | 4 | 5–4 | 0.556 | 3 | 2 | – | – | –
+4 | big 8 | 4 | 3–4 | 0.429 | 2 | 1 | – | – | –
+5 | atlantic coast | 3 | 9–2 | 0.818 | 3 | 2 | 1 | 1 | 1
+6 | atlantic 10 | 3 | 1–3 | 0.25 | 1 | – | – | – | –
+7 | sun belt | 2 | 6–2 | 0.75 | 2 | 1 | 1 | 1 | 1
+8 | big east | 2 | 5–2 | 0.714 | 2 | 2 | 1 | – | –
+9 | metro | 2 | 2–2 | 0.5 | 1 | 1 | – | – | –
+10 | missouri valley | 2 | 2–2 | 0.5 | 2 | – | – | – | –
+11 | big sky | 2 | 1–2 | 0.333 | 1 | – | – | – | –
+12 | big west | 2 | 0–2 | – | – | – | – | – | –
+13 | great midwest | 2 | 0–2 | – | – | – | – | – | –
+14 | mid-continent | 2 | 0–2 | – | – | – | – | – | –
+15 | west coast | 2 | 0–2 | – | – | – | – | – | –
+16 | colonial | 1 | 1–1 | 0.5 | 1 | – | – | – | –
+17 | western athletic | 1 | 1–1 | 0.5 | 1 | – | – | – | –
+
+
+id:  nu-183  Q:  what is the total attendance of the first 10 games this season?  Gold ans:  76,000
+TabSQLify Prediction:  82500 
+Binder Prediction:  [76500]
+Table Title:  1914–15 Aberdeen F.C. season
+
+Table Column:  row_number, match_day, date, opponent, h_a, score, aberdeen_scorers, attendance
+Linear Table:
+ row_number | match_day | date | opponent | h_a | score | aberdeen_scorers | attendance
+0 | 1 | 15 august | dundee | a | 3–1 | soye, walker, cail | 10000
+1 | 2 | 22 august | rangers | h | 0–2 | none | 15000
+2 | 3 | 29 august | morton | a | 1–1 | cail | 4500
+3 | 4 | 5 september | clyde | h | 2–0 | maclachlan, archibald | 6000
+4 | 5 | 12 september | ayr united | a | 0–1 | none | 2000
+5 | 6 | 19 september | motherwell | h | 3–1 | j. wyllie, maclachlan, walker | 7000
+6 | 7 | 26 september | heart of midlothian | a | 0–2 | none | 14000
+7 | 8 | 28 september | queen's park | h | 1–1 | main | 5000
+8 | 9 | 3 october | st. mirren | h | 0–0 | none | 6000
+9 | 10 | 10 october | airdrieonians | a | 0–3 | none | 7000
+10 | 11 | 17 october | third lanark | h | 1–2 | archibald | 6000
+11 | 12 | 24 october | falkirk | a | 1–1 | j. wyllie | 5500
+12 | 13 | 31 october | hibernian | a | 2–1 | chatwin, main | 4000
+13 | 14 | 7 november | raith rovers | h | 1–3 | main | 6000
+14 | 15 | 14 november | hamilton academical | a | 0–3 | none | 4000
+15 | 16 | 21 november | dumbarton | h | 0–0 | none | 5000
+16 | 17 | 28 november | kilmarnock | a | 2–5 | maclachlan, mcleod | 2500
+17 | 18 | 5 december | celtic | h | 0–1 | none | 7000
+18 | 19 | 12 december | partick thistle | a | 0–3 | none | 6000
+19 | 20 | 19 december | kilmarnock | h | 3–0 | maclachlan, cail, main | 4000
+20 | 21 | 26 december | motherwell | a | 1–1 | walker | 3000
+21 | 22 | 1 january | dundee | h | 2–1 | walker, j. wyllie | 7000
+22 | 23 | 2 january | raith rovers | a | 1–5 | cail | 6000
+23 | 24 | 9 january | ayr united | h | 1–1 | cail | 4500
+24 | 25 | 16 january | clyde | a | 0–3 | none | 3000
+25 | 26 | 23 january | falkirk | h | 1–2 | walker | 4000
+26 | 27 | 30 january | dumbarton | a | 2–3 | cail, walker | 3000
+27 | 28 | 6 february | morton | h | 2–0 | brewster, archibald | 2000
+28 | 29 | 13 february | st. mirren | a | 2–0 | cail, walker | 3000
+29 | 30 | 20 february | hibernian | h | 0–0 | none | 8500
+30 | 31 | 27 february | third lanark | a | 1–0 | walker | 5000
+31 | 32 | 6 march | partick thistle | h | 0–0 | none | 6000
+32 | 33 | 13 march | queen's park | a | 1–3 | cail | 6000
+33 | 34 | 20 march | airdrieonians | h | 3–0 | brewster, cail, main | 5500
+34 | 35 | 27 march | rangers | a | 1–1 | w. wylie | 10000
+35 | 36 | 3 april | heart of midlothian | h | 0–0 | none | 6000
+36 | 37 | 10 april | celtic | a | 0–1 | none | 10000
+37 | 38 | 17 april | hamilton academical | h | 1–0 | j. wyllie | 4000
+
+
+id:  nu-188  Q:  what was the total number of goals scored in the game between haiti and south korea on september 6, 2013?  Gold ans:  5
+TabSQLify Prediction:  none 
+Binder Prediction:  0
+Table Title:  Haiti national football team
+
+Table Column:  row_number, date, location, opponent, result, competition
+Linear Table:
+ row_number | date | location | opponent | result | competition
+0 | 2013-1-19 | concepción, chile | chile | 0–3 | f
+1 | 2013-2-6 | santa cruz de la sierra, bolivia | bolivia | 1–2 | f
+2 | 2013-3-20 | muscat, oman | oman | 0–3 | f
+3 | 2013-3-24 | santo domingo, dominican republic | dominican republic | 1–3 | f
+4 | 2013-6-8 | miami, united states | spain | 1–2 | f
+5 | 2013-6-11 | rio de janeiro, brazil | italy | 2–2 | f
+6 | 2013-7-8 | harrison, united states | honduras | 0–2 | gc
+7 | 2013-7-12 | miami gardens, united states | trinidad and tobago | 2-0 | gc
+8 | 2013-7-15 | houston, united states | el salvador | 0-1 | gc
+9 | 2013-9-6 | incheon, south korea | south korea | 1-4 | f
+10 | 2014-3-5 | mitrovica, kosovo | kosovo | 0–0 | f
+
+
+id:  nu-190  Q:  what is the last film that lars von trier made?  Gold ans:  nymphomaniac: volume ii
+TabSQLify Prediction:  nymphomaniac: volume i 
+Binder Prediction:  ['nymphomaniac: volume i']
+Table Title:  Lars von Trier
+
+Table Column:  row_number, year, film, rotten_tomatoes, metacritic, imdb
+Linear Table:
+ row_number | year | film | rotten_tomatoes | metacritic | imdb
+0 | 1982 | images of liberation | n/a | n/a | 2010-1-5
+1 | 1984 | the element of crime | 77% | n/a | 2010-9-6
+2 | 1987 | epidemic | 33% | 66% | 2010-1-6
+3 | 1991 | europa | 85% | 66% | 2010-7-7
+4 | 1996 | breaking the waves | 86% | 76% | 2010-9-7
+5 | 1998 | the idiots | 70% | 47% | 2010-9-6
+6 | 2000 | dancer in the dark | 68% | 61% | 8.0/10
+7 | 2003 | the 5 obstructions | 88% | 79% | 2010-5-7
+8 | 2003 | dogville | 70% | 59% | 8.0/10
+9 | 2005 | manderlay | 51% | 46% | 2010-4-7
+10 | 2006 | the boss of it all | 74% | 71% | 2010-7-6
+11 | 2009 | antichrist | 48% | 49% | 2010-6-6
+12 | 2011 | melancholia | 77% | 80% | 2010-1-7
+13 | 2013 | nymphomaniac: volume i | 77% | 63% | 2010-5-7
+14 | 2013 | nymphomaniac: volume ii | 79% | 76% | 2010-2-7
+
+
+id:  nu-194  Q:  how long did charlie sheen go without a nomination after 2008?  Gold ans:  2 years
+TabSQLify Prediction:  2012 
+Binder Prediction:  [0]
+Table Title:  List of awards and nominations received by Charlie Sheen
+
+Table Column:  row_number, year, result, award, film
+Linear Table:
+ row_number | year | result | award | film
+0 | 1989 | won | bronze wrangler theatrical motion picture | young guns
+1 | 1999 | nominated | sag award outstanding performance by a cast in a theatrical motion picture | being john malkovich
+2 | 1999 | nominated | online film critics society award for best cast | being john malkovich
+3 | 2001 | nominated | alma award outstanding actor in a television series | spin city
+4 | 2002 | nominated | alma award outstanding actor in a television series | spin city
+5 | 2002 | won | golden globe award best performance by an actor in a television series - musical or comedy | spin city
+6 | 2002 | nominated | kids' choice awards favorite television actor | 2.5 men
+7 | 2005 | nominated | sag award outstanding performance by a male actor in a comedy series | 2.5 men
+8 | 2005 | nominated | golden globe award for best actor – television series musical or comedy | 2.5 men
+9 | 2006 | won | golden icon award best actor - comedy series | 2.5 men
+10 | 2006 | nominated | emmy award for outstanding lead actor - comedy series | 2.5 men
+11 | 2006 | nominated | golden globe award for best actor – television series musical or comedy | 2.5 men
+12 | 2007 | nominated | people's choice award favorite male tv star | none
+13 | 2007 | nominated | teen choice award choice tv actor: comedy | 2.5 men
+14 | 2007 | nominated | emmy award for outstanding lead actor - comedy series | 2.5 men
+15 | 2008 | nominated | people's choice award favorite male tv star | none
+16 | 2008 | nominated | teen choice awards choice tv actor: comedy | 2.5 men
+17 | 2008 | nominated | outstanding lead actor - comedy series | 2.5 men
+18 | 2008 | won | alma award outstanding actor in a comedy television series | 2.5 men
+19 | 2010 | nominated | sag award outstanding performance by a male actor in a comedy series | 2.5 men
+20 | 2012 | won | wwe slammy award top social media ambassador | wwe raw
+
+
+id:  nu-196  Q:  who is the only winning driver not from the us?  Gold ans:  ludwig heimrath
+TabSQLify Prediction:  greg pickett 
+Binder Prediction:  ['bob matkowitch', 'gene bothello', 'greg pickett', 'hal shaw, jr.;  monte shelton', 'jerry hansen', 'ludwig heimrath', 'monte sheldon', 'nick engels', 'tuck thomas']
+Table Title:  1978 Trans-Am season
+
+Table Column:  row_number, round, date, circuit, winning_driver_ta2, winning_vehicle_ta2, winning_driver_ta1, winning_vehicle_ta1
+Linear Table:
+ row_number | round | date | circuit | winning_driver_ta2 | winning_vehicle_ta2 | winning_driver_ta1 | winning_vehicle_ta1
+0 | 1 | may 21 | sears point | greg pickett | chevrolet corvette | gene bothello | chevrolet corvette
+1 | 2 | june 4 | westwood | ludwig heimrath | porsche 935 | nick engels | chevrolet corvette
+2 | 3 | june 11 | portland | tuck thomas | chevrolet monza | bob matkowitch | chevrolet corvette
+3 | 4 | june 25 | mont-tremblant | monte sheldon | porsche 935 | bob tullius | jaguar xjs
+4 | 5 | july 8 | watkins glen‡ | hal shaw, jr.;  monte shelton | porsche 935 | brian fuerstenau;  bob tullius | jaguar xjs
+5 | 6 | august 13 | brainerd | jerry hansen | chevrolet monza | bob tullius | jaguar xjs
+6 | 7 | august 19 | mosport | greg pickett | chevrolet corvette | bob tullius | jaguar xjs
+7 | 8 | september 4 | road america | greg pickett | chevrolet corvette | bob tullius | jaguar xjs
+8 | 9 | october 8 | laguna seca | greg pickett | chevrolet corvette | bob tullius | jaguar xjs
+9 | 10 | november 5 | mexico city | ludwig heimrath | porsche 935 | bob tullius | jaguar xjs
+
+
+id:  nu-201  Q:  what was the previous episode before "robin hood play?"  Gold ans:  "the weekend aunt helen came"
+TabSQLify Prediction:   "2023-w46-we aunt helen came"
+Binder Prediction:  0
+Table Title:  My Brother and Me
+
+Table Column:  row_number, series__, season__, title, notes, original_air_date
+Linear Table:
+ row_number | series__ | season__ | title | notes | original_air_date
+0 | 1 | 1 | "the charity" | alfie, dee dee, and melanie are supposed to be helping their parents at a carnival by working the dunking booth. when goo arrives and announces their favorite basketball player, kendall gill, is at the comic book store signing autographs, the boys decide to ditch the carnival. this leaves melanie and jennifer to work the booth and both end up soaked. but the comic book store is packed and much to alfie and dee dee's surprise their father has to interview kendall gill. goo comes up with a plan to get alfie and dee dee, gill's signature before getting them back at the local carnival, but are caught by roger. all ends well for everyone except alfie and goo, who must endure being soaked at the dunking booth. | 1994-10-15
+1 | 2 | 1 | "the practical joke war" | alfie and goo unleash harsh practical jokes on dee dee and his friends. dee dee, harry and donnel retaliate by pulling a practical joke on alfie with the trick gum. after alfie and goo get even with dee dee and his friends, melanie and deonne help them get even. soon, alfie and goo declare a practical joke war on melanie, dee dee and their friends. this eventually stops when roger and jennifer end up on the wrong end of the practical joke war after being announced as the winner of a magazine contest for best family of 2024. they set their children straight for their behavior and will have a talk with their friends' parents as well. | 1994-10-22
+2 | 3 | 1 | "2024-w10-we aunt helen came" | the boy's mother, jennifer, leaves for 2024-w10-we and she leaves the father, roger, in charge. however, he lets the kids run wild. alfie and dee dee's aunt helen then comes to oversee the house until jennifer gets back. meanwhile, alfie throws a basketball at goo, which hits him in the head, giving him temporary amnesia. in this case of memory loss, goo acts like a nerd, does homework on a weekend, wants to be called milton instead of goo, and he even calls alfie alfred. he is much nicer to deonne and dee dee, but is somewhat rude to melanie. the only thing that will reverse this is another hit in the head. | 1994-11-1
+3 | 4 | 1 | "robin hood play" | alfie's school is performing the play robin hood and alfie is chosen to play the part of robin hood. alfie is excited at this prospect, but he does not want to wear tights because he feels that tights are for girls. however, he reconsiders his stance on tights when dee dee wisely tells him not to let that affect his performance as robin hood. | 1994-11-9
+4 | 5 | 1 | "basketball tryouts" | alfie tries out for the basketball team and doesn't make it even after showing off his basketball skills. however, harry, dee dee and donnell make the team. alfie is depressed and doesn't want to attend the celebration party. however, goo sets him straight by telling him it was his own fault for not being a team player and kept the ball to himself. | 1994-11-30
+5 | 6 | 1 | "where's the snake?" | dee dee gets a snake, but he doesn't want his parents to know about it. however, things get complicated when he loses the snake in the house. meanwhile, melanie and deonne are assigned by their teacher to take care of her beloved pet rabbit, duchess for 2024-w10-we. this causes both alfie and dee dee to be concerned for duchess when they learn from goo that snakes eat rabbits. | 1994-12-6
+6 | 7 | 1 | "dee dee's girlfriend" | a girl kisses dee dee in front of harry and donnell. they promise not to tell, but it slips and everyone laughs at dee dee. dee dee ends his friendship with harry and donnell and hangs out with alfie and goo. soon, alfie and goo finally get the 3 to talk to each other. | 1994-12-15
+7 | 8 | 1 | "dee dee's haircut" | dee dee wants to get a hair cut by cool doctor money and have his name shaved in his head. his parents will not let him do this, but goo offers to do it for 5 dollars. however, when goo messes up dee dee's hair and spells his name wrong, his parents find out the truth and dee dee is forced to have his hair shaved off. in addition to that, his friends tease him about his bald head, causing a fight between the boys along with goo and alfie. in a b-story, alfie and goo try to play a practical joke on dee dee involving a jalapeño lollipop. it backfires when roger is the unwitting victim and it leads to him chasing the boys around. | 1994-12-20
+8 | 9 | 1 | "dee dee runs away" | dee dee has been waiting to go to a monster truck show p1w. but alfie and goo's baseball team makes it to the tournament and everyone forgets about the monster truck show. dee dee feels ignored and runs away from home with harry and donnell. it's up to alfie and goo to try and convince him to come home. | 1994-12-28
+9 | 10 | 1 | '"donnell's birthday party" | donnell is having a birthday party and brags about all the dancing and cool people who will be there. harry says that he knows how to dance so dee dee feels left out because he doesn't know how to dance. later on, harry admits to dee dee alone that he can't dance either and only lied so he doesn't get teased by donnell. so, they ask alfie to help them learn how to dance. he refuses to help because dee dee past_ref told on him to roger about his and goo's plans to cheat on their math quiz. alfie eventually agrees, after melanie threatens to refuse to help him with his math homework. soon dee dee and harry learn donnell's secret and were forced to teach him how to dance. after the party, dee dee tells alfie about it and finds out that he knew donnell was a liar. | 1995-1-5
+10 | 11 | 1 | "alfie's birthday party" | goo and melanie pretend they are dating and they leave alfie out of everything. he ends up bored and starts hanging out with dee dee and his friends. however, it just isn't the same without goo. later on, alfie learns about the surprise birthday party that goo and melanie had been planning with everyone else (except for dee dee, who couldn't know since he would've told). | 1995-1-19
+11 | 12 | 1 | "candy sale" | alfie and goo are selling candy to make money for some expensive jackets, but they are not having any luck. however, when dee dee start helping them sell candy, they start to make money and asks him to help them out. soon goo and alfie finds themselves confronted by melanie, deonne, harry and donnell for dee dee's share of the money. they soon learn the boys have used the money to buy 3 expensive jackets for themselves and dee dee as a token of their gratitude. they quickly apologize to alfie and goo for their quick judgment. | 1995-1-26
+12 | 13 | 1 | "the big bully" | dee dee gets beat up at school and his friends try to teach him how to fight back. goo, however, tells him to bluff, but the plan backfires and dee dee gets hit because of it. when alfie confronts the bully, he learns that dee dee was picked on by a girl. alfie and goo decide to confront her. however, when some of their classmates, who happen to be the girls' siblings, learn they are bullying their sister, they intervene. | 1995-2-2
+
+
+id:  nu-203  Q:  how many years were there more than 6 matches?  Gold ans:  4
+TabSQLify Prediction:  5 
+Binder Prediction:  [5]
+Table Title:  India–Pakistan field hockey rivalry
+
+Table Column:  row_number, year, matches, winner, results, pakistan_captain, pakistan_coach, india_captain, india_coach
+Linear Table:
+ row_number | year | matches | winner | results | pakistan_captain | pakistan_coach | india_captain | india_coach
+0 | 1978 | 4 | pakistan win | 3 - 1 | islahuddin siddique | sayad a. hussain | v. j. philips | r. s. gentle
+1 | 1981 | 4 | pakistan win | 2 - 1 | akhtar rasool | zakauddin | surjeet singh | harmeek singh
+2 | 1986 | 7 | india win | 3 - 2 | hassan sardar | anwar ahmad khan | mohmmad shaheed | m. p. ganesh
+3 | 1988 | 6 | draw | 2 - 2 | nasir ali | manzoor-ul-hasan | m. m. somaya | m. p. ganesh
+4 | 1998 | 8 | pakistan win | 4 - 3 | tahir zaman | islahuddin siddique | dhanraj pillay | v bhaskaran
+5 | 1999 | 9 | pakistan win | 5 - 3 | atif bashir | shahnaz shaikh | anil aldrin | v bhaskaran
+6 | 2004 | 8 | pakistan win | 4 - 2 | waseem ahmad | roelant oltmans | dileep tirkey | gehard rach
+7 | 2006 | 6 | pakistan win | 3 - 1 | mohammad saqlain | asif bajwa | ignace tirkey | rajinder singh jr.
+8 | 2013 | tba | tba | tba | tba | tba | tba | tba
+
+
+id:  nu-204  Q:  what is the difference in number of petrol models and the number of diesel?  Gold ans:  13
+TabSQLify Prediction:  10
+Binder Prediction:  0
+Table Title:  BMW 7 Series (E38)
+
+Table Column:  row_number, model, volume, engine, fuel, power_torque, years_produced, produced
+Linear Table:
+ row_number | model | volume | engine | fuel | power_torque | years_produced | produced
+0 | 728i | 2.8l | m52b28 i6 | petrol | 142 kw (193 ps; 190 hp) / 280 n·m (207 lb·ft) | 1996–2001 | 38947.0
+1 | 728il | 2.8l | m52b28 i6 | petrol | 142 kw (193 ps; 190 hp) / 280 n·m (207 lb·ft) | 1996–2001 | 6816.0
+2 | 730i | 3.0l | m60b30 v8 | petrol | 160 kw (218 ps; 215 hp) / 290 n·m (214 lb·ft) | 1994–1996 | 20876.0
+3 | 730il | 3.0l | m60b30 v8 | petrol | 160 kw (218 ps; 215 hp) / 290 n·m (214 lb·ft) | 1994–1996 | 2137.0
+4 | 735i | 3.5l | m62b35 v8 | petrol | 173 kw (235 ps; 232 hp) / 320 n·m (236 lb·ft) | 1994–1997 | 21481.0
+5 | 735i | 3.5l | m62tub35 v8 | petrol | 174 kw (237 ps; 233 hp) / 345 n·m (254 lb·ft) | 1998–2001 | nan
+6 | 735il | 3.5l | m62b35 v8 | petrol | 173 kw (235 ps; 232 hp) / 320 n·m (236 lb·ft) | 1994–1997 | 6963.0
+7 | 735il | 3.5l | m62tub35 v8 | petrol | 174 kw (237 ps; 233 hp) / 345 n·m (254 lb·ft) | 1998–2001 | nan
+8 | 740i | 4.0l | m60b40 v8 | petrol | 210 kw (286 ps; 282 hp) / 400 n·m (295 lb·ft) | 1994–1996 | nan
+9 | 740il | 4.0l | m60b40 v8 | petrol | 210 kw (286 ps; 282 hp) / 400 n·m (295 lb·ft) | 1994–1996 | nan
+10 | 740i | 4.4l | m62b44 v8 | petrol | 210 kw (286 ps; 282 hp) / 420 n·m (310 lb·ft) | 1996–1998 | 88853.0
+11 | 740i | 4.4l | m62tub44 v8 | petrol | 210 kw (286 ps; 282 hp) / 440 n·m (325 lb·ft) | 1998–2001 | nan
+12 | 740il | 4.4l | m62b44 v8 | petrol | 210 kw (286 ps; 282 hp) / 420 n·m (310 lb·ft) | 1996–1998 | 91431.0
+13 | 740il | 4.4l | m62tub44 v8 | petrol | 210 kw (286 ps; 282 hp) / 440 n·m (325 lb·ft) | 1998–2001 | nan
+14 | 750i-il | 5.4l | m73b54 v12 | petrol | 240 kw (326 ps; 322 hp) / 490 n·m (361 lb·ft) | 1995–1997 | 15759.0
+15 | 750i-il | 5.4l | m73tub54 v12 | petrol | 240 kw (326 ps; 322 hp) / 490 n·m (361 lb·ft) | 1998–2001 | 1032.0
+16 | 725tds | 2.5l | m51d25 turbocharged i6 | diesel | 105 kw (143 ps; 141 hp) / 280 n·m (207 lb·ft) | 1995–2001 | 9053.0
+17 | 730d | 2.9l | m57d30 turbocharged i6 | diesel | 142 kw (193 ps; 190 hp) / 410 n·m (302 lb·ft) | 1998–2001 | 12336.0
+18 | 740d | 3.9l | m67d40 turbocharged v8 | diesel | 180 kw (245 ps; 241 hp) / 560 n·m (413 lb·ft) | 1998–2001 | 3450.0
+
+
+id:  nu-206  Q:  which kind of train has been recorded going the top speed of any steam rail vehicle?  Gold ans:  lner class a4 no. 4468 mallard
+TabSQLify Prediction:  boston and maine railroad antelope 
+Binder Prediction:  ['boston and maine railroad antelope']
+Table Title:  Land speed record for rail vehicles
+
+Table Column:  row_number, speed, date, country, train, arr, power, state, comments
+Linear Table:
+ row_number | speed | date | country | train | arr | power | state | comments
+0 | 202.6 km/h (126 mph) | 1938-7-3 | uk | lner class a4 no. 4468 mallard | loc | steam | unkn. | downhill grade. data indicates peak speed 202.6 km/h (126 mph), mean speed (0.5-mile) 201.2 km/h (125 mph). mallard suffered an overheated crankpin during the run, but was repaired and returned to traffic within 9 days.
+1 | 200.4 km/h (125 mph) | 1936-5-11 | germany | borsig drg series 5002 | loc | steam | unkn. | level grade.[citation needed]
+2 | 185.07 km/h (115 mph) | 1905-6-11 | usa | pennsylvania railroad e2 #7002 | loc | steam | unmod. | claimed.[by whom?] clocked at crestline, ohio at 127.1 mph (205 km/h) in 1905. however prr steam locomotives did not carry speedometers at that time, speed was calculated by measuring time between mile markers, so this is not recognized as a speed record.[citation needed]
+3 | 182.4 km/h (113 mph) | 1972-10-11 | germany | br 18201 | loc | steam | unkn. | the fastest operational steam locomotive as of 2011.[citation needed]
+4 | 181.1 km/h (113 mph) | 1935-4-5 | usa | milwaukee road class a #2 | loc | steam | unkn. | claimed[by whom?] to have sustained 112.5 mph (181 km/h) for 14 miles (23 km). average speed for 136 miles (219 km) between milwaukee and new lisbon, wisconsin was 74.9 mph (121 km/h).
+5 | 180.3 km/h (112 mph) | 1935-9-29 | uk | lner class a4 2509 silver link | loc | steam | unkn. | authenticated. some sources say 112.5 mph.[citation needed]
+6 | 168.5 km/h (105 mph) | 1935-3-5 | uk | lner class a3 no. 2750 papyrus | loc | steam | unmod. | first run at 100+ mph with complete, surviving documentation.[citation needed]
+7 | 166.6 km/h (104 mph) | 1934-7-20 | usa | milwaukee road class f6 #6402 | loc | steam | unmod | a point between oakwood, illinois and lake, wisconsin. also averaged 75.5 mph (122 km/h) on 85 miles (137 km) from chicago, illinois to milwaukee, and 89.92 mph (145 km/h) for a 68.9 miles (110.9 km) stretch
+8 | 164 km/h (102 mph) | 1904-5-9 | uk | gwr 3700 class 3440 city of truro | loc | steam | unmod. | claimed[by whom?] to be the first steam locomotive to reach100 mph (161 km/h).[citation needed]
+9 | 161 km/h (100 mph) | 1934-11-30 | uk | lner class a3 4472 flying scotsman | loc | steam | unmod. | in 1934, flying scotsman achieved the first authenticated 100 mph (161 km/h) by a steam locomotive.
+10 | 145 km/h (90 mph) | 1895-8-22 | uk | lnwr no. 790 hardwicke | loc | steam | unmod. | maximum speed claimed[by whom?], although average speed record was authenticated.[citation needed]
+11 | 131.6 km/h (82 mph) | 1854-6 | uk | bristol & exeter railway #41 | loc | steam | unmod. | broad gauge[citation needed]
+12 | 131 km/h (81 mph) | 1893-5-10 | usa | empire state express no. 999 | loc | steam | unmod. | 112 mph (180 km/h) claimed[by whom?], which would make it the first wheeled vehicle to exceed 100 mph (161 km/h).
+13 | 125.6 km/h (78 mph) | 1850 | uk | great britain | loc | steam | unmod. | 80 mph (129 km/h) claimed[by whom?][citation needed]
+14 | 96.6 km/h (60 mph) | 1848 | usa | boston and maine railroad antelope | loc | steam | unmod. | first authenticated 60 mph (97 km/h),26 miles (42 km) 2024-3-06t12:57:9.[citation needed]
+15 | 48 km/h (30 mph) | 1830 | uk | stephenson's rocket | loc | steam | unmod. | [citation needed]
+16 | 24 km/h (15 mph) | 1825 | uk | locomotion no. 1 | loc | steam | unmod. | [citation needed]
+17 | 8 km/h (5 mph) | 1804-2-21 | uk | richard trevithick's world's first railway steam locomotive | loc | steam | unmod. | [citation needed]
+
+
+id:  nu-209  Q:  how many other albums are there besides a world called you?  Gold ans:  6
+TabSQLify Prediction:  32 
+Binder Prediction:  [32]
+Table Title:  David Rogers (singer)
+
+Table Column:  row_number, year, single, peak_chart_positions_us_country, peak_chart_positions_can_country, album
+Linear Table:
+ row_number | year | single | peak_chart_positions_us_country | peak_chart_positions_can_country | album
+0 | 1967 | "forbidden fruit" | — | — | a world called you
+1 | 1968 | "i'd be your fool again" | 69 | — | a world called you
+2 | 1968 | "i'm in love with my wife" | 38 | — | a world called you
+3 | 1968 | "you touched my heart" | 37 | — | a world called you
+4 | 1969 | "dearly beloved" | 59 | — | single only
+5 | 1969 | "a world called you" | 23 | — | a world called you
+6 | 1970 | "so much in love with you" | 46 | — | a world called you
+7 | 1970 | "i wake up in heaven" | 26 | — | she don't make me cry
+8 | 1971 | "she don't make me cry" | 19 | 9 | she don't make me cry
+9 | 1971 | "ruby, you're warm" | 21 | 16 | single only
+10 | 1972 | "need you" | 9 | 9 | need you
+11 | 1972 | "goodbye" | 38 | — | need you
+12 | 1972 | "all heaven breaks loose" | 35 | — | single only
+13 | 1973 | "just thank me" | 17 | 18 | just thank me
+14 | 1973 | "it'll be her" | 22 | 16 | just thank me
+15 | 1974 | "loving you has changed my life" | 9 | 21 | hey there girl
+16 | 1974 | "hey there girl" | 21 | 42 | hey there girl
+17 | 1974 | "i just can't help believin'" | 59 | — | hey there girl
+18 | 1975 | "it takes a whole lot of livin' in a house" | 60 | — | whole lotta livin' in a house
+19 | 1976 | "whispers and grins" | 66 | — | singles only
+20 | 1976 | "mahogany bridge" | 84 | — | singles only
+21 | 1977 | "i'm gonna love you right out of this world" | 21 | 38 | singles only
+22 | 1977 | "the lady and the baby" | 76 | — | singles only
+23 | 1977 | "i love what my woman does to me" | 49 | 33 | singles only
+24 | 1977 | "do you hear my heart beat" | 47 | — | lovingly
+25 | 1977 | "you and me alone" | 24 | — | lovingly
+26 | 1978 | "i'll be there (when you get lonely)" | 22 | — | lovingly
+27 | 1978 | "let's try to remember" | 32 | — | lovingly
+28 | 1978 | "when a woman cries" | 31 | — | singles only
+29 | 1979 | "darlin'" | 18 | 36 | singles only
+30 | 1979 | "you are my rainbow" | 36 | — | singles only
+31 | 1979 | "you're amazing" | 39 | — | singles only
+32 | 1981 | "houston blue" | 88 | — | singles only
+33 | 1982 | "crown prince of the barroom" | 92 | — | singles only
+34 | 1983 | "hold me" | 67 | — | singles only
+35 | 1983 | "you've still got me" | 71 | — | singles only
+36 | 1983 | "the devil is a woman" | 87 | — | singles only
+37 | 1984 | "i'm a country song" | 72 | — | singles only
+
+
+id:  nu-210  Q:  which player scored the most in this season?  Gold ans:  greaves
+TabSQLify Prediction:  tindall, tambling, neill (o.g.) 
+Binder Prediction:  ['brabrook, greaves (5), tindall']
+Table Title:  1960–61 Chelsea F.C. season
+
+Table Column:  row_number, date, opponent, venue, result, attendance, scorers
+Linear Table:
+ row_number | date | opponent | venue | result | attendance | scorers
+0 | 1960-8-20 | aston villa | a | 2-3 | 43776 | brabrook, gibbs
+1 | 1960-8-24 | leicester city | h | 1-3 | 24691 | bradbury
+2 | 1960-8-27 | wolverhampton wanderers | h | 3-3 | 41681 | greaves (3)
+3 | 1960-8-31 | leicester city | a | 3-1 | 21087 | sillett, greaves, brooks
+4 | 1960-9-3 | bolton wanderers | a | 1-4 | 21609 | greaves
+5 | 1960-9-7 | blackburn rovers | h | 5-2 | 23224 | greaves (3), livesey (2)
+6 | 1960-9-10 | west ham united | h | 3-2 | 37873 | greaves, livesey, blunstone
+7 | 1960-9-17 | fulham | a | 2-3 | 37423 | livesey, blunstone
+8 | 1960-9-19 | blackburn rovers | a | 1-3 | 21508 | brabrook
+9 | 1960-9-24 | blackpool | a | 4-1 | 26546 | greaves (2), livesey (2)
+10 | 1960-10-1 | everton | h | 3-3 | 31457 | greaves
+11 | 1960-10-15 | birmingham city | a | 0-1 | 22337 | none
+12 | 1960-10-22 | burnley | h | 2-6 | 29080 | brabrook, greaves
+13 | 1960-10-29 | preston north end | a | 2-0 | 14174 | tindall, tambling
+14 | 1960-11-5 | newcastle united | h | 4-2 | 30489 | brabrook, tindall (3)
+15 | 1960-11-12 | arsenal | a | 4-1 | 38666 | mortimore, greaves, tindall, tambling
+16 | 1960-11-19 | manchester city | h | 6-3 | 37346 | greaves (3), tindall (2), tambling
+17 | 1960-11-26 | nottingham forest | a | 1-2 | 22121 | brabrook
+18 | 1960-12-3 | west bromwich albion | h | 7-1 | 19568 | brabrook, greaves (5), tindall
+19 | 1960-12-10 | cardiff city | a | 1-2 | 21840 | greaves
+20 | 1960-12-17 | aston villa | h | 2-4 | 23805 | greaves (2)
+21 | 1960-12-24 | manchester united | h | 1-2 | 37601 | brabrook
+22 | 1960-12-26 | manchester united | a | 0-6 | 50213 | none
+23 | 1960-12-31 | wolverhampton wanderers | a | 1-6 | 28503 | anderton
+24 | 1961-1-14 | bolton wanderers | h | 1-1 | 20461 | livesey
+25 | 1961-1-21 | west ham united | a | 1-3 | 21829 | blunstone
+26 | 1961-2-4 | fulham | h | 2-1 | 39185 | greaves, bridges
+27 | 1961-2-11 | blackpool | h | 2-2 | 21993 | sillett, greaves
+28 | 1961-2-18 | everton | a | 1-1 | 34449 | greaves
+29 | 1961-2-25 | sheffield wednesday | a | 0-1 | 21936 | none
+30 | 1961-3-4 | birmingham city | h | 3-2 | 27727 | greaves, tindall, tambling
+31 | 1961-3-11 | burnley | a | 4-4 | 19435 | greaves (2), tambling (2)
+32 | 1961-3-18 | preston north end | h | 1-1 | 22031 | tindall
+33 | 1961-3-25 | newcastle united | a | 6-1 | 28975 | greaves (4), tindall (2)
+34 | 1961-3-31 | tottenham hotspur | a | 2-4 | 65032 | brabrook, tindall
+35 | 1961-4-1 | cardiff city | h | 6-1 | 22697 | greaves, tindall (2), tambling, harrison, harrington (o.g.)
+36 | 1961-4-3 | tottenham hotspur | h | 2-3 | 57103 | blunstone, greaves
+37 | 1961-4-8 | manchester city | a | 1-2 | 27720 | tambling
+38 | 1961-4-15 | arsenal | h | 3-1 | 38233 | tindall, tambling, neill (o.g.)
+39 | 1961-4-22 | west bromwich albion | a | 0-3 | 17691 | none
+40 | 1961-4-26 | sheffield wednesday | h | 0-2 | 24258 | none
+41 | 1961-4-29 | nottingham forest | h | 4-3 | 22775 | greaves (4)
+
+
+id:  nu-214  Q:  all songs are over 3:00 but which song?  Gold ans:  intro
+TabSQLify Prediction:   "lake of fire"
+Binder Prediction:  ['"7"', '"out here"', '"it ain\'t a thang"', '"digging"', '"lady in the jaguar"', '"they pray with snakes"', '"rollin hard"', '"the harvest"', '"sippin"', '"lake of fire"', '"red mist"', '"angel like"']
+Table Title:  The Harvest (Boondox album)
+
+Table Column:  row_number, _, title, time, lyrics, music, producers, performers
+Linear Table:
+ row_number | _ | title | time | lyrics | music | producers | performers
+0 | 1 | "intro" | 1:16 | none | none | none | none
+1 | 2 | "7" | 3:30 | boondox | mike e. clark | boondox | boondox
+2 | 3 | "out here" | 3:18 | boondox | mike e. clark; tino grosse | boondox | boondox
+3 | 4 | "it ain't a thang" | 3:45 | boondox | mike e. clark | boondox | boondox
+4 | 5 | "digging" | 3:4 | boondox | kuma | boondox | boondox
+5 | 6 | "lady in the jaguar" | 3:55 | boondox; icp | mike e. clark | boondox; icp | boondox; icp
+6 | 7 | "they pray with snakes" | 3:56 | boondox | kuma | boondox | boondox
+7 | 8 | "rollin hard" | 4:7 | boondox | mike e. clark | boondox | boondox
+8 | 9 | "the harvest" | 3:53 | boondox; amb | kuma | boondox; amb | boondox; axe murder boyz
+9 | 10 | "sippin" | 3:16 | boondox | mike e. clark | boondox | boondox
+10 | 11 | "lake of fire" | 4:12 | boondox | mike e. clark | boondox | boondox
+11 | 12 | "red mist" | 3:54 | boondox | mike e. clark | boondox | boondox; blaze ya dead homie; twiztid
+12 | 13 | "angel like" | 3:42 | boondox | mike e. clark | boondox | boondox

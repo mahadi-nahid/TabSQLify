@@ -1,0 +1,210 @@
+id,question,answer,prediction,sql,response,r_num_cell,t_num_cell
+nu-30,what is the name listed before mount pleasant line?,pennsylvania avenue metro extra line,mount pleasant line,select name from T where name like '%mount pleasant line%',direct ans,1,540
+nu-44,which year did the team have their most total wins?,1992,"2014, but the number of total wins is unknown","select season, total_wins from T order by total_wins desc limit 1","Based on the table, the team's most total wins occurred in the year 2014. However, it is mentioned that the status for the 2014 season is ""upcoming"" instead of a specific number of wins. Therefore, we cannot determine the exact number of wins in the 2014 season. 
+Therefore, the answer is 2014, but the number of total wins is unknown.",2,1332
+nu-141,how many total wins did the citadel bulldogs have before 1908?,6,6,select sum(total_wins) from T where season < 1908,direct ans,1,1332
+nu-158,how many different flyby's have been done for the halley comet?,6,1,select count(spacecraft_encounters) from T where comet = 't13/halley',direct ans,1,1485
+nu-208,"what is the number of counties in saegertown, pennsylvania?",1,1,select number_of_counties from T where name_of_place = 'saegertown',direct ans,1,3102
+nu-237,"which coach served longer, higgins or powers?",kevin higgins,"based on the table, the most recent season listed for head coach kevin higgins is 2013. however, there is no information available for head coach powers in the table. therefore, we cannot determine which coach served longer based on the given information.","select head_coach, season from T where head_coach like '%higgins%' or head_coach like '%powers%' order by season desc limit 1","Based on the table, the most recent season listed for head coach Kevin Higgins is 2013. However, there is no information available for head coach Powers in the table. Therefore, we cannot determine which coach served longer based on the given information. ",2,1332
+nu-263,tell me the number of lines that stop at the naylor road station.,3,2,select count(*) from T where terminals1 like '%naylor road station%',direct ans,1,540
+nu-279,progressive republican is his party association.,william kent,progressive republican,"select representative, party from T where party like '%progressive republican%'","Based on the table, the representative's name is William Kent and his party association is Progressive Republican. 
+Therefore, the answer is Progressive Republican.
+Answer: Progressive Republican",2,1992
+nu-348,what was the first pod color in the list of leroy & stitch episode?,blue,blue,select pod_color from T where episode = 'leroy & stitch' order by row_number asc limit 1,direct ans,1,594
+nu-367,"city with the highest altitude with a population greater than 100,000",brașov,brașov,"select city, altitude_m from T where population_2011 > 100000 order by altitude_m desc limit 1","Based on the table, the city with the highest altitude and a population greater than 100,000 is Brașov, with an altitude of 625.0 meters. 
+Therefore, the answer is Brașov.
+Answer: Brașov",2,2233
+nu-395,how many total experiments are there?,99,99,select count(*) from T,direct ans,1,594
+nu-401,"alphabetically, which place in pennsylvania comes before sadlers corner?",sacramento,sacramento,select name_of_place from T where name_of_place < 'sadlers corner' order by name_of_place desc limit 1,direct ans,1,3102
+nu-441,which artist is above the last artist,rihanna,ayumi hamasaki,select artist from T where row_number = (select max(row_number) from T),direct ans,1,1368
+nu-444,name two people who both are 28 years old,"craig phillips,tom mcdermott",craig phillips and tom mcdermott,select name from T where age = 28 limit 2,"Based on the table, the two people who are both 28 years old are Craig Phillips and Tom McDermott. 
+Therefore, the answer is Craig Phillips and Tom McDermott.
+Answer: Craig Phillips and Tom McDermott",2,1939
+nu-514,how many table dancers were evicted?,1,1,select count(*) from T where occupation like '%table dancer%' and status like '%evicted%',direct ans,1,1939
+nu-546,how many happened after august 1st?,33,35,select count(*) from T where date_time_ut > '1972-08-01',direct ans,1,385
+nu-553,name all models with the same mpg as fiat 500 1.4 pop.,"fiat 500 1.4 lounge 3d,fiat 500 1.4 sport,citroen c4 2.0 sx 5dr 6sp a d,volkswagen golf tdi 103kw 4motion,peugeot 207 xs 1.4 5dr 5spd m p,saab 9-3 linear convertible 1.9tid m,suzuki swift glx 1.5 5dr,suzuki swift glxh 1.5 5dr,suzuki swift glxh2 1.5 5dr","based on the table, we can see that the mpg_us_gallons value for the model 'fiat 500 1.4 pop' is 0. 
+so, we need to find all the models that have an mpg_us_gallons value of 0. 
+from the table, we can see that the models with the same mpg as 'fiat 500 1.4 pop' are:
+- fiat 500 1.4 lounge 3d
+- fiat 500 1.4 sport",select model from T where mpg_us_gallons = (select mpg_us_gallons from T where model = 'fiat 500 1.4 pop'),"Based on the table, we can see that the mpg_us_gallons value for the model 'fiat 500 1.4 pop' is 0. 
+So, we need to find all the models that have an mpg_us_gallons value of 0. 
+From the table, we can see that the models with the same mpg as 'fiat 500 1.4 pop' are:
+- fiat 500 1.4 lounge 3d
+- fiat 500 1.4 sport",10,1056
+nu-573,is sides located in clarion or indiana county?,indiana county,indiana county,"select name_of_place, principal_county from T where name_of_place like '%sides%' or principal_county like '%clarion%' or principal_county like '%indiana%'","Based on the table, the place ""sides"" is located in Indiana county. This is evident from the entry ""sides | indiana county"" in the table.
+Therefore, the answer is Indiana county.
+Answer: Indiana county",40,3102
+nu-575,what is the number of the population 2011 for the city of ploiesti?,"209,945","209,945",select * from T,"Based on the table, the population in 2011 for the city of Ploiești is 209,945.
+Therefore, the answer is 209,945.",2233,2233
+nu-642,how many contestants participated in season two?,11,11,select count(*) from T where series = 'bb2',direct ans,1,1939
+nu-659,how many total ghost towns are there in franklin county?,3,5,select count(*) from T where county = 'franklin county',direct ans,1,2149
+nu-690,how many times is sadsbury township listed?,3,3,select count(*) from T where name_of_place like '%sadsbury township%',direct ans,1,3102
+nu-699,who became head coach after ellis johnson?,john zernhelt,george c. rogers,select head_coach from T where head_coach > 'ellis johnson' order by head_coach asc limit 1,direct ans,1,1332
+nu-718,was acadia or american samoa established first?,acadia,acadia,"select name, date_established from T where name like '%acadia%' or name like '%american samoa%' order by date_established asc limit 2","Based on the table, Acadia National Park was established on February 26, 1919, while American Samoa National Park was established on October 31, 1988. 
+Therefore, Acadia National Park was established first.
+Answer: Acadia",4,354
+nu-766,what model has the top mpg (us gallons)?,volkswagen polo 1.4 tdi bluemotion,"based on the table, the model with the top mpg (us gallons) is the volkswagen polo 1.4 tdi bluemotion with a rating of 62.0 mpg.","select model, mpg_us_gallons from T order by mpg_us_gallons desc limit 1","Based on the table, the model with the top mpg (us gallons) is the Volkswagen Polo 1.4 TDI Bluemotion with a rating of 62.0 mpg. ",2,1056
+nu-904,"how many ghost towns were, or were near the sites of battles?",2,9,select count(*) from T where remarks like '%battle%' or remarks like '%war%',direct ans,1,2149
+nu-919,"other than route 31, name one that starts at the friendship heights station.",32,pennsylvania avenue line,select name from T where terminals like '%friendship heights station%' and route != 31 limit 1,direct ans,1,540
+nu-936,name someone from the same state and party as karst.,frank m. karsten,"based on the table, karst is from new york and is a democratic representative. to find someone from the same state and party as karst, we look for another representative from new york who is also a democrat.","select representative, state, party from T;","Based on the table, Karst is from New York and is a Democratic representative. To find someone from the same state and party as Karst, we look for another representative from New York who is also a Democrat. ",996,1992
+nu-973,how many experiments have a green pod color?,4,4,select count(*) from T where pod_color = 'green',direct ans,1,594
+nu-999,what is the code for the less than sign?,u+003c (60),u+003c (60),"select character, unicode_code_point_decimal from T where name = 'lt'","Based on the table, the code for the less than sign is u+003c (60).
+Therefore, the answer is u+003c (60).
+Answer: u+003c (60)",2,2032
+nu-1004,what is the number of ghost towns in allen county?,5,5,select count(*) from T where county = 'allen county',direct ans,1,2149
+nu-1008,did the bulldogs perform better or worse in the 1905 season than the 1906 season?,worse,"based on the table, in the 1905 season, the bulldogs had a total of 2 wins and 3 losses. in the 1906 season, they had a total of 3 wins and 0 losses.","select season, total_wins, total_losses from T where season = 1905 or season = 1906","Based on the table, in the 1905 season, the Bulldogs had a total of 2 wins and 3 losses. In the 1906 season, they had a total of 3 wins and 0 losses. ",6,1332
+nu-1014,how many models utilize diesel as their fuel type?,110,111,select count(*) from T where fuel_type = 'diesel',direct ans,1,1056
+nu-1041,who was the first head coach of the citadel bulldogs?,sidney smith,sidney smith,select head_coach from T order by season asc limit 1,direct ans,1,1332
+nu-1073,how many housemates are from liverpool?,11,11,select count(*) from T where hometown = 'liverpool',direct ans,1,1939
+nu-1084,how many numbers (num) are there?,99,99,select count(num) from T,direct ans,1,594
+nu-1109,"who coached longer, john sauer or charlie taaffe?",charlie taaffe,charlie taaffe,"select head_coach, season from T where head_coach like '%john sauer%' or head_coach like '%charlie taaffe%'","Based on the table, John Sauer coached for 2 seasons (1955 and 1956), while Charlie Taaffe coached for 8 seasons (1987-1994). 
+Therefore, Charlie Taaffe coached longer than John Sauer.
+Answer: Charlie Taaffe",22,1332
+nu-1140,does sabinsville have the same number of counties as sabula?,yes,yes,"select name_of_place, number_of_counties from T where name_of_place like '%sabinsville%' or name_of_place like '%sabula%'","Based on the table, both Sabinsville and Sabula have the same number of counties, which is 1. 
+Therefore, the answer is yes, Sabinsville has the same number of counties as Sabula.
+Answer: Yes",4,3102
+nu-1166,how many names are listed?,59,59,select count(name) from T,direct ans,1,354
+nu-1185,what is the last route on the chart?,benning road-h street metro extra line,x9,select route from T order by row_number desc limit 1,direct ans,1,540
+nu-1259,what is the first nickname?,shrink,shrink,select nickname from T order by row_number asc limit 1,direct ans,1,594
+nu-1330,"which contains higher elevation, denali or rocky mountain national park?",denali,"based on the table, the elevation of denali is not provided. therefore, we cannot determine which park has a higher elevation based on the given information.","select name, location, area from T where name = 'denali' or name = 'rocky mountain national park' order by area desc","Based on the table, the elevation of Denali is not provided. Therefore, we cannot determine which park has a higher elevation based on the given information.",3,354
+nu-1365,the volkswagen pol 1.4 tdi bluemotion and the fiat 500 1.3 jtd pop both run on what fuel type?,diesel,diesel,select fuel_type from T where model like '%volkswagen polo 1.4 tdi bluemotion%' or model like '%fiat 500 1.3 jtd pop%',"Based on the table, both the Volkswagen Polo 1.4 TDI Bluemotion and the Fiat 500 1.3 JTD Pop run on diesel fuel. 
+Therefore, the answer is diesel.
+Answer: diesel",2,1056
+nu-1382,nickname of the last experiment on the list.,spot,spot,select nickname from T order by row_number desc limit 1,direct ans,1,594
+nu-1406,what are the total number of major streets naylor rd line has listed?,3,1,select count(major_streets) from T where route = '34',direct ans,1,540
+nu-1430,how many songs would you have if you added the number of justin bieber songs on the hot 100 list to the number of justin timberlake songs on the hot 100 list?,8,"based on the table and the sql query, the result shows that there are 2 songs by justin bieber and justin timberlake on the hot 100 list. therefore, if we add the number of justin bieber songs (2) to the number of justin timberlake songs (2), we would have a total of 4 songs.",select count(*) from T where artist = 'justin bieber' and billboard_hot_100 = 'new single' or artist = 'justin timberlake' and billboard_hot_100 = 'new single';,"Based on the table and the SQL query, the result shows that there are 2 songs by Justin Bieber and Justin Timberlake on the hot 100 list. Therefore, if we add the number of Justin Bieber songs (2) to the number of Justin Timberlake songs (2), we would have a total of 4 songs. ",1,1368
+nu-1453,the number of consecutive albums rick ross worked with jaycen joshua on in 2014,2,0,select count(*) from T where artist = 'rick ross' and chart_year = 2014,direct ans,1,1368
+nu-1596,which national park was created most recently?,pinnacles,pinnacles,"select name, date_established from T order by date_established desc limit 1","Based on the table, the national park that was created most recently is Pinnacles, which was established on January 10, 2013. 
+Therefore, the answer is Pinnacles.
+Answer: Pinnacles",2,354
+nu-1617,how many toggle series were there total?,35,0,select count(*) from T where name like '%toggle%',direct ans,1,385
+nu-1624,"other than cumberland county, which county is shippensburg in?",franklin county,franklin county,select principal_county from T where name_of_place = 'shippensburg' and principal_county != 'cumberland county',direct ans,1,3102
+nu-1627,what is the name of the last place on the table?,sizerville,sizerville,select name_of_place from T order by row_number desc limit 1,direct ans,1,3102
+nu-1671,what ghost towns are in the same county as chetola?,"rome,yocemento,smoky hill city","rome, yocemento, smoky hill city","select town_name, county from T where county = (select county from T where town_name = 'chetola')","Based on the table, the ghost towns in the same county as Chetola are Rome, Yocemento, and Smoky Hill City. 
+Therefore, the answer is Rome, Yocemento, and Smoky Hill City.
+Answer: Rome, Yocemento, Smoky Hill City",8,2149
+nu-1707,what is the largest unicode code point?,u+2666 (9830),u+399 (921),select unicode_code_point_decimal from T order by unicode_code_point_decimal desc limit 1,direct ans,1,2032
+nu-1844,which is the only toggle series to use an underground tunnel?,diamond sculls,diamond sculls,select name from T where delivery = 'underground tunnel',"Based on the table, the only toggle series that uses an underground tunnel is ""diamond sculls"". 
+Therefore, the answer is ""diamond sculls"".
+Answer: diamond sculls",2,385
+nu-1873,how many places are listed after sixtieth street?,1,33,select count(*) from T where name_of_place > 'sixtieth street',direct ans,1,3102
+nu-1877,"who lived longer, kading or kaufman?",kading,charles a. kading,"select representative, lifespan from T where representative like '%kading%' or representative like '%kaufman%'","Based on the table, Charles A. Kading lived from 1874 to 1956, while David S. Kaufman lived from 1813 to 1851. 
+Therefore, Charles A. Kading lived longer than David S. Kaufman.
+Answer: Charles A. Kading",4,1992
+nu-1895,how many counties does schuyler belong to?,2,2,select number_of_counties from T where name_of_place = 'schuyler',"Based on the table, the name of the place is 'schuyler' and the number of counties associated with it is 2. 
+Therefore, the answer is 2.
+Answer: 2",2,3102
+nu-1899,"total number of entries from ""leroy and stitch"" episode.",89,71,select count(*) from T where episode = 'leroy & stitch',direct ans,1,594
+nu-1918,which toggle series had the least yield?,atarque,atarque,"select name, yield from T order by yield asc limit 1","Based on the table, the toggle series ""atarque"" had the least yield, which is 1.5 kt. 
+Therefore, the answer is ""atarque"".
+Answer: atarque",2,385
+nu-1945,what fuel type performs the most mpg (us gallons) result?,diesel,diesel,"select fuel_type, max(mpg_us_gallons) from T","Based on the table, the fuel type that performs the most mpg (us gallons) is diesel, with a maximum value of 62.0.
+Therefore, the answer is diesel.
+Answer: diesel",2,1056
+nu-1955,how many national parks are there in the united states?,59,59,select count(*) from T,direct ans,1,354
+nu-1969,what is the total wins?,473,473.0,select sum(total_wins) from T,direct ans,1,1332
+nu-2019,how many prime ministers were affiliated with the sangkum political party?,12,0,select count(*) from T where political_party = 'sangkum political party',direct ans,1,639
+nu-2047,"in 2011 was the population of arad more than 200,000?",no,"based on the table, the population of arad in 2011 was 159,074. therefore, the population of arad in 2011 was not more than 200,000.","select city, population_2011 from T;","Based on the table, the population of Arad in 2011 was 159,074. Therefore, the population of Arad in 2011 was not more than 200,000. ",638,2233
+nu-2100,what is the only name for route 70?,georgia avenue-7th street line,georgia avenue-7th street line,select name from T where route = 70,direct ans,1,540
+nu-2160,how many zipcodes does sheridan have?,2,2,select count(*) from T where name_of_place like '%sheridan%',direct ans,1,3102
+nu-2191,does cebolla -1 or atarque have a higher elevation?,atarque,"based on the table, the elevation of atarque is 1182 m (3878 ft) - 294.2 m (965 ft), while the elevation of cebolla -1 (with cuchillo, solano) is 1180 m (3870 ft) - 287 m (942 ft).","select name, elevation__height from T where name like '%cebolla -1%' or name like '%atarque%'","Based on the table, the elevation of Atarque is 1182 m (3878 ft) - 294.2 m (965 ft), while the elevation of Cebolla -1 (with cuchillo, solano) is 1180 m (3870 ft) - 287 m (942 ft). ",4,385
+nu-2212,what was the name of the first national park which was established in 1872?,yellowstone,"based on the table, the name of the first national park which was established in 1872 is yellowstone.","select name, date_established from T;","Based on the table, the name of the first national park which was established in 1872 is Yellowstone.",118,354
+nu-2219,what is the last symbol listed?,diams,♦,select character from T order by row_number desc limit 1,direct ans,1,2032
+nu-2235,"which vehicle gets better mpg, the fiat 500 1.2 pop or mini cooper coupe 6m 3dr 1.6l?",mini cooper coupe 6m 3dr 1.6l diesel,mini cooper coupe 6m 3dr 1.6l diesel.,"select model, mpg_us_gallons from T where model like '%fiat 500 1.2 pop%' or model like '%mini cooper coupe 6m 3dr 1.6l%' order by mpg_us_gallons desc limit 1","Based on the table, the Fiat 500 1.2 pop has a fuel economy rating of mpg_us_gallons, while the Mini Cooper Coupe 6m 3dr 1.6l diesel has a fuel economy rating of 52.0 mpg_us_gallons. 
+Therefore, the Mini Cooper Coupe 6m 3dr 1.6l diesel gets better mpg than the Fiat 500 1.2 pop.
+Answer: Mini Cooper Coupe 6m 3dr 1.6l diesel.",2,1056
+nu-2243,"was the population of bucharest at least 2,000,000 in 2011?",no,"based on the table, the population of bucharest in 2011 was 1,883,425. therefore, the population of bucharest was not at least 2,000,000 in 2011.","select city, population_2011 from T;","Based on the table, the population of Bucharest in 2011 was 1,883,425. Therefore, the population of Bucharest was not at least 2,000,000 in 2011. ",638,2233
+nu-2292,who served the longest--florence prag kahn or julius kahn?,julius kahn,"based on the table, florence prag kahn served from 1925-1936, while julius kahn is not listed in the table. therefore, florence prag kahn served the longest.","select representative, years from T where representative like '%florence prag kahn%' or representative like '%julius kahn%' order by years desc limit 1","Based on the table, Florence Prag Kahn served from 1925-1936, while Julius Kahn is not listed in the table. Therefore, Florence Prag Kahn served the longest.",2,1992
+nu-2293,how many counties is sadsbury township in?,3,1,select number_of_counties from T where name_of_place = 'sadsbury township',"Based on the table, the number of counties for Sadsbury Township is 1. Therefore, the answer is 1.
+Answer: 1",3,3102
+nu-2323,which us state is home to the greatest number of national parks?,california,wyoming,"select location, count(*) as num_parks from T group by location order by num_parks desc limit 1","Based on the table, the state with the greatest number of national parks is Wyoming. This is determined by the location ""wyoming; 43°44′n 110°48′w﻿ / ﻿43.73°n 110.8°w"" which has a count of 1 in the ""num_parks"" column. Therefore, the answer is Wyoming.
+Answer: Wyoming",2,354
+nu-2355,how many vehicles on the list get at least 50mpg?,20,20,select count(*) from T where mpg_us_gallons >= 50,direct ans,1,1056
+nu-2359,does the nickname for number 008 have more or less than 10 letters?,less,less than 10.,select nickname from T where num = 8;,"Based on the table, the nickname for number 008 is ""carmine"". 
+The nickname ""carmine"" has 7 letters, which is less than 10. 
+Therefore, the answer is less than 10. 
+Answer: less than 10.",1,594
+nu-2439,does ll cool j have more or less songs on the hot 100 list than usher?,usher,"based on the table, ll cool j has 1 song on the hot 100 list, while usher has 3 songs on the hot 100 list. therefore, usher has more songs on the hot 100 list than ll cool j.","select artist, count(*) from T where artist = 'll cool j' or artist = 'usher' group by artist","Based on the table, Ll Cool J has 1 song on the hot 100 list, while Usher has 3 songs on the hot 100 list. Therefore, Usher has more songs on the hot 100 list than Ll Cool J. ",4,1368
+nu-2443,"what was the pod color in episode 220, which is second from the top?",purple,blue,"select pod_color, episode from T;","Based on the table, the pod color in episode 220, which is the second from the top, is blue.
+Therefore, the answer is blue.
+Answer: blue",198,594
+nu-2504,how long did head coach carl prause serve?,8 years,8 seasons,select season from T where head_coach = 'carl prause',"Based on the table, head coach Carl Prause served for 8 seasons, from 1922 to 1929. 
+Therefore, the answer is 8 seasons.
+Answer: 8 seasons",8,1332
+nu-2552,who was in office longer in the french protectorate: penn nouth or sisowath monireth?,sisowath monireth,"based on the table, penn nouth and sisowath monireth were both prime ministers during the french protectorate in cambodia.","select name_birth–death_title, term_start, term_end from T where name_birth–death_title like '%penn nouth%' or name_birth–death_title like '%sisowath monireth%' order by term_end - term_start desc limit 1","Based on the table, Penn Nouth and Sisowath Monireth were both prime ministers during the French protectorate in Cambodia.",3,639
+nu-2565,"what place is in elk county, sackett or saegertown?",sackett,sackett,select name_of_place from T where principal_county = 'elk county' and (name_of_place = 'sackett' or name_of_place = 'saegertown'),direct ans,1,3102
+nu-2630,what test took place before atarque in the toggle series of tests?,diamond sculls,diamond sculls,select name from T where date_time_ut < (select date_time_ut from T where name = 'atarque') order by date_time_ut desc limit 1,direct ans,1,385
+nu-2633,is the altitude in bucharest above or below 100?,below,"based on the table, the altitude of bucharest is 85.0. since 85.0 is below 100, the altitude in bucharest is below 100.","select altitude_m, city from T;","Based on the table, the altitude of Bucharest is 85.0. Since 85.0 is below 100, the altitude in Bucharest is below 100. ",638,2233
+nu-2650,does sibiu have an altitude above 200m?,yes,yes,"select city, altitude_m from T where city = 'sibiu' and altitude_m > 200","Based on the table, the city of Sibiu has an altitude of 415.0 meters. Since this altitude is above 200 meters, the answer is yes, Sibiu does have an altitude above 200m. Therefore, the answer is yes.",2,2233
+nu-2673,how long is the protected coastline in redwoods national park?,37 miles (60 km),"based on the table, the protected coastline in redwood national park is not provided. therefore, the answer cannot be determined from the given information.","select area, name from T;","Based on the table, the protected coastline in Redwood National Park is not provided. Therefore, the answer cannot be determined from the given information.",118,354
+nu-2696,"which season was more successful, 2005 or 2007?",2007,"based on the table, in 2005 the citadel bulldogs football team had 4 total wins and 7 total losses. in 2007, they had 7 total wins and 4 total losses.","select season, total_wins, total_losses from T where season = 2005 or season = 2007","Based on the table, in 2005 The Citadel Bulldogs football team had 4 total wins and 7 total losses. In 2007, they had 7 total wins and 4 total losses.",6,1332
+nu-2729,which greek letter is listed before upsilon?,tau,phi,"select name, character from T;","Based on the table, the Greek letter listed before upsilon is phi.
+Therefore, the answer is phi.
+Answer: phi",508,2032
+nu-2797,what is the place listed above sackville?,sackett,saco,select name_of_place from T where name_of_place > 'sackville' order by name_of_place asc limit 1,direct ans,1,3102
+nu-2816,what route is listed directly above the one that starts at georgetown university (37th & o streets nw) and ends at ledroit park?,e6,g2,"select route, name from T where terminals like '%georgetown university%' and terminals1 like '%ledroit park%'","Based on the table, the route listed directly above the one that starts at Georgetown University and ends at Ledroit Park is the G2 route. 
+Therefore, the answer is G2.
+Answer: G2",2,540
+nu-2819,andrew davidson is next after whom?,caroline o'shea,sada wilkington,select name from T where row_number = (select row_number from T where name = 'andrew davidson') + 1,direct ans,1,1939
+nu-2900,which town has the top remaining population to this date?,ulysses,"based on the given table and sql query, the town with the top remaining population to this date is sumner city.","select town_name, current_status from T order by current_status desc limit 1","Based on the given table and SQL query, the town with the top remaining population to this date is Sumner City.",2,2149
+nu-2906,which comet has the longest orbital period?,153p/ikeya-zhang,75d/kohoutek,"select comet, orbital_period_years from T order by orbital_period_years desc limit 1","Based on the table, the comet with the longest orbital period is 75d/kohoutek, with an orbital period of approximately 7 years.
+Therefore, the answer is 75d/kohoutek.
+Answer: 75d/kohoutek",2,1485
+nu-2908,who was the first head coach?,sidney smith,sidney smith,select head_coach from T order by season asc limit 1,direct ans,1,1332
+nu-3040,what is the total number of wins listed?,total wins 473,473.0,select sum(total_wins) from T,direct ans,1,1332
+nu-3092,how many names do not have images associated with them?,0,59,select count(*) from T where description not like '%image%',direct ans,1,354
+nu-3139,what is the number of locations named st. clair in pennsylvania?,3,6,select count(*) from T where name_of_place like '%st. clair%',direct ans,1,3102
+nu-3158,"in episode 220 of leroy & stitch, the nickname was not shrink. what was the nickname?",millie,"one of the following: ""doubledip"", ""gotchu"", ""forehead"", ""hocker"", or ""zawp","select nickname from T where episode = '220, leroy & stitch' and nickname != 'shrink'","Based on the table, in episode 220 of Leroy & Stitch, the nickname was not ""shrink"". The available nicknames in the table are ""doubledip"", ""gotchu"", ""forehead"", ""hocker"", and ""zawp"". 
+Therefore, the answer is one of the following: ""doubledip"", ""gotchu"", ""forehead"", ""hocker"", or ""zawp"".",5,594
+nu-3203,how many artists charted in the year 2010?,14,14,select count(distinct artist) from T where chart_year = 2010,direct ans,1,1368
+nu-3228,how many years did john a kasson serve in office?,12,42 years,select * from T,"Based on the table, John A. Kasson served in office for a total of 42 years. He served from 1863-1867, 1873-1877, and 1881-1884. 
+Therefore, the answer is 42 years.
+Answer: 42 years",1992,1992
+nu-3253,which town had the longest span between establishment and disestablishment?,irving,treece,"select town_name, established, disestablished from T order by (disestablished - established) desc limit 1","Based on the table, the town with the longest span between establishment and disestablishment is Treece. It was established in the early 1900s and disestablished in 2012. 
+Therefore, the answer is Treece.
+Answer: Treece",3,2149
+nu-3290,how many terminals have at least four major streets listed?,17,17,"select count(*) from T where length(major_streets) - length(replace(major_streets, ';', '')) >= 3",direct ans,1,540
+nu-3294,what city is before brasov?,craiova,craiova,select city from T;,"Based on the table, the city that comes before Brasov is Craiova.
+Therefore, the answer is Craiova.",319,2233
+nu-3419,what is the name of the last character in the table?,diams,diams,select name from T order by row_number desc limit 1,direct ans,1,2032
+nu-3434,which car utilizes the most amount of miles per gallon?,volkswagen polo 1.4 tdi bluemotion,volkswagen polo 1.4 tdi bluemotion,"select model, mpg_us_gallons from T order by mpg_us_gallons desc limit 1","Based on the table, the car that utilizes the most amount of miles per gallon is the Volkswagen Polo 1.4 TDI Bluemotion, with a fuel economy rating of 62.0 mpg (miles per gallon). 
+Therefore, the answer is Volkswagen Polo 1.4 TDI Bluemotion.
+Answer: Volkswagen Polo 1.4 TDI Bluemotion",2,1056
+nu-3469,who was/were the oldest winner(s) of big brother (uk)?,"brian dowling,cameron stout",cameron stout,"select name, age from T where status like '%winner%' order by age desc limit 1","Based on the table, the oldest winner of Big Brother (UK) is Cameron Stout, who was 32 years old when he won. 
+Therefore, the answer is Cameron Stout.
+Answer: Cameron Stout",2,1939
+nu-3487,who is after anna nolan on the table?,darren ramsay,darren ramsay,select name from T where row_number > (select row_number from T where name = 'anna nolan') limit 1,direct ans,1,1939
+nu-3573,how many years did pawnee exist for,1,44 years.,select disestablished - established as years_exist from T where county = 'pawnee county',"Based on the table, the years_exist column represents the number of years a ghost town existed. 
+For Pawnee County, there are two entries in the table, with values 0 and 44 in the years_exist column. 
+The first entry with a value of 0 means that the town was established and disestablished in the same year, so it did not exist for any years. 
+The second entry with a value of 44 means that the town existed for 44 years. 
+Therefore, the answer is 44 years.
+Answer: 44 years.",2,2149
+nu-3624,how many releases were not on a new single?,76,77,select count(*) from T where billboard_hot_100 not like '%new single%',direct ans,1,1368
+nu-3662,what is the first name listed?,acadia,acadia,select name from T order by row_number asc limit 1,direct ans,1,354
+nu-3663,who is the previous housemate before craig phillips?,anna nolan,josie gibson,select name from T;,"Based on the table, the previous housemate before Craig Phillips is Josie Gibson.
+Therefore, the answer is Josie Gibson.",277,1939
+nu-3679,what name is listed above atarque?,diamond sculls,diamond sculls,select name from T where row_number = (select row_number from T where name = 'atarque') - 1,direct ans,1,385
+nu-3693,what was the first national park established in the united states?,yellowstone,yellowstone,select name from T order by date_established asc limit 1,direct ans,1,354
+nu-3706,what is next after chuchillo -2?,solano - 3,"based on the table, the name ""chuchillo -2"" is at row number 3. the next row after ""chuchillo -2"" is row number 4.","select row_number, name from T;","Based on the table, the name ""chuchillo -2"" is at row number 3. The next row after ""chuchillo -2"" is row number 4. ",70,385
+nu-3709,"in leroy & stitch, what was the nickname before howcome?",doubledip,shrink,select nickname from T where episode = 'leroy & stitch' and row_number < (select row_number from T where nickname = 'howcome') order by row_number desc limit 1,direct ans,1,594
+nu-3711,how long did joseph karth live?,83 years,1922–2005,select lifespan from T where representative like '%joseph karth%',direct ans,1,1992
+nu-3732,how many songs does justin timberlake have on the hot 100 list?,1,0,select count(*) from T where artist = 'justin timberlake' and billboard_hot_100 is not null,direct ans,1,1368
+nu-3750,how many representatives with k last names were from wisconsin?,14,13,select count(*) from T where representative like '%k%' and state = 'wisconsin',direct ans,1,1992
+nu-3941,how many toggle tets took place in 1972?,16,0,select count(*) from T where name like '%toggle%' and date_time_ut like '%1972%',direct ans,1,385
+nu-3990,which experiment number came directly before felix?,009,9,"select num, nickname from T;","Based on the table, the experiment number that came directly before Felix is 9. 
+Therefore, the answer is 9.
+Answer: 9",198,594
+nu-4004,what song is previous to war ready,i know f rich homie quan,devil is a lie,select song from T where row_number = (select row_number from T where song = 'war ready') - 1,direct ans,1,1368
+nu-4007,who is the last artist and it song on this chart,"ayumi hamasaki,like a doll",ayumi hamasaki - like a doll,"select artist, song from T order by row_number desc limit 1","Based on the table, the last artist and song on this chart is ""ayumi hamasaki"" with the song ""like a doll"". 
+Therefore, the answer is ""ayumi hamasaki - like a doll"".
+Answer: ayumi hamasaki - like a doll",2,1368
+nu-4068,what counties are each scott townships located in?,"allegheny county,columbia county,lackawanna county,lawrence county,wayne county","based on the table, there are multiple scott townships located in different counties in pennsylvania. the scott townships are located in the following counties:","select name_of_place, principal_county from T where name_of_place like '%scott township%'","Based on the table, there are multiple Scott Townships located in different counties in Pennsylvania. The Scott Townships are located in the following counties:",10,3102
+nu-4085,who was the next contestant to come from ireland after anna nolan?,brian dowling,darren ramsay,"select name, hometown from T;","Based on the table, the next contestant to come from Ireland after Anna Nolan is Darren Ramsay.
+Therefore, the answer is Darren Ramsay.
+Answer: Darren Ramsay",554,1939
+nu-4188,what is the difference in age between craig phillips and anna nolan?,1 year,1 year,select age from T where name = 'craig phillips' or name = 'anna nolan',"Based on the table, Craig Phillips is 28 years old and Anna Nolan is 29 years old. The difference in age between Craig Phillips and Anna Nolan is 29 - 28 = 1 year. Therefore, the answer is 1 year.",2,1939
+nu-4194,was it 2012 or 2013 that ciara released got me good?,2012,2012,select chart_year from T where artist like '%ciara%' and song like '%got me good%',direct ans,1,1368
+nu-4196,who was the next head coach after sidney smith?,ralph foster,ralph foster,select head_coach from T where row_number = (select row_number from T where head_coach = 'sidney smith') + 1,direct ans,1,1332
+nu-4222,which us national park is larger: yellowstone or the virgin islands?,yellowstone,"based on the table, yellowstone national park has an area of 2,219,790.71 acres, while virgin islands national park has an area of 14,688.87 acres.","select name, area from T where name like '%yellowstone%' or name like '%virgin islands%'","Based on the table, Yellowstone National Park has an area of 2,219,790.71 acres, while Virgin Islands National Park has an area of 14,688.87 acres. ",4,354
+nu-4299,which artist did jaycen joshua work with before his first job with rick ross?,puff daddy,"based on the table, jaycen joshua worked with several artists before his first job with rick ross. the sql query selects the artist names where the chart year is less than the minimum chart year of rick ross and the artist is not jaycen joshua.",select artist from T where chart_year < (select min(chart_year) from T where artist = 'rick ross') and artist != 'jaycen joshua',"Based on the table, Jaycen Joshua worked with several artists before his first job with Rick Ross. The SQL query selects the artist names where the chart year is less than the minimum chart year of Rick Ross and the artist is not Jaycen Joshua. ",91,1368
