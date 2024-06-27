@@ -1,4 +1,4 @@
-# TabSQLify: Enhancing Reasoning Capabilities of LLMs Through Table Decomposition
+# TabSQLify: Enhancing Reasoning Capabilities of LLMs Through Table Decomposition [NAACL 2024]
 
 ## Method Overview 
 
