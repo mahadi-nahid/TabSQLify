@@ -1,6 +1,4 @@
 # TabSQLify: Enhancing Reasoning Capabilities of LLMs Through Table Decomposition [NAACL 2024]
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/tabsqlify-enhancing-reasoning-capabilities-of/question-answering-on-wikitablequestions)](https://paperswithcode.com/sota/question-answering-on-wikitablequestions?p=tabsqlify-enhancing-reasoning-capabilities-of) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/tabsqlify-enhancing-reasoning-capabilities-of/question-answering-on-wikisql)](https://paperswithcode.com/sota/question-answering-on-wikisql?p=tabsqlify-enhancing-reasoning-capabilities-of) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/tabsqlify-enhancing-reasoning-capabilities-of/semantic-parsing-on-wikitablequestions)](https://paperswithcode.com/sota/semantic-parsing-on-wikitablequestions?p=tabsqlify-enhancing-reasoning-capabilities-of) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/tabsqlify-enhancing-reasoning-capabilities-of/table-based-fact-verification-on-tabfact)](https://paperswithcode.com/sota/table-based-fact-verification-on-tabfact?p=tabsqlify-enhancing-reasoning-capabilities-of)
-
 
 ## Method Overview 
 
